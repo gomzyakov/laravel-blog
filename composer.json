@@ -16,9 +16,9 @@
     "require-dev": {
         "doctrine/dbal": "^3.6",
         "fakerphp/faker": "^1.9.1",
+        "friendsofphp/php-cs-fixer": "^3.23",
+        "gomzyakov/php-cs-fixer-config": "^1.30",
         "laravel/breeze": "^1.20",
-        "laravel/pint": "^1.0",
-        "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
         "phpunit/phpunit": "^10.0",
@@ -37,6 +37,19 @@
         }
     },
     "scripts": {
+        "phpunit": "@php ./vendor/bin/phpunit ./tests --no-coverage --color=always",
+        "phpstan": "@php ./vendor/bin/phpstan analyze -c ./phpstan.neon.dist --no-progress --ansi --verbose",
+        "deptrac": "@php ./vendor/bin/deptrac analyse --config-file=deptrac.yaml --no-cache",
+        "deptrac-uncovered": "@php ./vendor/bin/deptrac analyse --config-file=deptrac.yaml --no-cache --report-uncovered",
+        "cs-check": "@php ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run --diff",
+        "cs-fix": "@php ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php",
+        "rector-check": "@php ./vendor/bin/rector process --dry-run",
+        "rector-fix": "@php ./vendor/bin/rector process",
+        "test": [
+            "@cs-check",
+            "@phpstan",
+            "@phpunit"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php ./artisan package:discover --ansi"
