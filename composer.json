@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "ext-intl" : "*",
+        "ext-intl": "*",
         "filament/filament": "^3.0-stable",
         "guzzlehttp/guzzle": "^7.8",
         "laravel/framework": "^10.0",
@@ -17,7 +17,6 @@
     "require-dev": {
         "doctrine/dbal": "^3.6",
         "fakerphp/faker": "^1.9.1",
-        "filament/upgrade": "^3.0-stable",
         "friendsofphp/php-cs-fixer": "^3.23",
         "gomzyakov/php-cs-fixer-config": "^1.30",
         "laravel/breeze": "^1.20",
@@ -54,7 +53,8 @@
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php ./artisan package:discover --ansi"
+            "@php ./artisan package:discover --ansi",
+            "@php artisan filament:upgrade"
         ],
         "post-update-cmd": [
             "@php ./artisan vendor:publish --tag=laravel-assets --ansi --force",
