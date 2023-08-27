@@ -4,7 +4,6 @@ namespace App\Filament\Resources\UserResource\Pages;
 
 use App\Filament\Resources\UserResource;
 use Carbon\Carbon;
-use Filament\Pages\Actions;
 use Filament\Resources\Pages\CreateRecord;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,13 +13,14 @@ class CreateUser extends CreateRecord
 
     protected function getRedirectUrl(): string
     {
-        return $this->getResource()::getUrl('index');
+        return static::getResource()::getUrl('index');
     }
 
     protected function mutateFormDataBeforeCreate(array $data): array
     {
         $data['email_verified_at'] = Carbon::now();
-        $data['password'] = bcrypt($data['password']);
+        $data['password']          = bcrypt($data['password']);
+
         return $data;
     }
 

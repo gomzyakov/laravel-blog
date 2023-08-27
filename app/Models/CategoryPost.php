@@ -3,11 +3,10 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
-class CategoryPost extends Model
+class CategoryPost extends EloquentModel
 {
-    protected $table = 'category_posts';
-
     use HasFactory;
+
+    protected $table = 'category_posts';
 }

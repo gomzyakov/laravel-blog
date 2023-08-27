@@ -3,7 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\PostResource\Pages;
-use App\Filament\Resources\PostResource\RelationManagers;
 use App\Models\Post;
 use Closure;
 use Filament\Forms;
@@ -11,8 +10,6 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Str;
 
 class PostResource extends Resource
@@ -56,7 +53,7 @@ class PostResource extends Resource
                         Forms\Components\Select::make('categories')
                             ->multiple()
                             ->relationship('categories', 'title'),
-                    ])->columnSpan(4)
+                    ])->columnSpan(4),
             ])->columns(12);
     }
 
@@ -98,10 +95,10 @@ class PostResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListPosts::route('/'),
+            'index'  => Pages\ListPosts::route('/'),
             'create' => Pages\CreatePost::route('/create'),
-            'view' => Pages\ViewPost::route('/{record}'),
-            'edit' => Pages\EditPost::route('/{record}/edit'),
+            'view'   => Pages\ViewPost::route('/{record}'),
+            'edit'   => Pages\EditPost::route('/{record}/edit'),
         ];
     }
 }

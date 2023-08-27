@@ -4,7 +4,6 @@ namespace App\Http\Livewire;
 
 use App\Models\Comment;
 use App\Models\Post;
-use Illuminate\Database\Eloquent\Collection;
 use Livewire\Component;
 
 class Comments extends Component
@@ -23,15 +22,13 @@ class Comments extends Component
 
     public function render()
     {
-//        dd('1234');
         $comments = $this->selectComments();
-        return view('livewire.comments', compact('comments'));
+
+        return view('livewire.comments', ['comments' => $comments]);
     }
 
     /**
-     *
      * @return mixed
-     * @author Zura Sekhniashvili <zurasekhniashvili@gmail.com>
      */
     private function selectComments()
     {

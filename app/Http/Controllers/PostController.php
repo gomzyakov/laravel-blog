@@ -56,10 +56,10 @@ class PostController extends Controller
         // If authorized - Show recommended posts based on user upvotes
         $user = auth()->user();
 
-        if ($user) {
-            $leftJoin = "(SELECT cp.category_id, cp.post_id FROM upvote_downvotes
+        if ($user instanceof \Illuminate\Contracts\Auth\Authenticatable) {
+            $leftJoin = '(SELECT cp.category_id, cp.post_id FROM upvote_downvotes
                         JOIN category_post cp ON upvote_downvotes.post_id = cp.post_id
-                        WHERE upvote_downvotes.is_upvote = 1 and upvote_downvotes.user_id = ?) as t";
+                        WHERE upvote_downvotes.is_upvote = 1 and upvote_downvotes.user_id = ?) as t';
             $recommendedPosts = Post::query()
                 ->leftJoin('category_post as cp', 'posts.id', '=', 'cp.post_id')
                 ->leftJoin(DB::raw($leftJoin), function ($join) {
@@ -71,7 +71,6 @@ class PostController extends Controller
                 ->setBindings([$user->id])
                 ->limit(3)
                 ->get();
-
         } // Not authorized - Popular posts based on views
         else {
             $recommendedPosts = Post::query()
@@ -125,21 +124,15 @@ class PostController extends Controller
             ->get();
 
 
-        return view('home', compact(
-            'latestPost',
-            'popularPosts',
-            'recommendedPosts',
-            'categories'
-        ));
+        return view('home', ['latestPost' => $latestPost, 'popularPosts' => $popularPosts, 'recommendedPosts' => $recommendedPosts, 'categories' => $categories]);
     }
-
 
     /**
      * Display the specified resource.
      */
     public function show(Post $post, Request $request)
     {
-        if (!$post->active || $post->published_at > Carbon::now()) {
+        if (! $post->active || $post->published_at > Carbon::now()) {
             throw new NotFoundHttpException();
         }
 
@@ -163,11 +156,11 @@ class PostController extends Controller
         PostView::create([
             'ip_address' => $request->ip(),
             'user_agent' => $request->userAgent(),
-            'post_id' => $post->id,
-            'user_id' => $user?->id
+            'post_id'    => $post->id,
+            'user_id'    => $user?->id,
         ]);
 
-        return view('post.view', compact('post', 'prev', 'next'));
+        return view('post.view', ['post' => $post, 'prev' => $prev, 'next' => $next]);
     }
 
     public function byCategory(Category $category)
@@ -180,7 +173,7 @@ class PostController extends Controller
             ->orderBy('published_at', 'desc')
             ->paginate(10);
 
-        return view('post.index', compact('posts', 'category'));
+        return view('post.index', ['posts' => $posts, 'category' => $category]);
     }
 
     public function search(Request $request)
@@ -192,11 +185,11 @@ class PostController extends Controller
             ->whereDate('published_at', '<=', Carbon::now())
             ->orderBy('published_at', 'desc')
             ->where(function ($query) use ($q) {
-                $query->where('title', 'like', "%$q%")
-                    ->orWhere('body', 'like', "%$q%");
+                $query->where('title', 'like', "%{$q}%")
+                    ->orWhere('body', 'like', "%{$q}%");
             })
             ->paginate(10);
 
-        return view('post.search', compact('posts'));
+        return view('post.search', ['posts' => $posts]);
     }
 }

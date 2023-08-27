@@ -20,7 +20,6 @@ class EditTextWidget extends EditRecord
 
     protected function getRedirectUrl(): string
     {
-        return $this->getResource()::getUrl('index');
+        return static::getResource()::getUrl('index');
     }
-
 }
