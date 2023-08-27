@@ -16,7 +16,7 @@ class Post extends Model
     protected $fillable = ['title', 'slug', 'thumbnail', 'body', 'user_id', 'active', 'published_at', 'meta_title', 'meta_description'];
 
     protected $casts = [
-        'published_at' => 'datetime'
+        'published_at' => 'datetime',
     ];
 
     public function user(): BelongsTo
@@ -52,7 +52,7 @@ class Post extends Model
     {
         return new Attribute(
             get: function ($value, $attributes) {
-                $words = Str::wordCount(strip_tags($attributes['body']));
+                $words   = Str::wordCount(strip_tags($attributes['body']));
                 $minutes = ceil($words / 200);
 
                 return $minutes . ' ' . str('min')->plural($minutes) . ', '

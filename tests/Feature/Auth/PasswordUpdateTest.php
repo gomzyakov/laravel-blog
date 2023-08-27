@@ -7,6 +7,9 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Hash;
 use Tests\TestCase;
 
+/**
+ * @coversNothing
+ */
 class PasswordUpdateTest extends TestCase
 {
     use RefreshDatabase;
@@ -19,8 +22,8 @@ class PasswordUpdateTest extends TestCase
             ->actingAs($user)
             ->from('/profile')
             ->put('/password', [
-                'current_password' => 'password',
-                'password' => 'new-password',
+                'current_password'      => 'password',
+                'password'              => 'new-password',
                 'password_confirmation' => 'new-password',
             ]);
 
@@ -39,8 +42,8 @@ class PasswordUpdateTest extends TestCase
             ->actingAs($user)
             ->from('/profile')
             ->put('/password', [
-                'current_password' => 'wrong-password',
-                'password' => 'new-password',
+                'current_password'      => 'wrong-password',
+                'password'              => 'new-password',
                 'password_confirmation' => 'new-password',
             ]);
 

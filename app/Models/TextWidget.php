@@ -15,14 +15,14 @@ class TextWidget extends Model
         'image',
         'title',
         'content',
-        'active'
+        'active',
     ];
 
     public static function getTitle(string $key): string
     {
         $widget = TextWidget::query()->where('key', $key)->first();
 
-        if (!$widget) {
+        if (! $widget) {
             return '';
         }
 
@@ -35,7 +35,7 @@ class TextWidget extends Model
             return TextWidget::query()->where('key', $key)->first();
         });
 
-        if (!$widget) {
+        if (! $widget) {
             return '';
         }
 
