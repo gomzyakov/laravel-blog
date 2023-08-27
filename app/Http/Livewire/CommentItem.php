@@ -32,7 +32,7 @@ class CommentItem extends Component
     public function deleteComment()
     {
         $user = auth()->user();
-        if (!$user instanceof \Illuminate\Contracts\Auth\Authenticatable) {
+        if (! $user instanceof \Illuminate\Contracts\Auth\Authenticatable) {
             return $this->redirect('/login');
         }
 

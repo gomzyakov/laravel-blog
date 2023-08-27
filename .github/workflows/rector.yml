@@ -23,4 +23,4 @@ jobs:
         run: composer install --no-interaction --prefer-dist
 
       - name: Run checks via Rector
-        run: composer phpstan
+        run: composer rector-check

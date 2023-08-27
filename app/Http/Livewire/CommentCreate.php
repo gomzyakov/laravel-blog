@@ -33,7 +33,7 @@ class CommentCreate extends Component
     public function createComment()
     {
         $user = auth()->user();
-        if (!$user instanceof \Illuminate\Contracts\Auth\Authenticatable) {
+        if (! $user instanceof \Illuminate\Contracts\Auth\Authenticatable) {
             return $this->redirect('/login');
         }
 
