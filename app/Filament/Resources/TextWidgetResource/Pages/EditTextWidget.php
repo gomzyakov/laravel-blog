@@ -10,7 +10,7 @@ class EditTextWidget extends EditRecord
 {
     protected static string $resource = TextWidgetResource::class;
 
-    protected function getActions(): array
+    protected function getHeaderActions(): array
     {
         return [
             Actions\ViewAction::make(),

@@ -6,7 +6,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "filament/filament": "^2.0",
+        "ext-intl" : "*",
+        "filament/filament": "^3.0-stable",
         "guzzlehttp/guzzle": "^7.8",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
@@ -16,6 +17,7 @@
     "require-dev": {
         "doctrine/dbal": "^3.6",
         "fakerphp/faker": "^1.9.1",
+        "filament/upgrade": "^3.0-stable",
         "friendsofphp/php-cs-fixer": "^3.23",
         "gomzyakov/php-cs-fixer-config": "^1.30",
         "laravel/breeze": "^1.20",
@@ -23,7 +25,7 @@
         "nunomaduro/collision": "^7.0",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^10.3",
-        "rector/rector": "^0.18.0",
+        "rector/rector": "0.17.0",
         "spatie/laravel-ignition": "^2.3"
     },
     "autoload": {
