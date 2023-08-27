@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Post;
+use App\Models\User;
 use Livewire\Component;
 
 class UpvoteDownvote extends Component
@@ -29,7 +30,7 @@ class UpvoteDownvote extends Component
         // null means user has not done upvote or downvote
         $hasUpvote = null;
 
-        /** @var \App\Models\User $user */
+        /** @var User $user */
         $user = request()->user();
         if ($user) {
             $model = \App\Models\UpvoteDownvote::where('post_id', '=', $this->post->id)->where('user_id', '=', $user->id)->first();
@@ -43,7 +44,7 @@ class UpvoteDownvote extends Component
 
     public function upvoteDownvote($upvote = true)
     {
-        /** @var \App\Models\User $user */
+        /** @var User $user */
         $user = request()->user();
         if (! $user) {
             return $this->redirect('login');
