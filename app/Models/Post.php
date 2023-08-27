@@ -31,7 +31,7 @@ class Post extends Model
 
     public function shortBody($words = 30): string
     {
-        return Str::words(strip_tags($this->body), $words);
+        return Str::words(strip_tags((string) $this->body), $words);
     }
 
     public function getFormattedDate()
@@ -41,7 +41,7 @@ class Post extends Model
 
     public function getThumbnail()
     {
-        if (str_starts_with($this->thumbnail, 'http')) {
+        if (str_starts_with((string) $this->thumbnail, 'http')) {
             return $this->thumbnail;
         }
 
@@ -52,7 +52,7 @@ class Post extends Model
     {
         return new Attribute(
             get: function ($value, $attributes) {
-                $words   = Str::wordCount(strip_tags($attributes['body']));
+                $words   = Str::wordCount(strip_tags((string) $attributes['body']));
                 $minutes = ceil($words / 200);
 
                 return $minutes . ' ' . str('min')->plural($minutes) . ', '

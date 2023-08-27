@@ -56,7 +56,7 @@ class PostController extends Controller
         // If authorized - Show recommended posts based on user upvotes
         $user = auth()->user();
 
-        if ($user) {
+        if ($user instanceof \Illuminate\Contracts\Auth\Authenticatable) {
             $leftJoin = '(SELECT cp.category_id, cp.post_id FROM upvote_downvotes
                         JOIN category_post cp ON upvote_downvotes.post_id = cp.post_id
                         WHERE upvote_downvotes.is_upvote = 1 and upvote_downvotes.user_id = ?) as t';
@@ -124,12 +124,7 @@ class PostController extends Controller
             ->get();
 
 
-        return view('home', compact(
-            'latestPost',
-            'popularPosts',
-            'recommendedPosts',
-            'categories'
-        ));
+        return view('home', ['latestPost' => $latestPost, 'popularPosts' => $popularPosts, 'recommendedPosts' => $recommendedPosts, 'categories' => $categories]);
     }
 
     /**
@@ -165,7 +160,7 @@ class PostController extends Controller
             'user_id'    => $user?->id,
         ]);
 
-        return view('post.view', compact('post', 'prev', 'next'));
+        return view('post.view', ['post' => $post, 'prev' => $prev, 'next' => $next]);
     }
 
     public function byCategory(Category $category)
@@ -178,7 +173,7 @@ class PostController extends Controller
             ->orderBy('published_at', 'desc')
             ->paginate(10);
 
-        return view('post.index', compact('posts', 'category'));
+        return view('post.index', ['posts' => $posts, 'category' => $category]);
     }
 
     public function search(Request $request)
@@ -195,6 +190,6 @@ class PostController extends Controller
             })
             ->paginate(10);
 
-        return view('post.search', compact('posts'));
+        return view('post.search', ['posts' => $posts]);
     }
 }

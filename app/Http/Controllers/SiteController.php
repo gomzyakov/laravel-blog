@@ -14,6 +14,6 @@ class SiteController extends Controller
             ->where('active', '=', 1)
             ->first();
 
-        return view('about', compact('widget'));
+        return view('about', ['widget' => $widget]);
     }
 }

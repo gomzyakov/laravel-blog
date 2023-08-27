@@ -25,7 +25,7 @@ class Comments extends Component
         //        dd('1234');
         $comments = $this->selectComments();
 
-        return view('livewire.comments', compact('comments'));
+        return view('livewire.comments', ['comments' => $comments]);
     }
 
     /**

@@ -25,6 +25,6 @@ class Sidebar extends Component
             ->limit(5)
             ->get();
 
-        return view('components.sidebar', compact('categories'));
+        return view('components.sidebar', ['categories' => $categories]);
     }
 }

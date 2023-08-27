@@ -38,7 +38,7 @@ class UpvoteDownvote extends Component
             }
         }
 
-        return view('livewire.upvote-downvote', compact('upvotes', 'downvotes', 'hasUpvote'));
+        return view('livewire.upvote-downvote', ['upvotes' => $upvotes, 'downvotes' => $downvotes, 'hasUpvote' => $hasUpvote]);
     }
 
     public function upvoteDownvote($upvote = true)
