@@ -2,14 +2,22 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Str;
 
-class Post extends Model
+/**
+ * @property string      $title
+ * @property string      $slug
+ * @property string|null $thumbnail
+ * @property string      $body
+ * @property bool        $active
+ * @property Carbon      $published_at
+ */
+class Post extends EloquentModel
 {
     use HasFactory;
 
