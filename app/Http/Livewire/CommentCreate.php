@@ -46,6 +46,7 @@ class CommentCreate extends Component
             $this->commentModel->save();
 
             $this->comment = '';
+            /** @phpstan-ignore-next-line  */
             $this->emitUp('commentUpdated');
         } else {
             $comment = Comment::create([
@@ -55,6 +56,7 @@ class CommentCreate extends Component
                 'parent_id' => $this->parentComment?->id,
             ]);
 
+            /** @phpstan-ignore-next-line  */
             $this->emitUp('commentCreated', $comment->id);
             $this->comment = '';
         }

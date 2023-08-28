@@ -43,6 +43,8 @@ class CommentItem extends Component
         $id = $this->comment->id;
 
         $this->comment->delete();
+
+        /** @phpstan-ignore-next-line  */
         $this->emitUp('commentDeleted', $id);
     }
 
