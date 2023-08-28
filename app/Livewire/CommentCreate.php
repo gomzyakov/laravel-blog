@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Models\Comment;
 use App\Models\Post;
@@ -46,8 +46,6 @@ class CommentCreate extends Component
             $this->commentModel->save();
 
             $this->comment = '';
-            /** @phpstan-ignore-next-line  */
-            $this->emitUp('commentUpdated');
         } else {
             $comment = Comment::create([
                 'comment'   => $this->comment,
@@ -56,8 +54,6 @@ class CommentCreate extends Component
                 'parent_id' => $this->parentComment?->id,
             ]);
 
-            /** @phpstan-ignore-next-line  */
-            $this->emitUp('commentCreated', $comment->id);
             $this->comment = '';
         }
     }
