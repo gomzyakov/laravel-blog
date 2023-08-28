@@ -22,11 +22,17 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Filament::serving(function () {
+            /** @phpstan-ignore-next-line  */
             Filament::registerNavigationItems([
-                NavigationItem::make('github.com/gomzyakov')
-                    ->url('https://github.com/gomzyakov', shouldOpenInNewTab: true)
+                NavigationItem::make('Swagger')
+                    ->url('/', shouldOpenInNewTab: true)
+                    ->icon('heroicon-o-cursor-arrow-rays')
+                    ->group('Links')
+                    ->sort(3),
+                NavigationItem::make('Project on GitHub')
+                    ->url('https://github.com/gomzyakov/laravel-blog', shouldOpenInNewTab: true)
                     ->icon('heroicon-o-globe-alt')
-                    ->group('Content Creator')
+                    ->group('Links')
                     ->sort(3),
             ]);
         });

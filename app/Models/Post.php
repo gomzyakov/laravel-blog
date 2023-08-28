@@ -59,7 +59,7 @@ class Post extends EloquentModel
     public function humanReadTime(): Attribute
     {
         return new Attribute(
-            get: function ($value, $attributes) {
+            get: function ($value, $attributes): string {
                 $words   = Str::wordCount(strip_tags((string) $attributes['body']));
                 $minutes = ceil($words / 200);
 
