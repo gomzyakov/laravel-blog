@@ -40,8 +40,6 @@ class CommentItem extends Component
             return response('You are not allowed to perform this action', 403);
         }
 
-        $id = $this->comment->id;
-
         $this->comment->delete();
     }
 

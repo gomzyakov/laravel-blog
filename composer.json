@@ -50,6 +50,7 @@
         "test": [
             "@cs-check",
             "@phpstan",
+            "@rector-check",
             "@phpunit"
         ],
         "post-autoload-dump": [
