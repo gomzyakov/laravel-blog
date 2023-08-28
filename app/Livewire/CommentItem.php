@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Models\Comment;
 use Livewire\Component;
@@ -43,9 +43,6 @@ class CommentItem extends Component
         $id = $this->comment->id;
 
         $this->comment->delete();
-
-        /** @phpstan-ignore-next-line  */
-        $this->emitUp('commentDeleted', $id);
     }
 
     public function startCommentEdit()
