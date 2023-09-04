@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e562abe32a63e3e8985356c5f52029f",
+    "content-hash": "e9cb37326b94d2aedb4b1534f63d1906",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -9002,21 +9002,21 @@
         },
         {
             "name": "rector/rector",
-            "version": "0.17.0",
+            "version": "0.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "d8da002b107c9b64d464bb48101290d4d078df4b"
+                "reference": "ee72ef542680a7f47ed8c6784f78b032c0d2f381"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/d8da002b107c9b64d464bb48101290d4d078df4b",
-                "reference": "d8da002b107c9b64d464bb48101290d4d078df4b",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/ee72ef542680a7f47ed8c6784f78b032c0d2f381",
+                "reference": "ee72ef542680a7f47ed8c6784f78b032c0d2f381",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2|^8.0",
-                "phpstan/phpstan": "^1.10.15"
+                "phpstan/phpstan": "^1.10.31"
             },
             "conflict": {
                 "rector/rector-doctrine": "*",
@@ -9028,11 +9028,6 @@
                 "bin/rector"
             ],
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "0.15-dev"
-                }
-            },
             "autoload": {
                 "files": [
                     "bootstrap.php"
@@ -9051,7 +9046,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/0.17.0"
+                "source": "https://github.com/rectorphp/rector/tree/0.18.1"
             },
             "funding": [
                 {
@@ -9059,7 +9054,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-01T09:42:59+00:00"
+            "time": "2023-08-28T18:01:58+00:00"
         },
         {
             "name": "sebastian/cli-parser",
