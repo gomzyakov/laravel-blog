@@ -5,6 +5,6 @@
         ":disableDependencyDashboard"
     ],
     "schedule": [
-        "every weekend"
+        "on saturday"
     ]
 }
