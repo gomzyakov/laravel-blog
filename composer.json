@@ -22,7 +22,7 @@
         "gomzyakov/php-cs-fixer-config": "^1.30",
         "laravel/breeze": "^1.20",
         "mockery/mockery": "^1.6.6",
-        "nunomaduro/collision": "^7.0",
+        "nunomaduro/collision": "^7.9",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^10.3",
         "rector/rector": "0.18.3",
