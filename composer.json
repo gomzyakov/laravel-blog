@@ -18,7 +18,7 @@
     "require-dev": {
         "doctrine/dbal": "^3.6",
         "fakerphp/faker": "^1.9.1",
-        "friendsofphp/php-cs-fixer": "^3.27",
+        "friendsofphp/php-cs-fixer": "^3.34",
         "gomzyakov/php-cs-fixer-config": "^1.30",
         "icanhazstring/composer-unused": "^0.8.10",
         "laravel/breeze": "^1.23",
