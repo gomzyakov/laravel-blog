@@ -1,6 +1,6 @@
-# Laravel 10 blog with Filament admin panel
+# Laravel blog with Filament admin panel
 
-![Laravel 10 blog with Filament admin panel](./docs/screenshot-homepage.png)
+![Laravel blog with Filament admin panel](./docs/screenshot-homepage.png)
 
 This is [Laravel](https://laravel.com) blog starter kit project with [Filament](https://filamentphp.com) admin panel.
 
