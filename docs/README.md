@@ -1,4 +1,7 @@
-# Laravel blog application with Filament admin panel
+---
+layout: home
+title: "How to create a blog in Laravel with Filament admin panel?"
+---
 
 ![Laravel blog with Filament admin panel](./screenshot-homepage.png)
 
