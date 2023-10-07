@@ -1,6 +1,8 @@
 ---
-title: Laravel blog with Filament admin panel
+title: "Laravel blog with Filament admin panel"
 ---
+
+# Laravel blog with Filament admin panel
 
 ![Laravel blog with Filament admin panel](./screenshot-homepage.png)
 
