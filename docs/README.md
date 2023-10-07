@@ -1,8 +1,3 @@
----
-layout: home
-title: "How to create a blog in Laravel with Filament admin panel?"
----
-
 ![Laravel blog with Filament admin panel](./screenshot-homepage.png)
 
 This is [Laravel](https://laravel.com) blog starter kit project with [Filament](https://filamentphp.com) admin panel.
