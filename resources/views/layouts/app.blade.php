@@ -22,16 +22,13 @@
 
 
 <!-- Text Header -->
-<header class="w-full container mx-auto">
-    <div class="flex flex-col items-center py-12">
-        <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl" href="{{route('home')}}">
-            Laravel Blog
-        </a>
-        <p class="text-lg text-gray-600">
-            {{ \App\Models\TextWidget::getTitle('header') }}
-        </p>
-    </div>
-</header>
+{{--<header class="w-full container mx-auto">--}}
+{{--    <div class="flex flex-col items-center pb-12">--}}
+{{--        <p class="text-lg text-gray-600">--}}
+{{--            {{ \App\Models\TextWidget::getTitle('header') }}--}}
+{{--        </p>--}}
+{{--    </div>--}}
+{{--</header>--}}
 
 <!-- Topic Nav -->
 <nav class="w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">

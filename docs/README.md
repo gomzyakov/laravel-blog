@@ -1,5 +1,7 @@
 # Laravel Blog Starter Kit
 
+![Laravel 10 blog with Filament admin panel](./screenshot-homepage.png)
+
 This is [Laravel](https://laravel.com) blog starter kit project with [Filament](https://filamentphp.com) admin panel.
 
 The goal of this repository is to showcase good [Laravel](https://laravel.com) development practices with a simple application.
