@@ -21,8 +21,8 @@ class PostFactory extends Factory
 
         return [
             'title'        => $title,
-            'slug'         => Str::slug($title),
-            'thumbnail'    => fake()->imageUrl,
+            'slug'         => $slug = Str::slug($title),
+            'thumbnail'    => 'https://loremflickr.com/640/480?random=' . \mt_rand(1, 9999),
             'body'         => fake()->realText(5000),
             'active'       => fake()->boolean,
             'published_at' => fake()->dateTime,

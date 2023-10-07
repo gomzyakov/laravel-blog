@@ -1,4 +1,4 @@
-# Laravel Blog Starter Kit
+# Laravel 10 blog with Filament admin panel
 
 This is [Laravel](https://laravel.com) blog starter kit project with [Filament](https://filamentphp.com) admin panel.
 
