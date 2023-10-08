@@ -16,13 +16,6 @@ The goal of this repository is to showcase good [Laravel](https://laravel.com) d
 [//]: # (- :stopwatch: Expiration times, including a "forever" and "burn after reading" option)
 [//]: # (- :hatched_chick: Admin panel built on [Filament]&#40;https://filamentphp.com&#41;)
 
-## Roadmap
-
-The following features will be implemented soon:
-
-- API for integration with third parties https://github.com/gomzyakov/laravel-blog/issues/4
-- File upload support (image, media and PDF preview)
-
 ## Requesting features
 
 Open a [new issue](https://github.com/gomzyakov/laravel-blog/issues/new) to request a feature (or if you find a bug).
