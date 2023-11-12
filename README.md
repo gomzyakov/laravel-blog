@@ -1,7 +1,5 @@
 # Laravel blog with Filament admin panel
 
-![Laravel blog with Filament admin panel](./docs/screenshot-homepage.png)
-
 This is [Laravel](https://laravel.com) blog starter kit project with [Filament](https://filamentphp.com) admin panel.
 
 The goal of this repository is to showcase good [Laravel](https://laravel.com) development practices with a simple application.
@@ -12,6 +10,16 @@ The goal of this repository is to showcase good [Laravel](https://laravel.com) d
 - 🥑 Categories
 - :fire: Popular posts
 - :hatched_chick: Admin panel built on [Filament](https://filamentphp.com)
+
+## Screenshots
+
+This is what the blog looks like:
+
+![Laravel blog](./docs/screenshot-homepage.png)
+
+And this is what the admin panel on [Filament](https://filamentphp.com) looks like:
+
+![Filament admin panel](./docs/screenshot-admin-panel.png)
 
 ## Requesting features
 
