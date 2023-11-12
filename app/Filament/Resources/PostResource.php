@@ -68,8 +68,6 @@ class PostResource extends Resource
                 Tables\Columns\TextColumn::make('published_at')
                     ->sortable()
                     ->dateTime(),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime(),
             ])
             ->filters([
                 //
