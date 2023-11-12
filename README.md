@@ -13,7 +13,11 @@ The goal of this repository is to showcase good [Laravel](https://laravel.com) d
 
 ## Screenshots
 
+This is what the blog looks like:
+
 ![Laravel blog](./docs/screenshot-homepage.png)
+
+And this is what the admin panel on [Filament](https://filamentphp.com) looks like:
 
 ![Filament admin panel](./docs/screenshot-admin-panel.png)
 
