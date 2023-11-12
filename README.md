@@ -8,13 +8,10 @@ The goal of this repository is to showcase good [Laravel](https://laravel.com) d
 
 ## Features
 
-*TODO*
-
-[//]: # (- :fire: Burn after reading &#40;the note is destroyed after the first reading&#41;)
-[//]: # (- :lock: Password protection)
-[//]: # (- :clipboard: Copy note to clipboard in a click)
-[//]: # (- :stopwatch: Expiration times, including a "forever" and "burn after reading" option)
-[//]: # (- :hatched_chick: Admin panel built on [Filament]&#40;https://filamentphp.com&#41;)
+- 📚 Creating and editing posts
+- 🥑 Categories
+- :fire: Popular posts
+- :hatched_chick: Admin panel built on [Filament](https://filamentphp.com)
 
 ## Requesting features
 
