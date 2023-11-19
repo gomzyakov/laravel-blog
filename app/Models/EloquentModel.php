@@ -4,10 +4,13 @@ declare(strict_types = 1);
 
 namespace App\Models;
 
+use Barryvdh\LaravelIdeHelper\Eloquent;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder;
 
 /**
+ * App\Models\EloquentModel
+ *
  * @method static Model|Builder create($attributes = [])
  * @method static Builder       insert(array $values)
  * @method static Builder       find($id, $columns = ['*'])
@@ -21,6 +24,10 @@ use Illuminate\Database\Query\Builder;
  * @method static Builder       truncate()
  * @method static Builder       whereIn($column, $values)
  * @method static Builder       with(...$relations)
+ * @method static \Illuminate\Database\Eloquent\Builder|EloquentModel newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|EloquentModel newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|EloquentModel query()
+ * @mixin Eloquent
  */
 class EloquentModel extends Model
 {

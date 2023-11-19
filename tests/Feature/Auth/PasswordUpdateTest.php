@@ -16,6 +16,7 @@ class PasswordUpdateTest extends TestCase
 
     public function test_password_can_be_updated(): void
     {
+        /** @var User $user */
         $user = User::factory()->create();
 
         $response = $this

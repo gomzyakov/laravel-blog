@@ -32,8 +32,8 @@ class Comments extends Component
      */
     private function selectComments()
     {
-        return Comment::where('post_id', '=', $this->post->id)
-            ->with(['post', 'user', 'comments'])
+        return Comment::with(['post', 'user', 'comments'])
+            ->where('post_id', '=', $this->post->id)
             ->whereNull('parent_id')
             ->orderByDesc('created_at')
             ->get();

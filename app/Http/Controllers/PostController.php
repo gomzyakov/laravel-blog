@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\PostView;
+use App\Models\User;
 use Carbon\Carbon;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
@@ -54,9 +56,10 @@ class PostController extends Controller
             ->get();
 
         // If authorized - Show recommended posts based on user upvotes
+        /** @var User $user */
         $user = auth()->user();
 
-        if ($user instanceof \Illuminate\Contracts\Auth\Authenticatable) {
+        if ($user instanceof Authenticatable) {
             $leftJoin = '(SELECT cp.category_id, cp.post_id FROM upvote_downvotes
                         JOIN category_post cp ON upvote_downvotes.post_id = cp.post_id
                         WHERE upvote_downvotes.is_upvote = 1 and upvote_downvotes.user_id = ?) as t';
