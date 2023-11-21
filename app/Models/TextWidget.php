@@ -7,8 +7,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Facades\Cache;
 
 /**
- * App\Models\TextWidget.
- *
  * @property int                             $id
  * @property string                          $key
  * @property string|null                     $image

@@ -15,8 +15,6 @@ use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
 
 /**
- * App\Models\User.
- *
  * @method static Model|Builder create($attributes = [])
  *
  * @property int                             $id

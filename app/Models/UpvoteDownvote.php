@@ -6,8 +6,6 @@ use Barryvdh\LaravelIdeHelper\Eloquent;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
- * App\Models\UpvoteDownvote.
- *
  * @property int                             $id
  * @property int                             $is_upvote
  * @property int                             $post_id

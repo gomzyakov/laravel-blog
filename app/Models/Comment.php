@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Barryvdh\LaravelIdeHelper\Eloquent;
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -17,11 +18,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property int|null                        $parent_id
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Comment> $comments
+ * @property-read EloquentCollection<int, Comment> $comments
  * @property-read int|null $comments_count
  * @property-read Comment|null $parentComment
- * @property-read \App\Models\Post $post
- * @property-read \App\Models\User $user
+ * @property-read Post $post
+ * @property-read User $user
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Comment newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Comment newQuery()

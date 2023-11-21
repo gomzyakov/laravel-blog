@@ -4,17 +4,16 @@ namespace App\Models;
 
 use Barryvdh\LaravelIdeHelper\Eloquent;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Carbon;
 
 /**
- * App\Models\PostView.
- *
- * @property int                             $id
- * @property string                          $ip_address
- * @property string                          $user_agent
- * @property int                             $post_id
- * @property int|null                        $user_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property int         $id
+ * @property string      $ip_address
+ * @property string      $user_agent
+ * @property int         $post_id
+ * @property int|null    $user_id
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  *
  * @method static \Illuminate\Database\Eloquent\Builder|PostView newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|PostView newQuery()
