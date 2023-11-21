@@ -6,15 +6,16 @@ use Barryvdh\LaravelIdeHelper\Eloquent;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
- * App\Models\PostView
+ * App\Models\PostView.
  *
- * @property int $id
- * @property string $ip_address
- * @property string $user_agent
- * @property int $post_id
- * @property int|null $user_id
+ * @property int                             $id
+ * @property string                          $ip_address
+ * @property string                          $user_agent
+ * @property int                             $post_id
+ * @property int|null                        $user_id
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|PostView newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|PostView newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|PostView query()
@@ -25,6 +26,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @method static \Illuminate\Database\Eloquent\Builder|PostView whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PostView whereUserAgent($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PostView whereUserId($value)
+ *
  * @mixin Eloquent
  */
 class PostView extends EloquentModel
