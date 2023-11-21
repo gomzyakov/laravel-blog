@@ -3,25 +3,27 @@
 namespace App\Models;
 
 use Barryvdh\LaravelIdeHelper\Eloquent;
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
- * App\Models\Comment
+ * App\Models\Comment.
  *
- * @property int $id
- * @property string $comment
- * @property int $post_id
- * @property int $user_id
+ * @property int                             $id
+ * @property string                          $comment
+ * @property int                             $post_id
+ * @property int                             $user_id
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property int|null $parent_id
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Comment> $comments
+ * @property int|null                        $parent_id
+ * @property-read EloquentCollection<int, Comment> $comments
  * @property-read int|null $comments_count
  * @property-read Comment|null $parentComment
- * @property-read \App\Models\Post $post
- * @property-read \App\Models\User $user
+ * @property-read Post $post
+ * @property-read User $user
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Comment newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Comment newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Comment query()
@@ -32,6 +34,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @method static \Illuminate\Database\Eloquent\Builder|Comment wherePostId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Comment whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Comment whereUserId($value)
+ *
  * @mixin Eloquent
  */
 class Comment extends EloquentModel
