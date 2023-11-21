@@ -2,14 +2,14 @@
 
 namespace App\Filament\Resources\PostResource\Widgets;
 
+use App\Models\Post;
 use App\Models\PostView;
 use App\Models\UpvoteDownvote;
 use Filament\Widgets\Widget;
-use Illuminate\Database\Eloquent\Model;
 
 class PostOverview extends Widget
 {
-    public ?Model $record = null;
+    public ?Post $record = null;
 
     protected int | string | array $columnSpan = 3;
 

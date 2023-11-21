@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Comment;
+use App\Models\User;
 use Livewire\Component;
 
 class CommentItem extends Component
@@ -31,6 +32,9 @@ class CommentItem extends Component
 
     public function deleteComment()
     {
+        /**
+         * @var User $user
+         */
         $user = auth()->user();
         if (! $user instanceof \Illuminate\Contracts\Auth\Authenticatable) {
             return $this->redirect('/login');

@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Comment;
 use App\Models\Post;
+use App\Models\User;
 use Livewire\Component;
 
 class CommentCreate extends Component
@@ -32,6 +33,9 @@ class CommentCreate extends Component
 
     public function createComment()
     {
+        /**
+         * @var User $user
+         */
         $user = auth()->user();
         if (! $user instanceof \Illuminate\Contracts\Auth\Authenticatable) {
             return $this->redirect('/login');
