@@ -135,6 +135,7 @@ return [
     | of Symfony's setTimeout function.
     |
     */
+    
 
     'timeout' => 60,
 ];
