@@ -18,7 +18,7 @@ return new class () extends Migration {
             $table->longText('body');
             $table->boolean('active')->default(false);
             $table->datetime('published_at')->nullable();
-            $table->foreignIdFor(\App\Models\User::class, 'user_id');
+            $table->foreignIdFor(App\Models\User::class, 'user_id');
             $table->timestamps();
         });
     }

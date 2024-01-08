@@ -41,7 +41,7 @@ class CommentCreate extends Component
             return $this->redirect('/login');
         }
 
-        if ($this->commentModel instanceof \App\Models\Comment) {
+        if ($this->commentModel instanceof Comment) {
             if ($this->commentModel->user_id != $user->id) {
                 return response('You are not allowed to perform this action', 403);
             }
