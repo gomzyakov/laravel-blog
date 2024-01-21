@@ -25,10 +25,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup PHP 8.2
+      - name: Setup PHP 8.3
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.2
+          php-version: 8.3
 
       - name: Install PHP extensions
         run: sudo apt-get install -y php-phpdbg
