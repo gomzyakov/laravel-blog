@@ -27,6 +27,8 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->registration() //to register the user account.
+            ->passwordReset()
             ->colors([
                 'primary' => Color::Amber,
             ])
