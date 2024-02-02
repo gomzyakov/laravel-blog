@@ -7,6 +7,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\View\Component;
 use Illuminate\View\View;
+use Override;
 
 class AppLayout extends Component
 {
@@ -26,6 +27,7 @@ class AppLayout extends Component
     /**
      * Get the view / contents that represents the component.
      */
+    #[Override]
     public function render(): View
     {
         return view('layouts.app');

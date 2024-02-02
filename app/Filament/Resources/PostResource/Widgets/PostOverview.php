@@ -6,6 +6,7 @@ use App\Models\Post;
 use App\Models\PostView;
 use App\Models\UpvoteDownvote;
 use Filament\Widgets\Widget;
+use Override;
 
 class PostOverview extends Widget
 {
@@ -15,6 +16,7 @@ class PostOverview extends Widget
 
     protected static string $view = 'filament.resources.post-resource.widgets.post-overview';
 
+    #[Override]
     protected function getViewData(): array
     {
         return [

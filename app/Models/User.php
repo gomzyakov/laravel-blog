@@ -12,6 +12,7 @@ use Illuminate\Database\Query\Builder;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Override;
 use Spatie\Permission\Traits\HasRoles;
 
 /**
@@ -88,6 +89,7 @@ class User extends Authenticatable implements MustVerifyEmail, FilamentUser
         'email_verified_at' => 'datetime',
     ];
 
+    #[Override]
     public function canAccessPanel(\Filament\Panel $panel): bool
     {
         // TODO

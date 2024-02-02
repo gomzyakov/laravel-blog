@@ -7,12 +7,14 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\DB;
 use Illuminate\View\Component;
+use Override;
 
 class Sidebar extends Component
 {
     /**
      * Get the view / contents that represent the component.
      */
+    #[Override]
     public function render(): View|Closure|string
     {
         $categories = Category::query()
