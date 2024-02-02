@@ -26,7 +26,6 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
-            ->regestration()
             ->passwordReset()
             ->login()
             ->colors([
