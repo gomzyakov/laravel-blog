@@ -24,7 +24,7 @@
         "icanhazstring/composer-unused": "^0.8.11",
         "laravel/breeze": "^1.28",
         "mockery/mockery": "^1.6.7",
-        "nunomaduro/collision": "^7.9",
+        "nunomaduro/collision": "^7.10",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^10.3",
         "rector/rector": "0.18.4",
