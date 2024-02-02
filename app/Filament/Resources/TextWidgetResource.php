@@ -9,6 +9,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Override;
 
 class TextWidgetResource extends Resource
 {
@@ -18,7 +19,7 @@ class TextWidgetResource extends Resource
 
     protected static ?string $navigationGroup = 'Content';
 
-    #[\Override]
+    #[Override]
     public static function form(Form $form): Form
     {
         return $form
@@ -35,7 +36,7 @@ class TextWidgetResource extends Resource
             ])->columns(1);
     }
 
-    #[\Override]
+    #[Override]
     public static function table(Table $table): Table
     {
         return $table
@@ -59,7 +60,7 @@ class TextWidgetResource extends Resource
             ]);
     }
 
-    #[\Override]
+    #[Override]
     public static function getRelations(): array
     {
         return [
@@ -67,7 +68,7 @@ class TextWidgetResource extends Resource
         ];
     }
 
-    #[\Override]
+    #[Override]
     public static function getPages(): array
     {
         return [

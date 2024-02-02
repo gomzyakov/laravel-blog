@@ -10,6 +10,7 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
+use Override;
 
 class PostResource extends Resource
 {
@@ -19,7 +20,7 @@ class PostResource extends Resource
 
     protected static ?string $navigationGroup = 'Content';
 
-    #[\Override]
+    #[Override]
     public static function form(Form $form): Form
     {
         return $form
@@ -57,7 +58,7 @@ class PostResource extends Resource
             ])->columns(12);
     }
 
-    #[\Override]
+    #[Override]
     public static function table(Table $table): Table
     {
         return $table
@@ -84,7 +85,7 @@ class PostResource extends Resource
             ]);
     }
 
-    #[\Override]
+    #[Override]
     public static function getRelations(): array
     {
         return [
@@ -92,7 +93,7 @@ class PostResource extends Resource
         ];
     }
 
-    #[\Override]
+    #[Override]
     public static function getPages(): array
     {
         return [
