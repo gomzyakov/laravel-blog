@@ -10,6 +10,7 @@ class ViewPost extends ViewRecord
 {
     protected static string $resource = PostResource::class;
 
+    #[\Override]
     protected function getHeaderActions(): array
     {
         return [
@@ -17,6 +18,7 @@ class ViewPost extends ViewRecord
         ];
     }
 
+    #[\Override]
     protected function getHeaderWidgets(): array
     {
         return [

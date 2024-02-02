@@ -19,6 +19,7 @@ class PostResource extends Resource
 
     protected static ?string $navigationGroup = 'Content';
 
+    #[\Override]
     public static function form(Form $form): Form
     {
         return $form
@@ -56,6 +57,7 @@ class PostResource extends Resource
             ])->columns(12);
     }
 
+    #[\Override]
     public static function table(Table $table): Table
     {
         return $table
@@ -82,6 +84,7 @@ class PostResource extends Resource
             ]);
     }
 
+    #[\Override]
     public static function getRelations(): array
     {
         return [
@@ -89,6 +92,7 @@ class PostResource extends Resource
         ];
     }
 
+    #[\Override]
     public static function getPages(): array
     {
         return [

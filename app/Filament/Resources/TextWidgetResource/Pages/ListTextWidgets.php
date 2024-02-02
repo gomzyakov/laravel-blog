@@ -10,6 +10,7 @@ class ListTextWidgets extends ListRecords
 {
     protected static string $resource = TextWidgetResource::class;
 
+    #[\Override]
     protected function getHeaderActions(): array
     {
         return [

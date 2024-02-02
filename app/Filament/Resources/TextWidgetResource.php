@@ -18,6 +18,7 @@ class TextWidgetResource extends Resource
 
     protected static ?string $navigationGroup = 'Content';
 
+    #[\Override]
     public static function form(Form $form): Form
     {
         return $form
@@ -34,6 +35,7 @@ class TextWidgetResource extends Resource
             ])->columns(1);
     }
 
+    #[\Override]
     public static function table(Table $table): Table
     {
         return $table
@@ -57,6 +59,7 @@ class TextWidgetResource extends Resource
             ]);
     }
 
+    #[\Override]
     public static function getRelations(): array
     {
         return [
@@ -64,6 +67,7 @@ class TextWidgetResource extends Resource
         ];
     }
 
+    #[\Override]
     public static function getPages(): array
     {
         return [

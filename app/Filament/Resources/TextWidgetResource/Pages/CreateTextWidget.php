@@ -9,6 +9,7 @@ class CreateTextWidget extends CreateRecord
 {
     protected static string $resource = TextWidgetResource::class;
 
+    #[\Override]
     protected function getRedirectUrl(): string
     {
         return static::getResource()::getUrl('index');

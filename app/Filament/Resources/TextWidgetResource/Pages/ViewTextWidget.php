@@ -10,6 +10,7 @@ class ViewTextWidget extends ViewRecord
 {
     protected static string $resource = TextWidgetResource::class;
 
+    #[\Override]
     protected function getHeaderActions(): array
     {
         return [

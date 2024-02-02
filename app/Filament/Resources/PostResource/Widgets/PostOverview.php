@@ -15,6 +15,7 @@ class PostOverview extends Widget
 
     protected static string $view = 'filament.resources.post-resource.widgets.post-overview';
 
+    #[\Override]
     protected function getViewData(): array
     {
         return [

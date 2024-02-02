@@ -10,6 +10,7 @@ class ManageCategories extends ManageRecords
 {
     protected static string $resource = CategoryResource::class;
 
+    #[\Override]
     protected function getHeaderActions(): array
     {
         return [

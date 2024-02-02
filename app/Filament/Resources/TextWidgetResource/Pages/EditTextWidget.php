@@ -10,6 +10,7 @@ class EditTextWidget extends EditRecord
 {
     protected static string $resource = TextWidgetResource::class;
 
+    #[\Override]
     protected function getHeaderActions(): array
     {
         return [
@@ -18,6 +19,7 @@ class EditTextWidget extends EditRecord
         ];
     }
 
+    #[\Override]
     protected function getRedirectUrl(): string
     {
         return static::getResource()::getUrl('index');

@@ -88,6 +88,7 @@ class User extends Authenticatable implements MustVerifyEmail, FilamentUser
         'email_verified_at' => 'datetime',
     ];
 
+    #[\Override]
     public function canAccessPanel(\Filament\Panel $panel): bool
     {
         // TODO

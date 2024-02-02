@@ -19,6 +19,7 @@ class CategoryResource extends Resource
 
     protected static ?string $navigationGroup = 'Content';
 
+    #[\Override]
     public static function form(Form $form): Form
     {
         return $form
@@ -36,6 +37,7 @@ class CategoryResource extends Resource
             ]);
     }
 
+    #[\Override]
     public static function table(Table $table): Table
     {
         return $table
@@ -58,6 +60,7 @@ class CategoryResource extends Resource
             ]);
     }
 
+    #[\Override]
     public static function getPages(): array
     {
         return [

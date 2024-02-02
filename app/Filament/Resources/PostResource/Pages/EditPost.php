@@ -10,6 +10,7 @@ class EditPost extends EditRecord
 {
     protected static string $resource = PostResource::class;
 
+    #[\Override]
     protected function getHeaderActions(): array
     {
         return [
