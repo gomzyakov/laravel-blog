@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b5da4cbe1bcb4cc66e686c3b14e0138",
+    "content-hash": "12cc9d056b66be9a131f578123c39b81",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -8327,16 +8327,16 @@
         },
         {
             "name": "gomzyakov/php-cs-fixer-config",
-            "version": "v1.41.0",
+            "version": "v1.42.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gomzyakov/php-cs-fixer-config.git",
-                "reference": "75fdce5076549054e2252a9a77e63407cfc72475"
+                "reference": "b24f73c95c135e7fd3c94e0115b40aacead8dfc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gomzyakov/php-cs-fixer-config/zipball/75fdce5076549054e2252a9a77e63407cfc72475",
-                "reference": "75fdce5076549054e2252a9a77e63407cfc72475",
+                "url": "https://api.github.com/repos/gomzyakov/php-cs-fixer-config/zipball/b24f73c95c135e7fd3c94e0115b40aacead8dfc1",
+                "reference": "b24f73c95c135e7fd3c94e0115b40aacead8dfc1",
                 "shasum": ""
             },
             "require": {
@@ -8344,7 +8344,7 @@
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.48",
+                "friendsofphp/php-cs-fixer": "^3.49",
                 "mockery/mockery": "^1.6",
                 "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^10.5"
@@ -8374,9 +8374,9 @@
             ],
             "support": {
                 "issues": "https://github.com/gomzyakov/php-cs-fixer-config/issues",
-                "source": "https://github.com/gomzyakov/php-cs-fixer-config/tree/v1.41.0"
+                "source": "https://github.com/gomzyakov/php-cs-fixer-config/tree/v1.42.0"
             },
-            "time": "2024-02-01T06:57:49+00:00"
+            "time": "2024-02-06T05:17:16+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
