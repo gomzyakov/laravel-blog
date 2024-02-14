@@ -29,7 +29,7 @@ class CategoryResource extends Resource
                     ->required()
                     ->maxLength(2048)
                     ->reactive()
-                    ->afterStateUpdated(function (\Filament\Forms\Set $set, $state) {
+                    ->afterStateUpdated(function (Forms\Set $set, $state) {
                         $set('slug', Str::slug($state));
                     }),
                 Forms\Components\TextInput::make('slug')
