@@ -1,105 +1,94 @@
-![Laravel blog with Filament admin panel](./social-preview-en.png)
+![Блог на Laravel с админ-панелью на Filament](./social-preview-en.png)
 
-#### Read this in [other languages](translations.md):
+#### Описание проекта на [других языках](translations.md):
 
 [English](../README.md)
 &middot; [Русский](README.ru.md)
 
-# Laravel blog with Filament admin panel
+# Блог на Laravel с админ-панелью на Filament
 
-This is [Laravel](https://laravel.com) blog starter kit project with [Filament](https://filamentphp.com) admin panel.
+Это простой, но функциональный, блог на [Laravel](https://laravel.com) с панелью администратора на [Filament](https://filamentphp.com).
 
-The goal of this repository is to showcase good [Laravel](https://laravel.com) development practices with a simple application.
+Цель этого проекта — продемонстрировать хорошие практики разработки [Laravel](https://laravel.com) с помощью простого приложения.
 
-## Features
+## Возможности приложения
 
-- 📚 Creating and editing posts
-- 🥑 Categories
-- :fire: Popular posts
-- :hatched_chick: Admin panel built on [Filament](https://filamentphp.com)
+- 📚 Создание и редактирование постов
+- 🥑 Категории
+- :fire: Популярный посты
+- :hatched_chick: Админ-панель на [Filament](https://filamentphp.com)
 
-## Screenshots
+## Запрос функций
 
-This is what the blog looks like:
+Откройте [новую issue](https://github.com/gomzykov/laravel-blog/issues), чтобы запросить функцию (или если вы обнаружили ошибку).
 
-![Laravel blog](./docs/screenshot-homepage.png)
+## Как запустить блог локально?
 
-And this is what the admin panel on [Filament](https://filamentphp.com) looks like:
-
-![Filament admin panel](./docs/screenshot-admin-panel.png)
-
-## Requesting features
-
-Open a [new issue](https://github.com/gomzyakov/laravel-blog/issues/new) to request a feature (or if you find a bug).
-
-## How to run blog locally?
-
-Clone the project:
+Клонируйте проект:
 
 ```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
-I believe you already have Docker installed. If not, just do it on [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/) or [Linux](https://docs.docker.com/desktop/install/linux-install/).
+Будем считать, что у вас уже установлен Docker. Если нет, просто следуйте инструкциям: [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/) or [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Build the `laravel-blog` image with the following command:
+Создайте образ `laravel-blog` с помощью следующей команды:
 
 ```bash
 docker compose build --no-cache
 ```
 
->This command might take a few minutes to complete.
+>Выполнение этой команды может занять несколько минут.
 
-When the build is finished, you can run the environment in background mode with:
+Когда сборка завершена, вы можете запустить блог в фоновом режиме с помощью:
 
 ```bash
 docker compose up -d
 ```
 
-We’ll now run `composer install` to install the application dependencies:
+Теперь мы запустим `composer install`, чтобы установить зависимости приложения:
 
 ```bash
 docker compose exec app composer install
 ```
 
-Copy the environment settings:
+Скопируйте настройки среды:
 
 ```bash
 docker compose exec app cp .env.local .env
 ```
 
-Set encryption key with the `artisan` Laravel command-line tool:
+Сгенерируйте ключ шифрования с помощью команды `artisan`:
 
 ```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
-Migrate DB & seed fake data:
+Запустите миграцию базы данных и наполнение её тестовыми данными:
 
 ```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-And add Filament admin user:
+Добавьте нового пользователя Filament:
 
 ```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
-And open http://127.0.0.1:8000 in your favorite browser. Happy using Laravel Blog!
+И откройте http://127.0.0.1:8000 в своем любимом браузере. Приятного использования блога на Laravel!
 
-## How to get inside the container?
+## Как попасть внутрь контейнера?
 
-Access to the Docker container:
+Для доступа внутрь Docker-контейнера просто запустите:
 
 ```bash
 docker exec -ti laravel-blog-app bash
 ```
 
-## License
+## Лицензия
 
-This is open-sourced software licensed under the [MIT License](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
-
+Это программное обеспечение с открытым исходным кодом, лицензированное по [MIT License](https://github.com/gomzykov/php-code-style/blob/main/LICENSE).
 
 [![GitHub release](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
 [![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
