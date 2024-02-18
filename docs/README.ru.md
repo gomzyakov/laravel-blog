@@ -1,9 +1,9 @@
-![Laravel blog with Filament admin panel](./docs/social-preview-en.png)
+![Laravel blog with Filament admin panel](./social-preview-en.png)
 
-#### Read this in [other languages](docs/translations.md):
+#### Read this in [other languages](translations.md):
 
-[English](README.md)
-&middot; [Русский](docs/README.ru.md)
+[English](../README.md)
+&middot; [Русский](README.ru.md)
 
 # Laravel blog with Filament admin panel
 
@@ -32,7 +32,7 @@ And this is what the admin panel on [Filament](https://filamentphp.com) looks li
 
 Open a [new issue](https://github.com/gomzyakov/laravel-blog/issues/new) to request a feature (or if you find a bug).
 
-## How to run blog locally? 
+## How to run blog locally?
 
 Clone the project:
 
