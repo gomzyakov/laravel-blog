@@ -1,3 +1,7 @@
+---
+title: Оther languages
+---
+
 # Laravel blog README.md in other languages
 
 - [English](../README.md)
