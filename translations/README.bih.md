@@ -1,4 +1,4 @@
-![Laravel blog s administrativnom pločom Filament](./docs/social-preview-en.png)
+![Laravel blog s administrativnom pločom Filament](../docs/social-preview-en.png)
 
 # Laravel blog s administrativnom pločom Filament
 

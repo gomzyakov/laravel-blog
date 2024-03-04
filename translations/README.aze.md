@@ -1,4 +1,4 @@
-![Filament admin paneli ilə Laravel bloqu](./docs/social-preview-en.png)
+![Filament admin paneli ilə Laravel bloqu](../docs/social-preview-en.png)
 
 Filament admin paneli ilə # Laravel bloqu
 

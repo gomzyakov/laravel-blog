@@ -1,4 +1,4 @@
-![บล็อก Laravel พร้อมแผงผู้ดูแลระบบ Filament](./docs/social-preview-en.png)
+![บล็อก Laravel พร้อมแผงผู้ดูแลระบบ Filament](../docs/social-preview-en.png)
 
 # บล็อก Laravel พร้อมแผงผู้ดูแลระบบ Filament
 

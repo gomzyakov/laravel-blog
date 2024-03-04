@@ -1,4 +1,4 @@
-![בלוג Laravel עם פאנל ניהול Filament](./docs/social-preview-en.png)
+![בלוג Laravel עם פאנל ניהול Filament](../docs/social-preview-en.png)
 
 # בלוג Laravel עם פאנל ניהול Filament
 

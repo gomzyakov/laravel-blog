@@ -1,4 +1,4 @@
-![Laravel ბლოგი Filament-ის ადმინისტრაციული პანელით](./docs/social-preview-en.png)
+![Laravel ბლოგი Filament-ის ადმინისტრაციული პანელით](../docs/social-preview-en.png)
 
 # Laravel ბლოგი Filament ადმინისტრაციული პანელით
 

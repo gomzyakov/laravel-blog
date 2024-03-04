@@ -1,4 +1,4 @@
-![Bulọọgi Laravel pẹlu igbimọ abojuto Filament](./docs/social-preview-en.png)
+![Bulọọgi Laravel pẹlu igbimọ abojuto Filament](../docs/social-preview-en.png)
 
 # Bulọọgi Laravel pẹlu nronu abojuto Filament
 

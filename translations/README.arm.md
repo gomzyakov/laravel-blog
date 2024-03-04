@@ -1,4 +1,4 @@
-![Laravel բլոգ՝ Filament-ի ադմինիստրատորի վահանակով](./docs/social-preview-en.png)
+![Laravel բլոգ՝ Filament-ի ադմինիստրատորի վահանակով](../docs/social-preview-en.png)
 
 # Laravel բլոգ՝ Filament ադմինիստրատորի վահանակով
 

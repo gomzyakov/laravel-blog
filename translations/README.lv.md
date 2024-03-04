@@ -1,4 +1,4 @@
-![Laravel emuārs ar Filament administrēšanas paneli](./docs/social-preview-en.png)
+![Laravel emuārs ar Filament administrēšanas paneli](../docs/social-preview-en.png)
 
 # Laravel emuārs ar Filament administrēšanas paneli
 

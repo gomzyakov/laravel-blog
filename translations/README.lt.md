@@ -1,4 +1,4 @@
-![Laravel tinklaraštis su Filament administravimo skydeliu](./docs/social-preview-en.png)
+![Laravel tinklaraštis su Filament administravimo skydeliu](../docs/social-preview-en.png)
 
 # Laravel tinklaraštis su Filament administratoriaus skydeliu
 

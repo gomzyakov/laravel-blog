@@ -1,4 +1,4 @@
-![Filament басқару тақтасы бар Laravel блогы](./docs/social-preview-en.png)
+![Filament басқару тақтасы бар Laravel блогы](../docs/social-preview-en.png)
 
 Filament басқару тақтасы бар # Laravel блогы
 

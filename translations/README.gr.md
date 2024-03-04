@@ -1,4 +1,4 @@
-﻿![Ιστολόγιο Laravel με πίνακα διαχείρισης Filament](./docs/social-preview-en.png)
+﻿![Ιστολόγιο Laravel με πίνακα διαχείρισης Filament](../docs/social-preview-en.png)
 
 # Ιστολόγιο Laravel με πίνακα διαχείρισης Filament
 

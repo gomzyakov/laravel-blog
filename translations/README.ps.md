@@ -1,4 +1,4 @@
-![Laravel بلاګ د فیلامینټ اډمین پینل سره](./docs/social-preview-en.png)
+![Laravel بلاګ د فیلامینټ اډمین پینل سره](../docs/social-preview-en.png)
 
 # Laravel بلاګ د فیلامینټ اډمین پینل سره
 

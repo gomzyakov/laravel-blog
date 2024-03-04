@@ -1,4 +1,4 @@
-![Filament yönetici panelli Laravel blogu](./docs/social-preview-en.png)
+![Filament yönetici panelli Laravel blogu](../docs/social-preview-en.png)
 
 # Filament yönetici panelli Laravel blogu
 

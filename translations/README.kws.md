@@ -1,4 +1,4 @@
-![Blogu ya Laravel iliyo na paneli ya msimamizi wa Filament](./docs/social-preview-en.png)
+![Blogu ya Laravel iliyo na paneli ya msimamizi wa Filament](../docs/social-preview-en.png)
 
 Blogu ya # Laravel iliyo na paneli ya msimamizi wa Filament
 

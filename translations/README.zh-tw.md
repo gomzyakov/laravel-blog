@@ -1,4 +1,4 @@
-![帶有 Filament 管理面板的 Laravel 部落格](./docs/social-preview-en.png)
+![帶有 Filament 管理面板的 Laravel 部落格](../docs/social-preview-en.png)
 
 # Laravel 部落格與 Filament 管理面板
 

@@ -1,4 +1,4 @@
-![Blog của Laravel với bảng quản trị Filament](./docs/social-preview-en.png)
+![Blog của Laravel với bảng quản trị Filament](../docs/social-preview-en.png)
 
 # Blog Laravel với bảng quản trị Filament
 

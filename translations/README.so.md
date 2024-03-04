@@ -1,4 +1,4 @@
-![Laravel blog oo leh guddiga maamulka Filament](./docs/social-preview-en.png)
+![Laravel blog oo leh guddiga maamulka Filament](../docs/social-preview-en.png)
 
 # Laravel blog oo leh guddiga maamulka Filament
 

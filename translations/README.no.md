@@ -1,4 +1,4 @@
-![Laravel-blogg med Filament-administrasjonspanel](./docs/social-preview-en.png)
+![Laravel-blogg med Filament-administrasjonspanel](../docs/social-preview-en.png)
 
 # Laravel-blogg med Filament-administrasjonspanel
 

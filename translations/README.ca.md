@@ -1,4 +1,4 @@
-![Bloc de Laravel amb panell d'administració de Filament](./docs/social-preview-en.png)
+![Bloc de Laravel amb panell d'administració de Filament](../docs/social-preview-en.png)
 
 # Bloc Laravel amb panell d'administració de Filament
 

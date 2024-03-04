@@ -1,4 +1,4 @@
-![Blog Laravel s panelom správcu Filament](./docs/social-preview-en.png)
+![Blog Laravel s panelom správcu Filament](../docs/social-preview-en.png)
 
 # Blog Laravel s panelom správcu Filament
 

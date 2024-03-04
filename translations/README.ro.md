@@ -1,4 +1,4 @@
-![Blogul Laravel cu panoul de administrare Filament](./docs/social-preview-en.png)
+![Blogul Laravel cu panoul de administrare Filament](../docs/social-preview-en.png)
 
 # Blog Laravel cu panou de administrare Filament
 

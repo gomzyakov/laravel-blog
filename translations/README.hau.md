@@ -1,4 +1,4 @@
-![Laravel blog tare da kwamitin gudanarwa na Filament](./docs/social-preview-en.png)
+![Laravel blog tare da kwamitin gudanarwa na Filament](../docs/social-preview-en.png)
 
 # Laravel blog tare da kwamitin gudanarwa na Filament
 

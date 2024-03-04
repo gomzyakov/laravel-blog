@@ -1,4 +1,4 @@
-![Laravel blog with Filament admin panel]./docs/social-preview-en.png)
+![Laravel blog with Filament admin panel]../docs/social-preview-en.png)
 
 # Laravel blog ກັບ Filament admin panel
 

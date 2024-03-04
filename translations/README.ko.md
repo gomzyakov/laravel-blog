@@ -1,4 +1,4 @@
-![Filament 관리 패널이 포함된 Laravel 블로그](./docs/social-preview-en.png)
+![Filament 관리 패널이 포함된 Laravel 블로그](../docs/social-preview-en.png)
 
 # 필라멘트 관리 패널이 있는 Laravel 블로그
 

@@ -1,4 +1,4 @@
-![وبلاگ لاراول با پنل مدیریت Filament](./docs/social-preview-en.png)
+![وبلاگ لاراول با پنل مدیریت Filament](../docs/social-preview-en.png)
 
 # وبلاگ لاراول با پنل مدیریت Filament
 

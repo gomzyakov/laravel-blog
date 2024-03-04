@@ -1,4 +1,4 @@
-![Laravel blog Filament adminisztrációs panellel](./docs/social-preview-en.png)
+![Laravel blog Filament adminisztrációs panellel](../docs/social-preview-en.png)
 
 # Laravel blog Filament adminisztrációs panellel
 

@@ -1,4 +1,4 @@
-![Блог на Laravel с административен панел на Filament](./docs/social-preview-en.png)
+![Блог на Laravel с административен панел на Filament](../docs/social-preview-en.png)
 
 # Блог на Laravel с административен панел на Filament
 

@@ -1,4 +1,4 @@
-![Laravel blog with Filament admin panel](./docs/social-preview-en.png)
+![Laravel blog with Filament admin panel](../docs/social-preview-en.png)
 
 # Filament පරිපාලක පැනලය සමඟ Laravel බ්ලොග්
 

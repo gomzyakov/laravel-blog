@@ -1,4 +1,4 @@
-![Laravel-blogi Filamentin hallintapaneelilla](./docs/social-preview-en.png)
+![Laravel-blogi Filamentin hallintapaneelilla](../docs/social-preview-en.png)
 
 # Laravel-blogi Filamentin hallintapaneelilla
 

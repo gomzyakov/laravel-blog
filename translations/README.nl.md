@@ -1,4 +1,4 @@
-![Laravel-blog met Filament-beheerderspaneel](./docs/social-preview-en.png)
+![Laravel-blog met Filament-beheerderspaneel](../docs/social-preview-en.png)
 
 # Laravel-blog met Filament-beheerderspaneel
 

@@ -1,4 +1,4 @@
-![Blọọgụ Laravel nwere panel nchịkwa Filament](./docs/social-preview-en.png)
+![Blọọgụ Laravel nwere panel nchịkwa Filament](../docs/social-preview-en.png)
 
 # Laravel blọọgụ nwere panel nchịkwa Filament
 

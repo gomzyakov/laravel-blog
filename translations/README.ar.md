@@ -1,4 +1,4 @@
-![مدونة Laravel مع لوحة إدارة Filament](./docs/social-preview-en.png)
+![مدونة Laravel مع لوحة إدارة Filament](../docs/social-preview-en.png)
 
 # مدونة Laravel مع لوحة إدارة Filament
 

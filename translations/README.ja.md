@@ -1,4 +1,4 @@
-![Filament 管理パネルを備えた Laravel ブログ](./docs/social-preview-en.png)
+![Filament 管理パネルを備えた Laravel ブログ](../docs/social-preview-en.png)
 
 # Filament 管理パネルを備えた Laravel ブログ
 
