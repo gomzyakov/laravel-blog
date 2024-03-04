@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80374df603167546f7d29ebc8a2a44c3",
+    "content-hash": "d060c3e8dbc76d1352bdccfd78e76c71",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -8578,16 +8578,16 @@
         },
         {
             "name": "gomzyakov/php-cs-fixer-config",
-            "version": "v1.42.0",
+            "version": "v1.44.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gomzyakov/php-cs-fixer-config.git",
-                "reference": "b24f73c95c135e7fd3c94e0115b40aacead8dfc1"
+                "reference": "35e0840a0cffafece1b656577523d3177580c01e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gomzyakov/php-cs-fixer-config/zipball/b24f73c95c135e7fd3c94e0115b40aacead8dfc1",
-                "reference": "b24f73c95c135e7fd3c94e0115b40aacead8dfc1",
+                "url": "https://api.github.com/repos/gomzyakov/php-cs-fixer-config/zipball/35e0840a0cffafece1b656577523d3177580c01e",
+                "reference": "35e0840a0cffafece1b656577523d3177580c01e",
                 "shasum": ""
             },
             "require": {
@@ -8595,7 +8595,7 @@
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.49",
+                "friendsofphp/php-cs-fixer": "^3.50",
                 "mockery/mockery": "^1.6",
                 "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^10.5"
@@ -8625,9 +8625,9 @@
             ],
             "support": {
                 "issues": "https://github.com/gomzyakov/php-cs-fixer-config/issues",
-                "source": "https://github.com/gomzyakov/php-cs-fixer-config/tree/v1.42.0"
+                "source": "https://github.com/gomzyakov/php-cs-fixer-config/tree/v1.44.0"
             },
-            "time": "2024-02-06T05:17:16+00:00"
+            "time": "2024-03-02T12:33:57+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
