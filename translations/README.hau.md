@@ -1,5 +1,9 @@
 ![Laravel blog tare da kwamitin gudanarwa na Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel blog tare da kwamitin gudanarwa na Filament
 
 Wannan shine [Laravel](https://laravel.com) aikin kayan aikin farawa tare da [Filament](https://filamentphp.com) kwamitin gudanarwa.
@@ -10,8 +14,8 @@ Manufar wannan ma'ajiyar ita ce nuna kyawawan ayyukan ci gaba [Laravel](https://
 
 - 📚 Ƙirƙiri da gyara posts
 - 🥑 Categories
-- :wuta: Shahararrun posts
--: hatched_chick: Admin panel wanda aka gina akan [Filament](https://filamentphp.com)
+- 🔥 Shahararrun posts
+- 🎉 Admin panel wanda aka gina akan [Filament](https://filamentphp.com)
 
 ## Neman fasali
 
@@ -21,7 +25,7 @@ Bude [sabon fitowar](https://github.com/gomzyakov/laravel-blog/issues/new) don n
 
 Rufe aikin:
 
-``bash
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 

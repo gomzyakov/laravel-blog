@@ -1,5 +1,9 @@
 ![Blogul Laravel cu panoul de administrare Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Blog Laravel cu panou de administrare Filament
 
 Acesta este proiectul [Laravel](https://laravel.com) blog starter kit cu panoul de administrare [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@ Scopul acestui depozit este de a prezenta bunele practici de dezvoltare [Laravel
 
 - 📚 Crearea și editarea postărilor
 - 🥑 Categorii
-- :fire: Postări populare
-- :hatched_chick: Panoul de administrare construit pe [Filament](https://filamentphp.com)
+- 🔥 Postări populare
+- 🎉 Panoul de administrare construit pe [Filament](https://filamentphp.com)
 
 ## Se solicită funcții
 

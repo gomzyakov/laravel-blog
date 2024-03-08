@@ -1,6 +1,10 @@
 ![Blogu ya Laravel iliyo na paneli ya msimamizi wa Filament](../docs/social-preview-en.png)
 
-Blogu ya # Laravel iliyo na paneli ya msimamizi wa Filament
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
+# Blogu ya Laravel iliyo na paneli ya msimamizi wa Filament
 
 Huu ni mradi wa [Laravel](https://laravel.com) wa kuanzisha blogu wenye paneli ya msimamizi wa [Filament](https://filamentphp.com).
 
@@ -11,7 +15,7 @@ Lengo la hazina hii ni kuonyesha mbinu nzuri za ukuzaji za [Laravel](https://lar
 - 📚 Kuunda na kuhariri machapisho
 - 🥑 Kategoria
 - :moto: Machapisho maarufu
-- :hatched_chick: Paneli ya msimamizi iliyojengwa kwa [Filament](https://filamentphp.com)
+- 🎉 Paneli ya msimamizi iliyojengwa kwa [Filament](https://filamentphp.com)
 
 ## Kuomba vipengele
 

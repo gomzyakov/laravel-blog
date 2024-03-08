@@ -1,5 +1,9 @@
 ﻿![Ιστολόγιο Laravel με πίνακα διαχείρισης Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Ιστολόγιο Laravel με πίνακα διαχείρισης Filament
 
 Αυτό είναι το έργο του κιτ εκκίνησης ιστολογίου [Laravel](https://laravel.com) με τον πίνακα διαχείρισης [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@
 
 - 📚 Δημιουργία και επεξεργασία αναρτήσεων
 - 🥑 Κατηγορίες
-- :fire: Δημοφιλείς αναρτήσεις
-- :hatched_chick: Πίνακας διαχειριστή που βασίζεται στο [Filament](https://filamentphp.com)
+- 🔥 Δημοφιλείς αναρτήσεις
+- 🎉 Πίνακας διαχειριστή που βασίζεται στο [Filament](https://filamentphp.com)
 
 ## Αίτημα χαρακτηριστικών
 

@@ -1,5 +1,9 @@
 ![บล็อก Laravel พร้อมแผงผู้ดูแลระบบ Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # บล็อก Laravel พร้อมแผงผู้ดูแลระบบ Filament
 
 นี่คือโปรเจ็กต์ชุดเริ่มต้นบล็อกของ [Laravel](https://laravel.com) พร้อมด้วยแผงผู้ดูแลระบบ [Filament](https://filamentphp.com)
@@ -10,8 +14,8 @@
 
 - 📚 การสร้างและแก้ไขโพสต์
 - 🥑 หมวดหมู่
-- :fire: โพสต์ยอดนิยม
-- :hatched_chick: แผงผู้ดูแลระบบที่สร้างขึ้นบน [Filament](https://filamentphp.com)
+- 🔥 โพสต์ยอดนิยม
+- 🎉 แผงผู้ดูแลระบบที่สร้างขึ้นบน [Filament](https://filamentphp.com)
 
 ## คุณสมบัติที่ขอ
 

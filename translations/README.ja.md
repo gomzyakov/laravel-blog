@@ -1,5 +1,9 @@
 ![Filament 管理パネルを備えた Laravel ブログ](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Filament 管理パネルを備えた Laravel ブログ
 
 これは、[Filament](https://filamentphp.com) 管理パネルを備えた [Laravel](https://laravel.com) ブログ スターター キット プロジェクトです。
@@ -10,8 +14,8 @@
 
 - 📚 投稿の作成と編集
 - 🥑 カテゴリ
-- :fire: 人気の投稿
-- :hatched_chick: [Filament](https://filamentphp.com) 上に構築された管理パネル
+- 🔥 人気の投稿
+- 🎉 [Filament](https://filamentphp.com) 上に構築された管理パネル
 
 ## 機能のリクエスト
 

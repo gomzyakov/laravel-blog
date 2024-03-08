@@ -1,5 +1,9 @@
 ![Laravel-blog met Filament-beheerderspaneel](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel-blog met Filament-beheerderspaneel
 
 Dit is een [Laravel](https://laravel.com) blogstartpakketproject met [Filament](https://filamentphp.com) beheerderspaneel.
@@ -10,8 +14,8 @@ Het doel van deze repository is om goede [Laravel](https://laravel.com) ontwikke
 
 - 📚 Berichten maken en bewerken
 - 🥑 Categorieën
-- :fire: Populaire berichten
-- :hatched_chick: beheerderspaneel gebouwd op [Filament](https://filamentphp.com)
+- 🔥 Populaire berichten
+- 🎉 beheerderspaneel gebouwd op [Filament](https://filamentphp.com)
 
 ## Functies aanvragen
 

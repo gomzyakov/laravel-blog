@@ -1,5 +1,9 @@
 ![带有 Filament 管理面板的 Laravel 博客](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel 博客与 Filament 管理面板
 
 这是 [Laravel](https://laravel.com) 博客入门套件项目，带有 [Filament](https://filamentphp.com) 管理面板。
@@ -10,8 +14,8 @@
 
 - 📚 创建和编辑帖子
 - 🥑 类别
-- :fire: 热门帖子
-- :hatched_chick: 基于 [Filament](https://filamentphp.com) 构建的管理面板
+- 🔥 热门帖子
+- 🎉 基于 [Filament](https://filamentphp.com) 构建的管理面板
 
 ## 请求功能
 

@@ -1,5 +1,9 @@
 ![Filament 관리 패널이 포함된 Laravel 블로그](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # 필라멘트 관리 패널이 있는 Laravel 블로그
 
 이것은 [Filament](https://ilavelphp.com) 관리자 패널이 포함된 [Laravel](https://laravel.com) 블로그 스타터 키트 프로젝트입니다.
@@ -10,8 +14,8 @@
 
 - 📚 게시물 작성 및 편집
 - 🥑 카테고리
-- :fire: 인기 게시물
-- :hatched_chick: [Filament](https://pillamentphp.com)를 기반으로 구축된 관리자 패널
+- 🔥 인기 게시물
+- 🎉 [Filament](https://pillamentphp.com)를 기반으로 구축된 관리자 패널
 
 ## 기능 요청 중
 

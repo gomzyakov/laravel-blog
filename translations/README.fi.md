@@ -1,5 +1,9 @@
 ![Laravel-blogi Filamentin hallintapaneelilla](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel-blogi Filamentin hallintapaneelilla
 
 Tämä on [Laravel](https://laravel.com) blogin aloituspakettiprojekti [Filament](https://filamentphp.com) hallintapaneelin kanssa.
@@ -10,8 +14,8 @@ Tämän arkiston tavoitteena on esitellä hyviä [Laravel](https://laravel.com) 
 
 - 📚 Viestien luominen ja muokkaaminen
 - 🥑 Luokat
-- :fire: Suosittuja viestejä
-- :hatched_chick: [Filamentille] rakennettu hallintapaneeli (https://filamentphp.com)
+- 🔥 Suosittuja viestejä
+- 🎉 [Filamentille] rakennettu hallintapaneeli (https://filamentphp.com)
 
 ## Ominaisuuksien pyytäminen
 

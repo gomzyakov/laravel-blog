@@ -1,5 +1,9 @@
 ![Laravel blog with Filament admin panel](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Filament පරිපාලක පැනලය සමඟ Laravel බ්ලොග්
 
 මෙය [Laravel](https://laravel.com) [Filament](https://filamentphp.com) පරිපාලක පැනලය සහිත බ්ලොග් ආරම්භක කට්ටල ව්‍යාපෘතියයි.
@@ -10,8 +14,8 @@
 
 - 📚 පෝස්ට් සෑදීම සහ සංස්කරණය කිරීම
 - 🥑 වර්ග
-- :fire: ජනප්‍රිය පෝස්ට්
-- :hatched_chick: [Filament](https://filamentphp.com) මත ගොඩනගා ඇති පරිපාලක පැනලය
+- 🔥 ජනප්‍රිය පෝස්ට්
+- 🎉 [Filament](https://filamentphp.com) මත ගොඩනගා ඇති පරිපාලක පැනලය
 
 ## විශේෂාංග ඉල්ලීම
 

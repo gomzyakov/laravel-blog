@@ -1,5 +1,9 @@
 ![Laravel blog Filament adminisztrációs panellel](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel blog Filament adminisztrációs panellel
 
 Ez a [Laravel](https://laravel.com) blog kezdőcsomag projektje a [Filament](https://filamentphp.com) adminisztrációs panellel.
@@ -10,8 +14,8 @@ Ennek az adattárnak az a célja, hogy bemutassa a jó [Laravel](https://laravel
 
 - 📚 bejegyzések létrehozása és szerkesztése
 - 🥑 kategóriák
-- :fire: Népszerű bejegyzések
-- :hatched_chick: [Filament]-re épülő adminisztrációs panel (https://filamentphp.com)
+- 🔥 Népszerű bejegyzések
+- 🎉 [Filament]-re épülő adminisztrációs panel (https://filamentphp.com)
 
 ## Funkciók kérése
 

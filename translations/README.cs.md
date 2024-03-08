@@ -1,5 +1,9 @@
 ![Blog Laravel s panelem správce Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Blog Laravel s administračním panelem Filament
 
 Toto je projekt úvodní sady blogu [Laravel](https://laravel.com) s panelem administrátora [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@ Cílem tohoto úložiště je předvést dobré postupy vývoje [Laravel](https:
 
 - 📚 Vytváření a úprava příspěvků
 - 🥑 Kategorie
-- :fire: Oblíbené příspěvky
-- :hatched_chick: Admin panel postavený na [Filament](https://filamentphp.com)
+- 🔥 Oblíbené příspěvky
+- 🎉 Admin panel postavený na [Filament](https://filamentphp.com)
 
 ## Vyžadování funkcí
 

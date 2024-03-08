@@ -1,5 +1,9 @@
 ![בלוג Laravel עם פאנל ניהול Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # בלוג Laravel עם פאנל ניהול Filament
 
 זהו פרויקט ערכת ההתחלה של הבלוג [Laravel](https://laravel.com) עם פאנל הניהול של [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@
 
 - 📚 יצירה ועריכה של פוסטים
 - 🥑 קטגוריות
-- :fire: פוסטים פופולריים
-- :hatched_chick: פאנל ניהול בנוי על [Filament](https://filamentphp.com)
+- 🔥 פוסטים פופולריים
+- 🎉 פאנל ניהול בנוי על [Filament](https://filamentphp.com)
 
 ## מבקש תכונות
 

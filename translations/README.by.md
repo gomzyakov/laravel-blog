@@ -1,5 +1,9 @@
 ![Блог Laravel з панэллю адміністратара Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Блог Laravel з панэллю адміністратара Filament
 
 Гэта [Laravel](https://laravel.com) праект пачатковага набору для блога з панэллю адміністратара [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@
 
 - 📚 Стварэнне і рэдагаванне паведамленняў
 - 🥑 Катэгорыі
-- :fire: Папулярныя паведамленні
-- :hatched_chick: Панэль адміністратара пабудавана на [Filament](https://filamentphp.com)
+- 🔥 Папулярныя паведамленні
+- 🎉 Панэль адміністратара пабудавана на [Filament](https://filamentphp.com)
 
 ## Запыт функцый
 
@@ -21,7 +25,7 @@
 
 Кланаваць праект:
 
-```баш
+```bash
 git клон git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -29,7 +33,7 @@ git клон git@github.com:gomzyakov/laravel-blog.git
 
 Стварыце вобраз `laravel-blog` з дапамогай наступнай каманды:
 
-```баш
+```bash
 docker compose build --no-cache
 ```
 
@@ -37,37 +41,37 @@ docker compose build --no-cache
 
 Калі зборка скончана, вы можаце запусціць асяроддзе ў фонавым рэжыме з:
 
-```баш
+```bash
 докер скласці -d
 ```
 
 Цяпер мы запусцім `composer install`, каб усталяваць залежнасці прыкладання:
 
-```баш
+```bash
 docker compose exec app composer install
 ```
 
 Скапіруйце налады асяроддзя:
 
-```баш
+```bash
 docker compose exec app cp .env.local .env
 ```
 
 Усталюйце ключ шыфравання з дапамогай інструмента каманднага радка `artisan` Laravel:
 
-```баш
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 Перанос фальшывых даных БД і пачатка:
 
-```баш
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 І дадайце карыстальніка адміністратара Filament:
 
-```баш
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -77,7 +81,7 @@ docker compose exec app ./artisan make:filament-user
 
 Доступ да кантэйнера Docker:
 
-```баш
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

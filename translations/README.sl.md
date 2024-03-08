@@ -1,5 +1,9 @@
 ![Laravel blog s skrbniško ploščo Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Blog Laravel s skrbniško ploščo Filament
 
 To je [Laravel](https://laravel.com) projekt začetnega kompleta blogov s skrbniško ploščo [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@ Cilj tega skladišča je predstaviti dobre razvojne prakse [Laravel](https://lar
 
 - 📚 Ustvarjanje in urejanje objav
 - 🥑 Kategorije
-- :fire: Priljubljene objave
-- :hatched_chick: Skrbniška plošča zgrajena na [Filament](https://filamentphp.com)
+- 🔥 Priljubljene objave
+- 🎉 Skrbniška plošča zgrajena na [Filament](https://filamentphp.com)
 
 ## Zahtevanje funkcij
 

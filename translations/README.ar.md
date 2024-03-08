@@ -1,5 +1,9 @@
 ![مدونة Laravel مع لوحة إدارة Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # مدونة Laravel مع لوحة إدارة Filament
 
 هذا هو مشروع مجموعة أدوات مدونة [Laravel](https://laravel.com) مع لوحة إدارة [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@
 
 - 📚 إنشاء المشاركات وتحريرها
 - 🥑 الفئات
-- :fire: المشاركات الشعبية
-- :hatched_chick: لوحة إدارة مبنية على [Filament](https://filamentphp.com)
+- 🔥 المشاركات الشعبية
+- 🎉 لوحة إدارة مبنية على [Filament](https://filamentphp.com)
 
 ## طلب الميزات
 

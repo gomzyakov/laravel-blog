@@ -1,5 +1,9 @@
 ![وبلاگ لاراول با پنل مدیریت Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # وبلاگ لاراول با پنل مدیریت Filament
 
 این پروژه کیت شروع وبلاگ [Laravel](https://laravel.com) با پنل مدیریت [Filament](https://filamentphp.com) است.
@@ -10,8 +14,8 @@
 
 - 📚 ایجاد و ویرایش پست ها
 - 🥑 دسته بندی ها
-- :fire: پست های محبوب
-- :hatched_chick: پنل مدیریت ساخته شده بر روی [Filament] (https://filamentphp.com)
+- 🔥 پست های محبوب
+- 🎉 پنل مدیریت ساخته شده بر روی [Filament] (https://filamentphp.com)
 
 ## درخواست ویژگی ها
 

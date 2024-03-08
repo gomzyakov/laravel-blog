@@ -1,5 +1,9 @@
 ![Blog của Laravel với bảng quản trị Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Blog Laravel với bảng quản trị Filament
 
 Đây là dự án bộ công cụ khởi đầu blog [Laravel](https://laravel.com) với bảng quản trị [Filament](https://filavel.com).
@@ -10,8 +14,8 @@ Mục tiêu của kho lưu trữ này là giới thiệu các phương pháp ph�
 
 - 📚 Tạo và chỉnh sửa bài viết
 - 🥑 Danh mục
-- :fire: Bài viết phổ biến
-- :hatched_chick: Bảng quản trị được xây dựng trên [Filament](https://filaphp.com)
+- 🔥 Bài viết phổ biến
+- 🎉 Bảng quản trị được xây dựng trên [Filament](https://filaphp.com)
 
 ## Yêu cầu tính năng
 

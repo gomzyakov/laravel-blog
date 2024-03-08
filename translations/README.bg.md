@@ -1,5 +1,9 @@
 ![Блог на Laravel с административен панел на Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Блог на Laravel с административен панел на Filament
 
 Това е [Laravel](https://laravel.com) проект за стартов комплект за блог с [Filament](https://filamentphp.com) административен панел.
@@ -10,8 +14,8 @@
 
 - 📚 Създаване и редактиране на публикации
 - 🥑 Категории
-- :fire: Популярни публикации
-- :hatched_chick: Административен панел, изграден върху [Filament](https://filamentphp.com)
+- 🔥 Популярни публикации
+- 🎉 Административен панел, изграден върху [Filament](https://filamentphp.com)
 
 ## Искане на функции
 
@@ -21,7 +25,7 @@
 
 Клонирайте проекта:
 
-``` баш
+```bash
 git клонинг git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -29,7 +33,7 @@ git клонинг git@github.com:gomzyakov/laravel-blog.git
 
 Създайте изображението `laravel-blog` със следната команда:
 
-``` баш
+```bash
 docker compose build --no-cache
 ```
 
@@ -37,13 +41,13 @@ docker compose build --no-cache
 
 Когато изграждането приключи, можете да стартирате средата във фонов режим с:
 
-``` баш
+```bash
 докер съставяне -d
 ```
 
 Сега ще изпълним `composer install`, за да инсталираме зависимостите на приложението:
 
-``` баш
+```bash
 docker compose exec app composer install
 ```
 

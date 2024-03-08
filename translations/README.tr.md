@@ -1,5 +1,9 @@
 ![Filament yönetici panelli Laravel blogu](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Filament yönetici panelli Laravel blogu
 
 Bu, [Filament](https://filamentphp.com) yönetici panelli [Laravel](https://laravel.com) blog başlangıç kiti projesidir.
@@ -10,8 +14,8 @@ Bu havuzun amacı basit bir uygulamayla iyi [Laravel](https://laravel.com) geli�
 
 - 📚 Gönderi oluşturma ve düzenleme
 - 🥑 Kategoriler
-- :fire: Popüler gönderiler
-- :hatched_chick: [Filament](https://filamentphp.com) üzerine kurulu yönetici paneli
+- 🔥 Popüler gönderiler
+- 🎉 [Filament](https://filamentphp.com) üzerine kurulu yönetici paneli
 
 ## Özellikler talep ediliyor
 

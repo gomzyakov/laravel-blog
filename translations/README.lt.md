@@ -1,5 +1,9 @@
 ![Laravel tinklaraštis su Filament administravimo skydeliu](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel tinklaraštis su Filament administratoriaus skydeliu
 
 Tai yra [Laravel](https://laravel.com) tinklaraščio pradžios rinkinio projektas su [Filament](https://filamentphp.com) administratoriaus skydeliu.
@@ -10,8 +14,8 @@ Tai yra [Laravel](https://laravel.com) tinklaraščio pradžios rinkinio projekt
 
 - 📚 Įrašų kūrimas ir redagavimas
 - 🥑 Kategorijos
-- :fire: Populiarūs įrašai
-- :hatched_chick: administratoriaus skydelis sukurtas naudojant [Filament] (https://filamentphp.com)
+- 🔥 Populiarūs įrašai
+- 🎉 administratoriaus skydelis sukurtas naudojant [Filament] (https://filamentphp.com)
 
 ## Funkcijų užklausa
 

@@ -1,5 +1,9 @@
 ![Laravel-blog met Filament-administrasiepaneel](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel-blog met Filament-administrasiepaneel
 
 Dit is [Laravel](https://laravel.com) blogbeginstelprojek met [Filament](https://filamentphp.com) adminpaneel.
@@ -10,8 +14,8 @@ Die doel van hierdie bewaarplek is om goeie [Laravel](https://laravel.com) ontwi
 
 - 📚 Skep en redigeer plasings
 - 🥑 Kategorieë
-- :fire: Gewilde plasings
-- :hatched_chick: Adminpaneel gebou op [Filament](https://filamentphp.com)
+- 🔥 Gewilde plasings
+- 🎉 Adminpaneel gebou op [Filament](https://filamentphp.com)
 
 ## Versoek kenmerke
 

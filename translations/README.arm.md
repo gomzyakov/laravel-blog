@@ -1,5 +1,9 @@
 ![Laravel բլոգ՝ Filament-ի ադմինիստրատորի վահանակով](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel բլոգ՝ Filament ադմինիստրատորի վահանակով
 
 Սա [Laravel](https://laravel.com) բլոգի մեկնարկային փաթեթի նախագիծն է՝ [Filament](https://filamentphp.com) ադմինիստրատորի վահանակով:
@@ -10,8 +14,8 @@
 
 - 📚 Գրառումների ստեղծում և խմբագրում
 - 🥑 Կատեգորիաներ
-- :fire: Հանրաճանաչ գրառումներ
-- :hatched_chick: Ադմինիստրատորի վահանակը կառուցված է [Filament]-ի վրա (https://filamentphp.com)
+- 🔥 Հանրաճանաչ գրառումներ
+- 🎉 Ադմինիստրատորի վահանակը կառուցված է [Filament]-ի վրա (https://filamentphp.com)
 
 ## Հատկանիշների հայցում
 

@@ -1,5 +1,9 @@
 ![Blog Laravel com painel de administração Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Blog Laravel com painel de administração Filament
 
 Este é o projeto do kit inicial do blog [Laravel](https://laravel.com) com painel de administração do [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@ O objetivo deste repositório é mostrar boas práticas de desenvolvimento do [L
 
 - 📚 Criação e edição de postagens
 - 🥑 Categorias
-- :fire: Postagens populares
-- :hatched_chick: Painel de administração construído em [Filament](https://filamentphp.com)
+- 🔥 Postagens populares
+- 🎉 Painel de administração construído em [Filament](https://filamentphp.com)
 
 ## Solicitando recursos
 

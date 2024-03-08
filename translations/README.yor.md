@@ -1,5 +1,9 @@
 ![Bulọọgi Laravel pẹlu igbimọ abojuto Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Bulọọgi Laravel pẹlu nronu abojuto Filament
 
 Eyi ni [Laravel](https://laravel.com) ohun elo ohun elo bulọọgi bulọọgi pẹlu igbimọ abojuto [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@ Ibi-afẹde ti ibi ipamọ yii ni lati ṣafihan awọn iṣe idagbasoke [Larave
 
 - 📚 Ṣiṣẹda ati ṣiṣatunṣe awọn ifiweranṣẹ
 - 🥑 Awọn ẹka
--: ina: Awọn ifiweranṣẹ olokiki
--: hatched_chick: Igbimọ abojuto ti a ṣe lori [Filament] (https://filamentphp.com)
+- 🔥 Awọn ifiweranṣẹ olokiki
+- 🎉 Igbimọ abojuto ti a ṣe lori [Filament] (https://filamentphp.com)
 
 ## Awọn ẹya ti o beere
 

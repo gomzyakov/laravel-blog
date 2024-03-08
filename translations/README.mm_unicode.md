@@ -1,5 +1,9 @@
 ![Filament admin panel ပါသော Laravel blog](/docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Filament admin panel ဖြင့် Laravel ဘလော့ဂ်
 
 ၎င်းသည် [Laravel](https://laravel.com) [Filament](https://filamentphp.com) အက်ဒ်မင်အကန့်ဖြင့် ဘလော့ဂ်စတင်သူကိရိယာပရောဂျက်ဖြစ်သည်။
@@ -10,7 +14,7 @@
 
 - 📚 ပို့စ်များကို ဖန်တီးခြင်းနှင့် တည်းဖြတ်ခြင်း။
 - 🥑 အမျိုးအစားများ
-- :fire: လူကြိုက်များသော ပို့စ်များ
+- 🔥 လူကြိုက်များသော ပို့စ်များ
 - :hatched_chick- [Filament](https://filamentphp.com) တွင်တည်ဆောက်ထားသော စီမံခန့်ခွဲသူအကန့်
 
 ## တောင်းဆိုနေပါသည်။

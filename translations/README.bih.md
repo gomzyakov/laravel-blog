@@ -1,5 +1,9 @@
 ![Laravel blog s administrativnom pločom Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel blog s administrativnom pločom Filament
 
 Ovo je [Laravel](https://laravel.com) projekt početnog kompleta za blog s [Filament](https://filamentphp.com) administratorskom pločom.
@@ -10,8 +14,8 @@ Cilj ovog repozitorija je prikazati dobre [Laravel](https://laravel.com) razvojn
 
 - 📚 Kreiranje i uređivanje objava
 - 🥑 Kategorije
-- :fire: Popularne objave
-- :hatched_chick: Administratorska ploča izgrađena na [Filament](https://filamentphp.com)
+- 🔥 Popularne objave
+- 🎉 Administratorska ploča izgrađena na [Filament](https://filamentphp.com)
 
 ## Traženje značajki
 

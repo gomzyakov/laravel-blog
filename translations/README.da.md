@@ -1,5 +1,9 @@
 ![Laravel blog med Filament admin panel](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel blog med Filament admin panel
 
 Dette er [Laravel](https://laravel.com) blog starter kit-projekt med [Filament](https://filamentphp.com) admin panel.
@@ -10,8 +14,8 @@ Målet med dette lager er at fremvise god [Laravel](https://laravel.com) udvikli
 
 - 📚 Oprettelse og redigering af indlæg
 - 🥑 Kategorier
-- :fire: Populære indlæg
-- :hatched_chick: Admin panel bygget på [Filament](https://filamentphp.com)
+- 🔥 Populære indlæg
+- 🎉 Admin panel bygget på [Filament](https://filamentphp.com)
 
 ## Anmoder om funktioner
 

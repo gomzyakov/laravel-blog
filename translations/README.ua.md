@@ -1,5 +1,9 @@
 ![Блог Laravel із панеллю адміністратора Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Блог Laravel з панеллю адміністратора Filament
 
 Це [Laravel](https://laravel.com) проект стартового набору для блогу з панеллю адміністратора [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@
 
 - 📚 Створення та редагування дописів
 - 🥑 Категорії
-- :fire: Популярні пости
-- :hatched_chick: Панель адміністратора побудована на [Filament](https://filamentphp.com)
+- 🔥 Популярні пости
+- 🎉 Панель адміністратора побудована на [Filament](https://filamentphp.com)
 
 ## Запит функцій
 

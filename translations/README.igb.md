@@ -1,5 +1,9 @@
 ![Blọọgụ Laravel nwere panel nchịkwa Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel blọọgụ nwere panel nchịkwa Filament
 
 Nke a bụ [Laravel](https://laravel.com) blọgụ mmalite kit oru ngo nwere [Filament](https://filamentphp.com) nchịkwa nchịkwa.
@@ -10,8 +14,8 @@ Ebumnuche nke ebe nchekwa a bụ igosi ezi omume mmepe [Laravel](https://laravel
 
 - 📚 Mepụta na dezie posts
 - 🥑 ngalaba
-- :ọkụ: Ederede ndị ama ama
--: hatched_chick: Ogwe nchịkwa wuru na [Filament](https://filamentphp.com)
+- 🔥 Ederede ndị ama ama
+- 🎉 Ogwe nchịkwa wuru na [Filament](https://filamentphp.com)
 
 ## Arịrịọ atụmatụ
 

@@ -1,5 +1,9 @@
 ![Блог на Ларавел со административен панел на Филамент](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Блог на Ларавел со административен панел Филамент
 
 Ова е проект за стартер комплет за блог [Laravel](https://laravel.com) со административен панел [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@
 
 - 📚 Создавање и уредување објави
 - 🥑 Категории
-- :fire: Популарни објави
-- :hatched_chick: Административен панел изграден на [Filament](https://filamentphp.com)
+- 🔥 Популарни објави
+- 🎉 Административен панел изграден на [Filament](https://filamentphp.com)
 
 ## Барам карактеристики
 

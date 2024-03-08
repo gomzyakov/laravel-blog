@@ -1,5 +1,9 @@
 ![Blog Laravel dengan panel admin Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Blog Laravel dengan panel admin Filament
 
 Ini adalah proyek starter kit blog [Laravel](https://laravel.com) dengan panel admin [Filament](https://filamentphp.com).
@@ -10,8 +14,8 @@ Tujuan dari repositori ini adalah untuk menampilkan praktik pengembangan [Larave
 
 - 📚 Membuat dan mengedit postingan
 - 🥑 Kategori
-- :fire: Postingan populer
-- :hatched_chick: Panel admin dibangun di atas [Filamen](https://filamentphp.com)
+- 🔥 Postingan populer
+- 🎉 Panel admin dibangun di atas [Filamen](https://filamentphp.com)
 
 ## Meminta fitur
 

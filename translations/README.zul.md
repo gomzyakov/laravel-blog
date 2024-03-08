@@ -1,4 +1,8 @@
-![Laravel blog with Filament admin panel](./docs/social-preview-zu.png)
+![Laravel blog with Filament admin panel](../docs/social-preview-zu.png)
+
+_Read this in [other languages](./Translations.md)_
+
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
 # Ibhulogi yeLaravel enephaneli yokuphatha ye-Filament
 
@@ -10,8 +14,8 @@ Umgomo waleli gumbi ukukhombisa izinqubo ezinhle zokuthuthukisa ze-[Laravel](htt
 
 - 📚 Ukudala nokuhlela okuthunyelwe
 - 🥑 Izigaba
-- :fire: Okuthunyelwe okudumile
-- :hatched_chick: Iphaneli yomqondisi eyakhelwe ku-[Filament](https://filamentphp.com)
+- 🔥 Okuthunyelwe okudumile
+- 🎉 Iphaneli yomqondisi eyakhelwe ku-[Filament](https://filamentphp.com)
 
 ## Icela izici
 
