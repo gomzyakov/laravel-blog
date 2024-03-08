@@ -1,5 +1,7 @@
 ![带有 Filament 管理面板的 Laravel 博客](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel 博客与 Filament 管理面板
 
 这是 [Laravel](https://laravel.com) 博客入门套件项目，带有 [Filament](https://filamentphp.com) 管理面板。

@@ -1,5 +1,7 @@
 ![Laravel-Blog mit Filament-Admin-Panel](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel-Blog mit Filament-Admin-Panel
 
 Dies ist das Blog-Starterkit-Projekt von [Laravel](https://laravel.com) mit dem Admin-Panel von [Filament](https://filamentphp.com).

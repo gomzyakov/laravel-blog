@@ -1,6 +1,8 @@
 ﻿![ફિલામેન્ટ એડમિન પેનલ સાથે લારેવેલ બ્લોગ](../docs/social-preview-en.png)
 
-ફિલામેન્ટ એડમિન પેનલ સાથે # Laravel બ્લોગ
+_Read this in [other languages](./Translations.md)_
+
+# ફિલામેન્ટ એડમિન પેનલ સાથે Laravel બ્લોગ
 
 આ [Filament](https://filamentphp.com) એડમિન પેનલ સાથેનો [Laravel](https://laravel.com) બ્લોગ સ્ટાર્ટર કિટ પ્રોજેક્ટ છે.
 

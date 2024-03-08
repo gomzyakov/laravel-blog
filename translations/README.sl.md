@@ -1,5 +1,7 @@
 ![Laravel blog s skrbniško ploščo Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Blog Laravel s skrbniško ploščo Filament
 
 To je [Laravel](https://laravel.com) projekt začetnega kompleta blogov s skrbniško ploščo [Filament](https://filamentphp.com).

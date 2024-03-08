@@ -1,5 +1,7 @@
 ![ఫిలమెంట్ అడ్మిన్ ప్యానెల్‌తో లారావెల్ బ్లాగ్](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # ఫిలమెంట్ అడ్మిన్ ప్యానెల్‌తో లారావెల్ బ్లాగ్
 
 ఇది [Laravel](https://laravel.com) బ్లాగ్ స్టార్టర్ కిట్ ప్రాజెక్ట్ [Filament](https://filamentphp.com) అడ్మిన్ ప్యానెల్.

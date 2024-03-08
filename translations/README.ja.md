@@ -1,5 +1,7 @@
 ![Filament 管理パネルを備えた Laravel ブログ](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Filament 管理パネルを備えた Laravel ブログ
 
 これは、[Filament](https://filamentphp.com) 管理パネルを備えた [Laravel](https://laravel.com) ブログ スターター キット プロジェクトです。

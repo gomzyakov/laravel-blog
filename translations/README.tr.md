@@ -1,5 +1,7 @@
 ![Filament yönetici panelli Laravel blogu](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Filament yönetici panelli Laravel blogu
 
 Bu, [Filament](https://filamentphp.com) yönetici panelli [Laravel](https://laravel.com) blog başlangıç kiti projesidir.

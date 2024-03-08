@@ -1,6 +1,8 @@
 ![फिलामेन्ट एडमिन प्यानलको साथ लारावेल ब्लग](../docs/social-preview-en.png)
 
-फिलामेन्ट एडमिन प्यानलको साथ # Laravel ब्लग
+_Read this in [other languages](./Translations.md)_
+
+# फिलामेन्ट एडमिन प्यानलको साथ # Laravel ब्लग
 
 यो [Laravel](https://laravel.com) [Filament](https://filamentphp.com) एडमिन प्यानल भएको ब्लग स्टार्टर किट परियोजना हो।
 

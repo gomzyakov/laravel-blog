@@ -1,5 +1,7 @@
 ![בלוג Laravel עם פאנל ניהול Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # בלוג Laravel עם פאנל ניהול Filament
 
 זהו פרויקט ערכת ההתחלה של הבלוג [Laravel](https://laravel.com) עם פאנל הניהול של [Filament](https://filamentphp.com).

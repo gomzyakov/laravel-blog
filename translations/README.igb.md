@@ -1,5 +1,7 @@
 ![Blọọgụ Laravel nwere panel nchịkwa Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel blọọgụ nwere panel nchịkwa Filament
 
 Nke a bụ [Laravel](https://laravel.com) blọgụ mmalite kit oru ngo nwere [Filament](https://filamentphp.com) nchịkwa nchịkwa.

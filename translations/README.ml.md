@@ -1,5 +1,7 @@
 ![ഫിലമെൻ്റ് അഡ്മിൻ പാനലുള്ള ലാറവൽ ബ്ലോഗ്](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # ഫിലമെൻ്റ് അഡ്‌മിൻ പാനലുള്ള ലാറവെൽ ബ്ലോഗ്
 
 ഇതാണ് [Laravel](https://laravel.com) [Filament](https://filamentphp.com) അഡ്മിൻ പാനലുള്ള ബ്ലോഗ് സ്റ്റാർട്ടർ കിറ്റ് പ്രോജക്റ്റ്.

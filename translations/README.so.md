@@ -1,5 +1,7 @@
 ![Laravel blog oo leh guddiga maamulka Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel blog oo leh guddiga maamulka Filament
 
 Kani waa [Laravel](https://laravel.com) mashruuca xirmada bilawga ah ee blogka oo leh [Filament](https://filamentphp.com) guddiga maamulka.

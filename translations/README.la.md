@@ -1,5 +1,7 @@
 ![Laravel blog with Filament admin panel]../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel blog ກັບ Filament admin panel
 
 ນີ້​ແມ່ນ [Laravel](https://laravel.com) ໂຄງ​ການ​ຊຸດ​ການ​ເລີ່ມ​ຕົ້ນ​ຂອງ blog ກັບ [Filament](https://filamentphp.com) ກະ​ດານ​ບໍ​ລິ​ຫານ.

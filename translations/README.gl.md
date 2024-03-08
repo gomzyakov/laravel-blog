@@ -1,6 +1,8 @@
 ![Blogue de Laravel co panel de administración de Filament](../docs/social-preview-en.png)
 
-Blog de # Laravel con panel de administración de Filament
+_Read this in [other languages](./Translations.md)_
+
+# Blog de Laravel con panel de administración de Filament
 
 Este é o proxecto do kit de inicio do blog [Laravel](https://laravel.com) co panel de administración de [Filament](https://filamentphp.com).
 

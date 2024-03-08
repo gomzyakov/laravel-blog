@@ -1,5 +1,7 @@
 ![Filament 관리 패널이 포함된 Laravel 블로그](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # 필라멘트 관리 패널이 있는 Laravel 블로그
 
 이것은 [Filament](https://ilavelphp.com) 관리자 패널이 포함된 [Laravel](https://laravel.com) 블로그 스타터 키트 프로젝트입니다.

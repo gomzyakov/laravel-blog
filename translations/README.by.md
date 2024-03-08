@@ -1,5 +1,7 @@
 ![Блог Laravel з панэллю адміністратара Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Блог Laravel з панэллю адміністратара Filament
 
 Гэта [Laravel](https://laravel.com) праект пачатковага набору для блога з панэллю адміністратара [Filament](https://filamentphp.com).

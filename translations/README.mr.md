@@ -1,6 +1,8 @@
 ![फिलामेंट ॲडमिन पॅनेलसह लारवेल ब्लॉग](../docs/social-preview-en.png)
 
-फिलामेंट ॲडमिन पॅनेलसह # Laravel ब्लॉग
+_Read this in [other languages](./Translations.md)_
+
+# फिलामेंट ॲडमिन पॅनेलसह # Laravel ब्लॉग
 
 हा [Laravel](https://laravel.com) [Filament](https://filamentphp.com) प्रशासक पॅनेलसह ब्लॉग स्टार्टर किट प्रकल्प आहे.
 

@@ -1,5 +1,7 @@
 ![Laravel-blogi Filamentin hallintapaneelilla](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel-blogi Filamentin hallintapaneelilla
 
 Tämä on [Laravel](https://laravel.com) blogin aloituspakettiprojekti [Filament](https://filamentphp.com) hallintapaneelin kanssa.

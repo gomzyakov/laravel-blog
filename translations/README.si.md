@@ -1,5 +1,7 @@
 ![Laravel blog with Filament admin panel](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Filament පරිපාලක පැනලය සමඟ Laravel බ්ලොග්
 
 මෙය [Laravel](https://laravel.com) [Filament](https://filamentphp.com) පරිපාලක පැනලය සහිත බ්ලොග් ආරම්භක කට්ටල ව්‍යාපෘතියයි.

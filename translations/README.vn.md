@@ -1,5 +1,7 @@
 ![Blog của Laravel với bảng quản trị Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Blog Laravel với bảng quản trị Filament
 
 Đây là dự án bộ công cụ khởi đầu blog [Laravel](https://laravel.com) với bảng quản trị [Filament](https://filavel.com).

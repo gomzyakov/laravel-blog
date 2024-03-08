@@ -1,5 +1,7 @@
 ![وبلاگ لاراول با پنل مدیریت Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # وبلاگ لاراول با پنل مدیریت Filament
 
 این پروژه کیت شروع وبلاگ [Laravel](https://laravel.com) با پنل مدیریت [Filament](https://filamentphp.com) است.

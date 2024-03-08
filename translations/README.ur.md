@@ -1,5 +1,7 @@
 ![فلامینٹ ایڈمن پینل کے ساتھ لاریول بلاگ](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel بلاگ فلیمینٹ ایڈمن پینل کے ساتھ
 
 یہ [Laravel](https://laravel.com) بلاگ اسٹارٹر کٹ پروجیکٹ ہے جس میں [Filament](https://filamentphp.com) ایڈمن پینل ہے۔

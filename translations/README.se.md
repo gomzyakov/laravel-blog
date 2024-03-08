@@ -1,5 +1,7 @@
 ![Laravel-blogg med Filament-adminpanel](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel-blogg med Filament-adminpanel
 
 Det här är [Laravel](https://laravel.com) bloggstartpaketprojekt med [Filament](https://filamentphp.com) adminpanel.

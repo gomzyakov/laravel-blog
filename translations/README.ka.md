@@ -1,5 +1,7 @@
 ![ಫಿಲಮೆಂಟ್ ನಿರ್ವಾಹಕ ಫಲಕದೊಂದಿಗೆ ಲಾರಾವೆಲ್ ಬ್ಲಾಗ್](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # ಫಿಲಮೆಂಟ್ ನಿರ್ವಾಹಕ ಫಲಕದೊಂದಿಗೆ ಲಾರಾವೆಲ್ ಬ್ಲಾಗ್
 
 ಇದು [Laravel](https://laravel.com) [Filament](https://filamentphp.com) ನಿರ್ವಾಹಕ ಫಲಕದೊಂದಿಗೆ ಬ್ಲಾಗ್ ಸ್ಟಾರ್ಟರ್ ಕಿಟ್ ಯೋಜನೆಯಾಗಿದೆ.

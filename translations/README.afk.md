@@ -1,5 +1,7 @@
 ![Laravel-blog met Filament-administrasiepaneel](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel-blog met Filament-administrasiepaneel
 
 Dit is [Laravel](https://laravel.com) blogbeginstelprojek met [Filament](https://filamentphp.com) adminpaneel.

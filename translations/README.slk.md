@@ -1,5 +1,7 @@
 ![Blog Laravel s panelom správcu Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Blog Laravel s panelom správcu Filament
 
 Toto je projekt úvodnej súpravy blogu [Laravel](https://laravel.com) s panelom správcu [Filament](https://filamentphp.com).

@@ -1,5 +1,7 @@
 ![บล็อก Laravel พร้อมแผงผู้ดูแลระบบ Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # บล็อก Laravel พร้อมแผงผู้ดูแลระบบ Filament
 
 นี่คือโปรเจ็กต์ชุดเริ่มต้นบล็อกของ [Laravel](https://laravel.com) พร้อมด้วยแผงผู้ดูแลระบบ [Filament](https://filamentphp.com)

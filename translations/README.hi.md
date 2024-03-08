@@ -1,6 +1,8 @@
 ﻿![फिलामेंट एडमिन पैनल के साथ लारवेल ब्लॉग](../docs/social-preview-en.png)
 
-फिलामेंट एडमिन पैनल के साथ # लारवेल ब्लॉग
+_Read this in [other languages](./Translations.md)_
+
+# फिलामेंट एडमिन पैनल के साथ # लारवेल ब्लॉग
 
 यह [लारवेल](https://laravel.com) ब्लॉग स्टार्टर किट प्रोजेक्ट है जिसमें [फिलामेंट](https://filamentphp.com) एडमिन पैनल है।
 

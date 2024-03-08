@@ -1,5 +1,7 @@
 ![Bloc de Laravel amb panell d'administració de Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Bloc Laravel amb panell d'administració de Filament
 
 Aquest és el projecte del kit d'inici del bloc [Laravel](https://laravel.com) amb el tauler d'administració de [Filament](https://filamentphp.com).

@@ -1,6 +1,8 @@
 ![Filament admin paneli ilə Laravel bloqu](../docs/social-preview-en.png)
 
-Filament admin paneli ilə # Laravel bloqu
+_Read this in [other languages](./Translations.md)_
+
+# Filament admin paneli ilə Laravel bloqu
 
 Bu, [Filament](https://filamentphp.com) admin paneli ilə [Laravel](https://laravel.com) blog başlanğıc dəsti layihəsidir.
 

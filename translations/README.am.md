@@ -1,5 +1,7 @@
 ![ላራቬል ብሎግ ከፋላመንት አስተዳዳሪ ፓነል ጋር](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # የላራቭል ብሎግ ከፋይላመንት አስተዳዳሪ ፓነል ጋር
 
 ይህ [ላራቬል](https://laravel.com) የብሎግ ጀማሪ ኪት ፕሮጀክት ከ[Filament](https://filamentphp.com) የአስተዳዳሪ ፓነል ጋር ነው።

@@ -1,4 +1,6 @@
-![Laravel blog with Filament admin panel](./docs/social-preview-zu.png)
+![Laravel blog with Filament admin panel](../docs/social-preview-zu.png)
+
+_Read this in [other languages](./Translations.md)_
 
 # Ibhulogi yeLaravel enephaneli yokuphatha ye-Filament
 

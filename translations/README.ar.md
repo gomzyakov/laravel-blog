@@ -1,5 +1,7 @@
 ![مدونة Laravel مع لوحة إدارة Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # مدونة Laravel مع لوحة إدارة Filament
 
 هذا هو مشروع مجموعة أدوات مدونة [Laravel](https://laravel.com) مع لوحة إدارة [Filament](https://filamentphp.com).

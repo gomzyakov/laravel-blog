@@ -1,5 +1,7 @@
 ![Laravel emuārs ar Filament administrēšanas paneli](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel emuārs ar Filament administrēšanas paneli
 
 Šis ir [Laravel](https://laravel.com) emuāra sākuma komplekta projekts ar [Filament](https://filamentphp.com) administrācijas paneli.

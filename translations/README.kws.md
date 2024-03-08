@@ -1,6 +1,8 @@
 ![Blogu ya Laravel iliyo na paneli ya msimamizi wa Filament](../docs/social-preview-en.png)
 
-Blogu ya # Laravel iliyo na paneli ya msimamizi wa Filament
+_Read this in [other languages](./Translations.md)_
+
+# Blogu ya Laravel iliyo na paneli ya msimamizi wa Filament
 
 Huu ni mradi wa [Laravel](https://laravel.com) wa kuanzisha blogu wenye paneli ya msimamizi wa [Filament](https://filamentphp.com).
 

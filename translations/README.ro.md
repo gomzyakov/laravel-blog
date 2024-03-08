@@ -1,5 +1,7 @@
 ![Blogul Laravel cu panoul de administrare Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Blog Laravel cu panou de administrare Filament
 
 Acesta este proiectul [Laravel](https://laravel.com) blog starter kit cu panoul de administrare [Filament](https://filamentphp.com).

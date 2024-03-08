@@ -1,5 +1,7 @@
 ﻿![Blog Laravel z panelem administracyjnym Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Blog Laravel z panelem administracyjnym Filament
 
 To jest projekt zestawu startowego bloga [Laravel](https://laravel.com) z panelem administracyjnym [Filament](https://filamentphp.com).

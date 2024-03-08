@@ -1,5 +1,7 @@
 ![Blog Laravel me panelin e administrimit të Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Blog Laravel me panelin e administrimit të Filament
 
 Ky është projekti i kompletit fillestar të blogut [Laravel](https://laravel.com) me panelin e administrimit të [Filament](https://filamentphp.com).

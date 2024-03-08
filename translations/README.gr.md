@@ -1,5 +1,7 @@
 ﻿![Ιστολόγιο Laravel με πίνακα διαχείρισης Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Ιστολόγιο Laravel με πίνακα διαχείρισης Filament
 
 Αυτό είναι το έργο του κιτ εκκίνησης ιστολογίου [Laravel](https://laravel.com) με τον πίνακα διαχείρισης [Filament](https://filamentphp.com).

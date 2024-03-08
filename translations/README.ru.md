@@ -1,9 +1,6 @@
 ![Блог на Laravel с админ-панелью на Filament](../docs/social-preview-en.png)
 
-#### Описание проекта на [других языках](Translations.md):
-
-[English](../README.md)
-&middot; [Русский](README.ru.md)
+_Описание проекта на [других языках](Translations.md)_
 
 # Блог на Laravel с админ-панелью на Filament
 

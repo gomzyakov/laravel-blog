@@ -1,5 +1,7 @@
 ![ஃபிலமென்ட் நிர்வாக குழுவுடன் லாராவெல் வலைப்பதிவு](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Filament நிர்வாக குழுவுடன் Laravel வலைப்பதிவு
 
 இது [Laravel](https://laravel.com) [Filament](https://filamentphp.com) நிர்வாக குழுவுடன் கூடிய வலைப்பதிவு ஸ்டார்டர் கிட் திட்டம்.

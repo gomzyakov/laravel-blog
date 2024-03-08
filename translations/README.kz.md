@@ -1,6 +1,8 @@
 ![Filament басқару тақтасы бар Laravel блогы](../docs/social-preview-en.png)
 
-Filament басқару тақтасы бар # Laravel блогы
+_Read this in [other languages](./Translations.md)_
+
+# Filament басқару тақтасы бар # Laravel блогы
 
 Бұл [Filament](https://filamentphp.com) басқару тақтасы бар [Laravel](https://laravel.com) блогының бастау жинағы жобасы.
 

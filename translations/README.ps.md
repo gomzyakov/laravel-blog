@@ -1,5 +1,7 @@
 ![Laravel بلاګ د فیلامینټ اډمین پینل سره](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel بلاګ د فیلامینټ اډمین پینل سره
 
 دا د [Laravel](https://laravel.com) د بلاګ سټارټر کټ پروژه ده چې د [Filament](https://filamentphp.com) اډمین پینل سره.

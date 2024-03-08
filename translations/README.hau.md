@@ -1,5 +1,7 @@
 ![Laravel blog tare da kwamitin gudanarwa na Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel blog tare da kwamitin gudanarwa na Filament
 
 Wannan shine [Laravel](https://laravel.com) aikin kayan aikin farawa tare da [Filament](https://filamentphp.com) kwamitin gudanarwa.
@@ -21,7 +23,7 @@ Bude [sabon fitowar](https://github.com/gomzyakov/laravel-blog/issues/new) don n
 
 Rufe aikin:
 
-``bash
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 

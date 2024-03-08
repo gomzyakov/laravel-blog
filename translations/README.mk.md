@@ -1,5 +1,7 @@
 ![Блог на Ларавел со административен панел на Филамент](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Блог на Ларавел со административен панел Филамент
 
 Ова е проект за стартер комплет за блог [Laravel](https://laravel.com) со административен панел [Filament](https://filamentphp.com).

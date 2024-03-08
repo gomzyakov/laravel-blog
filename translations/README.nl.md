@@ -1,5 +1,7 @@
 ![Laravel-blog met Filament-beheerderspaneel](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel-blog met Filament-beheerderspaneel
 
 Dit is een [Laravel](https://laravel.com) blogstartpakketproject met [Filament](https://filamentphp.com) beheerderspaneel.

@@ -1,5 +1,7 @@
 ![Laravel tinklaraštis su Filament administravimo skydeliu](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel tinklaraštis su Filament administratoriaus skydeliu
 
 Tai yra [Laravel](https://laravel.com) tinklaraščio pradžios rinkinio projektas su [Filament](https://filamentphp.com) administratoriaus skydeliu.

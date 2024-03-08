@@ -1,5 +1,7 @@
 ![Blog Laravel dengan panel admin Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Blog Laravel dengan panel admin Filament
 
 Ini adalah proyek starter kit blog [Laravel](https://laravel.com) dengan panel admin [Filament](https://filamentphp.com).

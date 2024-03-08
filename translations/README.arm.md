@@ -1,5 +1,7 @@
 ![Laravel բլոգ՝ Filament-ի ադմինիստրատորի վահանակով](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel բլոգ՝ Filament ադմինիստրատորի վահանակով
 
 Սա [Laravel](https://laravel.com) բլոգի մեկնարկային փաթեթի նախագիծն է՝ [Filament](https://filamentphp.com) ադմինիստրատորի վահանակով:

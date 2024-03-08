@@ -1,6 +1,8 @@
 ![ਫਿਲਾਮੈਂਟ ਐਡਮਿਨ ਪੈਨਲ ਵਾਲਾ ਲਾਰਵੇਲ ਬਲੌਗ](../docs/social-preview-en.png)
 
-ਫਿਲਾਮੈਂਟ ਐਡਮਿਨ ਪੈਨਲ ਦੇ ਨਾਲ # ਲਾਰਵੇਲ ਬਲੌਗ
+_Read this in [other languages](./Translations.md)_
+
+# ਫਿਲਾਮੈਂਟ ਐਡਮਿਨ ਪੈਨਲ ਦੇ ਨਾਲ # ਲਾਰਵੇਲ ਬਲੌਗ
 
 ਇਹ [Filament](https://filamentphp.com) ਐਡਮਿਨ ਪੈਨਲ ਵਾਲਾ [Laravel](https://laravel.com) ਬਲੌਗ ਸਟਾਰਟਰ ਕਿੱਟ ਪ੍ਰੋਜੈਕਟ ਹੈ।
 

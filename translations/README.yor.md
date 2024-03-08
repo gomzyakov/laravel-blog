@@ -1,5 +1,7 @@
 ![Bulọọgi Laravel pẹlu igbimọ abojuto Filament](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Bulọọgi Laravel pẹlu nronu abojuto Filament
 
 Eyi ni [Laravel](https://laravel.com) ohun elo ohun elo bulọọgi bulọọgi pẹlu igbimọ abojuto [Filament](https://filamentphp.com).

@@ -1,5 +1,7 @@
 ![Filament admin panel ပါသော Laravel blog](/docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Filament admin panel ဖြင့် Laravel ဘလော့ဂ်
 
 ၎င်းသည် [Laravel](https://laravel.com) [Filament](https://filamentphp.com) အက်ဒ်မင်အကန့်ဖြင့် ဘလော့ဂ်စတင်သူကိရိယာပရောဂျက်ဖြစ်သည်။

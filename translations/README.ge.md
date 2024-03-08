@@ -1,6 +1,8 @@
 ![Laravel ბლოგი Filament-ის ადმინისტრაციული პანელით](../docs/social-preview-en.png)
 
-# Laravel ბლოგი Filament ადმინისტრაციული პანელით
+# Laravel ბლო
+_Read this in [other languages](./Translations.md)_
+გი Filament ადმინისტრაციული პანელით
 
 ეს არის [Laravel](https://laravel.com) ბლოგის შემქმნელის ნაკრების პროექტი [Filament](https://filamentphp.com) ადმინისტრაციული პანელით.
 
@@ -21,11 +23,11 @@
 
 პროექტის კლონირება:
 
-``ბაშ
+```ბაშ
 git კლონი git@github.com:gomzyakov/laravel-blog.git
 ```
 
-მე მჯერა, რომ თქვენ უკვე გაქვთ Docker დაინსტალირებული. თუ არა, უბრალოდ გააკეთეთ ეს [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) ან [Linux] (https://docs.docker.com/desktop/install/linux-install/).
+მე მჯერა, რომ თქვენ უკვე გაქვთ Docker დაინსტალირებული. თუ არა, უბრალოდ გააკეთეთ ეს [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) ან [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
 შექმენით `laravel-blog` სურათი შემდეგი ბრძანებით:
 

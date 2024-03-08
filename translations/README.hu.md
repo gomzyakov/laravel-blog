@@ -1,5 +1,7 @@
 ![Laravel blog Filament adminisztrációs panellel](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # Laravel blog Filament adminisztrációs panellel
 
 Ez a [Laravel](https://laravel.com) blog kezdőcsomag projektje a [Filament](https://filamentphp.com) adminisztrációs panellel.

@@ -1,5 +1,7 @@
 ![ফিলামেন্ট অ্যাডমিন প্যানেল সহ লারাভেল ব্লগ](../docs/social-preview-en.png)
 
+_Read this in [other languages](./Translations.md)_
+
 # ফিলামেন্ট অ্যাডমিন প্যানেল সহ লারাভেল ব্লগ
 
 এটি হল [Laravel](https://laravel.com) [Filament](https://filamentphp.com) অ্যাডমিন প্যানেলের সাথে ব্লগ স্টার্টার কিট প্রকল্প।
