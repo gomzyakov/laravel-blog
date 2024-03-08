@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Filament yönetici panelli Laravel blogu
 
 Bu, [Filament](https://filamentphp.com) yönetici panelli [Laravel](https://laravel.com) blog başlangıç kiti projesidir.

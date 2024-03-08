@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Filament நிர்வாக குழுவுடன் Laravel வலைப்பதிவு
 
 இது [Laravel](https://laravel.com) [Filament](https://filamentphp.com) நிர்வாக குழுவுடன் கூடிய வலைப்பதிவு ஸ்டார்டர் கிட் திட்டம்.

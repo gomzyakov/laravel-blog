@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # ഫിലമെൻ്റ് അഡ്‌മിൻ പാനലുള്ള ലാറവെൽ ബ്ലോഗ്
 
 ഇതാണ് [Laravel](https://laravel.com) [Filament](https://filamentphp.com) അഡ്മിൻ പാനലുള്ള ബ്ലോഗ് സ്റ്റാർട്ടർ കിറ്റ് പ്രോജക്റ്റ്.

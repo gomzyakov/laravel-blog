@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # ଫିଲାମେଣ୍ଟ ଆଡମିନ୍ ପ୍ୟାନେଲ୍ ସହିତ ଲାରାଭେଲ୍ ବ୍ଲଗ୍ |
 
 ଏହା ହେଉଛି [ଲାରାଭେଲ୍] (https://laravel.com) ବ୍ଲଗ୍ ଷ୍ଟାର୍ଟର କିଟ୍ ପ୍ରୋଜେକ୍ଟ ସହିତ [ଫିଲାମାଣ୍ଟ] (https://filamentphp.com) ଆଡମିନ୍ ପ୍ୟାନେଲ୍ |

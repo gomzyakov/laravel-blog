@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel بلاګ د فیلامینټ اډمین پینل سره
 
 دا د [Laravel](https://laravel.com) د بلاګ سټارټر کټ پروژه ده چې د [Filament](https://filamentphp.com) اډمین پینل سره.

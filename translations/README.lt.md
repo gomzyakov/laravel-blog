@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel tinklaraštis su Filament administratoriaus skydeliu
 
 Tai yra [Laravel](https://laravel.com) tinklaraščio pradžios rinkinio projektas su [Filament](https://filamentphp.com) administratoriaus skydeliu.

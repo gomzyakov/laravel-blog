@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel 博客与 Filament 管理面板
 
 这是 [Laravel](https://laravel.com) 博客入门套件项目，带有 [Filament](https://filamentphp.com) 管理面板。

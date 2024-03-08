@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel blọọgụ nwere panel nchịkwa Filament
 
 Nke a bụ [Laravel](https://laravel.com) blọgụ mmalite kit oru ngo nwere [Filament](https://filamentphp.com) nchịkwa nchịkwa.

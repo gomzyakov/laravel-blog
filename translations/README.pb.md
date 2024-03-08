@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # ਫਿਲਾਮੈਂਟ ਐਡਮਿਨ ਪੈਨਲ ਦੇ ਨਾਲ # ਲਾਰਵੇਲ ਬਲੌਗ
 
 ਇਹ [Filament](https://filamentphp.com) ਐਡਮਿਨ ਪੈਨਲ ਵਾਲਾ [Laravel](https://laravel.com) ਬਲੌਗ ਸਟਾਰਟਰ ਕਿੱਟ ਪ੍ਰੋਜੈਕਟ ਹੈ।

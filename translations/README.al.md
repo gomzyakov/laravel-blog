@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Blog Laravel me panelin e administrimit të Filament
 
 Ky është projekti i kompletit fillestar të blogut [Laravel](https://laravel.com) me panelin e administrimit të [Filament](https://filamentphp.com).

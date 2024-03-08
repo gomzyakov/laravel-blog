@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Bloc Laravel amb panell d'administració de Filament
 
 Aquest és el projecte del kit d'inici del bloc [Laravel](https://laravel.com) amb el tauler d'administració de [Filament](https://filamentphp.com).

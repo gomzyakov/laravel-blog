@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # የላራቭል ብሎግ ከፋይላመንት አስተዳዳሪ ፓነል ጋር
 
 ይህ [ላራቬል](https://laravel.com) የብሎግ ጀማሪ ኪት ፕሮጀክት ከ[Filament](https://filamentphp.com) የአስተዳዳሪ ፓነል ጋር ነው።

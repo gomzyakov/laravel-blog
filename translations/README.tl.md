@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel blog na may Filament admin panel
 
 Ito ang [Laravel](https://laravel.com) blog starter kit project na may [Filament](https://filamentphp.com) admin panel.

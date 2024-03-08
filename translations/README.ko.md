@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # 필라멘트 관리 패널이 있는 Laravel 블로그
 
 이것은 [Filament](https://ilavelphp.com) 관리자 패널이 포함된 [Laravel](https://laravel.com) 블로그 스타터 키트 프로젝트입니다.

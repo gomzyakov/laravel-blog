@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Bulọọgi Laravel pẹlu nronu abojuto Filament
 
 Eyi ni [Laravel](https://laravel.com) ohun elo ohun elo bulọọgi bulọọgi pẹlu igbimọ abojuto [Filament](https://filamentphp.com).

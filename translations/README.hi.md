@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # फिलामेंट एडमिन पैनल के साथ # लारवेल ब्लॉग
 
 यह [लारवेल](https://laravel.com) ब्लॉग स्टार्टर किट प्रोजेक्ट है जिसमें [फिलामेंट](https://filamentphp.com) एडमिन पैनल है।

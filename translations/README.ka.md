@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # ಫಿಲಮೆಂಟ್ ನಿರ್ವಾಹಕ ಫಲಕದೊಂದಿಗೆ ಲಾರಾವೆಲ್ ಬ್ಲಾಗ್
 
 ಇದು [Laravel](https://laravel.com) [Filament](https://filamentphp.com) ನಿರ್ವಾಹಕ ಫಲಕದೊಂದಿಗೆ ಬ್ಲಾಗ್ ಸ್ಟಾರ್ಟರ್ ಕಿಟ್ ಯೋಜನೆಯಾಗಿದೆ.

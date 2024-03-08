@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel blog oo leh guddiga maamulka Filament
 
 Kani waa [Laravel](https://laravel.com) mashruuca xirmada bilawga ah ee blogka oo leh [Filament](https://filamentphp.com) guddiga maamulka.

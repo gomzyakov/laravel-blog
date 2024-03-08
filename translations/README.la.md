@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Laravel blog ກັບ Filament admin panel
 
 ນີ້​ແມ່ນ [Laravel](https://laravel.com) ໂຄງ​ການ​ຊຸດ​ການ​ເລີ່ມ​ຕົ້ນ​ຂອງ blog ກັບ [Filament](https://filamentphp.com) ກະ​ດານ​ບໍ​ລິ​ຫານ.

@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # Filament басқару тақтасы бар # Laravel блогы
 
 Бұл [Filament](https://filamentphp.com) басқару тақтасы бар [Laravel](https://laravel.com) блогының бастау жинағы жобасы.

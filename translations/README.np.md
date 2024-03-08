@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # फिलामेन्ट एडमिन प्यानलको साथ # Laravel ब्लग
 
 यो [Laravel](https://laravel.com) [Filament](https://filamentphp.com) एडमिन प्यानल भएको ब्लग स्टार्टर किट परियोजना हो।

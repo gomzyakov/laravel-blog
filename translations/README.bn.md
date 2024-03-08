@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # ফিলামেন্ট অ্যাডমিন প্যানেল সহ লারাভেল ব্লগ
 
 এটি হল [Laravel](https://laravel.com) [Filament](https://filamentphp.com) অ্যাডমিন প্যানেলের সাথে ব্লগ স্টার্টার কিট প্রকল্প।

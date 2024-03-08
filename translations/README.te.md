@@ -2,6 +2,8 @@
 
 _Read this in [other languages](./Translations.md)_
 
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+
 # ఫిలమెంట్ అడ్మిన్ ప్యానెల్‌తో లారావెల్ బ్లాగ్
 
 ఇది [Laravel](https://laravel.com) బ్లాగ్ స్టార్టర్ కిట్ ప్రాజెక్ట్ [Filament](https://filamentphp.com) అడ్మిన్ ప్యానెల్.
