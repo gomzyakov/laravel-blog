@@ -10,8 +10,8 @@ Cilj ovog repozitorija je prikazati dobre [Laravel](https://laravel.com) razvojn
 
 - 📚 Kreiranje i uređivanje objava
 - 🥑 Kategorije
-- :fire: Popularne objave
-- :hatched_chick: Administratorska ploča izgrađena na [Filament](https://filamentphp.com)
+- 🔥 Popularne objave
+- 🎉 Administratorska ploča izgrađena na [Filament](https://filamentphp.com)
 
 ## Traženje značajki
 

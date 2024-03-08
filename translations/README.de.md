@@ -10,8 +10,8 @@ Das Ziel dieses Repositorys ist es, gute [Laravel](https://laravel.com) Entwickl
 
 - 📚 Beiträge erstellen und bearbeiten
 - 🥑 Kategorien
-- :fire: Beliebte Beiträge
-- :hatched_chick: Admin-Panel basierend auf [Filament](https://filamentphp.com)
+- 🔥 Beliebte Beiträge
+- 🎉 Admin-Panel basierend auf [Filament](https://filamentphp.com)
 
 ## Anfordern von Funktionen
 

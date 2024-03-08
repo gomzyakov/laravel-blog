@@ -10,8 +10,8 @@ Het doel van deze repository is om goede [Laravel](https://laravel.com) ontwikke
 
 - 📚 Berichten maken en bewerken
 - 🥑 Categorieën
-- :fire: Populaire berichten
-- :hatched_chick: beheerderspaneel gebouwd op [Filament](https://filamentphp.com)
+- 🔥 Populaire berichten
+- 🎉 beheerderspaneel gebouwd op [Filament](https://filamentphp.com)
 
 ## Functies aanvragen
 

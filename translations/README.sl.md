@@ -10,8 +10,8 @@ Cilj tega skladišča je predstaviti dobre razvojne prakse [Laravel](https://lar
 
 - 📚 Ustvarjanje in urejanje objav
 - 🥑 Kategorije
-- :fire: Priljubljene objave
-- :hatched_chick: Skrbniška plošča zgrajena na [Filament](https://filamentphp.com)
+- 🔥 Priljubljene objave
+- 🎉 Skrbniška plošča zgrajena na [Filament](https://filamentphp.com)
 
 ## Zahtevanje funkcij
 

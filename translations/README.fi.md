@@ -10,8 +10,8 @@ Tämän arkiston tavoitteena on esitellä hyviä [Laravel](https://laravel.com) 
 
 - 📚 Viestien luominen ja muokkaaminen
 - 🥑 Luokat
-- :fire: Suosittuja viestejä
-- :hatched_chick: [Filamentille] rakennettu hallintapaneeli (https://filamentphp.com)
+- 🔥 Suosittuja viestejä
+- 🎉 [Filamentille] rakennettu hallintapaneeli (https://filamentphp.com)
 
 ## Ominaisuuksien pyytäminen
 

@@ -10,8 +10,8 @@ Cieľom tohto úložiska je ukázať dobré postupy vývoja [Laravel](https://la
 
 - 📚 Vytváranie a úprava príspevkov
 - 🥑 Kategórie
-- :fire: Obľúbené príspevky
-- :hatched_chick: Panel správcu vytvorený na [Filament](https://filamentphp.com)
+- 🔥 Obľúbené príspevky
+- 🎉 Panel správcu vytvorený na [Filament](https://filamentphp.com)
 
 ## Žiadosť o funkcie
 

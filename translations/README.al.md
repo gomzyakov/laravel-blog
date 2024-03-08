@@ -10,8 +10,8 @@ Qëllimi i kësaj depoje është të shfaqë praktikat e mira të zhvillimit [La
 
 - 📚 Krijimi dhe redaktimi i postimeve
 - 🥑 Kategoritë
-- :fire: Postime të njohura
-- :hatched_chick: Paneli i administratorit i ndërtuar në [Filament](https://filamentphp.com)
+- 🔥 Postime të njohura
+- 🎉 Paneli i administratorit i ndërtuar në [Filament](https://filamentphp.com)
 
 ## Duke kërkuar veçori
 

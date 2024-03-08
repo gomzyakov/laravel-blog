@@ -10,8 +10,8 @@ Manufar wannan ma'ajiyar ita ce nuna kyawawan ayyukan ci gaba [Laravel](https://
 
 - 📚 Ƙirƙiri da gyara posts
 - 🥑 Categories
-- :wuta: Shahararrun posts
--: hatched_chick: Admin panel wanda aka gina akan [Filament](https://filamentphp.com)
+- 🔥 Shahararrun posts
+- 🎉 Admin panel wanda aka gina akan [Filament](https://filamentphp.com)
 
 ## Neman fasali
 

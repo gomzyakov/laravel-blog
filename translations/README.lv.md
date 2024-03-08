@@ -10,8 +10,8 @@
 
 - 📚 Ziņu izveide un rediģēšana
 - 🥑 Kategorijas
-- :fire: Populāras ziņas
-- :hatched_chick: Administrēšanas panelis, kas izveidots uz [Filament] (https://filamentphp.com)
+- 🔥 Populāras ziņas
+- 🎉 Administrēšanas panelis, kas izveidots uz [Filament] (https://filamentphp.com)
 
 ## Funkcijas pieprasīšana
 

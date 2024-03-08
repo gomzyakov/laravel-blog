@@ -10,8 +10,8 @@
 
 - 📚 יצירה ועריכה של פוסטים
 - 🥑 קטגוריות
-- :fire: פוסטים פופולריים
-- :hatched_chick: פאנל ניהול בנוי על [Filament](https://filamentphp.com)
+- 🔥 פוסטים פופולריים
+- 🎉 פאנל ניהול בנוי על [Filament](https://filamentphp.com)
 
 ## מבקש תכונות
 

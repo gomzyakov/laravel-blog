@@ -10,8 +10,8 @@ Bu deponun məqsədi sadə tətbiqetmə ilə yaxşı [Laravel](https://laravel.c
 
 - 📚 Postların yaradılması və redaktə edilməsi
 - 🥑 Kateqoriyalar
-- :fire: Populyar yazılar
-- :hatched_chick: [Filament] üzərində qurulmuş admin paneli(https://filamentphp.com)
+- 🔥 Populyar yazılar
+- 🎉 [Filament] üzərində qurulmuş admin paneli(https://filamentphp.com)
 
 ## Xüsusiyyətlər tələb olunur
 

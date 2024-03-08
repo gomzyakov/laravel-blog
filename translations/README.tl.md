@@ -10,8 +10,8 @@ Ang layunin ng repositoryong ito ay ipakita ang magagandang [Laravel](https://la
 
 - 📚 Paggawa at pag-edit ng mga post
 - 🥑 Mga Kategorya
-- :fire: Mga sikat na post
-- :hatched_chick: Admin panel na binuo sa [Filament](https://filamentphp.com)
+- 🔥 Mga sikat na post
+- 🎉 Admin panel na binuo sa [Filament](https://filamentphp.com)
 
 ## Humihiling ng mga tampok
 

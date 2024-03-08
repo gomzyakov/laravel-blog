@@ -10,8 +10,8 @@ Målet med dette lager er at fremvise god [Laravel](https://laravel.com) udvikli
 
 - 📚 Oprettelse og redigering af indlæg
 - 🥑 Kategorier
-- :fire: Populære indlæg
-- :hatched_chick: Admin panel bygget på [Filament](https://filamentphp.com)
+- 🔥 Populære indlæg
+- 🎉 Admin panel bygget på [Filament](https://filamentphp.com)
 
 ## Anmoder om funktioner
 

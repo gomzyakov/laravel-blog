@@ -10,8 +10,8 @@ O objetivo deste repositório é mostrar boas práticas de desenvolvimento do [L
 
 - 📚 Criação e edição de postagens
 - 🥑 Categorias
-- :fire: Postagens populares
-- :hatched_chick: Painel de administração construído em [Filament](https://filamentphp.com)
+- 🔥 Postagens populares
+- 🎉 Painel de administração construído em [Filament](https://filamentphp.com)
 
 ## Solicitando recursos
 

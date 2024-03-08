@@ -10,8 +10,8 @@
 
 - 📚 پوسټونه جوړول او ایډیټ کول
 - 🥑 کټګورۍ
-- :fire: مشهور پوسټونه
-- :hatched_chick: اډمین پینل په [Filament](https://filamentphp.com) کې جوړ شوی
+- 🔥 مشهور پوسټونه
+- 🎉 اډمین پینل په [Filament](https://filamentphp.com) کې جوړ شوی
 
 ## د ځانګړتیاوو غوښتنه کول
 

@@ -10,8 +10,8 @@ Mục tiêu của kho lưu trữ này là giới thiệu các phương pháp ph�
 
 - 📚 Tạo và chỉnh sửa bài viết
 - 🥑 Danh mục
-- :fire: Bài viết phổ biến
-- :hatched_chick: Bảng quản trị được xây dựng trên [Filament](https://filaphp.com)
+- 🔥 Bài viết phổ biến
+- 🎉 Bảng quản trị được xây dựng trên [Filament](https://filaphp.com)
 
 ## Yêu cầu tính năng
 

@@ -10,8 +10,8 @@ L'objectiu d'aquest repositori és mostrar bones pràctiques de desenvolupament 
 
 - 📚 Creació i edició de publicacions
 - 🥑 Categories
-- :fire: Publicacions populars
-- :hatched_chick: Tauler d'administració construït a [Filament](https://filamentphp.com)
+- 🔥 Publicacions populars
+- 🎉 Tauler d'administració construït a [Filament](https://filamentphp.com)
 
 ## Sol·licitud de funcions
 

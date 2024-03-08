@@ -10,8 +10,8 @@ Tujuan dari repositori ini adalah untuk menampilkan praktik pengembangan [Larave
 
 - 📚 Membuat dan mengedit postingan
 - 🥑 Kategori
-- :fire: Postingan populer
-- :hatched_chick: Panel admin dibangun di atas [Filamen](https://filamentphp.com)
+- 🔥 Postingan populer
+- 🎉 Panel admin dibangun di atas [Filamen](https://filamentphp.com)
 
 ## Meminta fitur
 

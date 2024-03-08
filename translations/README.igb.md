@@ -10,8 +10,8 @@ Ebumnuche nke ebe nchekwa a bụ igosi ezi omume mmepe [Laravel](https://laravel
 
 - 📚 Mepụta na dezie posts
 - 🥑 ngalaba
-- :ọkụ: Ederede ndị ama ama
--: hatched_chick: Ogwe nchịkwa wuru na [Filament](https://filamentphp.com)
+- 🔥 Ederede ndị ama ama
+- 🎉 Ogwe nchịkwa wuru na [Filament](https://filamentphp.com)
 
 ## Arịrịọ atụmatụ
 

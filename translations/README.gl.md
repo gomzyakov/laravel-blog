@@ -10,8 +10,8 @@ O obxectivo deste repositorio é mostrar boas prácticas de desenvolvemento de [
 
 - 📚 Creación e edición de publicacións
 - 🥑 Categorías
-- :fire: Publicacións populares
-- :hatched_chick: Panel de administración construído en [Filament](https://filamentphp.com)
+- 🔥 Publicacións populares
+- 🎉 Panel de administración construído en [Filament](https://filamentphp.com)
 
 ## Solicitando funcións
 

@@ -10,8 +10,8 @@ L'obiettivo di questo repository è mostrare le buone pratiche di sviluppo di [L
 
 - 📚 Creazione e modifica dei post
 - 🥑 Categorie
-- :fire: post popolari
-- :hatched_chick: pannello di amministrazione basato su [Filament](https://filamentphp.com)
+- 🔥 post popolari
+- 🎉 pannello di amministrazione basato su [Filament](https://filamentphp.com)
 
 ## Richiesta di funzionalità
 

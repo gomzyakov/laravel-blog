@@ -10,8 +10,8 @@ Målet med dette depotet er å vise frem god [Laravel](https://laravel.com) utvi
 
 - 📚 Opprette og redigere innlegg
 - 🥑 Kategorier
-- :fire: Populære innlegg
-- :hatched_chick: Administrasjonspanel bygget på [Filament](https://filamentphp.com)
+- 🔥 Populære innlegg
+- 🎉 Administrasjonspanel bygget på [Filament](https://filamentphp.com)
 
 ## Ber om funksjoner
 

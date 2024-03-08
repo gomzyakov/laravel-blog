@@ -11,7 +11,7 @@ Lengo la hazina hii ni kuonyesha mbinu nzuri za ukuzaji za [Laravel](https://lar
 - 📚 Kuunda na kuhariri machapisho
 - 🥑 Kategoria
 - :moto: Machapisho maarufu
-- :hatched_chick: Paneli ya msimamizi iliyojengwa kwa [Filament](https://filamentphp.com)
+- 🎉 Paneli ya msimamizi iliyojengwa kwa [Filament](https://filamentphp.com)
 
 ## Kuomba vipengele
 

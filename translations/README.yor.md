@@ -10,8 +10,8 @@ Ibi-afẹde ti ibi ipamọ yii ni lati ṣafihan awọn iṣe idagbasoke [Larave
 
 - 📚 Ṣiṣẹda ati ṣiṣatunṣe awọn ifiweranṣẹ
 - 🥑 Awọn ẹka
--: ina: Awọn ifiweranṣẹ olokiki
--: hatched_chick: Igbimọ abojuto ti a ṣe lori [Filament] (https://filamentphp.com)
+- 🔥 Awọn ifiweranṣẹ olokiki
+- 🎉 Igbimọ abojuto ti a ṣe lori [Filament] (https://filamentphp.com)
 
 ## Awọn ẹya ti o beere
 

@@ -10,8 +10,8 @@ Ennek az adattárnak az a célja, hogy bemutassa a jó [Laravel](https://laravel
 
 - 📚 bejegyzések létrehozása és szerkesztése
 - 🥑 kategóriák
-- :fire: Népszerű bejegyzések
-- :hatched_chick: [Filament]-re épülő adminisztrációs panel (https://filamentphp.com)
+- 🔥 Népszerű bejegyzések
+- 🎉 [Filament]-re épülő adminisztrációs panel (https://filamentphp.com)
 
 ## Funkciók kérése
 

@@ -10,8 +10,8 @@ Die doel van hierdie bewaarplek is om goeie [Laravel](https://laravel.com) ontwi
 
 - 📚 Skep en redigeer plasings
 - 🥑 Kategorieë
-- :fire: Gewilde plasings
-- :hatched_chick: Adminpaneel gebou op [Filament](https://filamentphp.com)
+- 🔥 Gewilde plasings
+- 🎉 Adminpaneel gebou op [Filament](https://filamentphp.com)
 
 ## Versoek kenmerke
 

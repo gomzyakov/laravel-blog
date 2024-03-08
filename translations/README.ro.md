@@ -10,8 +10,8 @@ Scopul acestui depozit este de a prezenta bunele practici de dezvoltare [Laravel
 
 - 📚 Crearea și editarea postărilor
 - 🥑 Categorii
-- :fire: Postări populare
-- :hatched_chick: Panoul de administrare construit pe [Filament](https://filamentphp.com)
+- 🔥 Postări populare
+- 🎉 Panoul de administrare construit pe [Filament](https://filamentphp.com)
 
 ## Se solicită funcții
 

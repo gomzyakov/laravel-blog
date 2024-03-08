@@ -10,8 +10,8 @@ Cílem tohoto úložiště je předvést dobré postupy vývoje [Laravel](https:
 
 - 📚 Vytváření a úprava příspěvků
 - 🥑 Kategorie
-- :fire: Oblíbené příspěvky
-- :hatched_chick: Admin panel postavený na [Filament](https://filamentphp.com)
+- 🔥 Oblíbené příspěvky
+- 🎉 Admin panel postavený na [Filament](https://filamentphp.com)
 
 ## Vyžadování funkcí
 

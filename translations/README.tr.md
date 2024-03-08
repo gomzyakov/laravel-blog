@@ -10,8 +10,8 @@ Bu havuzun amacı basit bir uygulamayla iyi [Laravel](https://laravel.com) geli�
 
 - 📚 Gönderi oluşturma ve düzenleme
 - 🥑 Kategoriler
-- :fire: Popüler gönderiler
-- :hatched_chick: [Filament](https://filamentphp.com) üzerine kurulu yönetici paneli
+- 🔥 Popüler gönderiler
+- 🎉 [Filament](https://filamentphp.com) üzerine kurulu yönetici paneli
 
 ## Özellikler talep ediliyor
 

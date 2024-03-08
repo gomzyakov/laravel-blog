@@ -10,8 +10,8 @@ Målet med det här arkivet är att visa upp bra [Laravel](https://laravel.com) 
 
 - 📚 Skapa och redigera inlägg
 - 🥑 Kategorier
-- :fire: Populära inlägg
-- :hatched_chick: Adminpanel byggd på [Filament](https://filamentphp.com)
+- 🔥 Populära inlägg
+- 🎉 Adminpanel byggd på [Filament](https://filamentphp.com)
 
 ## Begär funktioner
 

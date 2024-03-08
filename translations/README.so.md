@@ -11,7 +11,7 @@ Hadafka kaydkan waa in lagu soo bandhigo dhaqamada horumarineed ee wanaagsan [La
 - 📚 Abuuritaanka iyo tafatirka qoraallada
 - 🥑 Qaybaha
 -: dab: Qoraallada caanka ah
--:hatched_chick: Maamulka maamulka oo lagu dhisay [Filament](https://filamentphp.com)
+-🎉 Maamulka maamulka oo lagu dhisay [Filament](https://filamentphp.com)
 
 ## Codsiga sifooyinka
 

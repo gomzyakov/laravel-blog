@@ -10,8 +10,8 @@ Celem tego repozytorium jest pokazanie dobrych praktyk programistycznych [Larave
 
 - 📚 Tworzenie i edytowanie postów
 - 🥑 Kategorie
-- :fire: Popularne posty
-- :hatched_chick: Panel administracyjny zbudowany na [Filamencie](https://filamentphp.com)
+- 🔥 Popularne posty
+- 🎉 Panel administracyjny zbudowany na [Filamencie](https://filamentphp.com)
 
 ## Żądanie funkcji
 

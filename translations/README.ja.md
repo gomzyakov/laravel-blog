@@ -10,8 +10,8 @@
 
 - 📚 投稿の作成と編集
 - 🥑 カテゴリ
-- :fire: 人気の投稿
-- :hatched_chick: [Filament](https://filamentphp.com) 上に構築された管理パネル
+- 🔥 人気の投稿
+- 🎉 [Filament](https://filamentphp.com) 上に構築された管理パネル
 
 ## 機能のリクエスト
 

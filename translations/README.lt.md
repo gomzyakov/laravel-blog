@@ -10,8 +10,8 @@ Tai yra [Laravel](https://laravel.com) tinklaraščio pradžios rinkinio projekt
 
 - 📚 Įrašų kūrimas ir redagavimas
 - 🥑 Kategorijos
-- :fire: Populiarūs įrašai
-- :hatched_chick: administratoriaus skydelis sukurtas naudojant [Filament] (https://filamentphp.com)
+- 🔥 Populiarūs įrašai
+- 🎉 administratoriaus skydelis sukurtas naudojant [Filament] (https://filamentphp.com)
 
 ## Funkcijų užklausa
 

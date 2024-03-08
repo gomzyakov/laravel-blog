@@ -10,8 +10,8 @@
 
 - 📚 게시물 작성 및 편집
 - 🥑 카테고리
-- :fire: 인기 게시물
-- :hatched_chick: [Filament](https://pillamentphp.com)를 기반으로 구축된 관리자 패널
+- 🔥 인기 게시물
+- 🎉 [Filament](https://pillamentphp.com)를 기반으로 구축된 관리자 패널
 
 ## 기능 요청 중
 
