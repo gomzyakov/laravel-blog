@@ -23,7 +23,7 @@ _Read this in [other languages](./Translations.md)_
 
 Клонирайте проекта:
 
-``` баш
+```bash
 git клонинг git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -31,7 +31,7 @@ git клонинг git@github.com:gomzyakov/laravel-blog.git
 
 Създайте изображението `laravel-blog` със следната команда:
 
-``` баш
+```bash
 docker compose build --no-cache
 ```
 
@@ -39,13 +39,13 @@ docker compose build --no-cache
 
 Когато изграждането приключи, можете да стартирате средата във фонов режим с:
 
-``` баш
+```bash
 докер съставяне -d
 ```
 
 Сега ще изпълним `composer install`, за да инсталираме зависимостите на приложението:
 
-``` баш
+```bash
 docker compose exec app composer install
 ```
 

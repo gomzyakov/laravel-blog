@@ -19,7 +19,7 @@ sudo apt update
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 sudo apt install php8.1-common php8.1-cli php8.1-mysql php8.1-xml php8.1-curl php8.1-bcmath php8.1-mbstring -y
- ```
+```
 
 Manually [install](https://getcomposer.org/download/) Composer:
 
@@ -99,11 +99,11 @@ After that, in the GitHub repository, in the `Settings > Secrets > Actions` sect
 
 Go to path `/var/www/web/sites` and clone current repository (or your own fork). For example, use `laravel-blog.app` folder name:
 
- ```bash
- cd /var/www/web/sites
- git clone git@github.com:gomzyakov/laravel-blog.git laravel-blog.app
- cd secretic
- ```
+```bash
+cd /var/www/web/sites
+git clone git@github.com:gomzyakov/laravel-blog.git laravel-blog.app
+cd secretic
+```
 
 Where `laravel-blog.app` is the domain that you previously purchased and under which your website will be visible.
 

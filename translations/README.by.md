@@ -23,7 +23,7 @@ _Read this in [other languages](./Translations.md)_
 
 Кланаваць праект:
 
-```баш
+```bash
 git клон git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -31,7 +31,7 @@ git клон git@github.com:gomzyakov/laravel-blog.git
 
 Стварыце вобраз `laravel-blog` з дапамогай наступнай каманды:
 
-```баш
+```bash
 docker compose build --no-cache
 ```
 
@@ -39,37 +39,37 @@ docker compose build --no-cache
 
 Калі зборка скончана, вы можаце запусціць асяроддзе ў фонавым рэжыме з:
 
-```баш
+```bash
 докер скласці -d
 ```
 
 Цяпер мы запусцім `composer install`, каб усталяваць залежнасці прыкладання:
 
-```баш
+```bash
 docker compose exec app composer install
 ```
 
 Скапіруйце налады асяроддзя:
 
-```баш
+```bash
 docker compose exec app cp .env.local .env
 ```
 
 Усталюйце ключ шыфравання з дапамогай інструмента каманднага радка `artisan` Laravel:
 
-```баш
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 Перанос фальшывых даных БД і пачатка:
 
-```баш
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 І дадайце карыстальніка адміністратара Filament:
 
-```баш
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -79,7 +79,7 @@ docker compose exec app ./artisan make:filament-user
 
 Доступ да кантэйнера Docker:
 
-```баш
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

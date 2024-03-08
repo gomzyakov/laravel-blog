@@ -23,7 +23,7 @@ _Read this in [other languages](./Translations.md)_
 
 ፕሮጀክቱን መዝጋት;
 
-`` ባሽ
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -31,7 +31,7 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 
 በሚከተለው ትዕዛዝ የ«ላራቬል-ብሎግ» ምስልን ይገንቡ፡
 
-`` ባሽ
+```bash
 docker compose build --ምንም-መሸጎጫ
 ```
 
@@ -39,13 +39,13 @@ docker compose build --ምንም-መሸጎጫ
 
 ግንባታው ሲጠናቀቅ አካባቢውን በበስተጀርባ ሁነታ ማስኬድ ይችላሉ፡-
 
-`` ባሽ
+```bash
 docker compose up -d
 ```
 
 የመተግበሪያውን ጥገኞች ለመጫን አሁን `አቀናባሪ ጫን`ን እናስሄዳለን፡-
 
-`` ባሽ
+```bash
 docker compose exec መተግበሪያ አቀናባሪ ጫን
 ```
 
