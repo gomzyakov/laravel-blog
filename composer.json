@@ -1,11 +1,12 @@
 {
     "name": "laravel/laravel",
+    "version": "dev-main",
     "type": "project",
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^8.1",
+        "php": "^8.3",
         "ext-intl": "*",
         "filament/filament": "^3.0",
         "guzzlehttp/guzzle": "^7.8",
@@ -27,7 +28,7 @@
         "nunomaduro/collision": "^7.10",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^10.5",
-        "rector/rector": "1.0.1",
+        "rector/rector": "1.0.2",
         "spatie/laravel-ignition": "^2.4"
     },
     "autoload": {
