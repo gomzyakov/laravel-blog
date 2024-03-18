@@ -10,7 +10,7 @@
         "ext-intl": "*",
         "filament/filament": "^3.0",
         "guzzlehttp/guzzle": "^7.8",
-        "laravel/framework": "^10.43",
+        "laravel/framework": "^10.48",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.4",
