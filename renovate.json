@@ -1,10 +1,12 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "config:base",
+        "config:recommended",
         ":disableDependencyDashboard"
     ],
+    "timezone": "Asia/Yekaterinburg",
     "schedule": [
-        "every weekend"
-    ]
+        "before 7am on Friday"
+    ],
+    "labels": ["dependencies"]
 }
