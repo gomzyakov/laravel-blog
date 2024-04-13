@@ -31,7 +31,7 @@ class CommentCreate extends Component
         return view('livewire.comment-create');
     }
 
-    public function createComment()
+    public function createComment(): \Illuminate\Http\Response|null
     {
         /**
          * @var User $user
@@ -60,5 +60,7 @@ class CommentCreate extends Component
 
             $this->comment = '';
         }
+
+        return null;
     }
 }

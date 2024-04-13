@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Comment;
 use App\Models\User;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Livewire\Component;
 
 class CommentItem extends Component
@@ -30,13 +31,13 @@ class CommentItem extends Component
         return view('livewire.comment-item');
     }
 
-    public function deleteComment()
+    public function deleteComment(): \Illuminate\Http\Response|null
     {
         /**
          * @var User $user
          */
         $user = auth()->user();
-        if (! $user instanceof \Illuminate\Contracts\Auth\Authenticatable) {
+        if (! $user instanceof Authenticatable) {
             return $this->redirect('/login');
         }
 
@@ -45,6 +46,8 @@ class CommentItem extends Component
         }
 
         $this->comment->delete();
+
+        return null;
     }
 
     public function startCommentEdit()
