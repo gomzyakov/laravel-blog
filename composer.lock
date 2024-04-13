@@ -1168,7 +1168,7 @@
         },
         {
             "name": "filament/actions",
-            "version": "v3.2.65",
+            "version": "v3.2.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/actions.git",
@@ -1221,16 +1221,16 @@
         },
         {
             "name": "filament/filament",
-            "version": "v3.2.65",
+            "version": "v3.2.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/panels.git",
-                "reference": "669ce35aef3a577af7f5d27b8acc7e4622c45f33"
+                "reference": "69c4c60fbc9c22708dde1aee017c4cc2ff99e0a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/panels/zipball/669ce35aef3a577af7f5d27b8acc7e4622c45f33",
-                "reference": "669ce35aef3a577af7f5d27b8acc7e4622c45f33",
+                "url": "https://api.github.com/repos/filamentphp/panels/zipball/69c4c60fbc9c22708dde1aee017c4cc2ff99e0a1",
+                "reference": "69c4c60fbc9c22708dde1aee017c4cc2ff99e0a1",
                 "shasum": ""
             },
             "require": {
@@ -1282,11 +1282,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-04-11T21:38:39+00:00"
+            "time": "2024-04-12T14:57:11+00:00"
         },
         {
             "name": "filament/forms",
-            "version": "v3.2.65",
+            "version": "v3.2.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
@@ -1342,7 +1342,7 @@
         },
         {
             "name": "filament/infolists",
-            "version": "v3.2.65",
+            "version": "v3.2.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/infolists.git",
@@ -1393,7 +1393,7 @@
         },
         {
             "name": "filament/notifications",
-            "version": "v3.2.65",
+            "version": "v3.2.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
@@ -1445,7 +1445,7 @@
         },
         {
             "name": "filament/support",
-            "version": "v3.2.65",
+            "version": "v3.2.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
@@ -1503,16 +1503,16 @@
         },
         {
             "name": "filament/tables",
-            "version": "v3.2.65",
+            "version": "v3.2.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
-                "reference": "1cdf9ee9ba35cad6e8e41725896e26e397549440"
+                "reference": "0f3d2b3525a7ffd6cf71f26fcc02d33c4d6c7793"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/tables/zipball/1cdf9ee9ba35cad6e8e41725896e26e397549440",
-                "reference": "1cdf9ee9ba35cad6e8e41725896e26e397549440",
+                "url": "https://api.github.com/repos/filamentphp/tables/zipball/0f3d2b3525a7ffd6cf71f26fcc02d33c4d6c7793",
+                "reference": "0f3d2b3525a7ffd6cf71f26fcc02d33c4d6c7793",
                 "shasum": ""
             },
             "require": {
@@ -1552,11 +1552,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-04-11T07:41:14+00:00"
+            "time": "2024-04-12T14:57:32+00:00"
         },
         {
             "name": "filament/widgets",
-            "version": "v3.2.65",
+            "version": "v3.2.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/widgets.git",
@@ -3461,16 +3461,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "c915e2634718dbc8a4a15c61b0e62e7a44e14448"
+                "reference": "4b18b21a5527a3d5ffdac2fd35d3ab25a9597654"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c915e2634718dbc8a4a15c61b0e62e7a44e14448",
-                "reference": "c915e2634718dbc8a4a15c61b0e62e7a44e14448",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4b18b21a5527a3d5ffdac2fd35d3ab25a9597654",
+                "reference": "4b18b21a5527a3d5ffdac2fd35d3ab25a9597654",
                 "shasum": ""
             },
             "require": {
@@ -3493,7 +3493,7 @@
                 "phpstan/phpstan": "^1.9",
                 "phpstan/phpstan-deprecation-rules": "^1.0",
                 "phpstan/phpstan-strict-rules": "^1.4",
-                "phpunit/phpunit": "^10.1",
+                "phpunit/phpunit": "^10.5.17",
                 "predis/predis": "^1.1 || ^2",
                 "ruflin/elastica": "^7",
                 "symfony/mailer": "^5.4 || ^6",
@@ -3546,7 +3546,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/3.5.0"
+                "source": "https://github.com/Seldaek/monolog/tree/3.6.0"
             },
             "funding": [
                 {
@@ -3558,7 +3558,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-27T15:32:31+00:00"
+            "time": "2024-04-12T21:02:21+00:00"
         },
         {
             "name": "nesbot/carbon",
