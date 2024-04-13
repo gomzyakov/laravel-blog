@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9fc7d66711b5d98c1eb109479cb24c0e",
+    "content-hash": "8378b0c9d8a812d0618095746a36b925",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -8582,27 +8582,27 @@
         },
         {
             "name": "gomzyakov/php-cs-fixer-config",
-            "version": "v1.47.0",
+            "version": "v1.48.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gomzyakov/php-cs-fixer-config.git",
-                "reference": "bcdbc89eb0baacd620f33ef99d586dd4dd95cde8"
+                "reference": "041a9e4336ec7e8ba8026260e3da5d6e460e7323"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gomzyakov/php-cs-fixer-config/zipball/bcdbc89eb0baacd620f33ef99d586dd4dd95cde8",
-                "reference": "bcdbc89eb0baacd620f33ef99d586dd4dd95cde8",
+                "url": "https://api.github.com/repos/gomzyakov/php-cs-fixer-config/zipball/041a9e4336ec7e8ba8026260e3da5d6e460e7323",
+                "reference": "041a9e4336ec7e8ba8026260e3da5d6e460e7323",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "php": "^7.4 || ^8.0"
+                "php": "^8.3"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.53",
                 "mockery/mockery": "^1.6",
                 "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^10.5"
+                "phpunit/phpunit": "^11.0"
             },
             "type": "package",
             "autoload": {
@@ -8629,9 +8629,9 @@
             ],
             "support": {
                 "issues": "https://github.com/gomzyakov/php-cs-fixer-config/issues",
-                "source": "https://github.com/gomzyakov/php-cs-fixer-config/tree/v1.47.0"
+                "source": "https://github.com/gomzyakov/php-cs-fixer-config/tree/v1.48.0"
             },
-            "time": "2024-04-10T06:18:08+00:00"
+            "time": "2024-04-13T10:03:25+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
