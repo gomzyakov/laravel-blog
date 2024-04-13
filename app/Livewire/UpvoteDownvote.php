@@ -42,7 +42,7 @@ class UpvoteDownvote extends Component
         return view('livewire.upvote-downvote', ['upvotes' => $upvotes, 'downvotes' => $downvotes, 'hasUpvote' => $hasUpvote]);
     }
 
-    public function upvoteDownvote($upvote = true)
+    public function upvoteDownvote($upvote = true): null
     {
         /** @var User $user */
         $user = request()->user();
@@ -62,7 +62,7 @@ class UpvoteDownvote extends Component
                 'user_id'   => $user->id,
             ]);
 
-            return;
+            return null;
         }
 
         if ($upvote && $model->is_upvote || ! $upvote && ! $model->is_upvote) {
@@ -71,5 +71,7 @@ class UpvoteDownvote extends Component
             $model->is_upvote = $upvote;
             $model->save();
         }
+
+        return null;
     }
 }

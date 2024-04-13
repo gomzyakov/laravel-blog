@@ -28,7 +28,7 @@
         "nunomaduro/collision": "^7.10",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^10.5",
-        "rector/rector": "1.0.3",
+        "rector/rector": "1.0.4",
         "spatie/laravel-ignition": "^2.5"
     },
     "autoload": {
