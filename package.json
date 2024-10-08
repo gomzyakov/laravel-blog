@@ -6,7 +6,7 @@
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.7",
-        "alpinejs": "^3.13.8",
+        "alpinejs": "^3.14.1",
         "autoprefixer": "^10.4.19",
         "axios": "^1.6.8",
         "laravel-vite-plugin": "^1.0.1",
