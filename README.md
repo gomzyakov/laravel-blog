@@ -75,7 +75,7 @@
 
 # Laravel blog with Filament admin panel
 
-This is [Laravel](https://laravel.com) blog starter kit project with [Filament](https://filamentphp.com) admin panel.
+This is a blog web-application written on Laravel and MySQL.
 
 The goal of this repository is to showcase good [Laravel](https://laravel.com) development practices with a simple application.
 
@@ -84,7 +84,18 @@ The goal of this repository is to showcase good [Laravel](https://laravel.com) d
 - 📚 Creating and editing posts
 - 🥑 Categories
 - 🔥 Popular posts
-- 🎉 Admin panel built on [Filament](https://filamentphp.com)
+- 🎉 Admin panel
+- Manage users, posts, categories and tags
+- Roles: reader and administrator
+- Personal account
+- Comments and likes
+- Post`s visual editor
+
+## Preview
+
+![Blog](docs/screen-main-page.png)
+
+![Blog](docs/screen-admin-panel.png)
 
 ## Requesting features
 
