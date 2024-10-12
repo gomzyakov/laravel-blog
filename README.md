@@ -1,4 +1,4 @@
-![Personal blog app written on Laravel and MySQL](./docs/social-preview-en.png)
+![Simple personal blog app written on Laravel and MySQL](./docs/social-preview-en.png)
 
 ### Read this in [other languages](./translations/Translations.md):
 
@@ -73,9 +73,7 @@
 &middot; [සිංහල(Sri Lanka)](translations/README.si.md)
 &middot; [հայերեն](translations/README.arm.md)
 
-# Personal blog app written on Laravel and MySQL
-
-This is a personal blog app written on Laravel and MySQL.
+# Simple personal blog app written on Laravel and MySQL
 
 The goal of this repository is to showcase good [Laravel](https://laravel.com) development practices with a simple application.
 
@@ -93,9 +91,9 @@ The goal of this repository is to showcase good [Laravel](https://laravel.com) d
 
 ## Preview
 
-![Blog](docs/screen-main-page.png)
+![Blog](docs/screenshot-main-page.png)
 
-![Blog](docs/screen-admin-panel.png)
+![Blog](docs/screenshot-admin-panel.png)
 
 ## Requesting features
 

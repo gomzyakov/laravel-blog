@@ -2,7 +2,7 @@
   /** @var \App\Models\Post $likedPost */
 @endphp
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
     <div class="col">
         <h2>Liked posts</h2>
     </div>
