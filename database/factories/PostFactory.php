@@ -20,10 +20,8 @@ class PostFactory extends Factory
      */
     public function definition(): array
     {
-        $title = fake()->realText(50);
-
         return [
-            'title'         => $title,
+            'title'         => $title = fake()->title,
             'slug'          => Str::slug($title),
             'preview_image' => 'https://loremflickr.com/640/480?random=' . mt_rand(1, 9999),
             'main_image'    => 'https://loremflickr.com/640/480?random=' . mt_rand(1, 9999),

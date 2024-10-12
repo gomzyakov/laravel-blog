@@ -1,4 +1,4 @@
-![Laravel blog with Filament admin panel](./docs/social-preview-en.png)
+![Personal blog app written on Laravel and MySQL](./docs/social-preview-en.png)
 
 ### Read this in [other languages](./translations/Translations.md):
 
@@ -73,9 +73,9 @@
 &middot; [සිංහල(Sri Lanka)](translations/README.si.md)
 &middot; [հայերեն](translations/README.arm.md)
 
-# Laravel blog with Filament admin panel
+# Personal blog app written on Laravel and MySQL
 
-This is a blog web-application written on Laravel and MySQL.
+This is a personal blog app written on Laravel and MySQL.
 
 The goal of this repository is to showcase good [Laravel](https://laravel.com) development practices with a simple application.
 
