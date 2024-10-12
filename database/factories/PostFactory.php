@@ -23,13 +23,11 @@ class PostFactory extends Factory
         $title = fake()->realText(50);
 
         return [
-            'title'        => $title,
-            'slug'         => Str::slug($title),
-            'thumbnail'    => 'https://loremflickr.com/640/480?random=' . mt_rand(1, 9999),
-            'body'         => fake()->realText(5000),
-            'active'       => fake()->boolean,
-            'published_at' => fake()->dateTime,
-            'user_id'      => 1,
+            'title'         => $title,
+            'slug'          => Str::slug($title),
+            'preview_image' => 'https://loremflickr.com/640/480?random=' . mt_rand(1, 9999),
+            'main_image'    => 'https://loremflickr.com/640/480?random=' . mt_rand(1, 9999),
+            'content'       => fake()->realText(5000),
         ];
     }
 }
