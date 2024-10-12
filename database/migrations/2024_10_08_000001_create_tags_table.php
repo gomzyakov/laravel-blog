@@ -10,12 +10,10 @@ return new class () extends Migration {
      */
     public function up(): void
     {
-        Schema::create('post_views', function (Blueprint $table) {
+        Schema::create('tags', function (Blueprint $table) {
             $table->id();
-            $table->string('ip_address', 55);
-            $table->string('user_agent', 255);
-            $table->foreignId('post_id')->references('id')->on('posts')->cascadeOnDelete();
-            $table->foreignId('user_id')->nullable()->references('id')->on('users')->cascadeOnDelete();
+            $table->string('title');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -25,6 +23,6 @@ return new class () extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('post_views');
+        Schema::dropIfExists('tags');
     }
 };
