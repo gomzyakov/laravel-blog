@@ -10,14 +10,10 @@ return new class () extends Migration {
      */
     public function up(): void
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('category_post', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('slug', 2048);
-            $table->longText('content');
-            $table->string('preview_image')->nullable();
-            $table->string('main_image')->nullable();
-            $table->softDeletes();
+            $table->foreignId('category_id')->references('id')->on('categories')->onDelete('cascade');
+            $table->foreignId('post_id')->references('id')->on('posts')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -27,6 +23,6 @@ return new class () extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('category_post');
     }
 };
