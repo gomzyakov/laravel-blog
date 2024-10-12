@@ -149,12 +149,6 @@ Migrate DB & seed fake data:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-And add Filament admin user:
-
-```bash
-docker compose exec app ./artisan make:filament-user
-```
-
 And open http://127.0.0.1:8000 in your favorite browser. Happy using Laravel Blog!
 
 ## How to get inside the container?
