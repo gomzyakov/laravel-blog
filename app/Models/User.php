@@ -80,7 +80,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'remember_token',
     ];
 
-    public function isAdministrator()
+    public function isAdministrator(): bool
     {
         return $this->role === 'administrator';
     }
