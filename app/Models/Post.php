@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
+use Barryvdh\LaravelIdeHelper\Eloquent;
 use Carbon\Carbon;
 use Database\Factories\PostFactory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -44,8 +46,25 @@ use Illuminate\Support\Str;
  * @method static Builder|Post whereTitle($value)
  * @method static Builder|Post whereUpdatedAt($value)
  * @method static Builder|Post whereUserId($value)
+ *
+ * @property-read Collection<int, \App\Models\Comment> $comments
+ * @property-read int|null $comments_count
+ * @property-read Collection<int, \App\Models\User> $likedUsers
+ * @property-read int|null $liked_users_count
+ * @property-read Collection<int, \App\Models\Tag> $tags
+ * @property-read int|null $tags_count
+ *
+ * @method static Builder|Post onlyTrashed()
+ * @method static Builder|Post whereContent($value)
+ * @method static Builder|Post whereDeletedAt($value)
+ * @method static Builder|Post whereMainImage($value)
+ * @method static Builder|Post wherePreviewImage($value)
+ * @method static Builder|Post withTrashed()
+ * @method static Builder|Post withoutTrashed()
+ *
+ * @mixin Eloquent
  */
-class Post extends EloquentModel
+class Post extends Model
 {
     use HasFactory, SoftDeletes;
 

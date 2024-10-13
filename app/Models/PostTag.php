@@ -2,10 +2,29 @@
 
 namespace App\Models;
 
+use Barryvdh\LaravelIdeHelper\Eloquent;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class PostTag extends EloquentModel
+/**
+ * @property int                             $id
+ * @property int                             $post_id
+ * @property int                             $tag_id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|PostTag newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|PostTag newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|PostTag query()
+ * @method static \Illuminate\Database\Eloquent\Builder|PostTag whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PostTag whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PostTag wherePostId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PostTag whereTagId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PostTag whereUpdatedAt($value)
+ *
+ * @mixin Eloquent
+ */
+class PostTag extends Model
 {
     use HasFactory;
 
