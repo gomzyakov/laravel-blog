@@ -1,4 +1,4 @@
-@extends('layouts.wrapper', ['title' => 'Контакты'])
+@extends('layouts.wrapper', ['title' => 'Contacts'])
 
 @section('content')
     <div class="container-lg mt-4">
