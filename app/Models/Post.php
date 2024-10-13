@@ -75,7 +75,9 @@ class Post extends Model
     protected $withCount = ['likedUsers'];
 
     protected $casts = [
-        'published_at' => 'datetime',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+        'deleted_at' => 'datetime',
     ];
 
     public function tags(): BelongsToMany
