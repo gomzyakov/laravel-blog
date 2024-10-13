@@ -13,9 +13,11 @@
             <div class="card h-100">
                 <img src="{{ $likedPost->preview_image }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <a class="card-title" href="{{ route('post.show', $likedPost->id) }}">
-                        {{ $likedPost->title }}
-                    </a>
+                    <h5 class="card-title">
+                        <a class="card-link text-black link-underline link-underline-opacity-0" href="{{ route('post.show', $likedPost->id) }}">
+                            {{ $likedPost->title }}
+                        </a>
+                    </h5>
                     <p class="card-text">
                         {{ $likedPost->shortBody() }}
                     </p>

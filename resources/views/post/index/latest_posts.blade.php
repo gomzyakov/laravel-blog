@@ -2,7 +2,7 @@
     /** @var \App\Models\Post $post */
 @endphp
 
-<div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
     <div class="col">
         <h2>Latest posts</h2>
     </div>
@@ -13,9 +13,11 @@
             <div class="card h-100">
                 <img src="{{ $post->preview_image }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <a class="card-title" href="{{ route('post.show', $post->id) }}">
-                        {{ $post->title }}
-                    </a>
+                    <h5 class="card-title">
+                        <a class="card-link text-black link-underline link-underline-opacity-0" href="{{ route('post.show', $post->id) }}">
+                            {{ $post->title }}
+                        </a>
+                    </h5>
                     <p class="card-text">
                         {{ $post->shortBody() }}
                     </p>
