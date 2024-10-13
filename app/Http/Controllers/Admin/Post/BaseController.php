@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin\Post;
 use App\Service\PostService;
 
 /**
- * TODO Abolish
+ * TODO Abolish.
  *
  * @deprecated
  */
