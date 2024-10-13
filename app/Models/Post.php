@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Barryvdh\LaravelIdeHelper\Eloquent;
 use Carbon\Carbon;
 use Database\Factories\PostFactory;
 use Illuminate\Database\Eloquent\Builder;

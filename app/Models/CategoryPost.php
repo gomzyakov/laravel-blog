@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Barryvdh\LaravelIdeHelper\Eloquent;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -12,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static Builder|CategoryPost newQuery()
  * @method static Builder|CategoryPost query()
  *
- * @mixin Eloquent
+ * @mixin Model
  */
 class CategoryPost extends Model
 {
