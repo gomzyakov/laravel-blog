@@ -4,7 +4,6 @@ declare(strict_types = 1);
 
 namespace App\Models;
 
-use Barryvdh\LaravelIdeHelper\Eloquent;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder;
@@ -26,8 +25,6 @@ use Illuminate\Database\Query\Builder;
  * @method static EloquentBuilder|EloquentModel newModelQuery()
  * @method static EloquentBuilder|EloquentModel newQuery()
  * @method static EloquentBuilder|EloquentModel query()
- *
- * @mixin Eloquent
  */
 class EloquentModel extends Model
 {

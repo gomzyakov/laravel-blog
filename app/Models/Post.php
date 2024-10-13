@@ -2,65 +2,76 @@
 
 namespace App\Models;
 
-use Barryvdh\LaravelIdeHelper\Eloquent;
 use Carbon\Carbon;
+use Database\Factories\PostFactory;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
 
 /**
- * @property string                          $title
- * @property string                          $slug
- * @property string|null                     $thumbnail
- * @property string                          $body
- * @property bool                            $active
- * @property Carbon                          $published_at
- * @property int                             $id
- * @property int                             $user_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string|null                     $meta_title
- * @property string|null                     $meta_description
+ * @property int         $id
+ * @property string      $title
+ * @property string      $slug
+ * @property string      $content
+ * @property string|null $preview_image
+ * @property string|null $main_image
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $deleted_at
  * @property-read Collection<int, Category> $categories
  * @property-read int|null $categories_count
  * @property-read string $human_read_time
  * @property-read User $user
  *
- * @method static \Database\Factories\PostFactory            factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder|Post newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Post newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Post query()
- * @method static \Illuminate\Database\Eloquent\Builder|Post whereActive($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post whereBody($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post whereMetaDescription($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post whereMetaTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post wherePublishedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post whereSlug($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post whereThumbnail($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post whereTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post whereUserId($value)
- *
- * @mixin Eloquent
+ * @method static PostFactory  factory($count = null, $state = [])
+ * @method static Builder|Post newModelQuery()
+ * @method static Builder|Post newQuery()
+ * @method static Builder|Post query()
+ * @method static Builder|Post whereActive($value)
+ * @method static Builder|Post whereBody($value)
+ * @method static Builder|Post whereCreatedAt($value)
+ * @method static Builder|Post whereId($value)
+ * @method static Builder|Post whereMetaDescription($value)
+ * @method static Builder|Post whereMetaTitle($value)
+ * @method static Builder|Post wherePublishedAt($value)
+ * @method static Builder|Post whereSlug($value)
+ * @method static Builder|Post whereThumbnail($value)
+ * @method static Builder|Post whereTitle($value)
+ * @method static Builder|Post whereUpdatedAt($value)
+ * @method static Builder|Post whereUserId($value)
  */
 class Post extends EloquentModel
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
-    protected $fillable = ['title', 'slug', 'thumbnail', 'body', 'user_id', 'active', 'published_at', 'meta_title', 'meta_description'];
+    protected $table = 'posts';
+
+    protected $guarded = false;
+
+    protected $withCount = ['likedUsers'];
 
     protected $casts = [
         'published_at' => 'datetime',
     ];
 
-    public function user(): BelongsTo
+    public function tags(): BelongsToMany
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsToMany(Tag::class, 'post_tags', 'post_id', 'tag_id');
+    }
+
+    public function likedUsers(): BelongsToMany
+    {
+        return $this->belongsToMany(User::class, 'likes', 'post_id', 'user_id');
+    }
+
+    public function comments(): HasMany
+    {
+        return $this->hasMany(Comment::class, 'post_id', 'id');
     }
 
     public function categories(): BelongsToMany
@@ -68,25 +79,17 @@ class Post extends EloquentModel
         return $this->belongsToMany(Category::class);
     }
 
-    public function shortBody($words = 30): string
+    public function shortBody($words = 20): string
     {
-        return Str::words(strip_tags((string) $this->body), $words);
+        return Str::words(strip_tags((string) $this->content), $words);
     }
 
-    public function getFormattedDate()
+    public function getFormattedDate(): string
     {
         return $this->published_at->format('F jS Y');
     }
 
-    public function getThumbnail()
-    {
-        if (str_starts_with((string) $this->thumbnail, 'http')) {
-            return $this->thumbnail;
-        }
-
-        return '/storage/' . $this->thumbnail;
-    }
-
+    // todo Use on post page
     public function humanReadTime(): Attribute
     {
         return new Attribute(
