@@ -13,6 +13,6 @@ class IndexController extends Controller
         /** @phpstan-ignore-next-line  */
         $data['countLiked']    = count(auth()->user()->likedPosts);
 
-        return view('personal.main.index', compact('data'));
+        return view('personal.main.index', ['data' => $data]);
     }
 }

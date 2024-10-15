@@ -11,6 +11,6 @@ class IndexController extends Controller
         /** @phpstan-ignore-next-line  */
         $comments = auth()->user()->comments;
 
-        return view('personal.comment.index', compact('comments'));
+        return view('personal.comment.index', ['comments' => $comments]);
     }
 }

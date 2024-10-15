@@ -9,6 +9,6 @@ class ShowController extends Controller
 {
     public function __invoke(Tag $tag)
     {
-        return view('admin.tag.show', compact('tag'));
+        return view('admin.tag.show', ['tag' => $tag]);
     }
 }

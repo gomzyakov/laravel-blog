@@ -38,7 +38,7 @@ class PostService
                 $post->tags()->attach($tagIds);
             }
             DB::commit();
-        } catch (Exception $exception) {
+        } catch (Exception) {
             DB::rollBack();
             abort(500);
         }
@@ -65,7 +65,7 @@ class PostService
                 $post->tags()->sync($tagIds);
             }
             DB::commit();
-        } catch (Exception $exception) {
+        } catch (Exception) {
             DB::rollBack();
             abort(500);
         }

@@ -11,6 +11,6 @@ class IndexController extends Controller
         /** @phpstan-ignore-next-line  */
         $posts = auth()->user()->likedPosts;
 
-        return view('personal.liked.index', compact('posts'));
+        return view('personal.liked.index', ['posts' => $posts]);
     }
 }

@@ -11,6 +11,6 @@ class IndexController extends Controller
     {
         $tags = Tag::all();
 
-        return view('admin.tag.index', compact('tags'));
+        return view('admin.tag.index', ['tags' => $tags]);
     }
 }

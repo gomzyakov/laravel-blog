@@ -17,6 +17,6 @@ class IndexController extends Controller
         $data['countCategory'] = count(Category::all());
         $data['countTag']      = count(Tag::all());
 
-        return view('admin.main.index', compact('data'));
+        return view('admin.main.index', ['data' => $data]);
     }
 }

@@ -35,7 +35,7 @@ class PostController extends Controller
         // TODO Add
         $relatedPosts = collect();
 
-        return view('post.show', compact('post', 'relatedPosts', 'date', 'tags'));
+        return view('post.show', ['post' => $post, 'relatedPosts' => $relatedPosts, 'date' => $date, 'tags' => $tags]);
     }
 
     // TODO Add view

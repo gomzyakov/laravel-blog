@@ -9,6 +9,6 @@ class EditController extends Controller
 {
     public function __invoke(User $user)
     {
-        return view('admin.user.edit', compact('user'));
+        return view('admin.user.edit', ['user' => $user]);
     }
 }

@@ -11,6 +11,6 @@ class IndexController extends Controller
     {
         $categories = Category::all();
 
-        return view('category.index', compact('categories'));
+        return view('category.index', ['categories' => $categories]);
     }
 }

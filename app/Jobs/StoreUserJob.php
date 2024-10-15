@@ -15,16 +15,11 @@ class StoreUserJob implements ShouldQueue
 {
     use Queueable;
 
-    private $data;
-
     /**
      * Create a new job instance.
-     *
-     * @param mixed $data
      */
-    public function __construct($data)
+    public function __construct(private mixed $data)
     {
-        $this->data = $data;
     }
 
     /**
