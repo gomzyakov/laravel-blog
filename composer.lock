@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4cebce8c3c8b3500bfe08e7fcf3120f",
+    "content-hash": "ebd993079074e0885f3f91206ab9e6f9",
     "packages": [
         {
             "name": "brick/math",
@@ -6396,16 +6396,16 @@
         },
         {
             "name": "gomzyakov/php-cs-fixer-config",
-            "version": "v1.74.0",
+            "version": "v1.75.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gomzyakov/php-cs-fixer-config.git",
-                "reference": "343aec59f3d59e30cb0bbd5e4ca1e18627cd2d9d"
+                "reference": "4b72c2d86c27409d0652286842eba04d56bae8e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gomzyakov/php-cs-fixer-config/zipball/343aec59f3d59e30cb0bbd5e4ca1e18627cd2d9d",
-                "reference": "343aec59f3d59e30cb0bbd5e4ca1e18627cd2d9d",
+                "url": "https://api.github.com/repos/gomzyakov/php-cs-fixer-config/zipball/4b72c2d86c27409d0652286842eba04d56bae8e9",
+                "reference": "4b72c2d86c27409d0652286842eba04d56bae8e9",
                 "shasum": ""
             },
             "require": {
@@ -6443,9 +6443,9 @@
             ],
             "support": {
                 "issues": "https://github.com/gomzyakov/php-cs-fixer-config/issues",
-                "source": "https://github.com/gomzyakov/php-cs-fixer-config/tree/v1.74.0"
+                "source": "https://github.com/gomzyakov/php-cs-fixer-config/tree/v1.75.0"
             },
-            "time": "2024-09-28T11:50:12+00:00"
+            "time": "2024-10-15T06:06:51+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
