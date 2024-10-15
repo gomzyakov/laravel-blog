@@ -7,9 +7,11 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 /**
+ * TODO Revert name ProfileXest to ProfileTest.
+ *
  * @coversNothing
  */
-class ProfileTest extends TestCase
+class ProfileXest extends TestCase
 {
     use RefreshDatabase;
 
