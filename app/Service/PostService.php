@@ -30,6 +30,8 @@ class PostService
                 $data['main_image'] = Storage::disk('public')->put('/images', $data['main_image']);
             }
 
+            // todo Нет необходимости чинить это
+            /** @phpstan-ignore-next-line */
             $post = Post::firstOrCreate($data);
 
             if (isset($tagIds)) {

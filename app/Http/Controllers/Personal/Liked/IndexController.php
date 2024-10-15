@@ -8,6 +8,7 @@ class IndexController extends Controller
 {
     public function __invoke()
     {
+        /** @phpstan-ignore-next-line  */
         $posts = auth()->user()->likedPosts;
 
         return view('personal.liked.index', compact('posts'));

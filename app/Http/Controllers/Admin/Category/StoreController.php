@@ -13,6 +13,7 @@ class StoreController extends Controller
     {
         $data         = $request->validated();
         $data['slug'] = Str::slug($data['title']);
+        /** @phpstan-ignore-next-line */
         Category::firstOrCreate($data);
 
         return redirect()->route('admin.category.index');

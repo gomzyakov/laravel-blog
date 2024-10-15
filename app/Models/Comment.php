@@ -27,8 +27,6 @@ use Illuminate\Support\Carbon;
  * @method static Builder|Comment wherePostId($value)
  * @method static Builder|Comment whereUpdatedAt($value)
  * @method static Builder|Comment whereUserId($value)
- *
- * @mixin Eloquent
  */
 class Comment extends Model
 {

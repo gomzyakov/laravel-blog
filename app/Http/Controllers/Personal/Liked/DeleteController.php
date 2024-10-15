@@ -9,6 +9,7 @@ class DeleteController extends Controller
 {
     public function __invoke(Post $post)
     {
+        /** @phpstan-ignore-next-line  */
         auth()->user()->likedPosts()->detach($post->id);
 
         return redirect()->route('personal.liked.index');

@@ -20,8 +20,6 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|PostUserLike wherePostId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PostUserLike whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PostUserLike whereUserId($value)
- *
- * @mixin Eloquent
  */
 class PostUserLike extends Model
 {

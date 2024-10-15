@@ -10,8 +10,6 @@ use Illuminate\Database\Eloquent\Model;
  * @method static Builder|CategoryPost newModelQuery()
  * @method static Builder|CategoryPost newQuery()
  * @method static Builder|CategoryPost query()
- *
- * @mixin Model
  */
 class CategoryPost extends Model
 {

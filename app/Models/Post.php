@@ -28,6 +28,12 @@ use Illuminate\Support\Str;
  * @property-read int|null $categories_count
  * @property-read string $human_read_time
  * @property-read User $user
+ * @property-read Collection<int, Comment> $comments
+ * @property-read int|null $comments_count
+ * @property-read Collection<int, \App\Models\User> $likedUsers
+ * @property-read int|null $liked_users_count
+ * @property-read Collection<int, \App\Models\Tag> $tags
+ * @property-read int|null $tags_count
  *
  * @method static PostFactory  factory($count = null, $state = [])
  * @method static Builder|Post newModelQuery()
@@ -45,14 +51,6 @@ use Illuminate\Support\Str;
  * @method static Builder|Post whereTitle($value)
  * @method static Builder|Post whereUpdatedAt($value)
  * @method static Builder|Post whereUserId($value)
- *
- * @property-read Collection<int, \App\Models\Comment> $comments
- * @property-read int|null $comments_count
- * @property-read Collection<int, \App\Models\User> $likedUsers
- * @property-read int|null $liked_users_count
- * @property-read Collection<int, \App\Models\Tag> $tags
- * @property-read int|null $tags_count
- *
  * @method static Builder|Post onlyTrashed()
  * @method static Builder|Post whereContent($value)
  * @method static Builder|Post whereDeletedAt($value)
@@ -60,8 +58,6 @@ use Illuminate\Support\Str;
  * @method static Builder|Post wherePreviewImage($value)
  * @method static Builder|Post withTrashed()
  * @method static Builder|Post withoutTrashed()
- *
- * @mixin Eloquent
  */
 class Post extends Model
 {
@@ -106,7 +102,7 @@ class Post extends Model
 
     public function getFormattedDate(): string
     {
-        return $this->published_at->format('F jS Y');
+        return $this->created_at->format('F jS Y');
     }
 
     // todo Use on post page

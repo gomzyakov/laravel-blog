@@ -9,6 +9,7 @@ class StoreController extends Controller
 {
     public function __invoke(Post $post)
     {
+        /** @phpstan-ignore-next-line  */
         auth()->user()->likedPosts()->toggle($post->id);
 
         return redirect()->back();

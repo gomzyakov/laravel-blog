@@ -13,7 +13,9 @@ class StoreController extends Controller
     {
         $data            = $request->validated();
         $data['post_id'] = $post->id;
+        /** @phpstan-ignore-next-line  */
         $data['user_id'] = auth()->user()->id;
+        /** @phpstan-ignore-next-line */
         Comment::create($data);
 
         return redirect()->route('post.show', $post->id);

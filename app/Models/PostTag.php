@@ -20,8 +20,6 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|PostTag wherePostId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PostTag whereTagId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PostTag whereUpdatedAt($value)
- *
- * @mixin Eloquent
  */
 class PostTag extends Model
 {

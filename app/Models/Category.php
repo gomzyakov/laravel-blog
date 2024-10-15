@@ -32,8 +32,6 @@ use Illuminate\Support\Carbon;
  * @method static Builder|Category whereUpdatedAt($value)
  * @method static Builder|Category withTrashed()
  * @method static Builder|Category withoutTrashed()
- *
- * @mixin Eloquent
  */
 class Category extends Model
 {
