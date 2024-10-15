@@ -1,3 +1,6 @@
+>[!IMPORTANT]
+>This project is under development. Not all functionality is finished and much can still be improved. If you want to help with the development of the project, you can select an [issue](https://github.com/gomzyakov/laravel-blog/issues), do it and open a PR.
+
 ![Simple personal blog app written on Laravel and MySQL](./docs/social-preview-en.png)
 
 ### Read this in [other languages](./translations/Translations.md):
@@ -97,7 +100,7 @@ The goal of this repository is to showcase good [Laravel](https://laravel.com) d
 
 ## Requesting features
 
-Open a [new issue](https://github.com/gomzyakov/laravel-blog/issues/new) to request a feature (or if you find a bug).
+Open a new [issue](https://github.com/gomzyakov/laravel-blog/issues) to request a feature (or if you find a bug).
 
 ## How to run blog locally? 
 
