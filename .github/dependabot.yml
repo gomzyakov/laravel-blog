@@ -38,14 +38,3 @@ updates:
       timezone: "Asia/Yekaterinburg"
     labels:
       - "dependencies"
-
-  # Maintain dependencies for npm
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "07:00"
-      timezone: "Asia/Yekaterinburg"
-    labels:
-      - "dependencies"
