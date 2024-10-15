@@ -1,19 +1,10 @@
-<x-app-layout :meta-title="'Laravel Blog - ' . $category->title"
-              :meta-description="'Posts filtered by category ' . $category->title">
-    <div class="container mx-auto flex flex-wrap py-6">
+@extends('layouts.wrapper', ['title' => 'My personal blog'])
 
-        <!-- Posts Section -->
-        <section class="w-full md:w-2/3  px-3">
-            <div class=" flex flex-col items-center">
-                @foreach($posts as $post)
-                    <x-post-item :post="$post"/>
-                @endforeach
-            </div>
-            {{ $posts->links() }}
-        </section>
+@section('content')
+    <div class="container-lg">
 
-        <!-- Sidebar Section -->
-        <x-sidebar />
+        @include('post.index.latest_posts')
+        @include('post.index.liked_posts')
 
     </div>
-</x-app-layout>
+@endsection

@@ -1,5 +1,3 @@
-version: "3.7"
-
 services:
     app:
         build:
@@ -18,7 +16,7 @@ services:
             - app-network
 
     db:
-        image: mysql:8.1
+        image: mysql:9.0
         container_name: laravel-blog-db
         restart: unless-stopped
         environment:
@@ -28,6 +26,8 @@ services:
             MYSQL_USER: ${DB_USERNAME}
             SERVICE_TAGS: dev
             SERVICE_NAME: mysql
+        ports:
+            - "3306:3306"
         volumes:
             - ./docker-compose/mysql:/docker-entrypoint-initdb.d
         networks:

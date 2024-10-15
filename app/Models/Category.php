@@ -2,49 +2,47 @@
 
 namespace App\Models;
 
-use Barryvdh\LaravelIdeHelper\Eloquent;
-use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Carbon;
 
 /**
- * @property int                             $id
- * @property string                          $title
- * @property string                          $slug
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Post> $posts
+ * @property int         $id
+ * @property string      $title
+ * @property string      $slug
+ * @property Carbon|null $deleted_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read Collection<int, \App\Models\Post> $posts
  * @property-read int|null $posts_count
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Post> $publishedPosts
- * @property-read int|null $published_posts_count
  *
- * @method static \Illuminate\Database\Eloquent\Builder|Category newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Category newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Category query()
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereSlug($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereUpdatedAt($value)
- *
- * @mixin Eloquent
+ * @method static Builder|Category newModelQuery()
+ * @method static Builder|Category newQuery()
+ * @method static Builder|Category onlyTrashed()
+ * @method static Builder|Category query()
+ * @method static Builder|Category whereCreatedAt($value)
+ * @method static Builder|Category whereDeletedAt($value)
+ * @method static Builder|Category whereId($value)
+ * @method static Builder|Category whereSlug($value)
+ * @method static Builder|Category whereTitle($value)
+ * @method static Builder|Category whereUpdatedAt($value)
+ * @method static Builder|Category withTrashed()
+ * @method static Builder|Category withoutTrashed()
  */
-class Category extends EloquentModel
+class Category extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
-    protected $fillable = ['title', 'slug'];
+    protected $table = 'categories';
 
-    public function posts(): BelongsToMany
+    protected $guarded = false;
+
+    public function posts(): HasMany
     {
-        return $this->belongsToMany(Post::class);
-    }
-
-    public function publishedPosts(): BelongsToMany
-    {
-        return $this->belongsToMany(Post::class, function ($query) {
-            $query->where('active', '=', 1)
-                ->whereDate('published_at', '<', Carbon::now());
-        });
+        return $this->hasMany(Post::class);
     }
 }

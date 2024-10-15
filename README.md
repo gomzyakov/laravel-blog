@@ -1,4 +1,7 @@
-![Laravel blog with Filament admin panel](./docs/social-preview-en.png)
+>[!IMPORTANT]
+>This project is under development. Not all functionality is finished and much can still be improved. If you want to help with the development of the project, you can select an [issue](https://github.com/gomzyakov/laravel-blog/issues), do it and open a PR.
+
+![Simple personal blog app written on Laravel and MySQL](./docs/social-preview-en.png)
 
 ### Read this in [other languages](./translations/Translations.md):
 
@@ -73,9 +76,7 @@
 &middot; [සිංහල(Sri Lanka)](translations/README.si.md)
 &middot; [հայերեն](translations/README.arm.md)
 
-# Laravel blog with Filament admin panel
-
-This is [Laravel](https://laravel.com) blog starter kit project with [Filament](https://filamentphp.com) admin panel.
+# Simple personal blog app written on Laravel and MySQL
 
 The goal of this repository is to showcase good [Laravel](https://laravel.com) development practices with a simple application.
 
@@ -84,11 +85,22 @@ The goal of this repository is to showcase good [Laravel](https://laravel.com) d
 - 📚 Creating and editing posts
 - 🥑 Categories
 - 🔥 Popular posts
-- 🎉 Admin panel built on [Filament](https://filamentphp.com)
+- 🎉 Admin panel
+- Manage users, posts, categories and tags
+- Roles: reader and administrator
+- Personal account
+- Comments and likes
+- Post`s visual editor
+
+## Preview
+
+![Blog](docs/screenshot-main-page.png)
+
+![Blog](docs/screenshot-admin-panel.png)
 
 ## Requesting features
 
-Open a [new issue](https://github.com/gomzyakov/laravel-blog/issues/new) to request a feature (or if you find a bug).
+Open a new [issue](https://github.com/gomzyakov/laravel-blog/issues) to request a feature (or if you find a bug).
 
 ## How to run blog locally? 
 
@@ -136,12 +148,6 @@ Migrate DB & seed fake data:
 
 ```bash
 docker compose exec app ./artisan migrate:fresh --seed
-```
-
-And add Filament admin user:
-
-```bash
-docker compose exec app ./artisan make:filament-user
 ```
 
 And open http://127.0.0.1:8000 in your favorite browser. Happy using Laravel Blog!
