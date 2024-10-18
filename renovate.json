@@ -8,6 +8,5 @@
     "schedule": [
         "before 7am on Friday"
     ],
-    "labels": ["dependencies"],
-    "rangeStrategy": "bump"
+    "labels": ["dependencies"]
 }
