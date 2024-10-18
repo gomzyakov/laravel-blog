@@ -7,7 +7,7 @@
     "require": {
         "php": "^8.3",
         "ext-intl": "*",
-        "laravel/framework": "^11.9",
+        "laravel/framework": "^11.28.1",
         "laravel/tinker": "^2.10.0",
         "laravel/ui": "^4.5",
         "spatie/laravel-permission": "^6.4"
