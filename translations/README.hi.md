@@ -1,4 +1,8 @@
-﻿![फिलामेंट एडमिन पैनल के साथ लारवेल ब्लॉग](../docs/social-preview-en.png)
+﻿>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[अंग्रेज़ी](/README.md) README फ़ाइल से मिलान करने के लिए इस फ़ाइल को अद्यतन करने की आवश्यकता है।
+
+![फिलामेंट एडमिन पैनल के साथ लारवेल ब्लॉग](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
 
@@ -25,54 +29,54 @@ _Read this in [other languages](./Translations.md)_
 
 प्रोजेक्ट को क्लोन करें:
 
-```बैश
-गिट क्लोन git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 मेरा मानना है कि आपके पास पहले से ही डॉकर स्थापित है। यदि नहीं, तो बस इसे [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) पर करें -इंस्टॉल/) या [लिनक्स](https://docs.docker.com/desktop/install/linux-install/)।
 
-निम्नलिखित कमांड के साथ `लारवेल-ब्लॉग` छवि बनाएं:
+निम्नलिखित कमांड के साथ `laravel-blog` छवि बनाएं:
 
-```बैश
-डॉकर कंपोज़ बिल्ड--नो-कैश
+```bash
+docker compose build --no-cache
 ```
 
 >इस आदेश को पूरा होने में कुछ मिनट लग सकते हैं।
 
 जब निर्माण पूरा हो जाता है, तो आप पर्यावरण को पृष्ठभूमि मोड में चला सकते हैं:
 
-```बैश
-डॉकर कंपोज़ अप -डी
+```bash
+docker compose up -d
 ```
 
-अब हम एप्लिकेशन निर्भरता स्थापित करने के लिए `कंपोजर इंस्टॉल` चलाएंगे:
+अब हम एप्लिकेशन निर्भरता स्थापित करने के लिए `composer install` चलाएंगे:
 
-```बैश
-डॉकर कंपोज़ एक्ज़ीक्यू ऐप कंपोज़र इंस्टॉल
+```bash
+docker compose exec app composer install
 ```
 
 पर्यावरण सेटिंग कॉपी करें:
 
-```बैश
-डॉकर कंपोज़ एक्ज़ीक्यूटिव ऐप सीपी .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
-'कारीगर' लारवेल कमांड-लाइन टूल के साथ एन्क्रिप्शन कुंजी सेट करें:
+`artisan` लारवेल कमांड-लाइन टूल के साथ एन्क्रिप्शन कुंजी सेट करें:
 
-```बैश
-डॉकर कंपोज़ एक्ज़ीक्यूटिव ऐप ./कारीगर कुंजी: जनरेट --एएनएसआई
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 डीबी माइग्रेट करें और नकली डेटा सीड करें:
 
-```बैश
-डॉकर कंपोज़ एक्ज़ीक्यूटिव ऐप ./कारीगर माइग्रेट: ताज़ा --बीज
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 और फिलामेंट व्यवस्थापक उपयोगकर्ता जोड़ें:
 
-```बैश
-डॉकर कंपोज एक्जीक्यूटिव ऐप ./कारीगर मेक:फिलामेंट-यूजर
+```bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 और अपने पसंदीदा ब्राउज़र में http://127.0.0.1:8000 खोलें। लारवेल ब्लॉग का उपयोग करके खुश!
@@ -81,8 +85,8 @@ _Read this in [other languages](./Translations.md)_
 
 डॉकर कंटेनर तक पहुंच:
 
-```बैश
-डॉकर एक्ज़ीक्यूटिव -टीआई लारवेल-ब्लॉग-ऐप बैश
+```bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## लाइसेंस

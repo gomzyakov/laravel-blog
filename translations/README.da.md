@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Denne fil skal opdateres for at matche [engelsk](/README.md) README-filen.
+
 ![Laravel blog med Filament admin panel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,8 +29,8 @@ Målet med dette lager er at fremvise god [Laravel](https://laravel.com) udvikli
 
 Klon projektet:
 
-``` bash
-git klon git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Jeg tror, du allerede har Docker installeret. Hvis ikke, skal du bare gøre det på [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) eller [Linux](https://docs.docker.com/desktop/install/linux-install/).
@@ -42,13 +46,13 @@ docker compose build --no-cache
 Når bygningen er færdig, kan du køre miljøet i baggrundstilstand med:
 
 ``` bash
-docker komponere op -d
+docker compose up -d
 ```
 
-Vi kører nu 'composer install' for at installere applikationsafhængighederne:
+Vi kører nu '`composer install` for at installere applikationsafhængighederne:
 
 ``` bash
-docker compose exec app composer installation
+docker compose exec app composer install
 ```
 
 Kopier miljøindstillingerne:
@@ -57,7 +61,7 @@ Kopier miljøindstillingerne:
 docker compose exec app cp .env.local .env
 ```
 
-Indstil krypteringsnøgle med kommandolinjeværktøjet 'håndværker' Laravel:
+Indstil krypteringsnøgle med kommandolinjeværktøjet `artisan` Laravel:
 
 ``` bash
 docker compose exec app ./artisan key:generate --ansi

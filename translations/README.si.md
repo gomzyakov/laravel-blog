@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[ඉංග්‍රීසි](/README.md) README ගොනුව හා ගැළපීමට මෙම ගොනුව යාවත්කාලීන කිරීමට අවශ්‍ය වේ.
+
 ![Laravel blog with Filament admin panel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,15 +29,15 @@ _Read this in [other languages](./Translations.md)_
 
 ව්‍යාපෘතිය ක්ලෝන කරන්න:
 
-```බෑෂ්
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 ඔබ දැනටමත් Docker ස්ථාපනය කර ඇතැයි මම විශ්වාස කරමි. එසේ නොවේ නම්, එය [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) මත කරන්න -install/) හෝ [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-පහත විධානය සමඟ 'laravel-blog' රූපය ගොඩනඟන්න:
+පහත විධානය සමඟ `laravel-blog` රූපය ගොඩනඟන්න:
 
-```බෑෂ්
+```bash
 docker compose build --no-cache
 ```
 
@@ -41,37 +45,37 @@ docker compose build --no-cache
 
 ගොඩනැගීම අවසන් වූ විට, ඔබට පසුබිම් ආකාරයෙන් පරිසරය ධාවනය කළ හැක:
 
-```බෑෂ්
+```bash
 docker compose up -d
 ```
 
-යෙදුම් පරායත්තතා ස්ථාපනය කිරීමට අපි දැන් 'රචක ස්ථාපනය' ධාවනය කරන්නෙමු:
+යෙදුම් පරායත්තතා ස්ථාපනය කිරීමට අපි දැන් `composer install` ධාවනය කරන්නෙමු:
 
-```බෑෂ්
-docker compose exec යෙදුම් නිර්මාපක ස්ථාපනය
+```bash
+docker compose exec app composer install
 ```
 
 පරිසර සැකසුම් පිටපත් කරන්න:
 
-```බෑෂ්
+```bash
 docker compose exec app cp .env.local .env
 ```
 
-'ශිල්පීන්' Laravel විධාන රේඛා මෙවලම සමඟ සංකේතන යතුර සකසන්න:
+`artisan` Laravel විධාන රේඛා මෙවලම සමඟ සංකේතන යතුර සකසන්න:
 
-```බෑෂ්
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 DB සහ බීජ ව්‍යාජ දත්ත සංක්‍රමණය කරන්න:
 
-```බෑෂ්
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 සහ Filament පරිපාලක පරිශීලක එක් කරන්න:
 
-```බෑෂ්
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ docker compose exec app ./artisan make:filament-user
 
 ඩොකර් කන්ටේනරය වෙත ප්‍රවේශය:
 
-```බෑෂ්
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

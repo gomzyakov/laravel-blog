@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+Tệp này cần được cập nhật để khớp với tệp README [tiếng Anh](/README.md).
+
 ![Blog của Laravel với bảng quản trị Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -33,46 +37,46 @@ Tôi tin rằng bạn đã cài đặt Docker. Nếu không, chỉ cần thực 
 
 Xây dựng hình ảnh `laravel-blog` bằng lệnh sau:
 
-``` bash
-docker soạn bản dựng --no-cache
+```bash
+docker compose build --no-cache
 ```
 
 >Lệnh này có thể mất vài phút để hoàn thành.
 
 Khi quá trình xây dựng hoàn tất, bạn có thể chạy môi trường ở chế độ nền với:
 
-``` bash
-docker soạn thảo -d
+```bash
+docker compose up -d
 ```
 
 Bây giờ chúng ta sẽ chạy `composer install` để cài đặt các phần phụ thuộc của ứng dụng:
 
-``` bash
-docker soạn ứng dụng thực thi cài đặt trình soạn thảo
+```bash
+docker compose exec app composer install
 ```
 
 Sao chép cài đặt môi trường:
 
-``` bash
-docker soạn ứng dụng thực thi cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
 Đặt khóa mã hóa bằng công cụ dòng lệnh `artisan` Laravel:
 
-``` bash
-docker soạn ứng dụng thực thi ./artisan key:generate --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 Di chuyển DB và tạo dữ liệu giả:
 
-``` bash
-docker soạn ứng dụng thực thi ./artisan Migrate:fresh --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 Và thêm người dùng quản trị Filament:
 
-``` bash
-docker soạn ứng dụng thực thi ./artisan make: fil-user
+```bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 Và mở http://127.0.0.1:8000 trong trình duyệt yêu thích của bạn. Chúc bạn sử dụng Blog Laravel vui vẻ!
@@ -81,7 +85,7 @@ Và mở http://127.0.0.1:8000 trong trình duyệt yêu thích của bạn. Ch�
 
 Truy cập vào vùng chứa Docker:
 
-``` bash
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Kailangang ma-update ang file na ito upang tumugma sa [ingles](/README.md) README file.
+
 ![Laravel blog na may Filament admin panel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_

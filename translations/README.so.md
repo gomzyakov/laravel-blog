@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Faylkan waxa uu u baahan yahay in la cusboonaysiiyo si uu u dhigmo [ingiriis](/README.md) faylka README.
+
 ![Laravel blog oo leh guddiga maamulka Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,55 +29,55 @@ Fur [arrin cusub](https://github.com/gomzyakov/laravel-blog/issues/new) si aad u
 
 Xir mashruuca:
 
-`` bash
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
-``
+```
 
 Waxaan aaminsanahay in aad hore u rakibtay Docker Haddii kale, kaliya ku samee [Mac] (https://docs.docker.com/desktop/install/mac-install/), [Windows] (https://docs.docker.com/desktop/install/windows). -install/) ama [Linux] (https://docs.docker.com/desktop/install/linux-install/).
 
 Ku dhis sawirka 'laravel-blog' amarkan soo socda:
 
-`` bash
+```bash
 docker compose build --no-cache
-``
+```
 
 >Amarkaan waxaa laga yaabaa inuu qaato dhowr daqiiqo in la dhammaystiro.
 
 Marka dhismuhu dhammeeyo, waxaad ku socodsiin kartaa deegaanka qaab-dhismeedka:
 
-`` bash
-docker curiye -d
-``
+```bash
+docker compose up -d
+```
 
-Waxaan hadda maamuli doonaa 'qalab laxamiistaha' si aan u rakibno ku-tiirsanaanta codsiga:
+Waxaan hadda maamuli doonaa `composer install` si aan u rakibno ku-tiirsanaanta codsiga:
 
-`` bash
-docker compose exec app laxamiistaha rakib
-``
+```bash
+docker compose exec app composer install
+```
 
 Nuqul ka samee dejinta deegaanka:
 
-`` bash
+```bash
 docker compose exec app cp .env.local .env
-``
+```
 
-Ku deji furaha sirta ah qalabka 'artisan' Laravel:
+Ku deji furaha sirta ah qalabka `artisan` Laravel:
 
-`` bash
+```bash
 docker compose exec app ./artisan key:generate --ansi
-``
+```
 
 Haajiro DB & abuurka xogta beenta ah:
 
-`` bash
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
-``
+```
 
 Oo ku dar isticmaalaha maamulaha Filament:
 
-`` bash
+```bash
 docker compose exec app ./artisan make:filament-user
-``
+```
 
 Oo fur http://127.0.0.1:8000 browserka aad jeceshahay. Ku faraxsan isticmaalka Laravel Blog!
 
@@ -81,9 +85,9 @@ Oo fur http://127.0.0.1:8000 browserka aad jeceshahay. Ku faraxsan isticmaalka L
 
 Gelitaanka weelka Docker:
 
-`` bash
+```bash
 docker exec -ti laravel-blog-app bash
-``
+```
 
 ## Shatiga
 

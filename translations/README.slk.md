@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Tento súbor je potrebné aktualizovať, aby sa zhodoval s [anglicky](/README.md) súborom README.
+
 ![Blog Laravel s panelom správcu Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -26,40 +30,40 @@ Otvorte [nové číslo](https://github.com/gomzyakov/laravel-blog/issues/new) a 
 Naklonujte projekt:
 
 ``` bash
-git klon git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Verím, že už máte nainštalovaný Docker. Ak nie, urobte to na [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) alebo [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
 Vytvorte obrázok `laravel-blog` pomocou nasledujúceho príkazu:
 
-``` bash
-zostava zostavy docker --no-cache
+```bash
+docker compose build --no-cache
 ```
 
 > Dokončenie tohto príkazu môže trvať niekoľko minút.
 
 Po dokončení zostavovania môžete prostredie spustiť v režime na pozadí pomocou:
 
-``` bash
-docker skladať -d
+```bash
+docker compose up -d
 ```
 
 Teraz spustíme `composer install`, aby sme nainštalovali závislosti aplikácie:
 
-``` bash
-inštalácia skladateľa aplikácie docker compose exec
+```bash
+docker compose exec app composer install
 ```
 
 Skopírujte nastavenia prostredia:
 
-``` bash
+```bash
 docker compose exec app cp .env.local .env
 ```
 
 Nastavte šifrovací kľúč pomocou nástroja príkazového riadka `artisan` Laravel:
 
-``` bash
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 

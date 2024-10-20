@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Dit bestand moet worden bijgewerkt zodat het overeenkomt met het [engels](/README.md) README-bestand.
+
 ![Laravel-blog met Filament-beheerderspaneel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,8 +29,8 @@ Open een [nieuw nummer](https://github.com/gomzyakov/laravel-blog/issues/new) om
 
 Kloon het project:
 
-``` bash
-git kloon git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Ik geloof dat je Docker al hebt geïnstalleerd. Zo niet, doe het dan gewoon op [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) of [Linux](https://docs.docker.com/desktop/install/linux-install/).
@@ -42,19 +46,19 @@ docker compose build --no-cache
 Wanneer de build is voltooid, kunt u de omgeving in de achtergrondmodus uitvoeren met:
 
 ``` bash
-docker componeren -d
+docker compose up -d
 ```
 
 We zullen nu `composer install` uitvoeren om de applicatie-afhankelijkheden te installeren:
 
 ``` bash
-docker compose exec app composer installeren
+docker compose exec app composer install
 ```
 
 Kopieer de omgevingsinstellingen:
 
 ``` bash
-docker componeer exec-app cp .env.local .env
+docker compose exec app cp .env.local .env
 ```
 
 Stel de coderingssleutel in met het `artisan` Laravel-opdrachtregelprogramma:
@@ -65,8 +69,8 @@ docker compose exec app ./artisan key:generate --ansi
 
 DB migreren en valse gegevens zaaien:
 
-``` bash
-docker compose exec app ./artisan migreren:fresh --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 En voeg Filament-beheerdergebruiker toe:

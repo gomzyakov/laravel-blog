@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>ეს ფაილი უნდა განახლდეს, რათა შეესაბამებოდეს [ინგლისურ](/README.md) README ფაილს.
+
 ![Laravel ბლოგი Filament-ის ადმინისტრაციული პანელით](../docs/social-preview-en.png)
 
 # Laravel ბლო
@@ -26,15 +30,15 @@ _Read this in [other languages](./Translations.md)_
 
 პროექტის კლონირება:
 
-```ბაშ
-git კლონი git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 მე მჯერა, რომ თქვენ უკვე გაქვთ Docker დაინსტალირებული. თუ არა, უბრალოდ გააკეთეთ ეს [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) ან [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
 შექმენით `laravel-blog` სურათი შემდეგი ბრძანებით:
 
-``ბაშ
+```bash
 docker compose build --no-cache
 ```
 
@@ -42,37 +46,37 @@ docker compose build --no-cache
 
 როდესაც კონსტრუქცია დასრულდება, შეგიძლიათ გარემო გაუშვათ ფონურ რეჟიმში:
 
-``ბაშ
-docker შედგენა up -d
+```bash
+docker compose up -d
 ```
 
-ჩვენ ახლა გავუშვით "კომპოზიტორის ინსტალაცია" აპლიკაციის დამოკიდებულების დასაყენებლად:
+ჩვენ ახლა გავუშვით `composer install` აპლიკაციის დამოკიდებულების დასაყენებლად:
 
-``ბაშ
-docker compose exec app კომპოზიტორის ინსტალაცია
+```bash
+docker compose exec app composer install
 ```
 
 დააკოპირეთ გარემოს პარამეტრები:
 
-``ბაშ
+```bash
 docker compose exec app cp .env.local .env
 ```
 
-დააყენეთ დაშიფვრის გასაღები `ხელოსანი` Laravel ბრძანების ხაზის ხელსაწყოთი:
+დააყენეთ დაშიფვრის გასაღები `artisan` Laravel ბრძანების ხაზის ხელსაწყოთი:
 
-``ბაშ
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 DB-ის მიგრაცია და ყალბი მონაცემების დათესვა:
 
-``ბაშ
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 და დაამატეთ Filament ადმინისტრატორი:
 
-``ბაშ
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -82,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 
 Docker კონტეინერზე წვდომა:
 
-``ბაშ
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

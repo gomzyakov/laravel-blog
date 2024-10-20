@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Этот файл необходимо обновить, чтобы он соответствовал [английскому](/README.md) файлу README.
+
 ![Блог на Laravel с админ-панелью на Filament](../docs/social-preview-en.png)
 
 _Описание проекта на [других языках](Translations.md)_

@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Denna fil måste uppdateras för att matcha [engelska](/README.md) README-filen.
+
 ![Laravel-blogg med Filament-adminpanel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -26,12 +30,12 @@ Målet med det här arkivet är att visa upp bra [Laravel](https://laravel.com) 
 Klona projektet:
 
 ``` bash
-git klon git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Jag tror att du redan har Docker installerat. Om inte, gör det bara på [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) eller [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Bygg `laravel-blogg`-bilden med följande kommando:
+Bygg `laravel-blog`-bilden med följande kommando:
 
 ``` bash
 docker compose build --no-cache
@@ -42,13 +46,13 @@ docker compose build --no-cache
 När bygget är klart kan du köra miljön i bakgrundsläge med:
 
 ``` bash
-docker komponera upp -d
+docker compose up -d
 ```
 
 Vi kommer nu att köra `composer install` för att installera programberoendena:
 
 ``` bash
-docker compose exec app composer installation
+docker compose exec app composer install
 ```
 
 Kopiera miljöinställningarna:
@@ -57,7 +61,7 @@ Kopiera miljöinställningarna:
 docker compose exec app cp .env.local .env
 ```
 
-Ställ in krypteringsnyckel med kommandoradsverktyget "hantverkare" Laravel:
+Ställ in krypteringsnyckel med kommandoradsverktyget `artisan` Laravel:
 
 ``` bash
 docker compose exec app ./artisan key:generate --ansi
@@ -82,7 +86,7 @@ Och öppna http://127.0.0.1:8000 i din favoritwebbläsare. Glad att använda Lar
 Tillgång till Docker-behållaren:
 
 ``` bash
-docker exec -ti laravel-blogg-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## Licens

@@ -1,3 +1,8 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Ana buƙatar sabunta wannan fayil ɗin don dacewa da 
+[turanci] (/README.md) fayil ɗin README.
+
 ![Laravel blog tare da kwamitin gudanarwa na Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -31,9 +36,9 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 
 Na yi imani kun riga kun shigar da Docker. Idan ba haka ba, kawai yi shi akan [Mac] (https://docs.docker.com/desktop/install/mac-install/), [Windows] (https://docs.docker.com/desktop/install/windows). -install/) ko [Linux] (https://docs.docker.com/desktop/install/linux-install/).
 
-Gina hoton 'laravel-blog' tare da umarni mai zuwa:
+Gina hoton `laravel-blog` tare da umarni mai zuwa:
 
-``bash
+```bash
 docker compose build --no-cache
 ```
 
@@ -41,37 +46,37 @@ docker compose build --no-cache
 
 Lokacin da aka gama ginin, zaku iya tafiyar da yanayin a yanayin baya tare da:
 
-``bash
-docker shirya up -d
+```bash
+docker compose up -d
 ```
 
-Yanzu za mu gudanar da 'installer composer' don shigar da abubuwan da suka dogara da aikace-aikacen:
+Yanzu za mu gudanar da `composer install` don shigar da abubuwan da suka dogara da aikace-aikacen:
 
-``bash
+```bash
 docker compose exec app composer install
 ```
 
 Kwafi saitunan muhalli:
 
-``bash
+```bash
 docker compose exec app cp .env.local .env
 ```
 
-Saita maɓallin ɓoyewa tare da kayan aikin layin umarni na 'artisan' Laravel:
+Saita maɓallin ɓoyewa tare da kayan aikin layin umarni na `artisan` Laravel:
 
-``bash
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 Ƙaura DB & bayanan karya:
 
-``bash
-docker compose exec app ./artisan ƙaura: sabo --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 Kuma ƙara mai amfani da Filament:
 
-``bash
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +86,7 @@ Kuma bude http://127.0.0.1:8000 a cikin burauzar da kuka fi so. Farin ciki ta am
 
 Samun dama ga kwandon Docker:
 
-``bash
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

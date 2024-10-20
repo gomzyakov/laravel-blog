@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Ky skedar duhet të përditësohet në mënyrë që të përputhet me skedarin [anglisht](/README.md) README.
+
 ![Blog Laravel me panelin e administrimit të Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -26,7 +30,7 @@ Hapni një [problem të ri](https://github.com/gomzyakov/laravel-blog/issues/new
 Klononi projektin:
 
 ```bash
-klon git git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Besoj se tashmë e keni të instaluar Docker. Nëse jo, thjesht bëjeni në [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) ose [Linux] (https://docs.docker.com/desktop/install/linux-install/).
@@ -34,7 +38,7 @@ Besoj se tashmë e keni të instaluar Docker. Nëse jo, thjesht bëjeni në [Mac
 Ndërtoni imazhin `laravel-blog` me komandën e mëposhtme:
 
 ```bash
-docker kompozoj build --no-cache
+docker compose build --no-cache
 ```
 
 > Kjo komandë mund të marrë disa minuta për t'u përfunduar.
@@ -42,22 +46,22 @@ docker kompozoj build --no-cache
 Kur ndërtimi të përfundojë, mund ta ekzekutoni mjedisin në modalitetin e sfondit me:
 
 ```bash
-docker kompozoj deri -d
+docker compose up -d
 ```
 
-Tani do të ekzekutojmë "instalimin e kompozitorit" për të instaluar varësitë e aplikacionit:
+Tani do të ekzekutojmë `composer install` për të instaluar varësitë e aplikacionit:
 
 ```bash
-instalimi i kompozitorit të aplikacionit docker compose exec
+docker compose exec app composer install
 ```
 
 Kopjoni cilësimet e mjedisit:
 
 ```bash
-docker kompozoj exec app cp .env.lokal .env
+docker compose exec app cp .env.local .env
 ```
 
-Vendosni çelësin e enkriptimit me mjetin e linjës së komandës "artisan" Laravel:
+Vendosni çelësin e enkriptimit me mjetin e linjës së komandës `artisan` Laravel:
 
 ```bash
 docker compose exec app ./artisan key:generate --ansi

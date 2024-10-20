@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[ਅੰਗਰੇਜ਼ੀ](/README.md) README ਫ਼ਾਈਲ ਨਾਲ ਮੇਲ ਕਰਨ ਲਈ ਇਸ ਫ਼ਾਈਲ ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।
+
 ![ਫਿਲਾਮੈਂਟ ਐਡਮਿਨ ਪੈਨਲ ਵਾਲਾ ਲਾਰਵੇਲ ਬਲੌਗ](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,55 +29,55 @@ _Read this in [other languages](./Translations.md)_
 
 ਪ੍ਰੋਜੈਕਟ ਨੂੰ ਕਲੋਨ ਕਰੋ:
 
-``ਬਾਸ਼
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
-``
+```
 
 ਮੇਰਾ ਮੰਨਣਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਡੌਕਰ ਸਥਾਪਤ ਹੈ. ਜੇ ਨਹੀਂ, ਤਾਂ ਇਸਨੂੰ [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) 'ਤੇ ਕਰੋ -ਇੰਸਟਾਲ/) ਜਾਂ [ਲੀਨਕਸ](https://docs.docker.com/desktop/install/linux-install/)।
 
-ਹੇਠ ਦਿੱਤੀ ਕਮਾਂਡ ਨਾਲ 'laravel-blog' ਚਿੱਤਰ ਬਣਾਓ:
+ਹੇਠ ਦਿੱਤੀ ਕਮਾਂਡ ਨਾਲ `laravel-blog` ਚਿੱਤਰ ਬਣਾਓ:
 
-``ਬਾਸ਼
-docker ਕੰਪੋਜ਼ ਬਿਲਡ --no-cache
-``
+```bash
+docker compose build --no-cache
+```
 
 > ਇਸ ਕਮਾਂਡ ਨੂੰ ਪੂਰਾ ਹੋਣ ਵਿੱਚ ਕੁਝ ਮਿੰਟ ਲੱਗ ਸਕਦੇ ਹਨ।
 
 ਜਦੋਂ ਬਿਲਡ ਪੂਰਾ ਹੋ ਜਾਂਦਾ ਹੈ, ਤੁਸੀਂ ਵਾਤਾਵਰਣ ਨੂੰ ਬੈਕਗ੍ਰਾਉਂਡ ਮੋਡ ਵਿੱਚ ਇਸ ਨਾਲ ਚਲਾ ਸਕਦੇ ਹੋ:
 
-``ਬਾਸ਼
-ਡੌਕਰ ਕੰਪੋਜ਼ ਅੱਪ -ਡੀ
-``
+```bash
+docker compose up -d
+```
 
-ਅਸੀਂ ਹੁਣ ਐਪਲੀਕੇਸ਼ਨ ਨਿਰਭਰਤਾ ਨੂੰ ਸਥਾਪਤ ਕਰਨ ਲਈ 'ਕੰਪੋਜ਼ਰ ਇੰਸਟੌਲ' ਚਲਾਵਾਂਗੇ:
+ਅਸੀਂ ਹੁਣ ਐਪਲੀਕੇਸ਼ਨ ਨਿਰਭਰਤਾ ਨੂੰ ਸਥਾਪਤ ਕਰਨ ਲਈ `composer install` ਚਲਾਵਾਂਗੇ:
 
-``ਬਾਸ਼
-docker compose exec ਐਪ ਕੰਪੋਜ਼ਰ ਇੰਸਟੌਲ
-``
+```bash
+docker compose exec app composer install
+```
 
 ਵਾਤਾਵਰਣ ਸੈਟਿੰਗਾਂ ਦੀ ਨਕਲ ਕਰੋ:
 
-``ਬਾਸ਼
+```bash
 docker compose exec app cp .env.local .env
-``
+```
 
-'ਕਾਰੀਗਰ' Laravel ਕਮਾਂਡ-ਲਾਈਨ ਟੂਲ ਨਾਲ ਏਨਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ ਸੈਟ ਕਰੋ:
+`artisan` Laravel ਕਮਾਂਡ-ਲਾਈਨ ਟੂਲ ਨਾਲ ਏਨਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ ਸੈਟ ਕਰੋ:
 
-``ਬਾਸ਼
-docker compose exec app./artisan key:generate --ansi
-``
+```bash
+docker compose exec app ./artisan key:generate --ansi
+```
 
 DB ਅਤੇ ਬੀਜ ਜਾਅਲੀ ਡੇਟਾ ਨੂੰ ਮਾਈਗਰੇਟ ਕਰੋ:
 
-``ਬਾਸ਼
-ਡੌਕਰ ਕੰਪੋਜ਼ ਐਗਜ਼ੀਕਿਊਸ਼ਨ ਐਪ ./ਆਰਟਿਸਨ ਮਾਈਗਰੇਟ: ਤਾਜ਼ਾ --ਸੀਡ
-``
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
+```
 
 ਅਤੇ ਫਿਲਾਮੈਂਟ ਐਡਮਿਨ ਉਪਭੋਗਤਾ ਸ਼ਾਮਲ ਕਰੋ:
 
-``ਬਾਸ਼
-ਡੌਕਰ ਕੰਪੋਜ਼ ਐਗਜ਼ੀਕਿਊਸ਼ਨ ਐਪ ./ਆਰਟੀਸਨ ਮੇਕ: ਫਿਲਾਮੈਂਟ-ਯੂਜ਼ਰ
-``
+``` bash
+docker compose exec app ./artisan make:filament-user
+```
 
 ਅਤੇ ਆਪਣੇ ਮਨਪਸੰਦ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ http://127.0.0.1:8000 ਖੋਲ੍ਹੋ। Laravel ਬਲੌਗ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਖੁਸ਼ੀ!
 
@@ -81,9 +85,9 @@ DB ਅਤੇ ਬੀਜ ਜਾਅਲੀ ਡੇਟਾ ਨੂੰ ਮਾਈਗਰੇ
 
 ਡੌਕਰ ਕੰਟੇਨਰ ਤੱਕ ਪਹੁੰਚ:
 
-``ਬਾਸ਼
+```bash
 docker exec -ti laravel-blog-app bash
-``
+```
 
 ## ਲਾਇਸੰਸ
 

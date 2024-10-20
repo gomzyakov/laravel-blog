@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Гэты файл трэба абнавіць, каб ён адпавядаў [англійскай](/README.md) файлу README.
+
 ![Блог Laravel з панэллю адміністратара Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -26,7 +30,7 @@ _Read this in [other languages](./Translations.md)_
 Кланаваць праект:
 
 ```bash
-git клон git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Я мяркую, што ў вас ужо ўсталяваны Docker. Калі няма, проста зрабіце гэта на [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) або [Linux](https://docs.docker.com/desktop/install/linux-install/).
@@ -42,7 +46,7 @@ docker compose build --no-cache
 Калі зборка скончана, вы можаце запусціць асяроддзе ў фонавым рэжыме з:
 
 ```bash
-докер скласці -d
+docker compose up -d
 ```
 
 Цяпер мы запусцім `composer install`, каб усталяваць залежнасці прыкладання:

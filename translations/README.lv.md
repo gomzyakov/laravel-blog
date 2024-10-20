@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Šis fails ir jāatjaunina, lai tas atbilstu [angļu valoda](/README.md) README failam.
+
 ![Laravel emuārs ar Filament administrēšanas paneli](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,7 +29,7 @@ Atveriet [jaunu izdevumu](https://github.com/gomzyakov/laravel-blog/issues/new),
 
 Klonēt projektu:
 
-```bah
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -33,45 +37,45 @@ Es uzskatu, ka jums jau ir instalēts Docker. Ja nē, vienkārši dariet to oper
 
 Izveidojiet `laravel-blog` attēlu ar šādu komandu:
 
-```bah
-docker compose build --bez kešatmiņas
+```bash
+docker compose build --no-cache
 ```
 
 >Šīs komandas izpilde var aizņemt dažas minūtes.
 
 Kad izveide ir pabeigta, varat palaist vidi fona režīmā, izmantojot:
 
-```bah
-docker sastādīt -d
+```bash
+docker compose up -d
 ```
 
 Tagad mēs izpildīsim `composer install`, lai instalētu lietojumprogrammu atkarības:
 
-```bah
-docker compose exec lietotnes komponista instalēšana
+```bash
+docker compose exec app composer install
 ```
 
 Kopējiet vides iestatījumus:
 
-```bah
+```bash
 docker compose exec app cp .env.local .env
 ```
 
 Iestatiet šifrēšanas atslēgu, izmantojot Laravel komandrindas rīku "artisan":
 
-```bah
-Docker Compose Exec app ./artisan key:generate --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 Migrēt DB un izsēt viltotus datus:
 
-```bah
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 Un pievienojiet Filament administratora lietotāju:
 
-```bah
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ Un savā iecienītākajā pārlūkprogrammā atveriet http://127.0.0.1:8000. Lai
 
 Piekļuve Docker konteineram:
 
-```bah
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

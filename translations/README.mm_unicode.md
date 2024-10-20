@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[အင်္ဂလိပ်](/README.md) README ဖိုင်နှင့် ကိုက်ညီစေရန် ဤဖိုင်ကို အပ်ဒိတ်လုပ်ရန် လိုအပ်ပါသည်။
+
 ![Filament admin panel ပါသော Laravel blog](/docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,7 +29,7 @@ _Read this in [other languages](./Translations.md)_
 
 ပရောဂျက်ကို ပွားပါ-
 
-``ဘေ့စ်
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -33,46 +37,46 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 
 အောက်ပါ command ဖြင့် `laravel-blog` ပုံကို တည်ဆောက်ပါ။
 
-``ဘေ့စ်
-docker ရေးဖွဲ့တည်ဆောက် --no-cache
+```bash
+docker compose build --no-cache
 ```
 
 > ဤအမိန့်ကို အပြီးသတ်ရန် မိနစ်အနည်းငယ် ကြာနိုင်သည်။
 
 တည်ဆောက်မှုပြီးသွားသောအခါ၊ သင်သည် ပတ်ဝန်းကျင်ကို နောက်ခံမုဒ်ဖြင့် လုပ်ဆောင်နိုင်သည်-
 
-``ဘေ့စ်
-docker မှ ရေးဖွဲ့သည် -d
+```bash
+docker compose up -d
 ```
 
-အပလီကေးရှင်းမှီခိုအားထားမှုများကို ထည့်သွင်းရန် 'စာရေးဆရာ တပ်ဆင်ခြင်း' ကို ယခု ကျွန်ုပ်တို့ လုပ်ဆောင်ပါမည်။
+အပလီကေးရှင်းမှီခိုအားထားမှုများကို ထည့်သွင်းရန် `composer install` ကို ယခု ကျွန်ုပ်တို့ လုပ်ဆောင်ပါမည်။
 
-``ဘေ့စ်
-docker ရေးဖွဲ့ exec အက်ပ်ရေးဆရာ ထည့်သွင်းပါ။
+```bash
+docker compose exec app composer install
 ```
 
 ပတ်ဝန်းကျင်ဆက်တင်များကို ကူးယူပါ-
 
-``ဘေ့စ်
-docker ရေးဖွဲ့ exec အက်ပ် cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
 `artisan` Laravel command-line tool ဖြင့် ကုဒ်ဝှက်ခြင်းကီးကို သတ်မှတ်ပါ-
 
-``ဘေ့စ်
-docker ရေးဖွဲ့ exec အက်ပ် ./artisan key:generate --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 DB နှင့် မျိုးစေ့ဒေတာအတုကို ရွှေ့ပြောင်းပါ-
 
-``ဘေ့စ်
-docker ရေးဖွဲ့ exec အက်ပ် ./artisan migrate:fresh --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 ပြီးလျှင် Filament admin user ကိုထည့်ပါ
 
-``ဘေ့စ်
-docker ရေးဖွဲ့ exec အက်ပ် ./artisan make:filament-user
+```bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 ပြီးလျှင် သင့်စိတ်ကြိုက် browser တွင် http://127.0.0.1:8000 ကိုဖွင့်ပါ။ Laravel Blog ကို အသုံးပြု၍ ပျော်ရွှင်ပါစေ။
@@ -81,7 +85,7 @@ docker ရေးဖွဲ့ exec အက်ပ် ./artisan make:filament-user
 
 Docker ကွန်တိန်နာသို့ ဝင်ရောက်ခွင့်-
 
-``ဘေ့စ်
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

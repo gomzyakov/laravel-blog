@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Este ficheiro debe actualizarse para que coincida co ficheiro README [inglés](/README.md).
+
 ![Blogue de Laravel co panel de administración de Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -42,37 +46,37 @@ docker compose build --no-cache
 Cando remate a compilación, pode executar o ambiente en modo de fondo con:
 
 ```bash
-docker compoñer -d
+docker compose up -d
 ```
 
 Agora executaremos `composer install` para instalar as dependencias da aplicación:
 
 ```bash
-Instalación de docker compose exec do compositor
+docker compose exec app composer install
 ```
 
 Copia a configuración do entorno:
 
 ```bash
-aplicación docker compose exec cp .env.local .env
+docker compose exec app cp .env.local .env
 ```
 
 Establece a clave de cifrado coa ferramenta de liña de comandos Laravel `artisan`:
 
 ```bash
-aplicación docker compose exec ./artisan key:generate --ansi
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 Migra datos falsos de base de datos e sementes:
 
 ```bash
-aplicación docker compose exec ./artisan migrate:fresh --seed
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 E engade o usuario administrador de Filament:
 
 ```bash
-aplicación docker compose exec ./artisan make:filament-user
+docker compose exec app ./artisan make:filament-user
 ```
 
 E abre http://127.0.0.1:8000 no teu navegador favorito. Feliz usando Laravel Blog!

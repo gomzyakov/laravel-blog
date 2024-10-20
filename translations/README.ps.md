@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>دا فایل د [انګلیسي](/README.md) README فایل سره د سمون لپاره تازه کولو ته اړتیا لري.
+
 ![Laravel بلاګ د فیلامینټ اډمین پینل سره](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,65 +29,63 @@ _Read this in [other languages](./Translations.md)_
 
 پروژه کلون کړئ:
 
-``باش
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
-``
+```
 
 زه باور لرم چې تاسو دمخه ډاکر نصب کړی دی. که نه، یوازې دا په [Mac](https://docs.docker.com/desktop/install/mac-install/)، [Windows](https://docs.docker.com/desktop/install/windows) کې وکړئ. -install/) یا [لینکس](https://docs.docker.com/desktop/install/linux-install/).
 
 د لاندې کمانډ سره د `laravel-blog` انځور جوړ کړئ:
 
-``باش
-docker کمپوز جوړ --no-cache
-``
-
+```bash
+docker compose build --no-cache
+```
 > دا کمانډ ممکن بشپړولو لپاره څو دقیقې وخت ونیسي.
 
 کله چې جوړونه پای ته ورسیږي، تاسو کولی شئ چاپیریال په شالید حالت کې د دې سره پرمخ بوځي:
 
-``باش
-ډاکر کمپوز اپ -d
-``
+```bash
+docker compose up -d
+```
 
 موږ به اوس د اپلیکیشن انحصارونو نصبولو لپاره 'کمپوزر انسټال' چلوو:
 
-``باش
-د ډاکر کمپوز exec ایپ کمپوزر انسټال کړئ
-``
+```bash
+docker compose exec app composer install
+```
 
 د چاپیریال ترتیبات کاپي کړئ:
 
-``باش
+```bash
 docker compose exec app cp .env.local .env
-``
+```
 
-د کوډ کولو کیلي د 'کارګر' لارویل کمانډ لاین وسیلې سره تنظیم کړئ:
+د کوډ کولو کیلي د `artisan` لارویل کمانډ لاین وسیلې سره تنظیم کړئ:
 
-``باش
-ډاکر کمپوز اجرایی ایپ ./آرټیسن کیلي: تولید --انسي
-``
+```bash
+docker compose exec app ./artisan key:generate --ansi
+```
 
 د DB او تخم جعلي ډاټا مهاجرت:
 
-``باش
-docker compose exec app./artisan migrate:fresh --seed
-``
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
+```
 
 او د فیلامینټ اډمین کارن اضافه کړئ:
 
-``باش
-د ډاکر کمپوز اجرایی ایپ
-``
-
+``` bash
+docker compose exec app ./artisan make:filament-user
+```
 او په خپل غوره براوزر کې http://127.0.0.1:8000 خلاص کړئ. د Laravel بلاګ په کارولو سره خوشحاله!
 
 ## د کانټینر دننه څنګه ورسیږو؟
 
 د ډاکر کانټینر ته لاسرسی:
 
-``باش
+```bash
 docker exec -ti laravel-blog-app bash
-``
+```
 
 ## جواز
 

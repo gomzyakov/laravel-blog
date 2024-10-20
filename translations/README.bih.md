@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Ovu datoteku treba ažurirati kako bi odgovarala [engleski](/README.md) README fajlu.
+
 ![Laravel blog s administrativnom pločom Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,15 +29,15 @@ Otvorite [novo izdanje](https://github.com/gomzyakov/laravel-blog/issues/new) da
 
 Klonirajte projekt:
 
-```baš
-git klon git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Vjerujem da već imate instaliran Docker. Ako ne, samo to učinite na [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) ili [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
 Izradite sliku `laravel-blog` sa sljedećom naredbom:
 
-```baš
+```bash
 docker compose build --no-cache
 ```
 
@@ -41,37 +45,37 @@ docker compose build --no-cache
 
 Kada je izrada gotova, možete pokrenuti okruženje u pozadinskom načinu rada sa:
 
-```baš
-docker sastaviti -d
+```bash
+docker compose up -d
 ```
 
 Sada ćemo pokrenuti `composer install` da instaliramo ovisnosti aplikacije:
 
-```baš
-docker compose exec app skladatelj instalacija
+```bash
+docker compose exec app composer install
 ```
 
 Kopirajte postavke okruženja:
 
-```baš
+```bash
 docker compose exec app cp .env.local .env
 ```
 
 Postavite ključ za šifriranje pomoću alata naredbenog retka `artisan` Laravel:
 
-```baš
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 Migracija lažnih podataka baze podataka i sjemena:
 
-```baš
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 I dodajte admin korisnika Filamenta:
 
-```baš
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ I otvorite http://127.0.0.1:8000 u svom omiljenom pregledniku. Sretno korištenj
 
 Pristup Docker spremniku:
 
-```baš
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

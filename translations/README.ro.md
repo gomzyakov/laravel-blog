@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Acest fișier trebuie actualizat pentru a se potrivi cu fișierul README în[engleză](/README.md).
+
 ![Blogul Laravel cu panoul de administrare Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -42,13 +46,13 @@ docker compose build --no-cache
 Când construirea este terminată, puteți rula mediul în modul de fundal cu:
 
 ```bash
-docker compune până -d
+docker compose up -d
 ```
 
 Acum vom rula `composer install` pentru a instala dependențele aplicației:
 
 ```bash
-instalarea compozitorului aplicației docker compose exec
+docker compose exec app composer install
 ```
 
 Copiați setările de mediu:

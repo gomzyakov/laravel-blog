@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Este archivo debe actualizarse para que coincida con el archivo README [inglés](/README.md).
+
 ![Blog de Laravel con panel de administración de Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,54 +29,54 @@ Abra un [nuevo número](https://github.com/gomzyakov/laravel-blog/issues/new) pa
 
 Clonar el proyecto:
 
-```golpecito
-clon de git git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Creo que ya tienes Docker instalado. Si no, hazlo en [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) o [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
 Construya la imagen `laravel-blog` con el siguiente comando:
 
-```golpecito
-compilación de composición de ventana acoplable --no-cache
+```bash
+docker compose build --no-cache
 ```
 
 >Este comando puede tardar unos minutos en completarse.
 
 Cuando finalice la compilación, puede ejecutar el entorno en modo de fondo con:
 
-```golpecito
-ventana acoplable componer -d
+```bash
+docker compose up -d
 ```
 
 Ahora ejecutaremos `composer install` para instalar las dependencias de la aplicación:
 
-```golpecito
-Instalación del compositor de la aplicación ejecutiva Docker Compose
+```bash
+docker compose exec app composer install
 ```
 
 Copie la configuración del entorno:
 
-```golpecito
-Docker compone la aplicación ejecutiva cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
-Configure la clave de cifrado con la herramienta de línea de comandos Laravel "artesanal":
+Configure la clave de cifrado con la herramienta de línea de comandos Laravel `artisan`:
 
-```golpecito
-ventana acoplable componer aplicación ejecutiva ./clave artesanal: generar --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 Migrar bases de datos y generar datos falsos:
 
-```golpecito
-ventana acoplable componer aplicación ejecutiva ./fabricante migrar: fresco --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 Y agregue el usuario administrador de Filament:
 
-```golpecito
-aplicación ejecutiva de composición acoplable ./fabricante artesanal: usuario de filamento
+```bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 Y abre http://127.0.0.1:8000 en tu navegador favorito. ¡Feliz usando Laravel Blog!
@@ -81,8 +85,8 @@ Y abre http://127.0.0.1:8000 en tu navegador favorito. ¡Feliz usando Laravel Bl
 
 Acceso al contenedor Docker:
 
-```golpecito
-ejecutivo de Docker -ti laravel-blog-app bash
+```bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## Licencia

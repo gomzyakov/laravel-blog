@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Bu dosyanın [İngilizce](/README.md) README dosyasıyla eşleşmesi için güncellenmesi gerekiyor.
+
 ![Filament yönetici panelli Laravel blogu](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,55 +29,54 @@ Bir özellik istemek için (veya bir hata bulursanız) bir [yeni sayı](https://
 
 Projeyi klonlayın:
 
-``` bash
-git klonu git@github.com:gomzyakov/laravel-blog.git
-''''
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
+```
 
 Docker'ın zaten kurulu olduğuna inanıyorum. Değilse, bunu [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) üzerinde yapın. -install/) veya [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Aşağıdaki komutla 'laravel-blog' görüntüsünü oluşturun:
+Aşağıdaki komutla `laravel-blog` görüntüsünü oluşturun:
 
-``` bash
-liman işçisi oluşturma derlemesi --önbellek yok
-''''
+```bash
+docker compose build --no-cache
+```
 
 >Bu komutun tamamlanması birkaç dakika sürebilir.
 
 Derleme tamamlandığında ortamı arka plan modunda aşağıdakilerle çalıştırabilirsiniz:
 
-``` bash
-liman işçisi oluştur -d
-''''
+```bash
+docker compose up -d
+```
 
-Şimdi uygulama bağımlılıklarını yüklemek için `besteci kurulumunu' çalıştıracağız:
+Şimdi uygulama bağımlılıklarını yüklemek için `composer install` çalıştıracağız:
 
-``` bash
-liman işçisi oluşturma exec uygulama besteci yükleme
-''''
+```bash
+docker compose exec app composer install
+```
 
 Ortam ayarlarını kopyalayın:
 
-``` bash
-docker exec uygulamasını oluşturur cp .env.local .env
-''''
+```bash
+docker compose exec app cp .env.local .env
+```
 
-Şifreleme anahtarını "artisan" Laravel komut satırı aracıyla ayarlayın:
+Şifreleme anahtarını `artisan` Laravel komut satırı aracıyla ayarlayın:
 
-``` bash
-docker exec uygulamasını oluştur ./artisan anahtarı:generate --ansi
-''''
+```bash
+docker compose exec app ./artisan key:generate --ansi
+```
 
 Veritabanını ve tohum sahte verilerini taşıyın:
 
-``` bash
-docker exec uygulamasını oluştur ./artisan taşıma:fresh --seed
-''''
-
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
+```
 Ve Filament yönetici kullanıcısını ekleyin:
 
-``` bash
-docker exec uygulamasını oluştur ./artisan make:filament-user
-''''
+```bash
+docker compose exec app ./artisan make:filament-user
+```
 
 Ve favori tarayıcınızda http://127.0.0.1:8000 adresini açın. Laravel Blog'u kullanmaktan mutluluk duyuyoruz!
 
@@ -81,9 +84,9 @@ Ve favori tarayıcınızda http://127.0.0.1:8000 adresini açın. Laravel Blog'u
 
 Docker kapsayıcısına erişim:
 
-``` bash
+```bash
 docker exec -ti laravel-blog-app bash
-''''
+```
 
 ## Lisans
 

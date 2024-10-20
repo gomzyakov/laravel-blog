@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[ഇംഗ്ലീഷ്](/README.md) README ഫയലുമായി പൊരുത്തപ്പെടുന്നതിന് ഈ ഫയൽ അപ്‌ഡേറ്റ് ചെയ്യേണ്ടതുണ്ട്.
+
 ![ഫിലമെൻ്റ് അഡ്മിൻ പാനലുള്ള ലാറവൽ ബ്ലോഗ്](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,54 +29,54 @@ _Read this in [other languages](./Translations.md)_
 
 പ്രോജക്റ്റ് ക്ലോൺ ചെയ്യുക:
 
-``` ബാഷ്
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 നിങ്ങൾ ഇതിനകം ഡോക്കർ ഇൻസ്റ്റാൾ ചെയ്തിട്ടുണ്ടെന്ന് ഞാൻ വിശ്വസിക്കുന്നു. ഇല്ലെങ്കിൽ, [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) എന്നതിൽ ഇത് ചെയ്യുക -install/) അല്ലെങ്കിൽ [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-ഇനിപ്പറയുന്ന കമാൻഡ് ഉപയോഗിച്ച് 'laravel-blog' ഇമേജ് നിർമ്മിക്കുക:
+ഇനിപ്പറയുന്ന കമാൻഡ് ഉപയോഗിച്ച് `laravel-blog` ഇമേജ് നിർമ്മിക്കുക:
 
-``` ബാഷ്
-ഡോക്കർ കമ്പോസ് ബിൽഡ് --നോ-കാഷെ
+```bash
+docker compose build --no-cache
 ```
 
 > ഈ കമാൻഡ് പൂർത്തിയാക്കാൻ കുറച്ച് മിനിറ്റുകൾ എടുത്തേക്കാം.
 
 നിർമ്മാണം പൂർത്തിയാകുമ്പോൾ, നിങ്ങൾക്ക് പശ്ചാത്തല മോഡിൽ പരിസ്ഥിതി പ്രവർത്തിപ്പിക്കാൻ കഴിയും:
 
-``` ബാഷ്
-ഡോക്കർ കമ്പോസ് അപ്പ് -ഡി
+```bash
+docker compose up -d
 ```
 
-ആപ്ലിക്കേഷൻ ഡിപൻഡൻസികൾ ഇൻസ്‌റ്റാൾ ചെയ്യുന്നതിന് ഞങ്ങൾ ഇപ്പോൾ `കമ്പോസർ ഇൻസ്റ്റാൾ' പ്രവർത്തിപ്പിക്കും:
+ആപ്ലിക്കേഷൻ ഡിപൻഡൻസികൾ ഇൻസ്‌റ്റാൾ ചെയ്യുന്നതിന് ഞങ്ങൾ ഇപ്പോൾ `composer install` പ്രവർത്തിപ്പിക്കും:
 
-``` ബാഷ്
-ഡോക്കർ കമ്പോസ് എക്‌സിക് ആപ്പ് കമ്പോസർ ഇൻസ്റ്റാൾ ചെയ്യുക
+```bash
+docker compose exec app composer install
 ```
 
 പരിസ്ഥിതി ക്രമീകരണങ്ങൾ പകർത്തുക:
 
-``` ബാഷ്
-ഡോക്കർ കമ്പോസ് എക്‌സിക് ആപ്പ് cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
-`ആർട്ടിസാൻ` Laravel കമാൻഡ്-ലൈൻ ടൂൾ ഉപയോഗിച്ച് എൻക്രിപ്ഷൻ കീ സജ്ജമാക്കുക:
+`artisan` Laravel കമാൻഡ്-ലൈൻ ടൂൾ ഉപയോഗിച്ച് എൻക്രിപ്ഷൻ കീ സജ്ജമാക്കുക:
 
-``` ബാഷ്
-ഡോക്കർ കമ്പോസ് എക്‌സിക് ആപ്പ് ./ആർട്ടിസാൻ കീ:ജനറേറ്റ് --ആൻസി
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 DB & വിത്ത് വ്യാജ ഡാറ്റ മൈഗ്രേറ്റ് ചെയ്യുക:
 
-``` ബാഷ്
-ഡോക്കർ കമ്പോസ് എക്‌സിക് ആപ്പ് ./ആർട്ടിസാൻ മൈഗ്രേറ്റ്:ഫ്രഷ് --സീഡ്
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 ഒപ്പം ഫിലമെൻ്റ് അഡ്മിൻ ഉപയോക്താവിനെ ചേർക്കുക:
 
-``` ബാഷ്
-ഡോക്കർ കമ്പോസ് എക്‌സിക് ആപ്പ് ./ആർട്ടിസാൻ മേക്ക്:ഫിലമെൻ്റ്-യൂസർ
+```bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 നിങ്ങളുടെ പ്രിയപ്പെട്ട ബ്രൗസറിൽ http://127.0.0.1:8000 തുറക്കുക. Laravel ബ്ലോഗ് ഉപയോഗിക്കുന്നതിൽ സന്തോഷമുണ്ട്!
@@ -81,7 +85,7 @@ DB & വിത്ത് വ്യാജ ഡാറ്റ മൈഗ്രേറ്
 
 ഡോക്കർ കണ്ടെയ്‌നറിലേക്കുള്ള ആക്‌സസ്:
 
-``` ബാഷ്
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

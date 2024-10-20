@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Este ficheiro necessita de ser atualizado para corresponder ao ficheiro README em [inglês](/README.md).
+
 ![Blog Laravel com painel de administração Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -42,19 +46,19 @@ docker compose build --no-cache
 Quando a compilação for concluída, você poderá executar o ambiente em modo de segundo plano com:
 
 ```bash
-docker compor -d
+docker compose up -d
 ```
 
 Agora executaremos `composer install` para instalar as dependências do aplicativo:
 
 ```bash
-docker compose exec app compositor instalar
+docker compose exec app composer install
 ```
 
 Copie as configurações do ambiente:
 
 ```bash
-docker compor aplicativo executivo cp .env.local .env
+docker compose exec app cp .env.local .env
 ```
 
 Defina a chave de criptografia com a ferramenta de linha de comando `artisan` do Laravel:
@@ -66,7 +70,7 @@ docker compose exec app ./artisan key:generate --ansi
 Migrar banco de dados e propagar dados falsos:
 
 ```bash
-docker compose exec app ./artisan Migrate:fresh --seed
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 E adicione o usuário administrador do Filament:

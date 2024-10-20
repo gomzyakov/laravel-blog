@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>ไฟล์นี้จำเป็นต้องอัปเดตเพื่อให้ตรงกับไฟล์ README [ภาษาอังกฤษ](/README.md)
+
 ![บล็อก Laravel พร้อมแผงผู้ดูแลระบบ Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,54 +29,54 @@ _Read this in [other languages](./Translations.md)_
 
 โคลนโครงการ:
 
-``` ทุบตี
-โคลนคอมไพล์ git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 ฉันเชื่อว่าคุณติดตั้ง Docker ไว้แล้ว ถ้าไม่ ให้ทำบน [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) หรือ [Linux](https://docs.docker.com/desktop/install/linux-install/)
 
 สร้างอิมเมจ `laravel-blog` ด้วยคำสั่งต่อไปนี้:
 
-``` ทุบตี
-นักเทียบท่าเขียน build --no-cache
+```bash
+docker compose build --no-cache
 ```
 
 >คำสั่งนี้อาจใช้เวลาสักครู่จึงจะเสร็จสิ้น
 
 เมื่อการสร้างเสร็จสิ้น คุณสามารถรันสภาพแวดล้อมในโหมดเบื้องหลังได้ด้วย:
 
-``` ทุบตี
-นักเทียบท่าเขียน -d
+```bash
+docker compose up -d
 ```
 
-ตอนนี้เราจะเรียกใช้ "การติดตั้งผู้แต่ง" เพื่อติดตั้งการพึ่งพาแอปพลิเคชัน:
+ตอนนี้เราจะเรียกใช้ `composer install` เพื่อติดตั้งการพึ่งพาแอปพลิเคชัน:
 
-``` ทุบตี
-นักเทียบท่าเขียนแอป exec ติดตั้งผู้แต่งเพลง
+```bash
+docker compose exec app composer install
 ```
 
 คัดลอกการตั้งค่าสภาพแวดล้อม:
 
-``` ทุบตี
-นักเทียบท่าเขียนแอป exec cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
 ตั้งค่าคีย์เข้ารหัสด้วยเครื่องมือบรรทัดคำสั่ง `artisan` Laravel:
 
-``` ทุบตี
-นักเทียบท่าเขียนแอป exec ./artisan key: สร้าง --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 ย้าย DB & Seed ข้อมูลปลอม:
 
-``` ทุบตี
-นักเทียบท่าเขียนแอป exec ./artisan โยกย้าย: สด --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 และเพิ่มผู้ใช้ผู้ดูแลระบบ Filament:
 
-``` ทุบตี
-นักเทียบท่าเขียนแอป exec ./artisan make: filament-user
+```bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 และเปิด http://127.0.0.1:8000 ในเบราว์เซอร์ที่คุณชื่นชอบ มีความสุขที่ได้ใช้บล็อก Laravel!
@@ -81,8 +85,8 @@ _Read this in [other languages](./Translations.md)_
 
 การเข้าถึงคอนเทนเนอร์นักเทียบท่า:
 
-``` ทุบตี
-นักเทียบท่า exec -ti laravel-blog-app bash
+```bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## ใบอนุญาต

@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[ஆங்கிலம்](/README.md) README கோப்பைப் பொருத்த இந்தக் கோப்பு புதுப்பிக்கப்பட வேண்டும்.
+
 ![ஃபிலமென்ட் நிர்வாக குழுவுடன் லாராவெல் வலைப்பதிவு](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,15 +29,15 @@ _Read this in [other languages](./Translations.md)_
 
 திட்டத்தை குளோன் செய்யுங்கள்:
 
-```பேஷ்
-git குளோன் git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 நீங்கள் ஏற்கனவே டோக்கரை நிறுவியுள்ளீர்கள் என்று நம்புகிறேன். இல்லையெனில், அதை [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) இல் செய்யுங்கள் -install/) அல்லது [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
 பின்வரும் கட்டளையுடன் `laravel-blog` படத்தை உருவாக்கவும்:
 
-```பேஷ்
+```bash
 docker compose build --no-cache
 ```
 
@@ -41,37 +45,37 @@ docker compose build --no-cache
 
 உருவாக்கம் முடிந்ததும், நீங்கள் பின்னணி பயன்முறையில் சூழலை இயக்கலாம்:
 
-```பேஷ்
-docker இசையமைக்க -d
+```bash
+docker compose up -d
 ```
 
-ஆப்ஸ் சார்புகளை நிறுவ, இப்போது `இசையமைப்பாளர் நிறுவலை' இயக்குவோம்:
+ஆப்ஸ் சார்புகளை நிறுவ, இப்போது `composer install` இயக்குவோம்:
 
-```பேஷ்
-docker compose exec பயன்பாட்டு இசையமைப்பாளர் நிறுவல்
+```bash
+docker compose exec app composer install
 ```
 
 சுற்றுச்சூழல் அமைப்புகளை நகலெடுக்கவும்:
 
-```பேஷ்
+```bash
 docker compose exec app cp .env.local .env
 ```
 
-`கைவினைஞர்` Laravel கட்டளை வரி கருவி மூலம் குறியாக்க விசையை அமைக்கவும்:
+`artisan` Laravel கட்டளை வரி கருவி மூலம் குறியாக்க விசையை அமைக்கவும்:
 
-```பேஷ்
-docker compose exec ஆப் ./ஆர்டிசன் கீ:ஜெனரேட் --ஆன்சி
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 DB & விதை போலித் தரவை நகர்த்தவும்:
 
-```பேஷ்
-docker compose exec app ./கைவினைஞர் மைக்ரேட்:fresh --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 மற்றும் இழை நிர்வாக பயனரைச் சேர்க்கவும்:
 
-```பேஷ்
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ docker compose exec app ./artisan make:filament-user
 
 டோக்கர் கொள்கலனுக்கான அணுகல்:
 
-```பேஷ்
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

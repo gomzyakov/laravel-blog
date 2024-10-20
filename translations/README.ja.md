@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[英語](/README.md) README ファイルと一致させるには、このファイルを更新する必要があります。
+
 ![Filament 管理パネルを備えた Laravel ブログ](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,55 +29,56 @@ _Read this in [other languages](./Translations.md)_
 
 プロジェクトのクローンを作成します。
 
-「」バッシュ
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
-「」
+```
 
 すでに Docker がインストールされていると思います。 そうでない場合は、[Mac](https://docs.docker.com/desktop/install/mac-install/)、[Windows](https://docs.docker.com/desktop/install/windows)で実行してください。 -install/) または [Linux](https://docs.docker.com/desktop/install/linux-install/)。
 
 次のコマンドを使用して「laravel-blog」イメージをビルドします。
 
-「」バッシュ
+```bash
 docker compose build --no-cache
-「」
+```
 
 >このコマンドが完了するまでに数分かかる場合があります。
 
 ビルドが完了したら、次のコマンドを使用して環境をバックグラウンド モードで実行できます。
 
-「」バッシュ
-ドッカー構成 -d
-「」
+```bash
+docker compose up -d
+```
 
-ここで「composer install」を実行して、アプリケーションの依存関係をインストールします。
+ここで `composer install`を実行して、アプリケーションの依存関係をインストールします。
 
-「」バッシュ
-docker compose exec アプリコンポーザーのインストール
-「」
+```bash
+docker compose exec app composer install
+```
 
 環境設定をコピーします。
 
-「」バッシュ
+```bash
 docker compose exec app cp .env.local .env
-「」
+```
 
-「artisan」Laravel コマンドライン ツールを使用して暗号化キーを設定します。
+`artisan` Laravel コマンドライン ツールを使用して暗号化キーを設定します。
 
-「」バッシュ
+```bash
 docker compose exec app ./artisan key:generate --ansi
-「」
+```
 
 DB を移行して偽のデータをシードする:
 
-「」バッシュ
-docker compose exec app ./artisan 移行:fresh --seed
-「」
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
+```
+
 
 そして、Filament 管理者ユーザーを追加します。
 
-「」バッシュ
+```bash
 docker compose exec app ./artisan make:filament-user
-「」
+```
 
 そして、お気に入りのブラウザで http://127.0.0.1:8000 を開きます。 Laravel ブログをぜひご利用ください。
 
@@ -81,9 +86,9 @@ docker compose exec app ./artisan make:filament-user
 
 Docker コンテナへのアクセス:
 
-「」バッシュ
+```bash
 docker exec -ti laravel-blog-app bash
-「」
+```
 
 ## ライセンス
 

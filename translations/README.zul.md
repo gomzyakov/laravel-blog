@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+Leli fayela lidinga ukubuyekezwa ukuze lifane nefayela elithi [isingisi](/README.md) README.
+
 ![Laravel blog with Filament admin panel](../docs/social-preview-zu.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -33,46 +37,46 @@ Ngikholwa ukuthi usunayo i-Docker efakiwe. Uma kungenjalo, vele ukwenze ku-[Mac]
 
 Yakha isithombe `se-laravel-blog` ngomyalo olandelayo:
 
-``` bash
-i-docker ibhala ukwakha --no-cache
+```bash
+docker compose build --no-cache
 ```
 
 >Lo myalo ungathatha amaminithi ambalwa ukuqeda.
 
 Lapho ukwakhiwa kuqediwe, ungasebenzisa indawo ezungezile ngemodi yangemuva nge:
 
-``` bash
-i-docker ibhala phezulu -d
+```bash
+docker compose up -d
 ```
 
-Manje sizosebenzisa `ukufaka komqambi` ukuze sifake ukuncika kohlelo lokusebenza:
+Manje sizosebenzisa `composer install` ukuze sifake ukuncika kohlelo lokusebenza:
 
-``` bash
-i-docker ibhala i-exec yomqambi wohlelo lokusebenza ukufaka
+```bash
+docker compose exec app composer install
 ```
 
 Kopisha izilungiselelo zendawo:
 
-``` bash
-idokha liqamba i-exec app cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
 Setha ukhiye wokubethela ngethuluzi lomugqa womyalo we-`artisan` we-Laravel:
 
-``` bash
-i-docker iqamba i-exec app ./artisan key:generate --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 Thutha i-DB nedatha mbumbulu yembewu:
 
-``` bash
-i-docker compose exec app ./artisan migrate:fresh --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 Futhi engeza umsebenzisi we-Filament admin:
 
-``` bash
-idokha liqamba uhlelo lokusebenza lwe-exec ./artisan make:filament-user
+```bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 Futhi uvule http://127.0.0.1:8000 kusiphequluli sakho osithandayo. Jabulela usebenzisa i-Laravel Blog!
@@ -81,7 +85,7 @@ Futhi uvule http://127.0.0.1:8000 kusiphequluli sakho osithandayo. Jabulela useb
 
 Ukufinyelela esitsheni se-Docker:
 
-``` basha
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

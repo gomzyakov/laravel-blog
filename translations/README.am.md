@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>ይህ ፋይል ከ[እንግሊዝኛ](/README.md) README ፋይል ጋር እንዲዛመድ መዘመን አለበት።
+
 ![ላራቬል ብሎግ ከፋላመንት አስተዳዳሪ ፓነል ጋር](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -34,7 +38,7 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 በሚከተለው ትዕዛዝ የ«ላራቬል-ብሎግ» ምስልን ይገንቡ፡
 
 ```bash
-docker compose build --ምንም-መሸጎጫ
+docker compose build --no-cache
 ```
 
 > ይህ ትእዛዝ ለማጠናቀቅ ጥቂት ደቂቃዎችን ሊወስድ ይችላል።
@@ -45,33 +49,33 @@ docker compose build --ምንም-መሸጎጫ
 docker compose up -d
 ```
 
-የመተግበሪያውን ጥገኞች ለመጫን አሁን `አቀናባሪ ጫን`ን እናስሄዳለን፡-
+የመተግበሪያውን ጥገኞች ለመጫን አሁን `composer install`ን እናስሄዳለን፡-
 
 ```bash
-docker compose exec መተግበሪያ አቀናባሪ ጫን
+docker compose exec app composer install
 ```
 
 የአካባቢ ቅንብሮችን ይቅዱ
 
-`` ባሽ
-docker compose exec መተግበሪያ cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
-የምስጠራ ቁልፍን በ'አርቲስያን' Laravel የትዕዛዝ መስመር መሣሪያ ያቀናብሩ፡
+የምስጠራ ቁልፍን በ `artisan` Laravel የትዕዛዝ መስመር መሣሪያ ያቀናብሩ፡
 
-`` ባሽ
-docker compose exec መተግበሪያ ./artisan key: አመንጭ --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 ዲቢን እና የውሸት ዘርን ያዛውሩ
 
-`` ባሽ
-docker compose exec መተግበሪያ ./artisan migrate:fresh --ዘር
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 እና የFilament አስተዳዳሪ ተጠቃሚን ያክሉ፡-
 
-`` ባሽ
+```ባሽ
 docker compose exec መተግበሪያ ./artisan make:filament-user
 ```
 
@@ -81,8 +85,8 @@ docker compose exec መተግበሪያ ./artisan make:filament-user
 
 ወደ ዶከር መያዣው መድረስ;
 
-`` ባሽ
-docker exec -ti ላራቬል-ብሎግ-መተግበሪያ ባሽ
+```bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## ፈቃድ

@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>اس فائل کو [انگریزی](/README.md) README فائل سے ملنے کے لیے اپ ڈیٹ کرنے کی ضرورت ہے۔
+
 ![فلامینٹ ایڈمن پینل کے ساتھ لاریول بلاگ](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,55 +29,55 @@ _Read this in [other languages](./Translations.md)_
 
 پروجیکٹ کو کلون کریں:
 
-''بش
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
-``
+```
 
 مجھے یقین ہے کہ آپ نے پہلے ہی ڈوکر انسٹال کر رکھا ہے۔ اگر نہیں تو اسے صرف [Mac](https://docs.docker.com/desktop/install/mac-install/)، [Windows](https://docs.docker.com/desktop/install/windows) پر کریں۔ -install/) یا [Linux](https://docs.docker.com/desktop/install/linux-install/)۔
 
-مندرجہ ذیل کمانڈ کے ساتھ 'laravel-blog' امیج بنائیں:
+مندرجہ ذیل کمانڈ کے ساتھ `laravel-blog` امیج بنائیں:
 
-''بش
+```bash
 docker compose build --no-cache
-``
+```
 
 >اس کمانڈ کو مکمل ہونے میں چند منٹ لگ سکتے ہیں۔
 
 جب تعمیر مکمل ہوجائے تو، آپ ماحول کو پس منظر کے موڈ میں اس کے ساتھ چلا سکتے ہیں:
 
-''بش
-ڈاکر کمپوز اپ -d
-``
+```bash
+docker compose up -d
+```
 
 اب ہم ایپلیکیشن انحصار کو انسٹال کرنے کے لیے کمپوزر انسٹال کریں گے:
 
-''بش
-docker compose exec ایپ کمپوزر انسٹال کریں۔
-``
+```bash
+docker compose exec app composer install
+```
 
 ماحول کی ترتیبات کو کاپی کریں:
 
-''بش
+```bash
 docker compose exec app cp .env.local .env
-``
+```
 
 ' کاریگر ' لاریول کمانڈ لائن ٹول کے ساتھ انکرپشن کلید سیٹ کریں:
 
-''بش
+```bash
 docker compose exec app ./artisan key:generate --ansi
-``
+```
 
 DB اور بیج جعلی ڈیٹا کو منتقل کریں:
 
-''بش
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
-``
+```
 
 اور Filament ایڈمن صارف شامل کریں:
 
-''بش
+```bash
 docker compose exec app ./artisan make:filament-user
-``
+```
 
 اور اپنے پسندیدہ براؤزر میں http://127.0.0.1:8000 کھولیں۔ Laravel بلاگ کا استعمال کرتے ہوئے خوش!
 
@@ -81,9 +85,9 @@ docker compose exec app ./artisan make:filament-user
 
 ڈاکر کنٹینر تک رسائی:
 
-''بش
+```bash
 docker exec -ti laravel-blog-app bash
-``
+```
 
 ## لائسنس
 

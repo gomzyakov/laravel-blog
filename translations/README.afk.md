@@ -30,7 +30,7 @@ Maak 'n [nuwe uitgawe](https://github.com/gomzyakov/laravel-blog/issues/new) oop
 Kloon die projek:
 
 ``` bash
-git kloon git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Ek glo jy het reeds Docker geïnstalleer. Indien nie, doen dit net op [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) of [Linux](https://docs.docker.com/desktop/install/linux-install/).
@@ -38,7 +38,7 @@ Ek glo jy het reeds Docker geïnstalleer. Indien nie, doen dit net op [Mac](http
 Bou die `laravel-blog`-prent met die volgende opdrag:
 
 ``` bash
-docker komponeer bou --geen-kas
+docker compose build --no-cache
 ```
 
 >Hierdie opdrag kan 'n paar minute neem om te voltooi.
@@ -46,13 +46,13 @@ docker komponeer bou --geen-kas
 Wanneer die bou voltooi is, kan jy die omgewing in agtergrondmodus laat loop met:
 
 ``` bash
-docker opstel -d
+docker compose up -d
 ```
 
 Ons sal nou `composer install` laat loop om die toepassingsafhanklikhede te installeer:
 
 ``` bash
-docker compose exec app composer installeer
+docker compose exec app composer install
 ```
 
 Kopieer die omgewingsinstellings:
