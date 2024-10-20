@@ -1,7 +1,7 @@
 >[!IMPORTANTE]
 >Esse projeto ainda está sob desenvolvimento. Nem todas as funcionalidades estão finalizadas e muito ainda pode ser melhorado. Se você quiser ajudar com o desenvolvimento desse projeto, você pode selecionar uma [issue](https://github.com/gomzyakov/laravel-blog/issues), e abrir uma PR.
 
-![Aplicativo de blog pessoal simples feito em Laravel e MySQL](./docs/social-preview-en.png)
+![Aplicativo de blog pessoal simples feito em Laravel e MySQL](/docs/social-preview-en.png)
 
 ### Leia em [outros idiomas](./translations/Translations.md):
 
@@ -95,9 +95,9 @@ O objetivo desse repositório é mostrar boas práticas de desenvolvimento em [L
 
 ## Prévias
 
-![Blog](docs/screenshot-main-page.png)
+![Blog](/docs/screenshot-main-page.png)
 
-![Blog](docs/screenshot-admin-panel.png)
+![Blog](/docs/screenshot-admin-panel.png)
 
 ## Solicitar funcionalidades
 
