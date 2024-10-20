@@ -34,6 +34,7 @@
 | ελληνικά                 | [ελληνικά](README.gr.md)                      |
 | العربية                  | [العربية](README.ar.md)                       |
 | Українська               | [Українська](README.ua.md)                    |
+| Português (Brasil)     | [Português (Brasil)](README.pt-br.md)       |
 | Português (Portugal)     | [Português (Portugal)](README.pt-pt.md)       |
 | Italiano                 | [Italiano](README.it.md)                      |
 | ภาษาไทย                  | [ภาษาไทย](README.th.md)                       |
