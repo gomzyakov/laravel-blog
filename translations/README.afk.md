@@ -1,3 +1,8 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.
+
+>Hierdie lêer moet opgedateer word om by die [engelse](/README.md) README lêer te pas
+
 ![Laravel-blog met Filament-administrasiepaneel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
