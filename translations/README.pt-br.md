@@ -1,9 +1,9 @@
->[!IMPORTANT]
->This project is under development. Not all functionality is finished and much can still be improved. If you want to help with the development of the project, you can select an [issue](https://github.com/gomzyakov/laravel-blog/issues), do it and open a PR.
+>[!IMPORTANTE]
+>Esse projeto ainda está sob desenvolvimento. Nem todas as funcionalidades estão finalizadas e muito ainda pode ser melhorado. Se você quiser ajudar com o desenvolvimento desse projeto, você pode selecionar uma [issue](https://github.com/gomzyakov/laravel-blog/issues), e abrir uma PR.
 
-![Simple personal blog app written on Laravel and MySQL](./docs/social-preview-en.png)
+![Aplicativo de blog pessoal simples feito em Laravel e MySQL](/docs/social-preview-en.png)
 
-### Read this in [other languages](./translations/Translations.md):
+### Leia em [outros idiomas](./translations/Translations.md):
 
 [ગુજરાતી](translations/README.guj.md)
 &middot; [हिन्दी](translations/README.hi.md)
@@ -18,6 +18,7 @@
 &middot; [မြန်မာ](translations/README.mm_unicode.md)
 &middot; [Bahasa Indonesia](translations/README.id.md)
 &middot; [Català](translations/README.ca.md)
+&middot; [English](/README.md)
 &middot; [Español](translations/README.es.md)
 &middot; [Nederlands](translations/README.nl.md)
 &middot; [Русский](translations/README.ru.md)
@@ -37,7 +38,6 @@
 &middot; [ελληνικά](translations/README.gr.md)
 &middot; [العربية](translations/README.ar.md)
 &middot; [Українська](translations/README.ua.md)
-&middot; [Português (Brasil)](/translations/README.pt-br.md)
 &middot; [Português (Portugal)](translations/README.pt-pt.md)
 &middot; [Italiano](translations/README.it.md)
 &middot; [ภาษาไทย](translations/README.th.md)
@@ -77,93 +77,93 @@
 &middot; [සිංහල(Sri Lanka)](translations/README.si.md)
 &middot; [հայերեն](translations/README.arm.md)
 
-# Simple blog application based on Larave
+# Aplicativo de blog pessoal simples baseado em Laravel
 
-The goal of this repository is to showcase good [Laravel](https://laravel.com) development practices with a simple application.
+O objetivo desse repositório é mostrar boas práticas de desenvolvimento em [Laravel](https://laravel.com) com um aplicativo simples.
 
-## Features
+## Funcionalidades
 
-- 📚 Creating and editing posts
-- 🥑 Categories
-- 🔥 Popular posts
-- 🎉 Admin panel
-- Manage users, posts, categories and tags
-- Roles: reader and administrator
-- Personal account
-- Comments and likes
-- Post`s visual editor
+- 📚 Criar e editar posts
+- 🥑 Categorias
+- 🔥 Posts populares
+- 🎉 Painel de administradores
+- Gerencie usuários, postagens, categorias e tags
+- Cargos: leitor e administrador
+- Conta pessoal
+- Comentários e likes
+- Editor visual de posts
 
-## Preview
+## Prévias
 
-![Blog](docs/screenshot-main-page.png)
+![Blog](/docs/screenshot-main-page.png)
 
-![Blog](docs/screenshot-admin-panel.png)
+![Blog](/docs/screenshot-admin-panel.png)
 
-## Requesting features
+## Solicitar funcionalidades
 
-Open a new [issue](https://github.com/gomzyakov/laravel-blog/issues) to request a feature (or if you find a bug).
+Abra uma nova [issue](https://github.com/gomzyakov/laravel-blog/issues) para solicitar uma funcionalidade (ou se você encontrar um bug).
 
-## How to run blog locally? 
+## Como rodar o blog localmente? 
 
-Clone the project:
+Clone o projeto:
 
 ```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
-I believe you already have Docker installed. If not, just do it on [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/) or [Linux](https://docs.docker.com/desktop/install/linux-install/).
+Acredito que você já tenha o Docker instalado. Se não, apenas o instale no [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/) ou [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Build the `laravel-blog` image with the following command:
+Monte a imagem `laravel-blog` com o seguinte comando:
 
 ```bash
 docker compose build --no-cache
 ```
 
->This command might take a few minutes to complete.
+>Esse comando pode pode levar alguns minutos para ser concluido.
 
-When the build is finished, you can run the environment in background mode with:
+Quando a montagem for concluida, você pode executar o ambiente no modo de fundo com:
 
 ```bash
 docker compose up -d
 ```
 
-We’ll now run `composer install` to install the application dependencies:
+Agora executaremos `composer install` para instalar as dependências do aplicativo:
 
 ```bash
 docker compose exec app composer install
 ```
 
-Copy the environment settings:
+Copie as variáveis de ambiente:
 
 ```bash
 docker compose exec app cp .env.local .env
 ```
 
-Set encryption key with the `artisan` Laravel command-line tool:
+Defina a chave de criptografia com a ferramenta de linha de comando do Laravel `artisan`:
 
 ```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
-Migrate DB & seed fake data:
+Migre a base de dados e defina uma seed com dados falsos:
 
 ```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-And open http://127.0.0.1:8000 in your favorite browser. Happy using Laravel Blog!
+E abra http://127.0.0.1:8000 em seu navegador favorito. Seja feliz usando o Laravel Blog!
 
-## How to get inside the container?
+## Como acessar o container?
 
-Access to the Docker container:
+Accesso ao container Docker:
 
 ```bash
 docker exec -ti laravel-blog-app bash
 ```
 
-## License
+## Licença
 
-This is open-sourced software licensed under the [MIT License](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
+Esse é um software em código aberto licenciado sob a [Licença MIT](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
 [![GitHub release](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
