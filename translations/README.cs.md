@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Tento soubor je třeba aktualizovat, aby odpovídal souboru README [angličtina](/README.md).
+
 ![Blog Laravel s panelem správce Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,8 +29,8 @@ Otevřete [nové číslo](https://github.com/gomzyakov/laravel-blog/issues/new) 
 
 Naklonujte projekt:
 
-``` bash
-git klon git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Věřím, že Docker již máte nainstalovaný. Pokud ne, udělejte to na [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) nebo [Linux](https://docs.docker.com/desktop/install/linux-install/).
@@ -42,13 +46,13 @@ docker compose build --no-cache
 Po dokončení sestavení můžete prostředí spustit v režimu na pozadí pomocí:
 
 ``` bash
-docker skládat -d
+docker compose up -d
 ```
 
 Nyní spustíme `composer install` pro instalaci závislostí aplikace:
 
 ``` bash
-docker compose exec app skladatel nainstalovat
+docker compose exec app composer install
 ```
 
 Zkopírujte nastavení prostředí:

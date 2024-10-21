@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Faili hii inahitaji kusasishwa ili ilingane na [kiingereza](/README.md) faili ya README.
+
 ![Blogu ya Laravel iliyo na paneli ya msimamizi wa Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -34,7 +38,7 @@ Ninaamini tayari umeweka Docker. Ikiwa sivyo, ifanye tu kwenye [Mac](https://doc
 Jenga picha ya `laravel-blog` kwa amri ifuatayo:
 
 ```bash
-docker kutunga kujenga --no-cache
+docker compose build --no-cache
 ```
 
 > Amri hii inaweza kuchukua dakika chache kukamilika.
@@ -42,19 +46,19 @@ docker kutunga kujenga --no-cache
 Wakati ujenzi umekamilika, unaweza kuendesha mazingira katika hali ya nyuma na:
 
 ```bash
-docker kutunga up -d
+docker compose up -d
 ```
 
-Sasa tutaendesha `kusakinisha mtunzi` ili kusakinisha vitegemezi vya programu:
+Sasa tutaendesha `composer install` ili kusakinisha vitegemezi vya programu:
 
 ```bash
-docker kutunga exec usakinishaji wa mtunzi wa programu
+docker compose exec app composer install
 ```
 
 Nakili mipangilio ya mazingira:
 
 ```bash
-docker kutunga exec app cp .env.local .env
+docker compose exec app cp .env.local .env
 ```
 
 Weka ufunguo wa usimbaji fiche kwa zana ya mstari wa amri ya `artisan` Laravel:

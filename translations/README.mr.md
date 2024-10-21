@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[इंग्रजी](/README.md) README फाइलशी जुळण्यासाठी ही फाइल अपडेट करणे आवश्यक आहे.
+
 ![फिलामेंट ॲडमिन पॅनेलसह लारवेल ब्लॉग](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,7 +29,7 @@ _Read this in [other languages](./Translations.md)_
 
 प्रकल्प क्लोन करा:
 
-``बाश
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -33,45 +37,45 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 
 खालील आदेशासह `laravel-blog` प्रतिमा तयार करा:
 
-``बाश
-डॉकर कंपोज बिल्ड --नो-कॅशे
+```bash
+docker compose build --no-cache
 ```
 
 >हा आदेश पूर्ण होण्यासाठी काही मिनिटे लागू शकतात.
 
 बिल्ड पूर्ण झाल्यावर, तुम्ही पार्श्वभूमी मोडमध्ये पर्यावरण चालवू शकता:
 
-``बाश
-डॉकर कंपोज अप -d
+```bash
+docker compose up -d
 ```
 
-आम्ही आता ऍप्लिकेशन अवलंबित्व स्थापित करण्यासाठी `कंपोजर इंस्टॉल` चालवू:
+आम्ही आता ऍप्लिकेशन अवलंबित्व स्थापित करण्यासाठी `composer install` चालवू:
 
-``बाश
+```bash
 docker compose exec app composer install
 ```
 
 पर्यावरण सेटिंग्ज कॉपी करा:
 
-``बाश
-डॉकर कम्पोज exec ॲप cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
-'कारागीर' Laravel कमांड-लाइन टूलसह एन्क्रिप्शन की सेट करा:
+`artisan` Laravel कमांड-लाइन टूलसह एन्क्रिप्शन की सेट करा:
 
-``बाश
+```bash
 docker compose exec app./artisan key:generate --ansi
 ```
 
 DB आणि बियाणे बनावट डेटा स्थलांतरित करा:
 
-``बाश
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 आणि फिलामेंट प्रशासक वापरकर्ता जोडा:
 
-``बाश
+```bash
 docker compose exec app./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ docker compose exec app./artisan make:filament-user
 
 डॉकर कंटेनरमध्ये प्रवेश:
 
-``बाश
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

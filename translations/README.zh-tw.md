@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+該檔案需要更新才能符合 [英語](/README.md) README 檔案。
+
 ![帶有 Filament 管理面板的 Laravel 部落格](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,55 +29,55 @@ _Read this in [other languages](./Translations.md)_
 
 克隆項目：
 
-````bash
-git 複製 git@github.com:gomzyakov/laravel-blog.git
-````
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
+```
 
 我相信你已經安裝了 Docker。 如果沒有，只需在 [Mac](https://docs.docker.com/desktop/install/mac-install/)、[Windows](https://docs.docker.com/desktop/install/windows - install/) 或[Linux](https://docs.docker.com/desktop/install/linux-install/)。
 
-使用以下命令建立“laravel-blog”映像：
+使用以下命令建立`laravel-blog`映像：
 
-````bash
+```bash
 docker compose build --no-cache
-````
+```
 
 >此命令可能需要幾分鐘才能完成。
 
 建置完成後，您可以使用以下命令在背景模式下執行環境：
 
-````bash
-docker 組成-d
-````
+```bash
+docker compose up -d
+```
 
-我們現在將運行“composer install”來安裝應用程式依賴項：
+我們現在將運行`composer install`來安裝應用程式依賴項：
 
-````bash
-docker compose exec 應用程式作曲家安裝
-````
+```bash
+docker compose exec app composer install
+```
 
 複製環境設定：
 
-````bash
+```bash
 docker compose exec app cp .env.local .env
-````
+```
 
-使用“artisan”Laravel 命令列工具設定加密金鑰：
+使用`artisan`Laravel 命令列工具設定加密金鑰：
 
-````bash
+```bash
 docker compose exec app ./artisan key:generate --ansi
-````
+```
 
 遷移資料庫和種子假資料：
 
-````bash
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
-````
+```
 
 並新增 Filament 管理員使用者：
 
-````bash
+```bash
 docker compose exec app ./artisan make:filament-user
-````
+```
 
 然後在您喜歡的瀏覽器中開啟 http://127.0.0.1:8000。 祝您使用 Laravel 部落格愉快！
 
@@ -81,9 +85,9 @@ docker compose exec app ./artisan make:filament-user
 
 存取Docker容器：
 
-````bash
+```bash
 docker exec -ti laravel-blog-app bash
-````
+```
 
 ＃＃ 執照
 

@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Ezt a fájlt frissíteni kell, hogy megfeleljen az [angol](/README.md) README fájlnak.
+
 ![Laravel blog Filament adminisztrációs panellel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,8 +29,8 @@ Nyisson meg egy [új számot](https://github.com/gomzyakov/laravel-blog/issues/n
 
 A projekt klónozása:
 
-``` bash
-git klón git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Azt hiszem, már telepítve van a Docker. Ha nem, csak tegye meg [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) -install/) vagy [Linux](https://docs.docker.com/desktop/install/linux-install/).
@@ -41,14 +45,14 @@ docker compose build --no-cache
 
 Ha az összeállítás befejeződött, a környezetet háttér módban futtathatja a következőkkel:
 
-``` bash
-dokkoló összeállít -d
+```bash
+docker compose up -d
 ```
 
-Most a "composer install" parancsot fogjuk futtatni az alkalmazásfüggőségek telepítéséhez:
+Most a `composer install` parancsot fogjuk futtatni az alkalmazásfüggőségek telepítéséhez:
 
 ``` bash
-docker compose exec alkalmazás zeneszerző telepítése
+docker compose exec app composer install
 ```
 
 Másolja a környezeti beállításokat:
@@ -57,16 +61,16 @@ Másolja a környezeti beállításokat:
 docker compose exec app cp .env.local .env
 ```
 
-Állítsa be a titkosítási kulcsot az "artisan" Laravel parancssori eszközzel:
+Állítsa be a titkosítási kulcsot az `artisan` Laravel parancssori eszközzel:
 
 ``` bash
-docker Compose exec app ./artisan key:generate --ansi
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 DB és hamis adatok áttelepítése:
 
 ``` bash
-docker Compose exec app ./artisan migrate:fresh --seed
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 És adjunk hozzá Filament admin felhasználót:

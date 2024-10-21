@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Оваа датотека треба да се ажурира за да одговара на [англиски](/README.md) датотеката README.
+
 ![Блог на Ларавел со административен панел на Филамент](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,15 +29,15 @@ _Read this in [other languages](./Translations.md)_
 
 Клонирајте го проектот:
 
-```баш
-git клон git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Верувам дека веќе го имате инсталирано Docker. Ако не, само направете го тоа на [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) или [Linux] (https://docs.docker.com/desktop/install/linux-install/).
 
 Изградете ја сликата на `laravel-blog` со следнава команда:
 
-```баш
+```bash
 docker compose build --no-cache
 ```
 
@@ -41,37 +45,37 @@ docker compose build --no-cache
 
 Кога ќе заврши изградбата, можете да ја извршите околината во режим на позадина со:
 
-```баш
-докер состави до -г
+```bash
+docker compose up -d
 ```
 
-Сега ќе извршиме „инсталација на композитор“ за да ги инсталираме зависностите на апликацијата:
+Сега ќе извршиме `composer install` за да ги инсталираме зависностите на апликацијата:
 
-```баш
+```bash
 docker compose exec app composer install
 ```
 
 Копирајте ги поставките за околината:
 
-```баш
+```bash
 docker compose exec app cp .env.local .env
 ```
 
-Поставете го клучот за шифрирање со алатката за командна линија „занаетчија“ Ларавел:
+Поставете го клучот за шифрирање со алатката за командна линија `artisan` Ларавел:
 
-```баш
-docker compose exec апликација ./artisan key:generate --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 Мигрирајте DB и поставете лажни податоци:
 
-```баш
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 И додадете корисник на администратор на Filament:
 
-```баш
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ docker compose exec app ./artisan make:filament-user
 
 Пристап до контејнерот Docker:
 
-```баш
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

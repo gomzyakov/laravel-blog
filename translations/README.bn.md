@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[ইংরেজি](/README.md) README ফাইলের সাথে মেলে এই ফাইলটিকে আপডেট করতে হবে।
+
 ![ফিলামেন্ট অ্যাডমিন প্যানেল সহ লারাভেল ব্লগ](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -26,7 +30,7 @@ _Read this in [other languages](./Translations.md)_
 প্রকল্প ক্লোন করুন:
 
 ```bash
-git ক্লোন git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 আমি বিশ্বাস করি আপনি ইতিমধ্যে ডকার ইনস্টল করেছেন। যদি না হয়, শুধু [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) এ এটি করুন -ইনস্টল/) বা [লিনাক্স](https://docs.docker.com/desktop/install/linux-install/)।
@@ -34,7 +38,7 @@ git ক্লোন git@github.com:gomzyakov/laravel-blog.git
 নিম্নলিখিত কমান্ড দিয়ে `laravel-blog` ইমেজ তৈরি করুন:
 
 ```bash
-ডকার কম্পোজ বিল্ড --নো-ক্যাশে
+docker compose build --no-cache
 ```
 
 > এই কমান্ডটি সম্পূর্ণ হতে কয়েক মিনিট সময় লাগতে পারে।
@@ -42,37 +46,37 @@ git ক্লোন git@github.com:gomzyakov/laravel-blog.git
 বিল্ড শেষ হলে, আপনি এর সাথে পটভূমি মোডে পরিবেশ চালাতে পারেন:
 
 ```bash
-ডকার রচনা আপ -d
+docker compose up -d
 ```
 
-আমরা এখন অ্যাপ্লিকেশন নির্ভরতা ইনস্টল করতে `কম্পোজার ইনস্টল` চালাব:
+আমরা এখন অ্যাপ্লিকেশন নির্ভরতা ইনস্টল করতে `composer install` চালাব:
 
 ```bash
-ডকার কম্পোজ exec অ্যাপ কম্পোজার ইনস্টল করুন
+docker compose exec app composer install
 ```
 
 পরিবেশ সেটিংস অনুলিপি করুন:
 
 ```bash
-ডকার কম্পোজ exec অ্যাপ cp .env.local .env
+docker compose exec app cp .env.local .env
 ```
 
-'কারিগর' লারাভেল কমান্ড-লাইন টুল দিয়ে এনক্রিপশন কী সেট করুন:
+`artisan` লারাভেল কমান্ড-লাইন টুল দিয়ে এনক্রিপশন কী সেট করুন:
 
 ```bash
-ডকার কম্পোজ exec অ্যাপ ./artisan key: জেনারেট --ansi
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 DB এবং বীজ জাল ডেটা মাইগ্রেট করুন:
 
 ```bash
-ডকার কম্পোজ এক্সেক অ্যাপ।/শিল্পী মাইগ্রেট: ফ্রেশ --বীজ
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 এবং ফিলামেন্ট অ্যাডমিন ব্যবহারকারী যোগ করুন:
 
-``বাশ
-ডকার কম্পোজ exec অ্যাপ ./artisan make:filament-user
+```bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 এবং আপনার প্রিয় ব্রাউজারে http://127.0.0.1:8000 খুলুন। Laravel ব্লগ ব্যবহার করে খুশি!
@@ -81,7 +85,7 @@ DB এবং বীজ জাল ডেটা মাইগ্রেট করু
 
 ডকার কন্টেইনারে অ্যাক্সেস:
 
-``বাশ
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

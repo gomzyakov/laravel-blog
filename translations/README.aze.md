@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[ingilis](/README.md) README faylına uyğun olması üçün bu fayl yenilənməlidir.
+
 ![Filament admin paneli ilə Laravel bloqu](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -34,7 +38,7 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 Aşağıdakı komanda ilə `laravel-blog` şəklini yaradın:
 
 ``` bash
-docker quruluş tərtib edir --no-cache
+docker compose build --no-cache
 ```
 
 >Bu əmrin tamamlanması bir neçə dəqiqə çəkə bilər.
@@ -42,13 +46,13 @@ docker quruluş tərtib edir --no-cache
 Quraşdırma tamamlandıqda, mühiti fon rejimində aşağıdakılarla işlədə bilərsiniz:
 
 ``` bash
-docker tərtib -d
+docker compose up -d
 ```
 
-Tətbiq asılılıqlarını quraşdırmaq üçün indi "bəstəkarın quraşdırılması"nı işlədəcəyik:
+Tətbiq asılılıqlarını quraşdırmaq üçün indi `composer install`nı işlədəcəyik:
 
 ``` bash
-docker compose exec proqram bəstəkar quraşdırma
+docker compose exec app composer install
 ```
 
 Ətraf mühit parametrlərini kopyalayın:

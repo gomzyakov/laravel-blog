@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Tämä tiedosto on päivitettävä, jotta se vastaa [englanti](/README.md) README-tiedostoa.
+
 ![Laravel-blogi Filamentin hallintapaneelilla](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -26,7 +30,7 @@ Avaa [uusi numero](https://github.com/gomzyakov/laravel-blog/issues/new) pyytä�
 Kloonaa projekti:
 
 ```bash
-git-klooni git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Uskon, että sinulla on jo Docker asennettuna. Jos ei, tee se [Macissa](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) tai [Linux](https://docs.docker.com/desktop/install/linux-install/).
@@ -34,7 +38,7 @@ Uskon, että sinulla on jo Docker asennettuna. Jos ei, tee se [Macissa](https://
 Rakenna `laravel-blog` -kuva seuraavalla komennolla:
 
 ```bash
-telakka kirjoita koonti -- ei välimuistia
+docker compose build --no-cache
 ```
 
 >Tämän komennon suorittaminen voi kestää muutaman minuutin.
@@ -42,37 +46,37 @@ telakka kirjoita koonti -- ei välimuistia
 Kun rakennus on valmis, voit ajaa ympäristöä taustatilassa seuraavasti:
 
 ```bash
-telakka säveltää -d
+docker compose up -d
 ```
 
-Suoritamme nyt "composer install" asentaaksemme sovellusriippuvuudet:
+Suoritamme nyt `composer install` asentaaksemme sovellusriippuvuudet:
 
 ```bash
-docker compose exec app säveltäjän asennus
+docker compose exec app composer install
 ```
 
 Kopioi ympäristöasetukset:
 
 ```bash
-docker kirjoittaa exec app cp .env.local .env
+docker compose exec app cp .env.local .env
 ```
 
 Aseta salausavain "artisan" Laravel -komentorivityökalulla:
 
 ```bash
-telakka kirjoittaa exec app ./artisan key:generate --ansi
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 Siirrä DB ja siemen väärennetyt tiedot:
 
 ```bash
-docker kirjoittaa exec app ./artisan migrate:fresh --seed
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 Ja lisää Filamentin järjestelmänvalvojan käyttäjä:
 
 ```bash
-telakka kirjoittaa exec app ./artisan make:filament-user
+docker compose exec app ./artisan make:filament-user
 ```
 
 Ja avaa http://127.0.0.1:8000 suosikkiselaimessasi. Hyvää Laravel-blogin käyttöä!

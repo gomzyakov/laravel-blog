@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>این فایل برای مطابقت با فایل README [انگلیسی](/README.md) باید به روز شود.
+
 ![وبلاگ لاراول با پنل مدیریت Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,7 +29,7 @@ _Read this in [other languages](./Translations.md)_
 
 کلون کردن پروژه:
 
-``باش
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -33,7 +37,7 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 
 تصویر laravel-blog را با دستور زیر بسازید:
 
-``باش
+```bash
 docker compose build --no-cache
 ```
 
@@ -41,37 +45,37 @@ docker compose build --no-cache
 
 پس از اتمام ساخت، می توانید محیط را در حالت پس زمینه با استفاده از:
 
-``باش
-docker آهنگسازی -d
+```bash
+docker compose up -d
 ```
 
-اکنون «composer install» را برای نصب وابستگی‌های برنامه اجرا می‌کنیم:
+اکنون `composer install` را برای نصب وابستگی‌های برنامه اجرا می‌کنیم:
 
-``باش
-نصب برنامه docker compose exec composer
+```bash
+docker compose exec app composer install
 ```
 
 تنظیمات محیط را کپی کنید:
 
-``باش
+```bash
 docker compose exec app cp .env.local .env
 ```
 
-کلید رمزگذاری را با ابزار خط فرمان «Artisan» لاراول تنظیم کنید:
+کلید رمزگذاری را با ابزار خط فرمان `artisan` لاراول تنظیم کنید:
 
-``باش
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 انتقال DB و تخمین داده های جعلی:
 
-``باش
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 و کاربر مدیریت Filament را اضافه کنید:
 
-``باش
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ docker compose exec app ./artisan make:filament-user
 
 دسترسی به کانتینر Docker:
 
-``باش
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

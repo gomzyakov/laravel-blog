@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Diese Datei muss aktualisiert werden, damit sie mit der README-Datei [englisch](/README.md) übereinstimmt.
+
 ![Laravel-Blog mit Filament-Admin-Panel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,55 +29,55 @@ Das Ziel dieses Repositorys ist es, gute [Laravel](https://laravel.com) Entwickl
 
 Klonen Sie das Projekt:
 
-„Bash
-Git-Klon git@github.com:gomzyakov/laravel-blog.git
-„
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
+```
 
 Ich glaube, Sie haben Docker bereits installiert. Wenn nicht, machen Sie es einfach auf [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) oder [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Erstellen Sie das „laravel-blog“-Image mit dem folgenden Befehl:
+Erstellen Sie das `laravel-blog`-Image mit dem folgenden Befehl:
 
-„Bash
-Docker Compose Build --no-cache
-„
+```bash
+docker compose build --no-cache
+```
 
 >Die Ausführung dieses Befehls kann einige Minuten dauern.
 
 Wenn der Build abgeschlossen ist, können Sie die Umgebung im Hintergrundmodus ausführen mit:
 
-„Bash
-Docker komponieren -d
-„
+```bash
+docker compose up -d
+```
 
-Wir führen nun „composer install“ aus, um die Anwendungsabhängigkeiten zu installieren:
+Wir führen nun `composer install` aus, um die Anwendungsabhängigkeiten zu installieren:
 
-„Bash
-Docker Compose Exec App Composer installieren
-„
+```bash
+docker compose exec app composer install
+```
 
 Kopieren Sie die Umgebungseinstellungen:
 
-„Bash
-Docker Compose Exec App CP .env.local .env
-„
+```bash
+docker compose exec app cp .env.local .env
+```
 
-Legen Sie den Verschlüsselungsschlüssel mit dem Laravel-Befehlszeilentool „artisan“ fest:
+Legen Sie den Verschlüsselungsschlüssel mit dem Laravel-Befehlszeilentool `artisan` fest:
 
-„Bash
-Docker Compose Exec App ./Artisan Key:generate --ansi
-„
+```bash
+docker compose exec app ./artisan key:generate --ansi
+```
 
 DB migrieren und Fake-Daten säen:
 
-„Bash
-Docker Compose Exec App ./artisan migrate:fresh --seed
-„
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
+```
 
 Und fügen Sie den Filament-Administratorbenutzer hinzu:
 
-„Bash
-Docker Compose Exec App ./artisan make:filament-user
-„
+```bash
+docker compose exec app ./artisan make:filament-user
+```
 
 Und öffnen Sie http://127.0.0.1:8000 in Ihrem Lieblingsbrowser. Viel Freude mit Laravel Blog!
 
@@ -81,9 +85,9 @@ Und öffnen Sie http://127.0.0.1:8000 in Ihrem Lieblingsbrowser. Viel Freude mit
 
 Zugriff auf den Docker-Container:
 
-„Bash
+```bash
 docker exec -ti laravel-blog-app bash
-„
+```
 
 ## Lizenz
 

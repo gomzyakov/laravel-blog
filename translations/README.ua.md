@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Цей файл потрібно оновити, щоб відповідати файлу README [англійською](/README.md).
+
 ![Блог Laravel із панеллю адміністратора Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,15 +29,15 @@ _Read this in [other languages](./Translations.md)_
 
 Клонуйте проект:
 
-```баш
-git клон git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Я вважаю, що у вас уже встановлено Docker. Якщо ні, просто зробіть це на [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) -install/) або [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
 Створіть образ `laravel-blog` за допомогою такої команди:
 
-```баш
+```bash
 docker compose build --no-cache
 ```
 
@@ -41,37 +45,37 @@ docker compose build --no-cache
 
 Коли збірка завершена, ви можете запустити середовище у фоновому режимі за допомогою:
 
-```баш
+```bash
 docker compose up -d
 ```
 
 Тепер ми запустимо `composer install`, щоб встановити залежності програми:
 
-```баш
+```bash
 docker compose exec app composer install
 ```
 
 Скопіюйте налаштування середовища:
 
-```баш
+```bash
 docker compose exec app cp .env.local .env
 ```
 
 Встановіть ключ шифрування за допомогою інструмента командного рядка `artisan` Laravel:
 
-```баш
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 Перенести фальшиві дані БД і початкового рівня:
 
-```баш
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 І додайте користувача адміністратора Filament:
 
-```баш
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ docker compose exec app ./artisan make:filament-user
 
 Доступ до контейнера Docker:
 
-```баш
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

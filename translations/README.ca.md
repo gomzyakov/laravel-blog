@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Aquest fitxer s'ha d'actualitzar per tal que coincideixi amb el fitxer README [anglès](/README.md).
+
 ![Bloc de Laravel amb panell d'administració de Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -45,10 +49,10 @@ Quan s'hagi acabat la compilació, podeu executar l'entorn en mode de fons amb:
 Docker composa -d
 ```
 
-Ara executarem "composer install" per instal·lar les dependències de l'aplicació:
+Ara executarem `composer install` per instal·lar les dependències de l'aplicació:
 
 ```bash
-instal·lació del compositor de l'aplicació docker compose exec
+docker compose exec app composer install
 ```
 
 Copieu la configuració de l'entorn:
@@ -57,7 +61,7 @@ Copieu la configuració de l'entorn:
 docker compose exec app cp .env.local .env
 ```
 
-Estableix la clau de xifratge amb l'eina de línia d'ordres Laravel "artesana":
+Estableix la clau de xifratge amb l'eina de línia d'ordres Laravel `artisan`:
 
 ```bash
 docker compose exec app ./artisan key:generate --ansi

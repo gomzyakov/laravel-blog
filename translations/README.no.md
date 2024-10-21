@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Denne filen må oppdateres for å matche [engelsk](/README.md) README-filen.
+
 ![Laravel-blogg med Filament-administrasjonspanel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,8 +29,8 @@ Målet med dette depotet er å vise frem god [Laravel](https://laravel.com) utvi
 
 Klon prosjektet:
 
-``` bash
-git klone git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Jeg tror du allerede har Docker installert. Hvis ikke, bare gjør det på [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) eller [Linux](https://docs.docker.com/desktop/install/linux-install/).
@@ -42,13 +46,13 @@ docker compose build --no-cache
 Når byggingen er ferdig, kan du kjøre miljøet i bakgrunnsmodus med:
 
 ``` bash
-docker komponere opp -d
+docker compose up -d
 ```
 
 Vi kjører nå `composer install` for å installere applikasjonsavhengighetene:
 
-``` bash
-installering av docker compose exec app composer
+```bash
+docker compose exec app composer install
 ```
 
 Kopier miljøinnstillingene:
@@ -57,7 +61,7 @@ Kopier miljøinnstillingene:
 docker compose exec app cp .env.local .env
 ```
 
-Angi krypteringsnøkkel med kommandolinjeverktøyet "håndverker" Laravel:
+Angi krypteringsnøkkel med kommandolinjeverktøyet `artisan` Laravel:
 
 ``` bash
 docker compose exec app ./artisan key:generate --ansi
@@ -65,7 +69,7 @@ docker compose exec app ./artisan key:generate --ansi
 
 Migrer DB og seed falske data:
 
-``` bash
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
@@ -82,7 +86,7 @@ Og åpne http://127.0.0.1:8000 i favorittnettleseren din. Glad for å bruke Lara
 Tilgang til Docker-beholderen:
 
 ``` bash
-docker exec -ti laravel-blogg-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## Lisens

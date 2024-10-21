@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Šį failą reikia atnaujinti, kad jis atitiktų [anglų kalba](/README.md) README failą.
+
 ![Laravel tinklaraštis su Filament administravimo skydeliu](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,54 +29,54 @@ Atidarykite [naują leidimą] (https://github.com/gomzyakov/laravel-blog/issues/
 
 Klonuoti projektą:
 
-''bash
-git klonas git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Manau, kad jau įdiegėte „Docker“. Jei ne, tiesiog padarykite tai [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) arba [Linux] (https://docs.docker.com/desktop/install/linux-install/).
 
-Sukurkite „laravel-blog“ vaizdą naudodami šią komandą:
+Sukurkite `laravel-blog` vaizdą naudodami šią komandą:
 
-''bash
-docker Compe build --no-cache
+```bash
+docker compose build --no-cache
 ```
 
 >Ši komanda gali užtrukti kelias minutes.
 
 Kai kūrimas bus baigtas, galite paleisti aplinką fono režimu naudodami:
 
-''bash
-dokeris sudaryti -d
+```bash
+docker compose up -d
 ```
 
-Dabar paleisime „composer install“, kad įdiegtume programų priklausomybes:
+Dabar paleisime `composer install`, kad įdiegtume programų priklausomybes:
 
-''bash
-docker compose exec programos kompozitoriaus diegimas
+```bash
+docker compose exec app composer install
 ```
 
 Nukopijuokite aplinkos nustatymus:
 
-''bash
-docker sukurti exec app cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
-Nustatykite šifravimo raktą naudodami „Artisan“ Laravel komandinės eilutės įrankį:
+Nustatykite šifravimo raktą naudodami `artisan` Laravel komandinės eilutės įrankį:
 
-''bash
-docker sukurti exec app ./artisan key:generate --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 Perkelti DB ir suklastotus duomenis:
 
-''bash
-docker sukurti exec programą ./artisan migrate:fresh --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 Ir pridėkite „Filament“ administratoriaus vartotoją:
 
-''bash
-docker Compe Exec app ./artisan make:filament-user
+```bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 Ir atidarykite http://127.0.0.1:8000 savo mėgstamoje naršyklėje. Džiaugiamės naudodami Laravel tinklaraštį!
@@ -81,7 +85,7 @@ Ir atidarykite http://127.0.0.1:8000 savo mėgstamoje naršyklėje. Džiaugiamė
 
 Prieiga prie „Docker“ konteinerio:
 
-''bash
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

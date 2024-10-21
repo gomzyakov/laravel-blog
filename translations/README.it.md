@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Questo file deve essere aggiornato per corrispondere al file README [inglese](/README.md).
+
 ![Blog Laravel con pannello di amministrazione di Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,7 +29,7 @@ Apri un [nuovo numero](https://github.com/gomzyakov/laravel-blog/issues/new) per
 
 Clonare il progetto:
 
-"bash."
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -33,7 +37,7 @@ Credo che tu abbia già installato Docker. In caso contrario, eseguilo su [Mac](
 
 Costruisci l'immagine `laravel-blog` con il seguente comando:
 
-"bash."
+```bash
 docker compose build --no-cache
 ```
 
@@ -41,37 +45,37 @@ docker compose build --no-cache
 
 Al termine della compilazione, puoi eseguire l'ambiente in modalità background con:
 
-"bash."
-la finestra mobile compone -d
+```bash
+docker compose up -d
 ```
 
-Ora eseguiremo "composer install" per installare le dipendenze dell'applicazione:
+Ora eseguiremo `composer install` per installare le dipendenze dell'applicazione:
 
-"bash."
-docker compose installazione del compositore di app exec
+```bash
+docker compose exec app composer install
 ```
 
 Copia le impostazioni dell'ambiente:
 
-"bash."
+```bash
 docker compose exec app cp .env.local .env
 ```
 
-Imposta la chiave di crittografia con lo strumento da riga di comando "artisan" Laravel:
+Imposta la chiave di crittografia con lo strumento da riga di comando `artisan` Laravel:
 
-"bash."
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 Migrazione del DB e seed di dati falsi:
 
-"bash."
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 E aggiungi l'utente amministratore di Filament:
 
-"bash."
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ E apri http://127.0.0.1:8000 nel tuo browser preferito. Felice di usare il blog 
 
 Accesso al contenitore Docker:
 
-"bash."
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

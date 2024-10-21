@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>File ini perlu diperbarui agar cocok dengan file README [bahasa inggris](/README.md).
+
 ![Blog Laravel dengan panel admin Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,7 +29,7 @@ Buka [edisi baru](https://github.com/gomzyakov/laravel-blog/issues/new) untuk me
 
 Kloning proyek:
 
-``` pesta
+``` bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -33,46 +37,46 @@ Saya yakin Anda sudah menginstal Docker. Jika tidak, lakukan saja di [Mac](https
 
 Bangun image `laravel-blog` dengan perintah berikut:
 
-``` pesta
-buruh pelabuhan menulis build --no-cache
+```bash
+docker compose build --no-cache
 ```
 
 >Perintah ini mungkin memerlukan waktu beberapa menit untuk diselesaikan.
 
 Ketika pembangunan selesai, Anda dapat menjalankan lingkungan dalam mode latar belakang dengan:
 
-``` pesta
-buruh pelabuhan menyusun -d
+```bash
+docker compose up -d
 ```
 
 Sekarang kita akan menjalankan `composer install` untuk menginstal dependensi aplikasi:
 
-``` pesta
-buruh pelabuhan menulis instalasi komposer aplikasi exec
+```bash
+docker compose exec app composer install
 ```
 
 Salin pengaturan lingkungan:
 
-``` pesta
-buruh pelabuhan menulis aplikasi exec cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
 Setel kunci enkripsi dengan alat baris perintah `artisan` Laravel:
 
-``` pesta
-buruh pelabuhan menulis aplikasi exec ./artisan key:generate --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 Migrasikan data palsu DB & seed:
 
-``` pesta
-buruh pelabuhan menulis aplikasi exec ./artisan migrasi:segar --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 Dan tambahkan pengguna admin Filament:
 
-``` pesta
-buruh pelabuhan menulis aplikasi exec ./artisan make:filament-user
+``` bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 Dan buka http://127.0.0.1:8000 di browser favorit Anda. Selamat menggunakan Laravel Blog!
@@ -81,8 +85,8 @@ Dan buka http://127.0.0.1:8000 di browser favorit Anda. Selamat menggunakan Lara
 
 Akses ke wadah Docker:
 
-``` pesta
-docker exec -ti laravel-blog-aplikasi bash
+```bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## Lisensi

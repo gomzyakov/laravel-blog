@@ -1,4 +1,8 @@
-﻿![Blog Laravel z panelem administracyjnym Filament](../docs/social-preview-en.png)
+﻿>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Ten plik wymaga aktualizacji, aby był zgodny z plikiem README [angielski](/README.md).
+
+![Blog Laravel z panelem administracyjnym Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
 
@@ -25,15 +29,15 @@ Otwórz [nowy numer](https://github.com/gomzyakov/laravel-blog/issues/new), aby 
 
 Sklonuj projekt:
 
-,,bicie
-git klon git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Wierzę, że masz już zainstalowany Docker. Jeśli nie, po prostu zrób to na [Macu](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) lub [Linux] (https://docs.docker.com/desktop/install/linux-install/).
 
 Zbuduj obraz `laravel-blog` za pomocą następującego polecenia:
 
-,,bicie
+```bash
 docker compose build --no-cache
 ```
 
@@ -41,38 +45,38 @@ docker compose build --no-cache
 
 Po zakończeniu kompilacji możesz uruchomić środowisko w tle za pomocą:
 
-,,bicie
-doker komponuj -d
+```bash
+docker compose up -d
 ```
 
 Uruchomimy teraz `composer install`, aby zainstalować zależności aplikacji:
 
-,,bicie
-docker compose exec instalacja kompozytora aplikacji
+```bash
+docker compose exec app composer install
 ```
 
 Skopiuj ustawienia środowiska:
 
-,,bicie
-docker compose exec aplikacja cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
-Ustaw klucz szyfrowania za pomocą narzędzia wiersza poleceń `rzemieślnika` Laravel:
+Ustaw klucz szyfrowania za pomocą narzędzia wiersza poleceń `artisan` Laravel:
 
-,,bicie
-aplikacja docker compose exec ./Artist Key:generate --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 Migracja bazy danych i fałszywe dane:
 
-,,bicie
-aplikacja docker compose exec ./Artist migracji:fresh --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 I dodaj administratora Filament:
 
-,,bicie
-aplikacja docker compose exec ./Artist make:filament-user
+``` bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 I otwórz http://127.0.0.1:8000 w swojej ulubionej przeglądarce. Miłego korzystania z bloga Laravel!
@@ -81,7 +85,7 @@ I otwórz http://127.0.0.1:8000 w swojej ulubionej przeglądarce. Miłego korzys
 
 Dostęp do kontenera Docker:
 
-,,bicie
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

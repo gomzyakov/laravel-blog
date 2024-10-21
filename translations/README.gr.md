@@ -1,4 +1,8 @@
-﻿![Ιστολόγιο Laravel με πίνακα διαχείρισης Filament](../docs/social-preview-en.png)
+﻿>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Αυτό το αρχείο πρέπει να ενημερωθεί για να ταιριάζει με το [αγγλικά](/README.md) αρχείο README.
+
+![Ιστολόγιο Laravel με πίνακα διαχείρισης Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
 
@@ -25,7 +29,7 @@ _Read this in [other languages](./Translations.md)_
 
 Κλωνοποιήστε το έργο:
 
-```μπας
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -33,7 +37,7 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 
 Δημιουργήστε την εικόνα `laravel-blog` με την ακόλουθη εντολή:
 
-```μπας
+```bash
 docker compose build --no-cache
 ```
 
@@ -41,37 +45,37 @@ docker compose build --no-cache
 
 Όταν ολοκληρωθεί η κατασκευή, μπορείτε να εκτελέσετε το περιβάλλον σε λειτουργία παρασκηνίου με:
 
-```μπας
-docker συνθέτω επάνω -δ
+```bash
+docker compose up -d
 ```
 
-Τώρα θα τρέξουμε το "composer install" για να εγκαταστήσουμε τις εξαρτήσεις της εφαρμογής:
+Τώρα θα τρέξουμε το `composer install` για να εγκαταστήσουμε τις εξαρτήσεις της εφαρμογής:
 
-```μπας
-εγκατάσταση συνθέτη εφαρμογής docker compose exec
+```bash
+docker compose exec app composer install
 ```
 
 Αντιγράψτε τις ρυθμίσεις περιβάλλοντος:
 
-```μπας
+```bash
 docker compose exec app cp .env.local .env
 ```
 
-Ορισμός κλειδιού κρυπτογράφησης με το εργαλείο γραμμής εντολών «artisan» Laravel:
+Ορισμός κλειδιού κρυπτογράφησης με το εργαλείο γραμμής εντολών `artisan` Laravel:
 
-```μπας
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 Μετεγκατάσταση DB και δημιουργία πλαστών δεδομένων:
 
-```μπας
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 Και προσθέστε χρήστη διαχειριστή Filament:
 
-```μπας
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ docker compose exec app ./artisan make:filament-user
 
 Πρόσβαση στο κοντέινερ Docker:
 
-```μπας
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>ໄຟລ໌ນີ້ຕ້ອງການອັບເດດເພື່ອໃຫ້ກົງກັບໄຟລ໌ README [ພາສາອັງກິດ](/README.md).
+
 ![Laravel blog with Filament admin panel]../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,7 +29,7 @@ _Read this in [other languages](./Translations.md)_
 
 Clone ໂຄງ​ການ​:
 
-``ບັກ
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -33,46 +37,46 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 
 ສ້າງຮູບພາບ 'laravel-blog' ດ້ວຍຄໍາສັ່ງຕໍ່ໄປນີ້:
 
-``ບັກ
-docker ຂຽນ build --no-cache
+```bash
+docker compose build --no-cache
 ```
 
 > ຄຳສັ່ງນີ້ອາດຈະໃຊ້ເວລາສອງສາມນາທີເພື່ອໃຫ້ສຳເລັດ.
 
 ເມື່ອ​ການ​ກໍ່​ສ້າງ​ສໍາ​ເລັດ​, ທ່ານ​ສາ​ມາດ​ດໍາ​ເນີນ​ການ​ສະ​ພາບ​ແວດ​ລ້ອມ​ໃນ​ຮູບ​ແບບ​ພື້ນ​ຖານ​ທີ່​ມີ​:
 
-``ບັກ
-docker ປະກອບ -d
+```bash
+docker compose up -d
 ```
 
-ຕອນນີ້ພວກເຮົາຈະດໍາເນີນການ 'ຕິດຕັ້ງ composer' ເພື່ອຕິດຕັ້ງການຂຶ້ນກັບແອັບພລິເຄຊັນ:
+ຕອນນີ້ພວກເຮົາຈະດໍາເນີນການ `composer install` ເພື່ອຕິດຕັ້ງການຂຶ້ນກັບແອັບພລິເຄຊັນ:
 
-``ບັກ
-docker ຕິດຕັ້ງ exec app composer
+```bash
+docker compose exec app composer install
 ```
 
 ສຳເນົາການຕັ້ງຄ່າສະພາບແວດລ້ອມ:
 
-``ບັກ
-docker ປະກອບ exec app cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
-ຕັ້ງລະຫັດການເຂົ້າລະຫັດດ້ວຍເຄື່ອງມືເສັ້ນຄໍາສັ່ງ `ຊ່າງຝີມື` Laravel:
+ຕັ້ງລະຫັດການເຂົ້າລະຫັດດ້ວຍເຄື່ອງມືເສັ້ນຄໍາສັ່ງ `artisan` Laravel:
 
-``ບັກ
-docker ປະກອບ exec app ./artisan key:generate --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 ຍ້າຍຂໍ້ມູນປອມ DB ແລະແກ່ນ:
 
-``ບັກ
-docker ປະກອບ exec app ./artisan migrate:fresh --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 ແລະເພີ່ມ Filament admin user:
 
-``ບັກ
-docker ປະກອບ exec app ./artisan make:filament-user
+```bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 ແລະເປີດ http://127.0.0.1:8000 ໃນຕົວທ່ອງເວັບທີ່ທ່ານມັກ. ມີຄວາມສຸກກັບການໃຊ້ Laravel Blog!
@@ -81,7 +85,7 @@ docker ປະກອບ exec app ./artisan make:filament-user
 
 ການເຂົ້າເຖິງກ່ອງບັນຈຸ Docker:
 
-``ບັກ
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

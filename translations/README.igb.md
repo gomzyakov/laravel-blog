@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>Ekwesịrị imelite faịlụ a ka ọ dabara na faịlụ README [bekee](/README.md)
+
 ![Blọọgụ Laravel nwere panel nchịkwa Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,55 +29,55 @@ Mepee [okwu ọhụrụ](https://github.com/gomzyakov/laravel-blog/issues/new) i
 
 Mechie oru ngo:
 
-`` bash
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
-``
+```
 
 Ekwenyere m na ị tinyela Docker. Ọ bụrụ na ọ bụghị, mee ya na [Mac] (https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows). -install/) ma ọ bụ [Linux] (https://docs.docker.com/desktop/install/linux-install/).
 
-Jiri iwu a wuo ihe onyonyo 'laravel-blog':
+Jiri iwu a wuo ihe onyonyo `laravel-blog`:
 
-`` bash
-docker dere wuo --enweghị cache
-``
+```bash
+docker compose build --no-cache
+```
 
 > Iwu a nwere ike were nkeji ole na ole iji mechaa.
 
 Mgbe emechara ihe owuwu a, ị nwere ike iji:
 
-`` bash
-docker dere elu -d
-``
+```bash
+docker compose up -d
+```
 
-Anyị ga-agba ọsọ 'onye na-ede ihe install' iji wụnye ndabere ngwa:
+Anyị ga-agba ọsọ `composer install` iji wụnye ndabere ngwa:
 
-`` bash
-docker dere exec ngwa onye na-ede egwú wụnye
-``
+```bash
+docker compose exec app composer install
+```
 
 Detuo ntọala gburugburu:
 
-`` bash
-docker dere exec ngwa cp .env.local .env
-``
+```bash
+docker compose exec app cp .env.local .env
+```
 
-Tọọ igodo nzuzo site na iji ngwa ahịrị iwu 'artisan' Laravel:
+Tọọ igodo nzuzo site na iji ngwa ahịrị iwu `artisan` Laravel:
 
-`` bash
-docker dere exec ngwa ./artisan igodo: mepụta --ansi
-``
+```bash
+docker compose exec app ./artisan key:generate --ansi
+```
 
 Bugharịa DB & data adịgboroja mkpụrụ:
 
-`` bash
-docker dere exec ngwa ./artisan migrate:fresh --seed
-``
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
+```
 
 Ma gbakwunye onye ọrụ nchịkwa Filament:
 
-`` bash
-docker dere exec ngwa ./artisan make:filament-user
-``
+``` bash
+docker compose exec app ./artisan make:filament-user
+```
 
 Mepee http://127.0.0.1:8000 na ihe nchọgharị kacha amasị gị. Obi ụtọ na-eji Laravel Blog!
 
@@ -81,9 +85,9 @@ Mepee http://127.0.0.1:8000 na ihe nchọgharị kacha amasị gị. Obi ụtọ
 
 Ịbanye na akpa Docker:
 
-`` bash
+```bash
 docker exec -ti laravel-blog-app bash
-``
+```
 
 ## Ikikere
 

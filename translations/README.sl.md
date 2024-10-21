@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>To datoteko je treba posodobiti, da se ujema z [angleščina](/README.md) datoteko README.
+
 ![Laravel blog s skrbniško ploščo Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -26,7 +30,7 @@ Odprite [novo številko](https://github.com/gomzyakov/laravel-blog/issues/new), 
 Kloniraj projekt:
 
 ```bash
-git klon git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Mislim, da že imate nameščen Docker. Če ne, to preprosto storite v [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) ali [Linux](https://docs.docker.com/desktop/install/linux-install/).
@@ -42,7 +46,7 @@ docker compose build --no-cache
 Ko je gradnja končana, lahko zaženete okolje v načinu ozadja z:
 
 ```bash
-docker sestavi -d
+docker compose up -d
 ```
 
 Zdaj bomo zagnali `composer install`, da namestimo odvisnosti aplikacije:

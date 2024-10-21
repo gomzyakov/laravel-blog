@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[영어](/README.md) README 파일과 일치하려면 이 파일을 업데이트해야 합니다.
+
 ![Filament 관리 패널이 포함된 Laravel 블로그](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,55 +29,55 @@ _Read this in [other languages](./Translations.md)_
 
 프로젝트를 복제합니다.
 
-``배쉬
-자식 클론 git@github.com:gomzyakov/laravel-blog.git
-````
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
+```
 
 이미 Docker가 설치되어 있다고 생각합니다. 그렇지 않다면 [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows)에서 하세요. -install/) 또는 [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
 다음 명령을 사용하여 `laravel-blog` 이미지를 빌드합니다.
 
-``배쉬
+```bash
 docker compose build --no-cache
-````
+```
 
 >이 명령을 완료하는 데 몇 분 정도 걸릴 수 있습니다.
 
 빌드가 완료되면 다음을 사용하여 백그라운드 모드에서 환경을 실행할 수 있습니다.
 
-``배쉬
-도커 작성 -d
-````
+```bash
+docker compose up -d
+```
 
 이제 `composer install`을 실행하여 애플리케이션 종속성을 설치하겠습니다.
 
-``배쉬
-docker compose exec 앱 작곡가 설치
-````
+```bash
+docker compose exec app composer install
+```
 
 환경 설정을 복사합니다.
 
-``배쉬
-docker compose exec 앱 cp .env.local .env
-````
+```bash
+docker compose exec app cp .env.local .env
+```
 
 `artisan` Laravel 명령줄 도구를 사용하여 암호화 키를 설정하세요.
 
-``배쉬
+```bash
 docker compose exec app ./artisan key:generate --ansi
-````
+```
 
 DB 마이그레이션 및 가짜 데이터 시드:
 
-``배쉬
-docker compose exec app ./artisan 마이그레이션:fresh --seed
-````
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
+```
 
 그리고 Filament 관리자를 추가하세요:
 
-``배쉬
-docker compose exec app ./artisan make:필라멘트 사용자
-````
+```bash
+docker compose exec app ./artisan make:filament-user
+```
 
 그리고 즐겨 사용하는 브라우저에서 http://127.0.0.1:8000을 엽니다. Laravel 블로그를 이용해 주셔서 감사합니다!
 
@@ -81,9 +85,9 @@ docker compose exec app ./artisan make:필라멘트 사용자
 
 Docker 컨테이너에 액세스:
 
-``배쉬
+```bash
 docker exec -ti laravel-blog-app bash
-````
+```
 
 ## 라이선스
 

@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>यो फाइल [अंग्रेजी](/README.md) README फाइलसँग मिलाउनको लागि अद्यावधिक गर्न आवश्यक छ।
+
 ![फिलामेन्ट एडमिन प्यानलको साथ लारावेल ब्लग](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,7 +29,7 @@ _Read this in [other languages](./Translations.md)_
 
 परियोजना क्लोन गर्नुहोस्:
 
-``बाश
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -33,46 +37,46 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 
 निम्न आदेशको साथ `laravel-blog` छवि बनाउनुहोस्:
 
-``बाश
-डकर कम्पोज बिल्ड --नो-क्यास
+```bash
+docker compose build --no-cache
 ```
 
 > यो आदेश पूरा हुन केही मिनेट लाग्न सक्छ।
 
 जब निर्माण समाप्त हुन्छ, तपाईले वातावरणलाई पृष्ठभूमि मोडमा चलाउन सक्नुहुन्छ:
 
-``बाश
-डकर कम्पोज अप -d
+```bash
+docker compose up -d
 ```
 
-हामी अब एप्लिकेसन निर्भरताहरू स्थापना गर्न 'कम्पोजर स्थापना' चलाउनेछौं:
+हामी अब एप्लिकेसन निर्भरताहरू स्थापना गर्न `composer install` चलाउनेछौं:
 
-``बाश
-docker कम्पोज exec एप कम्पोजर स्थापना
+```bash
+docker compose exec app composer install
 ```
 
 वातावरण सेटिङहरू प्रतिलिपि गर्नुहोस्:
 
-``बाश
-डकर रचना exec एप cp .env.local .env
+```bash
+docker compose exec app cp .env.local .env
 ```
 
-'कारीगर' Laravel कमाण्ड-लाइन उपकरणसँग इन्क्रिप्शन कुञ्जी सेट गर्नुहोस्:
+`artisan` Laravel कमाण्ड-लाइन उपकरणसँग इन्क्रिप्शन कुञ्जी सेट गर्नुहोस्:
 
-``बाश
-docker कम्पोज exec एप।/artisan key:generate --ansi
+```bash
+docker compose exec app ./artisan key:generate --ansi
 ```
 
 DB र बीज नकली डाटा माइग्रेट:
 
-``बाश
-docker कम्पोज exec एप।/artisan migrate:fresh --seed
+```bash
+docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 र फिलामेन्ट प्रशासक प्रयोगकर्ता थप्नुहोस्:
 
-``बाश
-docker कम्पोज exec एप।/artisan make:filament-user
+``` bash
+docker compose exec app ./artisan make:filament-user
 ```
 
 र आफ्नो मनपर्ने ब्राउजरमा http://127.0.0.1:8000 खोल्नुहोस्। Laravel ब्लग प्रयोग गरेर खुसी!
@@ -81,7 +85,7 @@ docker कम्पोज exec एप।/artisan make:filament-user
 
 डकर कन्टेनरमा पहुँच:
 
-``बाश
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

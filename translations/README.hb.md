@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>קובץ זה צריך לעדכן כדי להתאים לקובץ README [אנגלית](/README.md).
+
 ![בלוג Laravel עם פאנל ניהול Filament](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,15 +29,15 @@ _Read this in [other languages](./Translations.md)_
 
 שכפול הפרויקט:
 
-```באש
-שיבוט git git@github.com:gomzyakov/laravel-blog.git
+```bash
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 אני מאמין שכבר התקנת את Docker. אם לא, פשוט עשה זאת ב-[Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) או [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
 בנה את תמונת `laravel-blog` עם הפקודה הבאה:
 
-```באש
+```bash
 docker compose build --no-cache
 ```
 
@@ -41,37 +45,37 @@ docker compose build --no-cache
 
 לאחר סיום הבנייה, תוכל להפעיל את הסביבה במצב רקע עם:
 
-```באש
+```bash
 docker compose up -d
 ```
 
-כעת נריץ את 'התקנת מלחין' כדי להתקין את התלות באפליקציה:
+כעת נריץ את `composer install` כדי להתקין את התלות באפליקציה:
 
-```באש
-docker compose exec app composer התקנת
+```bash
+docker compose exec app composer install
 ```
 
 העתק את הגדרות הסביבה:
 
-```באש
+```bash
 docker compose exec app cp .env.local .env
 ```
 
 הגדר מפתח הצפנה עם כלי שורת הפקודה 'ארטיזן' Laravel:
 
-```באש
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 העבר DB ונתונים מזויפים זרעים:
 
-```באש
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 והוסף משתמש מנהל Filament:
 
-```באש
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ docker compose exec app ./artisan make:filament-user
 
 גישה למיכל Docker:
 
-```באש
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 

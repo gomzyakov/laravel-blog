@@ -1,3 +1,7 @@
+>[!IMPORTANT]
+>This file needs to updated in order to match the [english](/README.md) README file.  
+>[ағылшын](/README.md) README файлына сәйкес болу үшін бұл файлды жаңарту қажет.
+
 ![Filament басқару тақтасы бар Laravel блогы](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
@@ -25,7 +29,7 @@ _Read this in [other languages](./Translations.md)_
 
 Жобаны клондау:
 
-```бас
+```bash
 git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
@@ -33,45 +37,45 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 
 `laravel-blog` кескінін келесі пәрменмен құрастырыңыз:
 
-```бас
-докер құрастырады --кэш жоқ
+```bash
+docker compose build --no-cache
 ```
 
 >Бұл пәрменді аяқтау үшін бірнеше минут кетуі мүмкін.
 
 Құрастыру аяқталғаннан кейін ортаны фондық режимде келесі әрекеттермен іске қосуға болады:
 
-```бас
-докер құрастырады -d
+```bash
+docker compose up -d
 ```
 
-Енді қолданба тәуелділіктерін орнату үшін «композиторды орнатуды» іске қосамыз:
+Енді қолданба тәуелділіктерін орнату үшін `composer install` іске қосамыз:
 
-```бас
-docker compose exec қолданбасын құрастырушы орнату
+```bash
+docker compose exec app composer install
 ```
 
 Орта параметрлерін көшіріңіз:
 
-```бас
+```bash
 docker compose exec app cp .env.local .env
 ```
 
 Шифрлау кілтін `artisan` Laravel пәрмен жолы құралымен орнатыңыз:
 
-```бас
+```bash
 docker compose exec app ./artisan key:generate --ansi
 ```
 
 ДБ және жалған деректерді көшіру:
 
-```бас
+```bash
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
 Және Filament әкімші пайдаланушысын қосыңыз:
 
-```бас
+```bash
 docker compose exec app ./artisan make:filament-user
 ```
 
@@ -81,7 +85,7 @@ docker compose exec app ./artisan make:filament-user
 
 Docker контейнеріне кіру:
 
-```бас
+```bash
 docker exec -ti laravel-blog-app bash
 ```
 
