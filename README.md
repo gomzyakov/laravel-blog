@@ -87,11 +87,11 @@ The goal of this repository is to showcase good [Laravel](https://laravel.com) d
 - 🥑 Categories
 - 🔥 Popular posts
 - 🎉 Admin panel
-- Manage users, posts, categories and tags
-- Roles: reader and administrator
-- Personal account
-- Comments and likes
-- Post`s visual editor
+- 🔧 Manage users, posts, categories and tags
+- 👥 Roles: reader and administrator
+- 🔐 Personal account
+- 💬 Comments and likes
+- 🖋️ Post`s visual editor
 
 ## Preview
 
