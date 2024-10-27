@@ -4,9 +4,8 @@
         "config:recommended",
         ":disableDependencyDashboard"
     ],
-    "timezone": "Asia/Yekaterinburg",
     "schedule": [
-        "before 7am on Friday"
+        "on the first day of the month"
     ],
     "labels": ["dependencies"]
 }
