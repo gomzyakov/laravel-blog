@@ -8,10 +8,7 @@ updates:
   - package-ecosystem: "composer"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "07:00"
-      timezone: "Asia/Yekaterinburg"
+      interval: "monthly"
     labels:
       - "dependencies"
 
@@ -20,10 +17,7 @@ updates:
     # Look for a `Dockerfile` in the `root` directory
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "07:00"
-      timezone: "Asia/Yekaterinburg"
+      interval: "monthly"
     labels:
       - "dependencies"
 
@@ -31,9 +25,6 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "07:00"
-      timezone: "Asia/Yekaterinburg"
+      interval: "monthly"
     labels:
       - "dependencies"
