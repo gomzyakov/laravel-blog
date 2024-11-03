@@ -77,7 +77,7 @@
 &middot; [සිංහල(Sri Lanka)](translations/README.si.md)
 &middot; [հայերեն](translations/README.arm.md)
 
-# Simple blog application based on Larave
+# Simple blog application based on Laravel
 
 The goal of this repository is to showcase good [Laravel](https://laravel.com) development practices with a simple application.
 
