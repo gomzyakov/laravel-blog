@@ -95,9 +95,9 @@ The goal of this repository is to showcase good [Laravel](https://laravel.com) d
 
 ## Preview
 
-![Blog](docs/screenshot-main-page.png)
+![Laravel blog main page](docs/screenshot-main-page.png)
 
-![Blog](docs/screenshot-admin-panel.png)
+![Laravel blog admin panel](docs/screenshot-admin-panel.png)
 
 ## Requesting features
 
@@ -112,6 +112,12 @@ git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 I believe you already have Docker installed. If not, just do it on [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/) or [Linux](https://docs.docker.com/desktop/install/linux-install/).
+
+Copy the environment settings:
+
+```bash
+cp .env.local .env
+```
 
 Build the `laravel-blog` image with the following command:
 
@@ -131,12 +137,6 @@ We’ll now run `composer install` to install the application dependencies:
 
 ```bash
 docker compose exec app composer install
-```
-
-Copy the environment settings:
-
-```bash
-docker compose exec app cp .env.local .env
 ```
 
 Set encryption key with the `artisan` Laravel command-line tool:
