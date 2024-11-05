@@ -34,7 +34,7 @@ services:
             - app-network
 
     nginx:
-        image: nginx:1.25-alpine
+        image: nginx:1.27-alpine
         container_name: laravel-blog-nginx
         restart: unless-stopped
         ports:
