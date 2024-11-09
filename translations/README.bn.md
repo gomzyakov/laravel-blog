@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # ফিলামেন্ট অ্যাডমিন প্যানেল সহ লারাভেল ব্লগ
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## বৈশিষ্ট্যগুলি অনুরোধ করা
 
-একটি বৈশিষ্ট্যের অনুরোধ করতে একটি [নতুন সমস্যা](https://github.com/gomzyakov/laravel-blog/issues/new) খুলুন (অথবা যদি আপনি একটি বাগ খুঁজে পান)।
+একটি বৈশিষ্ট্যের অনুরোধ করতে একটি [নতুন সমস্যা](https://github.com/gomzyakov/larajournal/issues/new) খুলুন (অথবা যদি আপনি একটি বাগ খুঁজে পান)।
 
 ## কিভাবে স্থানীয়ভাবে ব্লগ চালাবেন?
 
 প্রকল্প ক্লোন করুন:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 আমি বিশ্বাস করি আপনি ইতিমধ্যে ডকার ইনস্টল করেছেন। যদি না হয়, শুধু [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) এ এটি করুন -ইনস্টল/) বা [লিনাক্স](https://docs.docker.com/desktop/install/linux-install/)।
 
-নিম্নলিখিত কমান্ড দিয়ে `laravel-blog` ইমেজ তৈরি করুন:
+নিম্নলিখিত কমান্ড দিয়ে `larajournal` ইমেজ তৈরি করুন:
 
 ```bash
 docker compose build --no-cache
@@ -73,12 +73,6 @@ DB এবং বীজ জাল ডেটা মাইগ্রেট করু
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-এবং ফিলামেন্ট অ্যাডমিন ব্যবহারকারী যোগ করুন:
-
-```bash
-docker compose exec app ./artisan make:filament-user
-```
-
 এবং আপনার প্রিয় ব্রাউজারে http://127.0.0.1:8000 খুলুন। Laravel ব্লগ ব্যবহার করে খুশি!
 
 ## কন্টেইনারের ভিতরে কিভাবে প্রবেশ করবেন?
@@ -86,7 +80,7 @@ docker compose exec app ./artisan make:filament-user
 ডকার কন্টেইনারে অ্যাক্সেস:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## লাইসেন্স
@@ -94,6 +88,6 @@ docker exec -ti laravel-blog-app bash
 এটি [MIT লাইসেন্স](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) এর অধীনে লাইসেন্সকৃত ওপেন-সোর্স সফ্টওয়্যার।
 
 
-[![GitHub প্রকাশ](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![লাইসেন্স](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ লারাভেল-ব্লগ)
+[![GitHub প্রকাশ](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![লাইসেন্স](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ লারাভেল-ব্লগ)

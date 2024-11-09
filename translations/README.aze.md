@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Filament admin paneli ilə Laravel bloqu
 
@@ -23,19 +23,19 @@ Bu deponun məqsədi sadə tətbiqetmə ilə yaxşı [Laravel](https://laravel.c
 
 ## Xüsusiyyətlər tələb olunur
 
-Xüsusiyyət tələb etmək üçün [yeni buraxılış](https://github.com/gomzyakov/laravel-blog/issues/new) açın (və ya səhv tapsanız).
+Xüsusiyyət tələb etmək üçün [yeni buraxılış](https://github.com/gomzyakov/larajournal/issues/new) açın (və ya səhv tapsanız).
 
 ## Bloqu yerli olaraq necə idarə etmək olar?
 
 Layihəni klonlayın:
 
 ``` bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 İnanıram ki, siz artıq Docker quraşdırmısınız. Yoxdursa, bunu [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows)-da edin -install/) və ya [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Aşağıdakı komanda ilə `laravel-blog` şəklini yaradın:
+Aşağıdakı komanda ilə `larajournal` şəklini yaradın:
 
 ``` bash
 docker compose build --no-cache
@@ -73,12 +73,6 @@ DB və toxum saxta məlumatları köçürün:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-Və Filament admin istifadəçisini əlavə edin:
-
-``` bash
-docker compose exec app ./artisan make:filament-user
-```
-
 Və sevimli brauzerinizdə http://127.0.0.1:8000-i açın. Laravel Blogundan istifadə etmək xoşbəxtdir!
 
 ## Konteynerin içərisinə necə girmək olar?
@@ -86,7 +80,7 @@ Və sevimli brauzerinizdə http://127.0.0.1:8000-i açın. Laravel Blogundan ist
 Docker konteynerinə giriş:
 
 ``` bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Lisenziya
@@ -94,6 +88,6 @@ docker exec -ti laravel-blog-app bash
 Bu, [MIT License] (https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) əsasında lisenziyalaşdırılmış açıq mənbəli proqram təminatıdır.
 
 
-[![GitHub buraxılışı](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)
+[![GitHub buraxılışı](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

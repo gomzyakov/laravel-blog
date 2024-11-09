@@ -1,5 +1,5 @@
 >[!IMPORTANTE]
->Esse projeto ainda está sob desenvolvimento. Nem todas as funcionalidades estão finalizadas e muito ainda pode ser melhorado. Se você quiser ajudar com o desenvolvimento desse projeto, você pode selecionar uma [issue](https://github.com/gomzyakov/laravel-blog/issues), e abrir uma PR.
+>Esse projeto ainda está sob desenvolvimento. Nem todas as funcionalidades estão finalizadas e muito ainda pode ser melhorado. Se você quiser ajudar com o desenvolvimento desse projeto, você pode selecionar uma [issue](https://github.com/gomzyakov/larajournal/issues), e abrir uma PR.
 
 ![Aplicativo de blog pessoal simples feito em Laravel e MySQL](/docs/social-preview-en.png)
 
@@ -101,19 +101,19 @@ O objetivo desse repositório é mostrar boas práticas de desenvolvimento em [L
 
 ## Solicitar funcionalidades
 
-Abra uma nova [issue](https://github.com/gomzyakov/laravel-blog/issues) para solicitar uma funcionalidade (ou se você encontrar um bug).
+Abra uma nova [issue](https://github.com/gomzyakov/larajournal/issues) para solicitar uma funcionalidade (ou se você encontrar um bug).
 
 ## Como rodar o blog localmente? 
 
 Clone o projeto:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Acredito que você já tenha o Docker instalado. Se não, apenas o instale no [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/) ou [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Monte a imagem `laravel-blog` com o seguinte comando:
+Monte a imagem `larajournal` com o seguinte comando:
 
 ```bash
 docker compose build --no-cache
@@ -158,7 +158,7 @@ E abra http://127.0.0.1:8000 em seu navegador favorito. Seja feliz usando o Lara
 Accesso ao container Docker:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Licença
@@ -166,6 +166,6 @@ docker exec -ti laravel-blog-app bash
 Esse é um software em código aberto licenciado sob a [Licença MIT](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![GitHub release](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/laravel-blog)
+[![GitHub release](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/larajournal)

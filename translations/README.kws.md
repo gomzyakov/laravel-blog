@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Blogu ya Laravel iliyo na paneli ya msimamizi wa Filament
 
@@ -23,19 +23,19 @@ Lengo la hazina hii ni kuonyesha mbinu nzuri za ukuzaji za [Laravel](https://lar
 
 ## Kuomba vipengele
 
-Fungua [toleo jipya](https://github.com/gomzyakov/laravel-blog/issues/new) ili kuomba kipengele (au ukipata hitilafu).
+Fungua [toleo jipya](https://github.com/gomzyakov/larajournal/issues/new) ili kuomba kipengele (au ukipata hitilafu).
 
 ## Jinsi ya kuendesha blogi ndani ya nchi?
 
 Sambaza mradi:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Ninaamini tayari umeweka Docker. Ikiwa sivyo, ifanye tu kwenye [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) au [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Jenga picha ya `laravel-blog` kwa amri ifuatayo:
+Jenga picha ya `larajournal` kwa amri ifuatayo:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ Na ufungue http://127.0.0.1:8000 kwenye kivinjari chako unachopenda. Furahi kutu
 Ufikiaji wa chombo cha Docker:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 # #Leseni
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 Hii ni programu huria iliyoidhinishwa chini ya [Leseni ya MIT](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![Toleo la GitHub](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![leseni](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)
+[![Toleo la GitHub](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![leseni](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

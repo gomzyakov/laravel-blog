@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # 필라멘트 관리 패널이 있는 Laravel 블로그
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## 기능 요청 중
 
-기능을 요청하려면(또는 버그를 발견한 경우) [새 문제](https://github.com/gomzyakov/laravel-blog/issues/new)를 엽니다.
+기능을 요청하려면(또는 버그를 발견한 경우) [새 문제](https://github.com/gomzyakov/larajournal/issues/new)를 엽니다.
 
 ## 블로그를 로컬에서 어떻게 운영하나요?
 
 프로젝트를 복제합니다.
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 이미 Docker가 설치되어 있다고 생각합니다. 그렇지 않다면 [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows)에서 하세요. -install/) 또는 [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-다음 명령을 사용하여 `laravel-blog` 이미지를 빌드합니다.
+다음 명령을 사용하여 `larajournal` 이미지를 빌드합니다.
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 Docker 컨테이너에 액세스:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## 라이선스
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 이는 [MIT 라이선스](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE)에 따라 라이선스가 부여된 오픈 소스 소프트웨어입니다.
 
 
-[![GitHub 릴리스](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![라이선스](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel 블로그)
+[![GitHub 릴리스](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![라이선스](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel 블로그)

@@ -42,7 +42,7 @@ sudo certbot --nginx
 If you wish to add another SSL-certificate, just run:
 
 ```bash
-sudo certbot certonly --nginx --agree-tos --expand -d laravel-blog.app
+sudo certbot certonly --nginx --agree-tos --expand -d larajournal.com
 ```
 
-Where `laravel-blog.app` is the domain that you previously purchased and under which your website will be visible.
+Where `larajournal.com` is the domain that you previously purchased and under which your website will be visible.

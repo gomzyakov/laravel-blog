@@ -6,8 +6,8 @@ services:
                 uid: 1000
             context: ./
             dockerfile: Dockerfile
-        image: laravel-blog
-        container_name: laravel-blog-app
+        image: larajournal
+        container_name: larajournal-app
         restart: unless-stopped
         working_dir: /var/www/
         volumes:
@@ -17,7 +17,7 @@ services:
 
     db:
         image: mysql:9.1
-        container_name: laravel-blog-db
+        container_name: larajournal-db
         restart: unless-stopped
         environment:
             MYSQL_DATABASE: ${DB_DATABASE}
@@ -35,7 +35,7 @@ services:
 
     nginx:
         image: nginx:1.27-alpine
-        container_name: laravel-blog-nginx
+        container_name: larajournal-nginx
         restart: unless-stopped
         ports:
             - "8000:80"

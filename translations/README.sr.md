@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Ларавел блог са Филамент админ панелом
 
@@ -30,12 +30,12 @@ _Read this in [other languages](./Translations.md)_
 Клонирајте пројекат:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Верујем да већ имате инсталиран Доцкер. Ако не, урадите то на [Мац](хттпс://доцс.доцкер.цом/десктоп/инсталл/мац-инсталл/), [Виндовс](хттпс://доцс.доцкер.цом/десктоп/инсталл/виндовс -инсталл/) или [Линук](хттпс://доцс.доцкер.цом/десктоп/инсталл/линук-инсталл/).
 
-Направите слику `laravel-blog` помоћу следеће команде:
+Направите слику `larajournal` помоћу следеће команде:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 Приступ Доцкер контејнеру:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Лиценца

@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Ιστολόγιο Laravel με πίνακα διαχείρισης Filament
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## Αίτημα χαρακτηριστικών
 
-Ανοίξτε ένα [νέο τεύχος](https://github.com/gomzyakov/laravel-blog/issues/new) για να ζητήσετε μια λειτουργία (ή αν βρείτε κάποιο σφάλμα).
+Ανοίξτε ένα [νέο τεύχος](https://github.com/gomzyakov/larajournal/issues/new) για να ζητήσετε μια λειτουργία (ή αν βρείτε κάποιο σφάλμα).
 
 ## Πώς να εκτελέσετε το blog τοπικά;
 
 Κλωνοποιήστε το έργο:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Πιστεύω ότι έχετε ήδη εγκαταστήσει το Docker. Εάν όχι, απλώς κάντε το στο [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) ή [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Δημιουργήστε την εικόνα `laravel-blog` με την ακόλουθη εντολή:
+Δημιουργήστε την εικόνα `larajournal` με την ακόλουθη εντολή:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 Πρόσβαση στο κοντέινερ Docker:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Άδεια
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 Αυτό είναι λογισμικό ανοιχτού κώδικα με άδεια χρήσης [MIT License](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![Κυκλοφορία GitHub](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![άδεια](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)
+[![Κυκλοφορία GitHub](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![άδεια](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Filament පරිපාලක පැනලය සමඟ Laravel බ්ලොග්
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## විශේෂාංග ඉල්ලීම
 
-විශේෂාංගයක් (හෝ ඔබ දෝෂයක් සොයා ගන්නේ නම්) ඉල්ලීමට [නව නිකුතුවක්](https://github.com/gomzyakov/laravel-blog/issues/new) විවෘත කරන්න.
+විශේෂාංගයක් (හෝ ඔබ දෝෂයක් සොයා ගන්නේ නම්) ඉල්ලීමට [නව නිකුතුවක්](https://github.com/gomzyakov/larajournal/issues/new) විවෘත කරන්න.
 
 ## බ්ලොගය දේශීයව ධාවනය කරන්නේ කෙසේද?
 
 ව්‍යාපෘතිය ක්ලෝන කරන්න:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 ඔබ දැනටමත් Docker ස්ථාපනය කර ඇතැයි මම විශ්වාස කරමි. එසේ නොවේ නම්, එය [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) මත කරන්න -install/) හෝ [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-පහත විධානය සමඟ `laravel-blog` රූපය ගොඩනඟන්න:
+පහත විධානය සමඟ `larajournal` රූපය ගොඩනඟන්න:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 ඩොකර් කන්ටේනරය වෙත ප්‍රවේශය:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## බලපත්රය
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 මෙය [MIT බලපත්‍රය](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) යටතේ බලපත්‍ර ලබා ඇති විවෘත මූලාශ්‍ර මෘදුකාංගයකි.
 
 
-[![GitHub නිකුතුව](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)
+[![GitHub නිකුතුව](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

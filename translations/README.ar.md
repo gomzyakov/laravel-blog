@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # مدونة Laravel مع لوحة إدارة Filament
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## طلب الميزات
 
-افتح [إصدارًا جديدًا](https://github.com/gomzyakov/laravel-blog/issues/new) لطلب ميزة (أو إذا وجدت خطأً).
+افتح [إصدارًا جديدًا](https://github.com/gomzyakov/larajournal/issues/new) لطلب ميزة (أو إذا وجدت خطأً).
 
 ## كيفية تشغيل المدونة محليًا؟
 
 استنساخ المشروع:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 أعتقد أنك قمت بالفعل بتثبيت Docker. إذا لم يكن الأمر كذلك، فما عليك سوى القيام بذلك على [Mac](https://docs.docker.com/desktop/install/mac-install/)، [Windows](https://docs.docker.com/desktop/install/windows -install/) أو [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-أنشئ صورة `laravel-blog` باستخدام الأمر التالي:
+أنشئ صورة `larajournal` باستخدام الأمر التالي:
 
 ```bash
 docker compose build --no-cache
@@ -73,12 +73,6 @@ docker compose exec app ./artisan key:generate --ansi
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-وأضف مستخدم مسؤول Filament:
-
-``` باش
-docker compose exec app ./artisan make:filament-user
-```
-
 وافتح http://127.0.0.1:8000 في متصفحك المفضل. سعيد باستخدام مدونة Laravel!
 
 ## كيفية الدخول إلى الحاوية؟
@@ -86,7 +80,7 @@ docker compose exec app ./artisan make:filament-user
 الوصول إلى حاوية Docker:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## رخصة
@@ -94,6 +88,6 @@ docker exec -ti laravel-blog-app bash
 هذا برنامج مفتوح المصدر مرخص بموجب [ترخيص MIT](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![إصدار GitHub](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![الترخيص](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ مدونة لارافيل)
+[![إصدار GitHub](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![الترخيص](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ مدونة لارافيل)

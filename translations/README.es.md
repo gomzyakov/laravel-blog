@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Blog de Laravel con panel de administración de Filament
 
@@ -23,19 +23,19 @@ El objetivo de este repositorio es mostrar buenas prácticas de desarrollo de [L
 
 ## Solicitar funciones
 
-Abra un [nuevo número](https://github.com/gomzyakov/laravel-blog/issues/new) para solicitar una función (o si encuentra un error).
+Abra un [nuevo número](https://github.com/gomzyakov/larajournal/issues/new) para solicitar una función (o si encuentra un error).
 
 ## ¿Cómo ejecutar un blog localmente?
 
 Clonar el proyecto:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Creo que ya tienes Docker instalado. Si no, hazlo en [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) o [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Construya la imagen `laravel-blog` con el siguiente comando:
+Construya la imagen `larajournal` con el siguiente comando:
 
 ```bash
 docker compose build --no-cache
@@ -73,12 +73,6 @@ Migrar bases de datos y generar datos falsos:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-Y agregue el usuario administrador de Filament:
-
-```bash
-docker compose exec app ./artisan make:filament-user
-```
-
 Y abre http://127.0.0.1:8000 en tu navegador favorito. ¡Feliz usando Laravel Blog!
 
 ## ¿Cómo entrar al contenedor?
@@ -86,7 +80,7 @@ Y abre http://127.0.0.1:8000 en tu navegador favorito. ¡Feliz usando Laravel Bl
 Acceso al contenedor Docker:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Licencia
@@ -94,6 +88,6 @@ docker exec -ti laravel-blog-app bash
 Este es un software de código abierto con licencia [Licencia MIT] (https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![Lanzamiento de GitHub](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![licencia](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ blog-laravel)
+[![Lanzamiento de GitHub](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![licencia](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ blog-laravel)

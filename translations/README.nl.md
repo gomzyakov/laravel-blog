@@ -2,13 +2,13 @@
 >This file needs to updated in order to match the [english](/README.md) README file.  
 >Dit bestand moet worden bijgewerkt zodat het overeenkomt met het [engels](/README.md) README-bestand.
 
-![Laravel-blog met Filament-beheerderspaneel](../docs/social-preview-en.png)
+![larajournal met Filament-beheerderspaneel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
-# Laravel-blog met Filament-beheerderspaneel
+# larajournal met Filament-beheerderspaneel
 
 Dit is een [Laravel](https://laravel.com) blogstartpakketproject met [Filament](https://filamentphp.com) beheerderspaneel.
 
@@ -23,19 +23,19 @@ Het doel van deze repository is om goede [Laravel](https://laravel.com) ontwikke
 
 ## Functies aanvragen
 
-Open een [nieuw nummer](https://github.com/gomzyakov/laravel-blog/issues/new) om een functie aan te vragen (of als je een bug vindt).
+Open een [nieuw nummer](https://github.com/gomzyakov/larajournal/issues/new) om een functie aan te vragen (of als je een bug vindt).
 
 ## Hoe kan ik een blog lokaal runnen?
 
 Kloon het project:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Ik geloof dat je Docker al hebt geïnstalleerd. Zo niet, doe het dan gewoon op [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) of [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Bouw de `laravel-blog`-afbeelding met de volgende opdracht:
+Bouw de `larajournal`-afbeelding met de volgende opdracht:
 
 ``` bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ En open http://127.0.0.1:8000 in uw favoriete browser. Veel plezier met het gebr
 Toegang tot de Docker-container:
 
 ``` bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Licentie
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 Dit is open source software gelicentieerd onder de [MIT-licentie] (https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![GitHub-release](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![licentie](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)
+[![GitHub-release](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![licentie](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

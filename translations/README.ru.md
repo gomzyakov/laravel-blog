@@ -21,19 +21,19 @@ _Описание проекта на [других языках](Translations.m
 
 ## Запрос функций
 
-Откройте [новую issue](https://github.com/gomzykov/laravel-blog/issues), чтобы запросить функцию (или если вы обнаружили ошибку).
+Откройте [новую issue](https://github.com/gomzykov/larajournal/issues), чтобы запросить функцию (или если вы обнаружили ошибку).
 
 ## Как запустить блог локально?
 
 Клонируйте проект:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Будем считать, что у вас уже установлен Docker. Если нет, просто следуйте инструкциям: [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/) or [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Создайте образ `laravel-blog` с помощью следующей команды:
+Создайте образ `larajournal` с помощью следующей команды:
 
 ```bash
 docker compose build --no-cache
@@ -84,13 +84,13 @@ docker compose exec app ./artisan make:filament-user
 Для доступа внутрь Docker-контейнера просто запустите:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Лицензия
 
 Это программное обеспечение с открытым исходным кодом, лицензированное по [MIT License](https://github.com/gomzykov/php-code-style/blob/main/LICENSE).
 
-[![GitHub release](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/laravel-blog)
+[![GitHub release](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/larajournal)
