@@ -7,7 +7,7 @@
 # Laravel ბლო
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 გი Filament ადმინისტრაციული პანელით
 
@@ -24,19 +24,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## ითხოვს ფუნქციებს
 
-გახსენით [ახალი გამოცემა](https://github.com/gomzyakov/laravel-blog/issues/new) ფუნქციის მოთხოვნით (ან თუ იპოვით შეცდომას).
+გახსენით [ახალი გამოცემა](https://github.com/gomzyakov/larajournal/issues/new) ფუნქციის მოთხოვნით (ან თუ იპოვით შეცდომას).
 
 ## როგორ გავუშვათ ბლოგი ლოკალურად?
 
 პროექტის კლონირება:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 მე მჯერა, რომ თქვენ უკვე გაქვთ Docker დაინსტალირებული. თუ არა, უბრალოდ გააკეთეთ ეს [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) ან [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-შექმენით `laravel-blog` სურათი შემდეგი ბრძანებით:
+შექმენით `larajournal` სურათი შემდეგი ბრძანებით:
 
 ```bash
 docker compose build --no-cache
@@ -87,7 +87,7 @@ docker compose exec app ./artisan make:filament-user
 Docker კონტეინერზე წვდომა:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## ლიცენზია
@@ -95,6 +95,6 @@ docker exec -ti laravel-blog-app bash
 ეს არის ღია პროგრამული უზრუნველყოფა, რომელიც ლიცენზირებულია [MIT ლიცენზიით] (https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![GitHub-ის გამოშვება](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![ლიცენზია](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)
+[![GitHub-ის გამოშვება](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![ლიცენზია](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

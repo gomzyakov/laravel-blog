@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # ఫిలమెంట్ అడ్మిన్ ప్యానెల్‌తో లారావెల్ బ్లాగ్
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## ఫీచర్లను అభ్యర్థిస్తోంది
 
-లక్షణాన్ని అభ్యర్థించడానికి (లేదా మీరు బగ్‌ని కనుగొంటే) [కొత్త సంచిక](https://github.com/gomzyakov/laravel-blog/issues/new) తెరవండి.
+లక్షణాన్ని అభ్యర్థించడానికి (లేదా మీరు బగ్‌ని కనుగొంటే) [కొత్త సంచిక](https://github.com/gomzyakov/larajournal/issues/new) తెరవండి.
 
 ## బ్లాగును స్థానికంగా ఎలా రన్ చేయాలి?
 
 ప్రాజెక్ట్ను క్లోన్ చేయండి:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 మీరు ఇప్పటికే డాకర్ ఇన్‌స్టాల్ చేశారని నేను నమ్ముతున్నాను. కాకపోతే, దీన్ని [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows)లో చేయండి -install/) లేదా [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-కింది ఆదేశంతో `laravel-blog` చిత్రాన్ని రూపొందించండి:
+కింది ఆదేశంతో `larajournal` చిత్రాన్ని రూపొందించండి:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 డాకర్ కంటైనర్‌కు యాక్సెస్:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## లైసెన్స్
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 ఇది [MIT లైసెన్స్](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) కింద లైసెన్స్ పొందిన ఓపెన్ సోర్స్ సాఫ్ట్‌వేర్.
 
 
-[![GitHub విడుదల](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ లారావెల్-బ్లాగ్)
+[![GitHub విడుదల](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ లారావెల్-బ్లాగ్)

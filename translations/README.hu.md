@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Laravel blog Filament adminisztrációs panellel
 
@@ -23,19 +23,19 @@ Ennek az adattárnak az a célja, hogy bemutassa a jó [Laravel](https://laravel
 
 ## Funkciók kérése
 
-Nyisson meg egy [új számot](https://github.com/gomzyakov/laravel-blog/issues/new) funkció kéréséhez (vagy ha hibát talál).
+Nyisson meg egy [új számot](https://github.com/gomzyakov/larajournal/issues/new) funkció kéréséhez (vagy ha hibát talál).
 
 ## Hogyan lehet helyi blogot futtatni?
 
 A projekt klónozása:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Azt hiszem, már telepítve van a Docker. Ha nem, csak tegye meg [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) -install/) vagy [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Készítse el a `laravel-blog` képet a következő paranccsal:
+Készítse el a `larajournal` képet a következő paranccsal:
 
 ``` bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 Hozzáférés a Docker konténerhez:
 
 ``` bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Licenc
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 Ez egy nyílt forráskódú szoftver, amelynek licence a [MIT-licenc] (https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![GitHub kiadás](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![licenc](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)
+[![GitHub kiadás](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![licenc](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

@@ -6,7 +6,7 @@ Tệp này cần được cập nhật để khớp với tệp README [tiếng 
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Blog Laravel với bảng quản trị Filament
 
@@ -23,19 +23,19 @@ Mục tiêu của kho lưu trữ này là giới thiệu các phương pháp ph�
 
 ## Yêu cầu tính năng
 
-Mở [vấn đề mới](https://github.com/gomzykov/laravel-blog/issues/new) để yêu cầu một tính năng (hoặc nếu bạn tìm thấy lỗi).
+Mở [vấn đề mới](https://github.com/gomzykov/larajournal/issues/new) để yêu cầu một tính năng (hoặc nếu bạn tìm thấy lỗi).
 
 ## Làm cách nào để chạy blog cục bộ?
 
 Sao chép dự án:
 
 ``` bash
-git clone git@github.com:gomzykov/laravel-blog.git
+git clone git@github.com:gomzykov/larajournal.git
 ```
 
 Tôi tin rằng bạn đã cài đặt Docker. Nếu không, chỉ cần thực hiện trên [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) hoặc [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Xây dựng hình ảnh `laravel-blog` bằng lệnh sau:
+Xây dựng hình ảnh `larajournal` bằng lệnh sau:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ Và mở http://127.0.0.1:8000 trong trình duyệt yêu thích của bạn. Ch�
 Truy cập vào vùng chứa Docker:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Giấy phép
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 Đây là phần mềm nguồn mở được cấp phép theo [Giấy phép MIT](https://github.com/gomzykov/php-code-style/blob/main/LICENSE).
 
 
-[![Bản phát hành GitHub](https://img.shields.io/github/release/gomzykov/laravel-blog.svg)](https://github.com/gomzykov/laravel-blog/releases/latest)
-[![giấy phép](https://img.shields.io/badge/Lince-MIT-green.svg)](https://github.com/gomzykov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzykov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzykov/ blog laravel)
+[![Bản phát hành GitHub](https://img.shields.io/github/release/gomzykov/larajournal.svg)](https://github.com/gomzykov/larajournal/releases/latest)
+[![giấy phép](https://img.shields.io/badge/Lince-MIT-green.svg)](https://github.com/gomzykov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzykov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzykov/ blog laravel)

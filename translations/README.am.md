@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # የላራቭል ብሎግ ከፋይላመንት አስተዳዳሪ ፓነል ጋር
 
@@ -23,14 +23,14 @@ _Read this in [other languages](./Translations.md)_
 
 ## የመጠየቅ ባህሪዎች
 
-ባህሪን ለመጠየቅ (ወይም ሳንካ ካገኙ) [አዲስ እትም](https://github.com/gomzyakov/laravel-blog/issues/new) ይክፈቱ።
+ባህሪን ለመጠየቅ (ወይም ሳንካ ካገኙ) [አዲስ እትም](https://github.com/gomzyakov/larajournal/issues/new) ይክፈቱ።
 
 ## ብሎግ በአገር ውስጥ እንዴት እንደሚሰራ?
 
 ፕሮጀክቱን መዝጋት;
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 አስቀድመህ Docker እንደተጫነህ አምናለሁ። ካልሆነ፣ ልክ በ[Mac](https://docs.docker.com/desktop/install/mac-install/)፣ [Windows](https://docs.docker.com/desktop/install/windows) ላይ ያድርጉት። -install/) ወይም [Linux](https://docs.docker.com/desktop/install/linux-install/)።
@@ -86,7 +86,7 @@ docker compose exec መተግበሪያ ./artisan make:filament-user
 ወደ ዶከር መያዣው መድረስ;
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## ፈቃድ
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 ይህ በ[MIT ፈቃድ](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) ስር ፈቃድ ያለው ክፍት ምንጭ ሶፍትዌር ነው።
 
 
-[![GitHub ልቀት](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ ላራቬል-ብሎግ)
+[![GitHub ልቀት](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ ላራቬል-ብሎግ)

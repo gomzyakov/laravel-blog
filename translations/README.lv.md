@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Laravel emuārs ar Filament administrēšanas paneli
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## Funkcijas pieprasīšana
 
-Atveriet [jaunu izdevumu](https://github.com/gomzyakov/laravel-blog/issues/new), lai pieprasītu funkciju (vai ja atrodat kļūdu).
+Atveriet [jaunu izdevumu](https://github.com/gomzyakov/larajournal/issues/new), lai pieprasītu funkciju (vai ja atrodat kļūdu).
 
 ## Kā vadīt emuāru lokāli?
 
 Klonēt projektu:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Es uzskatu, ka jums jau ir instalēts Docker. Ja nē, vienkārši dariet to operētājsistēmā [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) vai [Linux] (https://docs.docker.com/desktop/install/linux-install/).
 
-Izveidojiet `laravel-blog` attēlu ar šādu komandu:
+Izveidojiet `larajournal` attēlu ar šādu komandu:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ Un savā iecienītākajā pārlūkprogrammā atveriet http://127.0.0.1:8000. Lai
 Piekļuve Docker konteineram:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Licence
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 Šī ir atvērtā pirmkoda programmatūra, kas licencēta saskaņā ar [MIT licenci] (https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![GitHub laidiens](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![licence](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-emuārs)
+[![GitHub laidiens](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![licence](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-emuārs)

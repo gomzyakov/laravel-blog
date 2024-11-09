@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # ഫിലമെൻ്റ് അഡ്‌മിൻ പാനലുള്ള ലാറവെൽ ബ്ലോഗ്
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## സവിശേഷതകൾ അഭ്യർത്ഥിക്കുന്നു
 
-ഒരു ഫീച്ചർ അഭ്യർത്ഥിക്കുന്നതിന് (അല്ലെങ്കിൽ നിങ്ങൾ ഒരു ബഗ് കണ്ടെത്തിയാൽ) [പുതിയ ലക്കം](https://github.com/gomzyakov/laravel-blog/issues/new) തുറക്കുക.
+ഒരു ഫീച്ചർ അഭ്യർത്ഥിക്കുന്നതിന് (അല്ലെങ്കിൽ നിങ്ങൾ ഒരു ബഗ് കണ്ടെത്തിയാൽ) [പുതിയ ലക്കം](https://github.com/gomzyakov/larajournal/issues/new) തുറക്കുക.
 
 ## ബ്ലോഗ് പ്രാദേശികമായി എങ്ങനെ പ്രവർത്തിപ്പിക്കാം?
 
 പ്രോജക്റ്റ് ക്ലോൺ ചെയ്യുക:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 നിങ്ങൾ ഇതിനകം ഡോക്കർ ഇൻസ്റ്റാൾ ചെയ്തിട്ടുണ്ടെന്ന് ഞാൻ വിശ്വസിക്കുന്നു. ഇല്ലെങ്കിൽ, [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) എന്നതിൽ ഇത് ചെയ്യുക -install/) അല്ലെങ്കിൽ [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-ഇനിപ്പറയുന്ന കമാൻഡ് ഉപയോഗിച്ച് `laravel-blog` ഇമേജ് നിർമ്മിക്കുക:
+ഇനിപ്പറയുന്ന കമാൻഡ് ഉപയോഗിച്ച് `larajournal` ഇമേജ് നിർമ്മിക്കുക:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 ഡോക്കർ കണ്ടെയ്‌നറിലേക്കുള്ള ആക്‌സസ്:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## ലൈസൻസ്
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 ഇത് [MIT ലൈസൻസ്](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) പ്രകാരം ലൈസൻസുള്ള ഓപ്പൺ സോഴ്‌സ് സോഫ്‌റ്റ്‌വെയറാണ്.
 
 
-[![GitHub റിലീസ്](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)
+[![GitHub റിലീസ്](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

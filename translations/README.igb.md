@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Laravel blọọgụ nwere panel nchịkwa Filament
 
@@ -23,19 +23,19 @@ Ebumnuche nke ebe nchekwa a bụ igosi ezi omume mmepe [Laravel](https://laravel
 
 ## Arịrịọ atụmatụ
 
-Mepee [okwu ọhụrụ](https://github.com/gomzyakov/laravel-blog/issues/new) iji rịọ atụmatụ (ma ọ bụ ọ bụrụ na ịchọta ahụhụ).
+Mepee [okwu ọhụrụ](https://github.com/gomzyakov/larajournal/issues/new) iji rịọ atụmatụ (ma ọ bụ ọ bụrụ na ịchọta ahụhụ).
 
 ## Kedu ka esi agba blọgụ na mpaghara?
 
 Mechie oru ngo:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Ekwenyere m na ị tinyela Docker. Ọ bụrụ na ọ bụghị, mee ya na [Mac] (https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows). -install/) ma ọ bụ [Linux] (https://docs.docker.com/desktop/install/linux-install/).
 
-Jiri iwu a wuo ihe onyonyo `laravel-blog`:
+Jiri iwu a wuo ihe onyonyo `larajournal`:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ Mepee http://127.0.0.1:8000 na ihe nchọgharị kacha amasị gị. Obi ụtọ
 Ịbanye na akpa Docker:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Ikikere
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 Nke a bụ ngwanrọ mepere emepe nwere ikike n'okpuru [MIT License](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![Ntọhapụ GitHub](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![akwụkwọ ikike](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)
+[![Ntọhapụ GitHub](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![akwụkwọ ikike](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

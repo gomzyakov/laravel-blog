@@ -1,4 +1,4 @@
-# Deployment to VDS
+# Deploy LaraJournal to VDS
 
 For simplicity, we will deploy the project to VDS. The deployment process consists of several steps:
 
@@ -97,19 +97,19 @@ After that, in the GitHub repository, in the `Settings > Secrets > Actions` sect
 
 ## Clone repository from GitHub
 
-Go to path `/var/www/web/sites` and clone current repository (or your own fork). For example, use `laravel-blog.app` folder name:
+Go to path `/var/www/web/sites` and clone current repository (or your own fork). For example, use `larajournal.com` folder name:
 
 ```bash
 cd /var/www/web/sites
-git clone git@github.com:gomzyakov/laravel-blog.git laravel-blog.app
+git clone git@github.com:gomzyakov/larajournal.git larajournal.com
 cd secretic
 ```
 
-Where `laravel-blog.app` is the domain that you previously purchased and under which your website will be visible.
+Where `larajournal.com` is the domain that you previously purchased and under which your website will be visible.
 
 ## Set up Laravel
 
-Then go to path `/var/www/web/sites/laravel-blog.app` and run some commands:
+Then go to path `/var/www/web/sites/larajournal.com` and run some commands:
 
 ```bash
 php -r "file_exists('.env') || copy('.env.ci', '.env');"
@@ -122,16 +122,16 @@ php artisan key:generate
 - Create a `secretnotes` database via phpMyAdmin
 - Run migrations `php artisan migrate:fresh --seed`
 
-Open assigned to VDS URL (like `dd`) in your favorite browser. Happy using laravel-blog app!
+Open assigned to VDS URL (like `dd`) in your favorite browser. Happy using LaraJournal app!
 
 
 ## Optional: Make domain aliases (if needed)
 
 ```bash
 cd /var/www/web/sites 
-ln -s laravel-blog.app www.laravel-blog.app
-ln -s laravel-blog.app laravel-blog.io
-ln -s laravel-blog.app laravelblog.com
+ln -s larajournal.com www.larajournal.com
+ln -s larajournal.com larajournal.io
+ln -s larajournal.com laravelblog.com
 ```
 
 ## Optional: Set up HTTPS

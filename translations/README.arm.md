@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Laravel բլոգ՝ Filament ադմինիստրատորի վահանակով
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## Հատկանիշների հայցում
 
-Բացեք [նոր թողարկում] (https://github.com/gomzyakov/laravel-blog/issues/new)՝ գործառույթ պահանջելու համար (կամ եթե վրիպակ եք գտնում):
+Բացեք [նոր թողարկում] (https://github.com/gomzyakov/larajournal/issues/new)՝ գործառույթ պահանջելու համար (կամ եթե վրիպակ եք գտնում):
 
 ## Ինչպե՞ս վարել բլոգը լոկալ:
 
 Կլոնավորել նախագիծը.
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Կարծում եմ, դուք արդեն տեղադրել եք Docker-ը: Եթե ոչ, պարզապես արեք դա [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows] (https://docs.docker.com/desktop/install/windows) -install/) կամ [Linux] (https://docs.docker.com/desktop/install/linux-install/):
 
-Կառուցեք `laravel-blog` պատկերը հետևյալ հրամանով.
+Կառուցեք `larajournal` պատկերը հետևյալ հրամանով.
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec հավելված ./artisan make:filament-user
 Մուտք դեպի Docker կոնտեյներ.
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Լիցենզիա
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 Սա բաց կոդով ծրագրակազմ է, որը լիցենզավորված է [MIT License] (https://github.com/gomzyakov/php-code-style/blob/main/LICENSE):
 
 
-[![GitHub թողարկում](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![լիցենզիա](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)
+[![GitHub թողարկում](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![լիցենզիա](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

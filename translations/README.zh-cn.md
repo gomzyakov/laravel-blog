@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Laravel 博客与 Filament 管理面板
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## 请求功能
 
-打开一个 [新问题](https://github.com/gomzyakov/laravel-blog/issues/new) 来请求功能（或者如果您发现错误）。
+打开一个 [新问题](https://github.com/gomzyakov/larajournal/issues/new) 来请求功能（或者如果您发现错误）。
 
 ## 如何在本地运行博客？
 
 克隆项目：
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 我相信你已经安装了 Docker。 如果没有，只需在 [Mac](https://docs.docker.com/desktop/install/mac-install/)、[Windows](https://docs.docker.com/desktop/install/windows -install/) 或 [Linux](https://docs.docker.com/desktop/install/linux-install/)。
 
-使用以下命令构建`laravel-blog`图像：
+使用以下命令构建`larajournal`图像：
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 访问Docker容器：
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ＃＃ 执照
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 这是根据 [MIT 许可证](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) 许可的开源软件。
 
 
-[![GitHub 发布](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![许可证](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ Laravel 博客）
+[![GitHub 发布](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![许可证](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ Laravel 博客）

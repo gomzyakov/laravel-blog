@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # Blog Laravel s administračním panelem Filament
 
@@ -23,19 +23,19 @@ Cílem tohoto úložiště je předvést dobré postupy vývoje [Laravel](https:
 
 ## Vyžadování funkcí
 
-Otevřete [nové číslo](https://github.com/gomzyakov/laravel-blog/issues/new) a požádejte o funkci (nebo pokud najdete chybu).
+Otevřete [nové číslo](https://github.com/gomzyakov/larajournal/issues/new) a požádejte o funkci (nebo pokud najdete chybu).
 
 ## Jak spustit blog lokálně?
 
 Naklonujte projekt:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Věřím, že Docker již máte nainstalovaný. Pokud ne, udělejte to na [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) nebo [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Vytvořte obrázek `laravel-blog` pomocí následujícího příkazu:
+Vytvořte obrázek `larajournal` pomocí následujícího příkazu:
 
 ``` bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ A otevřete http://127.0.0.1:8000 ve svém oblíbeném prohlížeči. Hodně št
 Přístup ke kontejneru Docker:
 
 ``` bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Licence
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 Toto je software s otevřeným zdrojovým kódem licencovaný pod [licence MIT] (https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![Vydání GitHubu](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![licence](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)
+[![Vydání GitHubu](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![licence](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

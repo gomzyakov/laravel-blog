@@ -2,13 +2,13 @@
 >This file needs to updated in order to match the [english](/README.md) README file.  
 >Diese Datei muss aktualisiert werden, damit sie mit der README-Datei [englisch](/README.md) übereinstimmt.
 
-![Laravel-Blog mit Filament-Admin-Panel](../docs/social-preview-en.png)
+![larajournal mit Filament-Admin-Panel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
-# Laravel-Blog mit Filament-Admin-Panel
+# larajournal mit Filament-Admin-Panel
 
 Dies ist das Blog-Starterkit-Projekt von [Laravel](https://laravel.com) mit dem Admin-Panel von [Filament](https://filamentphp.com).
 
@@ -23,19 +23,19 @@ Das Ziel dieses Repositorys ist es, gute [Laravel](https://laravel.com) Entwickl
 
 ## Anfordern von Funktionen
 
-Öffnen Sie eine [neue Ausgabe](https://github.com/gomzyakov/laravel-blog/issues/new), um eine Funktion anzufordern (oder wenn Sie einen Fehler finden).
+Öffnen Sie eine [neue Ausgabe](https://github.com/gomzyakov/larajournal/issues/new), um eine Funktion anzufordern (oder wenn Sie einen Fehler finden).
 
 ## Wie kann ich einen Blog lokal ausführen?
 
 Klonen Sie das Projekt:
 
 ```bash
-git clone git@github.com:gomzyakov/laravel-blog.git
+git clone git@github.com:gomzyakov/larajournal.git
 ```
 
 Ich glaube, Sie haben Docker bereits installiert. Wenn nicht, machen Sie es einfach auf [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) oder [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Erstellen Sie das `laravel-blog`-Image mit dem folgenden Befehl:
+Erstellen Sie das `larajournal`-Image mit dem folgenden Befehl:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ Und öffnen Sie http://127.0.0.1:8000 in Ihrem Lieblingsbrowser. Viel Freude mit
 Zugriff auf den Docker-Container:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## Lizenz
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 Dabei handelt es sich um Open-Source-Software, die unter der [MIT-Lizenz](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) lizenziert ist.
 
 
-[![GitHub-Veröffentlichung](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
-[![Lizenz](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ Laravel-Blog)
+[![GitHub-Veröffentlichung](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
+[![Lizenz](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)

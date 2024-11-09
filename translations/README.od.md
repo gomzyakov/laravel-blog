@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
 
 # ଫିଲାମେଣ୍ଟ ଆଡମିନ୍ ପ୍ୟାନେଲ୍ ସହିତ ଲାରାଭେଲ୍ ବ୍ଲଗ୍ |
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## ବ features ଶିଷ୍ଟ୍ୟଗୁଡିକ ଅନୁରୋଧ |
 
-ଏକ ବ feature ଶିଷ୍ଟ୍ୟ ଅନୁରୋଧ କରିବାକୁ (କିମ୍ବା ଯଦି ଆପଣ ଏକ ବଗ୍ ଖୋଜନ୍ତି) ଏକ ନୂତନ ବିଷୟ ଖୋଲନ୍ତୁ (https://github.com/gomzyakov/laravel-blog/issues/new) |
+ଏକ ବ feature ଶିଷ୍ଟ୍ୟ ଅନୁରୋଧ କରିବାକୁ (କିମ୍ବା ଯଦି ଆପଣ ଏକ ବଗ୍ ଖୋଜନ୍ତି) ଏକ ନୂତନ ବିଷୟ ଖୋଲନ୍ତୁ (https://github.com/gomzyakov/larajournal/issues/new) |
 
 ## ସ୍ଥାନୀୟ ଭାବରେ ବ୍ଲଗ୍ କିପରି ଚଲାଇବେ?
 
 ପ୍ରକଳ୍ପକୁ କ୍ଲୋନ କରନ୍ତୁ:
 
 ```bash
-git clone git@github.com: gomzyakov / laravel-blog.git
+git clone git@github.com: gomzyakov / larajournal.git
 ```
 
 ମୁଁ ବିଶ୍ୱାସ କରେ ତୁମେ ପୂର୍ବରୁ ଡକର୍ ସଂସ୍ଥାପିତ କରିଛ | ଯଦି ନୁହେଁ, କେବଳ ଏହାକୁ [ମ୍ୟାକ୍] (https://docs.docker.com/desktop/install/mac-install/), [ୱିଣ୍ଡୋଜ୍] (https://docs.docker.com/desktop/install/windows) ରେ କରନ୍ତୁ | -install /) କିମ୍ବା [Linux] (https://docs.docker.com/desktop/install/linux-install/) |
 
-ନିମ୍ନଲିଖିତ ନିର୍ଦ୍ଦେଶ ସହିତ `laravel-blog` ପ୍ରତିଛବି ନିର୍ମାଣ କରନ୍ତୁ:
+ନିମ୍ନଲିଖିତ ନିର୍ଦ୍ଦେଶ ସହିତ `larajournal` ପ୍ରତିଛବି ନିର୍ମାଣ କରନ୍ତୁ:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 ଡକର୍ ପାତ୍ରରେ ପ୍ରବେଶ:
 
 ```bash
-docker exec -ti laravel-blog-app bash
+docker exec -ti larajournal-app bash
 ```
 
 ## ଲାଇସେନ୍ସ
@@ -94,6 +94,6 @@ docker exec -ti laravel-blog-app bash
 ଏହା [MIT ଲାଇସେନ୍ସ] (https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) ଅଧୀନରେ ଲାଇସେନ୍ସପ୍ରାପ୍ତ ଖୋଲା ସଫ୍ଟୱେର୍ |
 
 
-[! [GitHub ପ୍ରକାଶନ] (https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)]
+[! [GitHub ପ୍ରକାଶନ] (https://img.shields.io/github/release/gomzyakov/larajournal.svg)]
 [! [ଲାଇସେନ୍ସ] (https://img.shields.io/badge/License-MIT-green.svg)]
 [! [କୋଡେକୋଭ] ଲାରାଭେଲ୍-ବ୍ଲଗ୍)
