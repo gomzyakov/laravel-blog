@@ -73,12 +73,6 @@ Migracija lažnih podataka baze podataka i sjemena:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-I dodajte admin korisnika Filamenta:
-
-```bash
-docker compose exec app ./artisan make:filament-user
-```
-
 I otvorite http://127.0.0.1:8000 u svom omiljenom pregledniku. Sretno korištenje Laravel bloga!
 
 ## Kako ući u kontejner?

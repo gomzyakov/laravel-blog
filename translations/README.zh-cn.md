@@ -73,12 +73,6 @@ docker compose exec app ./artisan key:generate --ansi
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-并添加 Filament 管理员用户：
-
-```bash
-docker compose exec app ./artisan make:filament-user
-```
-
 然后在您喜欢的浏览器中打开 http://127.0.0.1:8000。 祝您使用 Laravel 博客愉快！
 
 ## 如何进入容器内部？

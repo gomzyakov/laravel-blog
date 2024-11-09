@@ -73,12 +73,6 @@ DB és hamis adatok áttelepítése:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-És adjunk hozzá Filament admin felhasználót:
-
-``` bash
-docker compose exec app ./artisan make:filament-user
-```
-
 És nyissa meg a http://127.0.0.1:8000 címet kedvenc böngészőjében. Boldog Laravel Blog használatát!
 
 ## Hogyan lehet bejutni a konténerbe?

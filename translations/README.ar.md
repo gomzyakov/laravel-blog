@@ -73,12 +73,6 @@ docker compose exec app ./artisan key:generate --ansi
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-وأضف مستخدم مسؤول Filament:
-
-``` باش
-docker compose exec app ./artisan make:filament-user
-```
-
 وافتح http://127.0.0.1:8000 في متصفحك المفضل. سعيد باستخدام مدونة Laravel!
 
 ## كيفية الدخول إلى الحاوية؟

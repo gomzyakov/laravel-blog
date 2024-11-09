@@ -73,12 +73,6 @@ Migreu dades falses de base de dades i llavors:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-I afegiu l'usuari administrador de Filament:
-
-```bash
-docker compose exec app ./artisan make:filament-user
-```
-
 I obriu http://127.0.0.1:8000 al vostre navegador preferit. Feliç utilitzant Laravel Blog!
 
 ## Com entrar dins del contenidor?

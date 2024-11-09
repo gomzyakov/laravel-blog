@@ -73,12 +73,6 @@ DB এবং বীজ জাল ডেটা মাইগ্রেট করু
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-এবং ফিলামেন্ট অ্যাডমিন ব্যবহারকারী যোগ করুন:
-
-```bash
-docker compose exec app ./artisan make:filament-user
-```
-
 এবং আপনার প্রিয় ব্রাউজারে http://127.0.0.1:8000 খুলুন। Laravel ব্লগ ব্যবহার করে খুশি!
 
 ## কন্টেইনারের ভিতরে কিভাবে প্রবেশ করবেন?

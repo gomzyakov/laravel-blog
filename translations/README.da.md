@@ -2,7 +2,7 @@
 >This file needs to updated in order to match the [english](/README.md) README file.  
 >Denne fil skal opdateres for at matche [engelsk](/README.md) README-filen.
 
-![Laravel blog med Filament admin panel](../docs/social-preview-en.png)
+![Laravel blog](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
 
@@ -71,12 +71,6 @@ Migrer DB og seed falske data:
 
 ``` bash
 docker compose exec app ./artisan migrate:fresh --seed
-```
-
-Og tilføj Filament-administratorbruger:
-
-``` bash
-docker compose exec app ./artisan make:filament-user
 ```
 
 Og åbn http://127.0.0.1:8000 i din yndlingsbrowser. Glad for at bruge Laravel Blog!

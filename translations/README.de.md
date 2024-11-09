@@ -73,12 +73,6 @@ DB migrieren und Fake-Daten säen:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-Und fügen Sie den Filament-Administratorbenutzer hinzu:
-
-```bash
-docker compose exec app ./artisan make:filament-user
-```
-
 Und öffnen Sie http://127.0.0.1:8000 in Ihrem Lieblingsbrowser. Viel Freude mit Laravel Blog!
 
 ## Wie komme ich in den Container?

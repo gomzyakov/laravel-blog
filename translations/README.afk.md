@@ -73,12 +73,6 @@ Migreer DB en saad vals data:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-En voeg Filament admin gebruiker by:
-
-``` bash
-docker compose exec app ./artisan make:filament-user
-```
-
 En maak http://127.0.0.1:8000 oop in jou gunsteling blaaier. Lekker om Laravel Blog te gebruik!
 
 ## Hoe om in die houer te kom?

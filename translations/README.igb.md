@@ -73,12 +73,6 @@ Bugharịa DB & data adịgboroja mkpụrụ:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-Ma gbakwunye onye ọrụ nchịkwa Filament:
-
-``` bash
-docker compose exec app ./artisan make:filament-user
-```
-
 Mepee http://127.0.0.1:8000 na ihe nchọgharị kacha amasị gị. Obi ụtọ na-eji Laravel Blog!
 
 ## Kedu ka esi esi banye n'ime akpa ahụ?

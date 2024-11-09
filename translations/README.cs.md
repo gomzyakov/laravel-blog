@@ -73,12 +73,6 @@ Migrujte DB a falešná data:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-A přidejte uživatele Filament admin:
-
-``` bash
-docker compose exec app ./artisan make:filament-user
-```
-
 A otevřete http://127.0.0.1:8000 ve svém oblíbeném prohlížeči. Hodně štěstí s používáním blogu Laravel!
 
 ## Jak se dostat do kontejneru?

@@ -73,12 +73,6 @@ docker compose exec app ./artisan key:generate --ansi
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-И добавете администратор на Filament:
-
-``` bash
-docker compose exec app ./artisan make:filament-user
-```
-
 И отворете http://127.0.0.1:8000 в любимия си браузър. Приятно използване на блога на Laravel!
 
 ## Как да влезем в контейнера?

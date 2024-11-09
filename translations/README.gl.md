@@ -73,12 +73,6 @@ Migra datos falsos de base de datos e sementes:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-E engade o usuario administrador de Filament:
-
-```bash
-docker compose exec app ./artisan make:filament-user
-```
-
 E abre http://127.0.0.1:8000 no teu navegador favorito. Feliz usando Laravel Blog!
 
 ## Como entrar no contedor?

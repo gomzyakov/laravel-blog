@@ -73,12 +73,6 @@ DB və toxum saxta məlumatları köçürün:
 docker compose exec app ./artisan migrate:fresh --seed
 ```
 
-Və Filament admin istifadəçisini əlavə edin:
-
-``` bash
-docker compose exec app ./artisan make:filament-user
-```
-
 Və sevimli brauzerinizdə http://127.0.0.1:8000-i açın. Laravel Blogundan istifadə etmək xoşbəxtdir!
 
 ## Konteynerin içərisinə necə girmək olar?

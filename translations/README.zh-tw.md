@@ -2,7 +2,7 @@
 >This file needs to updated in order to match the [english](/README.md) README file.  
 該檔案需要更新才能符合 [英語](/README.md) README 檔案。
 
-![帶有 Filament 管理面板的 Laravel 部落格](../docs/social-preview-en.png)
+![帶有 Laravel 部落格](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
 
