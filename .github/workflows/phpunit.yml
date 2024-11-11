@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    name: Test & Upload coverage.xml to Codecov
+    name: Test
     runs-on: ubuntu-24.04
 
     services:
@@ -30,12 +30,6 @@ jobs:
         with:
           php-version: 8.3
 
-      - name: Install PHP extensions
-        run: sudo apt-get install -y php-phpdbg
-
-      - name: Check phpdbg version
-        run: phpdbg -V
-
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.ci', '.env');"
 
@@ -55,22 +49,4 @@ jobs:
         run: php artisan migrate
 
       - name: Run tests via PHPUnit
-        env:
-          XDEBUG_MODE: coverage
-        run: |
-          vendor/bin/phpunit --coverage-clover=coverage.xml
-          cat ./coverage.xml
-
-      - name: Show coverage.xml
-        run: cat ./coverage.xml
-
-      - name: Upload coverage.xml to Codecov
-        uses: codecov/codecov-action@v4
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: ./coverage.xml
-          fail_ci_if_error: true
-          flags: unittests
-          name: codecov-umbrella
-          verbose: true
-          env_vars: PHP
+        run: vendor/bin/phpunit
