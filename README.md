@@ -1,8 +1,6 @@
 >[!IMPORTANT]
 >This project is under development. Not all functionality is finished and much can still be improved. If you want to help with the development of the project, you can select an [issue](https://github.com/gomzyakov/larajournal/issues), do it and open a PR.
 
-![Simple personal blog app written on Laravel and MySQL](./docs/social-preview-en.png)
-
 ### Read this in [other languages](./translations/Translations.md):
 
 [ગુજરાતી](translations/README.guj.md)

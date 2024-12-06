@@ -30,7 +30,7 @@ class PostService
                 $data['main_image'] = Storage::disk('public')->put('/images', $data['main_image']);
             }
 
-            // todo Нет необходимости чинить это
+            // todo No needs to fix this
             /** @phpstan-ignore-next-line */
             $post = Post::firstOrCreate($data);
 
