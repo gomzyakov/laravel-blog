@@ -17,8 +17,6 @@ class PostController extends Controller
         /** @phpstan-ignore-next-line */
         $liked_posts = Post::withCount('likedUsers')->orderBy('liked_users_count', 'desc')->get()->take(3);
 
-        // todo replace `view()`
-        // todo remove compact()
         // todo Show recent categories with their latest posts
 
         return view('post.index', [
@@ -38,7 +36,6 @@ class PostController extends Controller
         return view('post.show', ['post' => $post, 'relatedPosts' => $relatedPosts, 'date' => $date, 'tags' => $tags]);
     }
 
-    // TODO Add view
     public function byCategory(Category $category)
     {
         $posts = Post::query()
@@ -51,7 +48,6 @@ class PostController extends Controller
         return view('post.index', ['posts' => $posts, 'category' => $category]);
     }
 
-    // TODO Add view
     public function search(Request $request)
     {
         $q = $request->get('q');
