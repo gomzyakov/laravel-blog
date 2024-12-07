@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\View\View;
+use Illuminate\Contracts\View\Factory as ViewFactory;
+use Illuminate\Contracts\View\View;
 
 class ContactsController extends Controller
 {
-    public function showContacts(): View
+    public function showContacts(ViewFactory $view_factory): View
     {
-        return view('contact.index');
+        return $view_factory->make('contact.index');
     }
 }
