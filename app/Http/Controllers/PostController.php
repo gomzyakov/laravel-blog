@@ -5,29 +5,28 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Post;
 use Carbon\Carbon;
+use Illuminate\Contracts\View\Factory as ViewFactory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
-use Illuminate\View\View;
 
 class PostController extends Controller
 {
-    public function showHomepage(): View
+    public function showHomepage(ViewFactory $view_factory): View
     {
         /** @phpstan-ignore-next-line */
         $latest_post = Post::paginate(6);
         /** @phpstan-ignore-next-line */
         $liked_posts = Post::withCount('likedUsers')->orderBy('liked_users_count', 'desc')->get()->take(3);
 
-        // todo replace `view()`
-        // todo remove compact()
         // todo Show recent categories with their latest posts
 
-        return view('post.index', [
+        return $view_factory->make('post.index', [
             'posts'      => $latest_post,
             'likedPosts' => $liked_posts,
         ]);
     }
 
-    public function show(Post $post, Request $request)
+    public function show(Post $post, Request $request, ViewFactory $view_factory)
     {
         $date = Carbon::parse($post->created_at);
         $tags = $post->tags;
@@ -35,11 +34,10 @@ class PostController extends Controller
         // TODO Add
         $relatedPosts = collect();
 
-        return view('post.show', ['post' => $post, 'relatedPosts' => $relatedPosts, 'date' => $date, 'tags' => $tags]);
+        return $view_factory->make('post.show', ['post' => $post, 'relatedPosts' => $relatedPosts, 'date' => $date, 'tags' => $tags]);
     }
 
-    // TODO Add view
-    public function byCategory(Category $category)
+    public function byCategory(Category $category, ViewFactory $view_factory)
     {
         $posts = Post::query()
             ->join('category_post', 'posts.id', '=', 'category_post.post_id')
@@ -48,11 +46,10 @@ class PostController extends Controller
             ->orderBy('published_at', 'desc')
             ->paginate(10);
 
-        return view('post.index', ['posts' => $posts, 'category' => $category]);
+        return $view_factory->make('post.index', ['posts' => $posts, 'category' => $category]);
     }
 
-    // TODO Add view
-    public function search(Request $request)
+    public function search(Request $request, ViewFactory $view_factory)
     {
         $q = $request->get('q');
 
@@ -65,6 +62,6 @@ class PostController extends Controller
             })
             ->paginate(10);
 
-        return view('post.search', ['posts' => $posts]);
+        return $view_factory->make('post.search', ['posts' => $posts]);
     }
 }
