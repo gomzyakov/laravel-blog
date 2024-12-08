@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Personal\Main;
 use App\Http\Controllers\Controller;
 use Illuminate\Contracts\View\Factory as ViewFactory;
 
-
 class IndexController extends Controller
 {
     public function __invoke(ViewFactory $view_factory)

@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Contracts\View\Factory as ViewFactory;
 
-
 class IndexController extends Controller
 {
     public function __invoke(Category $category, ViewFactory $view_factory)

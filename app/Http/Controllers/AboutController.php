@@ -7,7 +7,7 @@ use Illuminate\Contracts\View\View;
 
 class AboutController extends Controller
 {
-    public function showAbout(ViewFactory $view_factory):View
+    public function showAbout(ViewFactory $view_factory): View
     {
         return $view_factory->make('about.index');
     }
