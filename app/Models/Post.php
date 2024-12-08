@@ -29,9 +29,9 @@ use Illuminate\Support\Str;
  * @property-read User $user
  * @property-read Collection<int, Comment> $comments
  * @property-read int|null $comments_count
- * @property-read Collection<int, \App\Models\User> $likedUsers
+ * @property-read Collection<int, User> $likedUsers
  * @property-read int|null $liked_users_count
- * @property-read Collection<int, \App\Models\Tag> $tags
+ * @property-read Collection<int, Tag> $tags
  * @property-read int|null $tags_count
  *
  * @method static PostFactory  factory($count = null, $state = [])
