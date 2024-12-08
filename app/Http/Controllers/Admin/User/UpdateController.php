@@ -7,7 +7,6 @@ use App\Http\Requests\Admin\User\UpdateRequest;
 use App\Models\User;
 use Illuminate\Contracts\View\Factory as ViewFactory;
 
-
 class UpdateController extends Controller
 {
     public function __invoke(UpdateRequest $request, User $user, ViewFactory $view_factory)
