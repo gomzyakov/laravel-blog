@@ -23,8 +23,5 @@ jobs:
       - name: Install Composer Dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
 
-      - name: Temporary set PHP_CS_FIXER_IGNORE_ENV
-        run: export PHP_CS_FIXER_IGNORE_ENV=1
-
       - name: Run checks of code style
-        run: composer cs-check
+        run: export PHP_CS_FIXER_IGNORE_ENV=1 && composer cs-check
