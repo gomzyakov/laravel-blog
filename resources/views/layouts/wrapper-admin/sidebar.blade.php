@@ -12,7 +12,7 @@
                     <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page"
                        href="{{ route('admin.main.index') }}">
                         <svg class="bi">
-                            <use xlink:href="#house-fill"/>
+                            <use xlink:href="#house"/>
                         </svg>
                         Dashboard
                     </a>
@@ -20,7 +20,7 @@
                 <li class="nav-item">
                     <a class="nav-link d-flex align-items-center gap-2" href="{{ route('admin.post.index') }}">
                         <svg class="bi">
-                            <use xlink:href="#file-earmark"/>
+                            <use xlink:href="#pencil-square"/>
                         </svg>
                         Posts
                     </a>
@@ -29,7 +29,7 @@
                     <a class="nav-link d-flex align-items-center gap-2"
                        href="{{ route('admin.category.index') }}">
                         <svg class="bi">
-                            <use xlink:href="#cart"/>
+                            <use xlink:href="#list-task"/>
                         </svg>
                         Categories
                     </a>
@@ -45,7 +45,7 @@
                 <li class="nav-item">
                     <a class="nav-link d-flex align-items-center gap-2" href="{{ route('admin.tag.index') }}">
                         <svg class="bi">
-                            <use xlink:href="#graph-up"/>
+                            <use xlink:href="#tags"/>
                         </svg>
                         Tags
                     </a>
@@ -111,7 +111,7 @@
                     <a class="nav-link d-flex align-items-center gap-2"
                        href="{{ route('personal.main.index') }}">
                         <svg class="bi">
-                            <use xlink:href="#people"/>
+                            <use xlink:href="#user"/>
                         </svg>
                         Profile
                     </a>
@@ -119,7 +119,7 @@
                 <li class="nav-item">
                     <a class="nav-link d-flex align-items-center gap-2" href="{{ route('logout') }}">
                         <svg class="bi">
-                            <use xlink:href="#door-closed"/>
+                            <use xlink:href="#logout"/>
                         </svg>
                         Sign out
                     </a>
