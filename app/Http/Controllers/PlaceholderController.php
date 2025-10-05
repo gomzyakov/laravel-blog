@@ -52,6 +52,11 @@ class PlaceholderController extends Controller
 
         // Render decoded pixels into a PNG using GD
         $image = imagecreatetruecolor($width, $height);
+
+        if ($image === false) {
+            return response('Failed to create image', 500);
+        }
+
         for ($y = 0; $y < $height; $y++) {
             for ($x = 0; $x < $width; $x++) {
                 [$r, $g, $b] = $decoded[$y][$x];
