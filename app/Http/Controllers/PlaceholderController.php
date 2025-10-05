@@ -28,12 +28,12 @@ class PlaceholderController extends Controller
         $srcW     = 4;
         $srcH     = 3;
         $pixels   = [];
-        $seedHash = crc32($seed);
+        $seed_hash = crc32($seed);
         // Lightweight LCG based on seed for reproducible pseudo-random colors
-        $rand = function () use (&$seedHash): int {
-            $seedHash = (1103515245 * $seedHash + 12345) & 0x7fffffff;
+        $rand = function () use (&$seed_hash): int {
+            $seed_hash = (1103515245 * $seed_hash + 12345) & 0x7fffffff;
 
-            return $seedHash & 0xff;
+            return $seed_hash & 0xff;
         };
 
         for ($y = 0; $y < $srcH; $y++) {
