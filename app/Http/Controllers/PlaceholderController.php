@@ -25,9 +25,9 @@ class PlaceholderController extends Controller
 
         // Build a small deterministic pixel matrix based on seed
         // Small source image keeps blurhash fast and deterministic
-        $srcW     = 4;
-        $srcH     = 3;
-        $pixels   = [];
+        $srcW      = 4;
+        $srcH      = 3;
+        $pixels    = [];
         $seed_hash = crc32($seed);
         // Lightweight LCG based on seed for reproducible pseudo-random colors
         $rand = function () use (&$seed_hash): int {
@@ -61,11 +61,15 @@ class PlaceholderController extends Controller
 
         ob_start();
         imagepng($image);
-        $imageData = ob_get_contents();
+        $image_data = ob_get_contents();
         ob_end_clean();
         imagedestroy($image);
 
-        return response($imageData)
+        if ($image_data === false) {
+            return response('Failed to generate image', 500);
+        }
+
+        return response($image_data)
             ->header('Content-Type', 'image/png')
             ->header('Cache-Control', 'public, max-age=31536000');
     }
