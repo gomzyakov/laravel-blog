@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\PlaceholderController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PostController::class, 'showHomepage'])->name('main.index');
+
+// Placeholder image generation
+Route::get('/placeholder/{width}/{height}', [PlaceholderController::class, 'generate'])
+    ->where(['width' => '[0-9]+', 'height' => '[0-9]+'])
+    ->name('placeholder.generate');
 
 Auth::routes(['verify' => false]);
 

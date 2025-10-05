@@ -6,8 +6,6 @@ use App\Models\Post;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-use function mt_rand;
-
 /**
  * @extends Factory<Post>
  */
@@ -23,8 +21,8 @@ class PostFactory extends Factory
         return [
             'title'         => $title = fake()->text(100),
             'slug'          => Str::slug($title),
-            'preview_image' => 'https://loremflickr.com/640/480?random=' . mt_rand(1, 9999),
-            'main_image'    => 'https://loremflickr.com/640/480?random=' . mt_rand(1, 9999),
+            'preview_image' => route('placeholder.generate', ['width' => 640, 'height' => 480, 'seed' => Str::slug($title) . '-preview']),
+            'main_image'    => route('placeholder.generate', ['width' => 640, 'height' => 480, 'seed' => Str::slug($title) . '-main']),
             'content'       => fake()->realText(5000),
         ];
     }
