@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use kornrunner\Blurhash\Blurhash;
 
 class PlaceholderController extends Controller
 {
@@ -18,50 +19,59 @@ class PlaceholderController extends Controller
      */
     public function generate(Request $request, int $width = 640, int $height = 480): Response
     {
-        $seed = $request->get('seed', 'default');
-        $text = $request->get('text', "{$width}x{$height}");
+        $seed = (string) $request->get('seed', 'default');
+        $cx   = (int) $request->get('cx', 4); // blurhash components on X axis
+        $cy   = (int) $request->get('cy', 3); // blurhash components on Y axis
 
         // Validate dimensions
         $width  = max(1, min(2000, $width));
         $height = max(1, min(2000, $height));
+        $cx     = max(1, min(9, $cx));
+        $cy     = max(1, min(9, $cy));
 
-        // Create image
-        $image = imagecreate($width, $height);
+        // Build a small deterministic pixel matrix based on seed
+        // Small source image keeps blurhash fast and deterministic
+        $srcW = 4;
+        $srcH = 3;
+        $pixels = [];
+        $seedHash = crc32($seed);
+        // Lightweight LCG based on seed for reproducible pseudo-random colors
+        $rand = function () use (&$seedHash): int {
+            $seedHash = (1103515245 * $seedHash + 12345) & 0x7fffffff;
+            return $seedHash & 0xff;
+        };
 
-        // Generate colors based on seed for consistency
-        $hash    = crc32($seed);
-        $bgColor = imagecolorallocate($image,
-            ($hash >> 16) & 0xFF,
-            ($hash >> 8)  & 0xFF,
-            $hash         & 0xFF
-        );
+        for ($y = 0; $y < $srcH; $y++) {
+            $row = [];
+            for ($x = 0; $x < $srcW; $x++) {
+                $row[] = [$rand(), $rand(), $rand()];
+            }
+            $pixels[] = $row;
+        }
 
-        $textColor = imagecolorallocate($image, 255, 255, 255);
+        // Encode to blurhash with requested component counts
+        $blurhash = Blurhash::encode($pixels, $cx, $cy);
 
-        // Fill background
-        imagefill($image, 0, 0, $bgColor);
+        // Decode blurhash to requested output size
+        $decoded = Blurhash::decode($blurhash, $width, $height);
 
-        // Add text
-        $fontSize = min($width, $height) / 10;
-        $fontSize = max(12, min(48, $fontSize));
+        // Render decoded pixels into a PNG using GD
+        $image = imagecreatetruecolor($width, $height);
+        for ($y = 0; $y < $height; $y++) {
+            for ($x = 0; $x < $width; $x++) {
+                [$r, $g, $b] = $decoded[$y][$x];
+                imagesetpixel($image, $x, $y, imagecolorallocate($image, $r, $g, $b));
+            }
+        }
 
-        $textWidth  = imagefontwidth(5) * strlen($text);
-        $textHeight = imagefontheight(5);
-        $x          = ($width - $textWidth)   / 2;
-        $y          = ($height - $textHeight) / 2;
-
-        imagestring($image, 5, $x, $y, $text, $textColor);
-
-        // Output image
         ob_start();
         imagepng($image);
         $imageData = ob_get_contents();
         ob_end_clean();
-
         imagedestroy($image);
 
         return response($imageData)
             ->header('Content-Type', 'image/png')
-            ->header('Cache-Control', 'public, max-age=31536000'); // Cache for 1 year
+            ->header('Cache-Control', 'public, max-age=31536000');
     }
 }
