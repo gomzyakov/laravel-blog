@@ -10,12 +10,6 @@ class PlaceholderController extends Controller
 {
     /**
      * Generate a placeholder image.
-     *
-     * @param Request $request
-     * @param int     $width
-     * @param int     $height
-     *
-     * @return Response
      */
     public function generate(Request $request, int $width = 640, int $height = 480): Response
     {
@@ -31,13 +25,14 @@ class PlaceholderController extends Controller
 
         // Build a small deterministic pixel matrix based on seed
         // Small source image keeps blurhash fast and deterministic
-        $srcW = 4;
-        $srcH = 3;
-        $pixels = [];
+        $srcW     = 4;
+        $srcH     = 3;
+        $pixels   = [];
         $seedHash = crc32($seed);
         // Lightweight LCG based on seed for reproducible pseudo-random colors
         $rand = function () use (&$seedHash): int {
             $seedHash = (1103515245 * $seedHash + 12345) & 0x7fffffff;
+
             return $seedHash & 0xff;
         };
 
