@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
 # फिलामेंट एडमिन पैनल के साथ # लारवेल ब्लॉग
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## सुविधाओं का अनुरोध करना
 
-किसी सुविधा का अनुरोध करने के लिए (या यदि आपको कोई बग मिलता है) तो एक [नया अंक](https://github.com/gomzyakov/larajournal/issues/new) खोलें।
+किसी सुविधा का अनुरोध करने के लिए (या यदि आपको कोई बग मिलता है) तो एक [नया अंक](https://github.com/gomzyakov/laravel-blog/issues/new) खोलें।
 
 ## ब्लॉग को स्थानीय स्तर पर कैसे चलाएं?
 
 प्रोजेक्ट को क्लोन करें:
 
 ```bash
-git clone git@github.com:gomzyakov/larajournal.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 मेरा मानना है कि आपके पास पहले से ही डॉकर स्थापित है। यदि नहीं, तो बस इसे [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) पर करें -इंस्टॉल/) या [लिनक्स](https://docs.docker.com/desktop/install/linux-install/)।
 
-निम्नलिखित कमांड के साथ `larajournal` छवि बनाएं:
+निम्नलिखित कमांड के साथ `laravel-blog` छवि बनाएं:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 डॉकर कंटेनर तक पहुंच:
 
 ```bash
-docker exec -ti larajournal-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## लाइसेंस
@@ -94,6 +94,6 @@ docker exec -ti larajournal-app bash
 यह [MIT लाइसेंस](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) के तहत लाइसेंस प्राप्त ओपन-सोर्स सॉफ़्टवेयर है।
 
 
-[![गिटहब रिलीज़](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
-[![लाइसेंस](https://img.shields.io/ Badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
-[![कोडकोव](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/ Badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ लारवेल-ब्लॉग)
+[![गिटहब रिलीज़](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
+[![लाइसेंस](https://img.shields.io/ Badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
+[![कोडकोव](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/ Badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ लारवेल-ब्लॉग)

@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
 # Filament 管理パネルを備えた Laravel ブログ
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## 機能のリクエスト
 
-[新しい問題](https://github.com/gomzyakov/larajournal/issues/new) を開いて機能をリクエストします (またはバグを見つけた場合)。
+[新しい問題](https://github.com/gomzyakov/laravel-blog/issues/new) を開いて機能をリクエストします (またはバグを見つけた場合)。
 
 ## ブログをローカルで実行するにはどうすればよいですか?
 
 プロジェクトのクローンを作成します。
 
 ```bash
-git clone git@github.com:gomzyakov/larajournal.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 すでに Docker がインストールされていると思います。 そうでない場合は、[Mac](https://docs.docker.com/desktop/install/mac-install/)、[Windows](https://docs.docker.com/desktop/install/windows)で実行してください。 -install/) または [Linux](https://docs.docker.com/desktop/install/linux-install/)。
 
-次のコマンドを使用して「larajournal」イメージをビルドします。
+次のコマンドを使用して「laravel-blog」イメージをビルドします。
 
 ```bash
 docker compose build --no-cache
@@ -87,7 +87,7 @@ docker compose exec app ./artisan make:filament-user
 Docker コンテナへのアクセス:
 
 ```bash
-docker exec -ti larajournal-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## ライセンス
@@ -95,6 +95,6 @@ docker exec -ti larajournal-app bash
 これは、[MIT ライセンス](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) に基づいてライセンス供与されたオープンソース ソフトウェアです。
 
 
-[![GitHub リリース](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
-[![ライセンス](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravelブログ)
+[![GitHub リリース](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
+[![ライセンス](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravelブログ)

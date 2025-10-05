@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
 # Filament நிர்வாக குழுவுடன் Laravel வலைப்பதிவு
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## அம்சங்களைக் கோருகிறது
 
-ஒரு அம்சத்தைக் கோர (அல்லது பிழையைக் கண்டால்) [புதிய சிக்கலை](https://github.com/gomzyakov/larajournal/issues/new) திறக்கவும்.
+ஒரு அம்சத்தைக் கோர (அல்லது பிழையைக் கண்டால்) [புதிய சிக்கலை](https://github.com/gomzyakov/laravel-blog/issues/new) திறக்கவும்.
 
 ## வலைப்பதிவை உள்ளூரில் இயக்குவது எப்படி?
 
 திட்டத்தை குளோன் செய்யுங்கள்:
 
 ```bash
-git clone git@github.com:gomzyakov/larajournal.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 நீங்கள் ஏற்கனவே டோக்கரை நிறுவியுள்ளீர்கள் என்று நம்புகிறேன். இல்லையெனில், அதை [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) இல் செய்யுங்கள் -install/) அல்லது [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-பின்வரும் கட்டளையுடன் `larajournal` படத்தை உருவாக்கவும்:
+பின்வரும் கட்டளையுடன் `laravel-blog` படத்தை உருவாக்கவும்:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 டோக்கர் கொள்கலனுக்கான அணுகல்:
 
 ```bash
-docker exec -ti larajournal-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## உரிமம்
@@ -94,6 +94,6 @@ docker exec -ti larajournal-app bash
 இது [MIT உரிமம்](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) கீழ் உரிமம் பெற்ற திறந்த மூல மென்பொருள்.
 
 
-[![GitHub வெளியீடு](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)
+[![GitHub வெளியீடு](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)

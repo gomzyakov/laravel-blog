@@ -6,7 +6,7 @@ Leli fayela lidinga ukubuyekezwa ukuze lifane nefayela elithi [isingisi](/README
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
 # Ibhulogi yeLaravel enephaneli yokuphatha ye-Filament
 
@@ -23,19 +23,19 @@ Umgomo waleli gumbi ukukhombisa izinqubo ezinhle zokuthuthukisa ze-[Laravel](htt
 
 ## Icela izici
 
-Vula [inguqulo entsha](https://github.com/gomzyakov/larajournal/issues/new) ukuze ucele isici (noma uma uthola iphutha).
+Vula [inguqulo entsha](https://github.com/gomzyakov/laravel-blog/issues/new) ukuze ucele isici (noma uma uthola iphutha).
 
 ## Isetshenziswa kanjani ibhulogi endaweni?
 
 Hlanganisa iphrojekthi:
 
 ``` bash
-git clone git@github.com:gomzyakov/larajournal.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Ngikholwa ukuthi usunayo i-Docker efakiwe. Uma kungenjalo, vele ukwenze ku-[Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -faka/) noma i-[Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Yakha isithombe `se-larajournal` ngomyalo olandelayo:
+Yakha isithombe `se-laravel-blog` ngomyalo olandelayo:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ Futhi uvule http://127.0.0.1:8000 kusiphequluli sakho osithandayo. Jabulela useb
 Ukufinyelela esitsheni se-Docker:
 
 ```bash
-docker exec -ti larajournal-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## Ilayisensi
@@ -94,6 +94,6 @@ docker exec -ti larajournal-app bash
 Le isofthiwe enomthombo ovulekile inelayisensi ngaphansi kwe-[MIT License](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![Ukukhishwa kwe-GitHub](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
-[![ilayisensi](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ i-larajournal)
+[![Ukukhishwa kwe-GitHub](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
+[![ilayisensi](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ i-laravel-blog)

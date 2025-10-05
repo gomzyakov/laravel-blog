@@ -2,13 +2,13 @@
 >This file needs to updated in order to match the [english](/README.md) README file.  
 >Denne filen må oppdateres for å matche [engelsk](/README.md) README-filen.
 
-![larajournalg med Filament-administrasjonspanel](../docs/social-preview-en.png)
+![laravel-blogg med Filament-administrasjonspanel](../docs/social-preview-en.png)
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
-# larajournalg med Filament-administrasjonspanel
+# laravel-blogg med Filament-administrasjonspanel
 
 Dette er [Laravel](https://laravel.com) bloggstartpakkeprosjekt med [Filament](https://filamentphp.com) adminpanel.
 
@@ -23,19 +23,19 @@ Målet med dette depotet er å vise frem god [Laravel](https://laravel.com) utvi
 
 ## Ber om funksjoner
 
-Åpne en [ny utgave](https://github.com/gomzyakov/larajournal/issues/new) for å be om en funksjon (eller hvis du finner en feil).
+Åpne en [ny utgave](https://github.com/gomzyakov/laravel-blog/issues/new) for å be om en funksjon (eller hvis du finner en feil).
 
 ## Hvordan drive blogg lokalt?
 
 Klon prosjektet:
 
 ```bash
-git clone git@github.com:gomzyakov/larajournal.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Jeg tror du allerede har Docker installert. Hvis ikke, bare gjør det på [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) eller [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Bygg `larajournalg`-bildet med følgende kommando:
+Bygg `laravel-blogg`-bildet med følgende kommando:
 
 ``` bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ Og åpne http://127.0.0.1:8000 i favorittnettleseren din. Glad for å bruke Lara
 Tilgang til Docker-beholderen:
 
 ``` bash
-docker exec -ti larajournal-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## Lisens
@@ -94,6 +94,6 @@ docker exec -ti larajournal-app bash
 Dette er åpen programvare lisensiert under [MIT-lisensen](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![GitHub-utgivelse](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
-[![lisens](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournalg)
+[![GitHub-utgivelse](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
+[![lisens](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blogg)
