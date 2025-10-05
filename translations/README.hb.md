@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
 # בלוג Laravel עם פאנל ניהול Filament
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## מבקש תכונות
 
-פתח [גיליון חדש](https://github.com/gomzyakov/larajournal/issues/new) כדי לבקש תכונה (או אם אתה מוצא באג).
+פתח [גיליון חדש](https://github.com/gomzyakov/laravel-blog/issues/new) כדי לבקש תכונה (או אם אתה מוצא באג).
 
 ## איך להפעיל בלוג באופן מקומי?
 
 שכפול הפרויקט:
 
 ```bash
-git clone git@github.com:gomzyakov/larajournal.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 אני מאמין שכבר התקנת את Docker. אם לא, פשוט עשה זאת ב-[Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) או [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-בנה את תמונת `larajournal` עם הפקודה הבאה:
+בנה את תמונת `laravel-blog` עם הפקודה הבאה:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 גישה למיכל Docker:
 
 ```bash
-docker exec -ti larajournal-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## רישיון
@@ -94,6 +94,6 @@ docker exec -ti larajournal-app bash
 זוהי תוכנה בקוד פתוח ברישיון [MIT License](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![מהדורת GitHub](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
-[![רישיון](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)
+[![מהדורת GitHub](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
+[![רישיון](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)

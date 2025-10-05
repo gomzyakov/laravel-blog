@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
 # Filament басқару тақтасы бар # Laravel блогы
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## Мүмкіндіктерді сұрау
 
-Мүмкіндікті сұрау үшін (немесе қатені тапсаңыз) [жаңа шығарылымды] (https://github.com/gomzyakov/larajournal/issues/new) ашыңыз.
+Мүмкіндікті сұрау үшін (немесе қатені тапсаңыз) [жаңа шығарылымды] (https://github.com/gomzyakov/laravel-blog/issues/new) ашыңыз.
 
 ## Блогты жергілікті түрде қалай жүргізуге болады?
 
 Жобаны клондау:
 
 ```bash
-git clone git@github.com:gomzyakov/larajournal.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Сізде Docker орнатылған деп ойлаймын. Олай болмаса, мұны жай ғана [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows) компьютерінде орындаңыз. -install/) немесе [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-`larajournal` кескінін келесі пәрменмен құрастырыңыз:
+`laravel-blog` кескінін келесі пәрменмен құрастырыңыз:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 Docker контейнеріне кіру:
 
 ```bash
-docker exec -ti larajournal-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## Лицензия
@@ -94,6 +94,6 @@ docker exec -ti larajournal-app bash
 Бұл [MIT License] (https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) бойынша лицензияланған ашық бастапқы бағдарламалық құрал.
 
 
-[![GitHub шығарылымы](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-блог)
+[![GitHub шығарылымы](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-блог)

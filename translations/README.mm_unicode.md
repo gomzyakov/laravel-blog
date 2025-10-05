@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
 # Filament admin panel ဖြင့် Laravel ဘလော့ဂ်
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## တောင်းဆိုနေပါသည်။
 
-အင်္ဂါရပ်တစ်ခုတောင်းဆိုရန် (သို့မဟုတ် ချွတ်ယွင်းချက်တွေ့ရှိပါက) [ပြဿနာအသစ်](https://github.com/gomzyakov/larajournal/issues/new) ကိုဖွင့်ပါ။
+အင်္ဂါရပ်တစ်ခုတောင်းဆိုရန် (သို့မဟုတ် ချွတ်ယွင်းချက်တွေ့ရှိပါက) [ပြဿနာအသစ်](https://github.com/gomzyakov/laravel-blog/issues/new) ကိုဖွင့်ပါ။
 
 ## ဘလော့ဂ်ကို ပြည်တွင်းမှာ ဘယ်လိုဖွင့်မလဲ။
 
 ပရောဂျက်ကို ပွားပါ-
 
 ```bash
-git clone git@github.com:gomzyakov/larajournal.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 သင့်တွင် Docker ကို ထည့်သွင်းထားပြီးဖြစ်သည်ဟု ယုံကြည်ပါသည်။ မဟုတ်ပါက၊ [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows တွင်သာလုပ်ပါ။ -install/) သို့မဟုတ် [Linux](https://docs.docker.com/desktop/install/linux-install/)။
 
-အောက်ပါ command ဖြင့် `larajournal` ပုံကို တည်ဆောက်ပါ။
+အောက်ပါ command ဖြင့် `laravel-blog` ပုံကို တည်ဆောက်ပါ။
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 Docker ကွန်တိန်နာသို့ ဝင်ရောက်ခွင့်-
 
 ```bash
-docker exec -ti larajournal-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ##လိုင်စင်
@@ -94,6 +94,6 @@ docker exec -ti larajournal-app bash
 ၎င်းသည် [MIT လိုင်စင်](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE) အောက်တွင် လိုင်စင်ရ အခမဲ့အရင်းအမြစ်ဆော့ဖ်ဝဲဖြစ်သည်။
 
 
-[![GitHub ထုတ်ဝေမှု](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
-[![လိုင်စင်](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)
+[![GitHub ထုတ်ဝေမှု](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
+[![လိုင်စင်](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)

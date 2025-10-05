@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
 # Laravel blog ກັບ Filament admin panel
 
@@ -23,19 +23,19 @@ _Read this in [other languages](./Translations.md)_
 
 ## ລັກສະນະການຮ້ອງຂໍ
 
-ເປີດ [ບັນຫາໃໝ່](https://github.com/gomzyakov/larajournal/issues/new) ເພື່ອຮ້ອງຂໍຄຸນສົມບັດ (ຫຼືຫາກທ່ານພົບຂໍ້ບົກພ່ອງ).
+ເປີດ [ບັນຫາໃໝ່](https://github.com/gomzyakov/laravel-blog/issues/new) ເພື່ອຮ້ອງຂໍຄຸນສົມບັດ (ຫຼືຫາກທ່ານພົບຂໍ້ບົກພ່ອງ).
 
 ## ວິທີການດໍາເນີນການ blog ໃນທ້ອງຖິ່ນ?
 
 Clone ໂຄງ​ການ​:
 
 ```bash
-git clone git@github.com:gomzyakov/larajournal.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 ຂ້ອຍເຊື່ອວ່າເຈົ້າໄດ້ຕິດຕັ້ງ Docker ແລ້ວ. ຖ້າບໍ່, ພຽງແຕ່ເຮັດມັນຢູ່ໃນ [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) ຫຼື [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-ສ້າງຮູບພາບ 'larajournal' ດ້ວຍຄໍາສັ່ງຕໍ່ໄປນີ້:
+ສ້າງຮູບພາບ 'laravel-blog' ດ້ວຍຄໍາສັ່ງຕໍ່ໄປນີ້:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ docker compose exec app ./artisan make:filament-user
 ການເຂົ້າເຖິງກ່ອງບັນຈຸ Docker:
 
 ```bash
-docker exec -ti larajournal-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## ໃບອະນຸຍາດ
@@ -94,6 +94,6 @@ docker exec -ti larajournal-app bash
 ນີ້ແມ່ນຊອບແວແຫຼ່ງເປີດທີ່ໄດ້ຮັບອະນຸຍາດພາຍໃຕ້ [ໃບອະນຸຍາດ MIT](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![ການປ່ອຍ GitHub](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ larajournal)
+[![ການປ່ອຍ GitHub](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel-blog)

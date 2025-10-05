@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
 # Laravel tinklaraštis su Filament administratoriaus skydeliu
 
@@ -23,19 +23,19 @@ Tai yra [Laravel](https://laravel.com) tinklaraščio pradžios rinkinio projekt
 
 ## Funkcijų užklausa
 
-Atidarykite [naują leidimą] (https://github.com/gomzyakov/larajournal/issues/new), kad pateiktumėte užklausą dėl funkcijos (arba jei radote triktį).
+Atidarykite [naują leidimą] (https://github.com/gomzyakov/laravel-blog/issues/new), kad pateiktumėte užklausą dėl funkcijos (arba jei radote triktį).
 
 ## Kaip paleisti tinklaraštį vietoje?
 
 Klonuoti projektą:
 
 ```bash
-git clone git@github.com:gomzyakov/larajournal.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Manau, kad jau įdiegėte „Docker“. Jei ne, tiesiog padarykite tai [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) arba [Linux] (https://docs.docker.com/desktop/install/linux-install/).
 
-Sukurkite `larajournal` vaizdą naudodami šią komandą:
+Sukurkite `laravel-blog` vaizdą naudodami šią komandą:
 
 ```bash
 docker compose build --no-cache
@@ -86,7 +86,7 @@ Ir atidarykite http://127.0.0.1:8000 savo mėgstamoje naršyklėje. Džiaugiamė
 Prieiga prie „Docker“ konteinerio:
 
 ```bash
-docker exec -ti larajournal-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## Licencija
@@ -94,6 +94,6 @@ docker exec -ti larajournal-app bash
 Tai atvirojo kodo programinė įranga, licencijuota pagal [MIT licenciją] (https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![GitHub leidimas](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
-[![licencija](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel tinklaraštis)
+[![GitHub leidimas](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
+[![licencija](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ laravel tinklaraštis)
