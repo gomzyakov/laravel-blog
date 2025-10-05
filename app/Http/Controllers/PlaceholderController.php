@@ -2,12 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Service\ImagePlaceholder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use kornrunner\Blurhash\Blurhash;
+use RuntimeException;
 
 class PlaceholderController extends Controller
 {
+    public function __construct(
+        private readonly ImagePlaceholder $image_placeholder
+    ) {
+    }
+
     /**
      * Generate a placeholder image.
      */
@@ -17,65 +23,14 @@ class PlaceholderController extends Controller
         $cx   = (int) $request->get('cx', 4); // blurhash components on X axis
         $cy   = (int) $request->get('cy', 3); // blurhash components on Y axis
 
-        // Validate dimensions
-        $width  = max(1, min(2000, $width));
-        $height = max(1, min(2000, $height));
-        $cx     = max(1, min(9, $cx));
-        $cy     = max(1, min(9, $cy));
+        try {
+            $imageData = $this->image_placeholder->generate($width, $height, $seed, $cx, $cy);
 
-        // Build a small deterministic pixel matrix based on seed
-        // Small source image keeps blurhash fast and deterministic
-        $srcW      = 4;
-        $srcH      = 3;
-        $pixels    = [];
-        $seed_hash = crc32($seed);
-        // Lightweight LCG based on seed for reproducible pseudo-random colors
-        $rand = function () use (&$seed_hash): int {
-            $seed_hash = (1103515245 * $seed_hash + 12345) & 0x7fffffff;
-
-            return $seed_hash & 0xff;
-        };
-
-        for ($y = 0; $y < $srcH; $y++) {
-            $row = [];
-            for ($x = 0; $x < $srcW; $x++) {
-                $row[] = [$rand(), $rand(), $rand()];
-            }
-            $pixels[] = $row;
+            return response($imageData)
+                ->header('Content-Type', 'image/png')
+                ->header('Cache-Control', 'public, max-age=31536000');
+        } catch (RuntimeException $e) {
+            return response($e->getMessage(), 500);
         }
-
-        // Encode to blurhash with requested component counts
-        $blurhash = Blurhash::encode($pixels, $cx, $cy);
-
-        // Decode blurhash to requested output size
-        $decoded = Blurhash::decode($blurhash, $width, $height);
-
-        // Render decoded pixels into a PNG using GD
-        $image = imagecreatetruecolor($width, $height);
-
-        if ($image === false) {
-            return response('Failed to create image', 500);
-        }
-
-        for ($y = 0; $y < $height; $y++) {
-            for ($x = 0; $x < $width; $x++) {
-                [$r, $g, $b] = $decoded[$y][$x];
-                imagesetpixel($image, $x, $y, imagecolorallocate($image, $r, $g, $b));
-            }
-        }
-
-        ob_start();
-        imagepng($image);
-        $image_data = ob_get_contents();
-        ob_end_clean();
-        imagedestroy($image);
-
-        if ($image_data === false) {
-            return response('Failed to generate image', 500);
-        }
-
-        return response($image_data)
-            ->header('Content-Type', 'image/png')
-            ->header('Cache-Control', 'public, max-age=31536000');
     }
 }
