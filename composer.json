@@ -7,6 +7,8 @@
     "require": {
         "php": "^8.4",
         "ext-intl": "*",
+        "ext-gd": "*",
+        "gomzyakov/image-placeholder": "^1.0",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.10.0",
         "laravel/ui": "^4.5",
@@ -15,7 +17,7 @@
     "require-dev": {
         "fakerphp/faker": "^1.23.1",
         "friendsofphp/php-cs-fixer": "^3.53",
-        "gomzyakov/php-cs-fixer-config": "^1.75",
+        "gomzyakov/code-style": "^2.1",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.0",
         "phpstan/phpstan": "^1.10",
@@ -38,10 +40,10 @@
     "scripts": {
         "phpunit": "@php ./vendor/bin/phpunit ./tests --no-coverage --color=always",
         "phpstan": "@php ./vendor/bin/phpstan analyze -c ./phpstan.neon.dist --no-progress --ansi --verbose",
+        "fix": "@php ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php",
         "cs-check": "@php ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run --diff",
-        "cs-fix": "@php ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php",
+        "rector": "@php ./vendor/bin/rector process",
         "rector-check": "@php ./vendor/bin/rector process --dry-run",
-        "rector-fix": "@php ./vendor/bin/rector process",
         "test": [
             "@cs-check",
             "@phpstan",

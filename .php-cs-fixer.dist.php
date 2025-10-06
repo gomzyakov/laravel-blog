@@ -1,7 +1,7 @@
 <?php
 
-use Gomzyakov\CS\Finder;
-use Gomzyakov\CS\Config;
+use Gomzyakov\CodeStyleFinder;
+use Gomzyakov\CodeStyleConfig;
 
 // Routes for analysis with `php-cs-fixer`
 $routes = [
@@ -13,4 +13,4 @@ $routes = [
     __DIR__ . '/tests',
 ];
 
-return Config::createWithFinder(Finder::createWithRoutes($routes));
+return CodeStyleConfig::createWithFinder(CodeStyleFinder::createWithRoutes($routes));
