@@ -19,10 +19,10 @@ class PlaceholderController extends Controller
         $cy   = (int) $request->get('cy', 3); // blurhash components on Y axis
 
         try {
-            $generator = new ImagePlaceholder();
-            $imageData = $generator->generate($width, $height, $seed, $cx, $cy);
+            $generator  = new ImagePlaceholder();
+            $image_data = $generator->generate($width, $height, $seed, $cx, $cy);
 
-            return response($imageData)
+            return response($image_data)
                 ->header('Content-Type', 'image/png')
                 ->header('Cache-Control', 'public, max-age=31536000');
         } catch (RuntimeException $e) {
