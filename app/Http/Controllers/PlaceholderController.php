@@ -16,9 +16,24 @@ class PlaceholderController extends Controller
      */
     public function generate(Request $request, int $width = 640, int $height = 480): Response
     {
-        $seed = (string) $request->get('seed', 'default');
+        if ($width < 1 || $width > 2000) {
+            return response('Width must be between 1 and 2000', 400);
+        }
+        if ($height < 1 || $height > 2000) {
+            return response('Height must be between 1 and 2000', 400);
+        }
+
         $cx   = (int) $request->get('cx', 4); // blurhash components on X axis
         $cy   = (int) $request->get('cy', 3); // blurhash components on Y axis
+
+        if ($cx < 1 || $cx > 9) {
+            return response('cx must be between 1 and 9', 400);
+        }
+        if ($cy < 1 || $cy > 9) {
+            return response('cy must be between 1 and 9', 400);
+        }
+
+        $seed = (string) $request->get('seed', 'default');
 
         try {
             $generator  = new ImagePlaceholder();
