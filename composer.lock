@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3a7ea0713a03acc89d6b06e8ebbd013",
+    "content-hash": "70f069067f00e77c273385deb6d4b8b6",
     "packages": [
         {
             "name": "brick/math",
@@ -580,6 +580,63 @@
                 }
             ],
             "time": "2023-10-12T05:21:21+00:00"
+        },
+        {
+            "name": "gomzyakov/image-placeholder",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gomzyakov/image-placeholder.git",
+                "reference": "cffa391b1c14d999ceaf93533e59c1eaf70d41e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gomzyakov/image-placeholder/zipball/cffa391b1c14d999ceaf93533e59c1eaf70d41e8",
+                "reference": "cffa391b1c14d999ceaf93533e59c1eaf70d41e8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "kornrunner/blurhash": "^1.2",
+                "php": "^8.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.62",
+                "gomzyakov/code-style": "^2.0",
+                "mockery/mockery": "^1.6",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^12.0",
+                "rector/rector": "^2.1"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Gomzyakov\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Gomzyakov",
+                    "email": "alexander.gomzyakov@gmail.com"
+                }
+            ],
+            "description": "Simple image placeholder generator on PHP",
+            "homepage": "https://github.com/gomzyakov/image-placeholder",
+            "keywords": [
+                "generator",
+                "image",
+                "php",
+                "placeholder"
+            ],
+            "support": {
+                "issues": "https://github.com/gomzyakov/image-placeholder/issues",
+                "source": "https://github.com/gomzyakov/image-placeholder/tree/v1.0.0"
+            },
+            "time": "2025-10-05T17:01:35+00:00"
         },
         {
             "name": "graham-campbell/result-type",

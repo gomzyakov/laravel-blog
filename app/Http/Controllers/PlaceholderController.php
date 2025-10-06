@@ -2,18 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Service\ImagePlaceholder;
+use Gomzyakov\ImagePlaceholder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use RuntimeException;
 
 class PlaceholderController extends Controller
 {
-    public function __construct(
-        private readonly ImagePlaceholder $image_placeholder
-    ) {
-    }
-
     /**
      * Generate a placeholder image.
      */
@@ -24,7 +19,8 @@ class PlaceholderController extends Controller
         $cy   = (int) $request->get('cy', 3); // blurhash components on Y axis
 
         try {
-            $imageData = $this->image_placeholder->generate($width, $height, $seed, $cx, $cy);
+            $generator = new ImagePlaceholder();
+            $imageData = $generator->generate($width, $height, $seed, $cx, $cy);
 
             return response($imageData)
                 ->header('Content-Type', 'image/png')
