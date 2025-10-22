@@ -16,7 +16,7 @@ services:
             - app-network
 
     db:
-        image: mysql:9.1
+        image: mysql:9.5
         container_name: laravel-blog-db
         restart: unless-stopped
         environment:
