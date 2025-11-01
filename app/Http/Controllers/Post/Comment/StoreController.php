@@ -6,15 +6,16 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Post\Comment\StoreRequest;
 use App\Models\Comment;
 use App\Models\Post;
+use Illuminate\Contracts\Auth\Authenticatable;
 
 class StoreController extends Controller
 {
-    public function __invoke(StoreRequest $request, Post $post)
+    public function __invoke(StoreRequest $request, Post $post, Authenticatable $user)
     {
-        $data            = $request->validated();
+        $data = $request->validated();
         $data['post_id'] = $post->id;
-        /** @phpstan-ignore-next-line  */
-        $data['user_id'] = auth()->user()->id;
+        /** @phpstan-ignore-next-line */
+        $data['user_id'] = $user->id;
         /** @phpstan-ignore-next-line */
         Comment::create($data);
 
