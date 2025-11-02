@@ -3,7 +3,6 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -14,10 +13,11 @@ class AdminMiddleware
      *
      * @param Closure(Request): (Response) $next
      */
-    public function handle(Request $request, Closure $next, Authenticatable $user): Response
+    public function handle(Request $request, Closure $next): Response
     {
+        $user = $request->user();
         /** @phpstan-ignore-next-line */
-        if ($user->isReader()) {
+        if (! $user || $user->isReader()) {
             abort(404);
         }
 

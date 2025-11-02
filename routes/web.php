@@ -48,7 +48,7 @@ Route::prefix('category')->namespace('App\Http\Controllers\Category')->group(fun
 Route::prefix('post')->namespace('')->group(function () {
     Route::get('/{post}', [PostController::class, 'show'])->name('post.show');
 
-    Route::prefix('{post}/comments')->group(function () {
+    Route::prefix('{post}/comments')->middleware('auth')->group(function () {
         Route::post('/', 'App\Http\Controllers\Post\Comment\StoreController')->name('post.comments.store');
     });
     Route::prefix('{post}/likes')->group(function () {
