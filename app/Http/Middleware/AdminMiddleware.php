@@ -17,7 +17,7 @@ class AdminMiddleware
     {
         $user = $request->user();
         /** @phpstan-ignore-next-line */
-        if (! $user || $user->isReader()) {
+        if (! $user || ! $user->isAdministrator()) {
             abort(404);
         }
 

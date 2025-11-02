@@ -51,7 +51,7 @@ Route::prefix('post')->namespace('')->group(function () {
     Route::prefix('{post}/comments')->middleware('auth')->group(function () {
         Route::post('/', 'App\Http\Controllers\Post\Comment\StoreController')->name('post.comments.store');
     });
-    Route::prefix('{post}/likes')->group(function () {
+    Route::prefix('{post}/likes')->middleware('auth')->group(function () {
         Route::post('/', 'App\Http\Controllers\Post\Like\StoreController')->name('post.likes.store');
     });
 });
