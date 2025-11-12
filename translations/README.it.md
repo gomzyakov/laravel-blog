@@ -6,7 +6,7 @@
 
 _Read this in [other languages](./Translations.md)_
 
->This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/larajournal/issues).
+>This file is automatically translated. If you notice an error, please correct it yourself (by making a PR) or write about it in the [issues](https://github.com/gomzyakov/laravel-blog/issues).
 
 # Blog Laravel con pannello di amministrazione di Filament
 
@@ -23,19 +23,19 @@ L'obiettivo di questo repository è mostrare le buone pratiche di sviluppo di [L
 
 ## Richiesta di funzionalità
 
-Apri un [nuovo numero](https://github.com/gomzyakov/larajournal/issues/new) per richiedere una funzionalità (o se trovi un bug).
+Apri un [nuovo numero](https://github.com/gomzyakov/laravel-blog/issues/new) per richiedere una funzionalità (o se trovi un bug).
 
 ## Come gestire il blog localmente?
 
 Clonare il progetto:
 
 ```bash
-git clone git@github.com:gomzyakov/larajournal.git
+git clone git@github.com:gomzyakov/laravel-blog.git
 ```
 
 Credo che tu abbia già installato Docker. In caso contrario, eseguilo su [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows -install/) o [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-Costruisci l'immagine `larajournal` con il seguente comando:
+Costruisci l'immagine `laravel-blog` con il seguente comando:
 
 ```bash
 docker compose build --no-cache
@@ -80,7 +80,7 @@ E apri http://127.0.0.1:8000 nel tuo browser preferito. Felice di usare il blog 
 Accesso al contenitore Docker:
 
 ```bash
-docker exec -ti larajournal-app bash
+docker exec -ti laravel-blog-app bash
 ```
 
 ## Licenza
@@ -88,6 +88,6 @@ docker exec -ti larajournal-app bash
 Questo è un software open source concesso in licenza con la [licenza MIT](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
 
-[![Versione GitHub](https://img.shields.io/github/release/gomzyakov/larajournal.svg)](https://github.com/gomzyakov/larajournal/releases/latest)
-[![licenza](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/larajournal/blob/development/LICENSE)
-[![codecov](https://codecov.io/gh/gomzyakov/larajournal/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ blog laravel)
+[![Versione GitHub](https://img.shields.io/github/release/gomzyakov/laravel-blog.svg)](https://github.com/gomzyakov/laravel-blog/releases/latest)
+[![licenza](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/laravel-blog/blob/development/LICENSE)
+[![codecov](https://codecov.io/gh/gomzyakov/laravel-blog/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/ blog laravel)
