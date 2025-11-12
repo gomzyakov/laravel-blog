@@ -581,16 +581,16 @@
         },
         {
             "name": "gomzyakov/image-placeholder",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gomzyakov/image-placeholder.git",
-                "reference": "cffa391b1c14d999ceaf93533e59c1eaf70d41e8"
+                "reference": "86ded1486e27c4988d39f4383f143147cd99c9bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gomzyakov/image-placeholder/zipball/cffa391b1c14d999ceaf93533e59c1eaf70d41e8",
-                "reference": "cffa391b1c14d999ceaf93533e59c1eaf70d41e8",
+                "url": "https://api.github.com/repos/gomzyakov/image-placeholder/zipball/86ded1486e27c4988d39f4383f143147cd99c9bc",
+                "reference": "86ded1486e27c4988d39f4383f143147cd99c9bc",
                 "shasum": ""
             },
             "require": {
@@ -632,9 +632,9 @@
             ],
             "support": {
                 "issues": "https://github.com/gomzyakov/image-placeholder/issues",
-                "source": "https://github.com/gomzyakov/image-placeholder/tree/v1.0.0"
+                "source": "https://github.com/gomzyakov/image-placeholder/tree/v1.1.0"
             },
-            "time": "2025-10-05T17:01:35+00:00"
+            "time": "2025-10-06T16:43:24+00:00"
         },
         {
             "name": "graham-campbell/result-type",
