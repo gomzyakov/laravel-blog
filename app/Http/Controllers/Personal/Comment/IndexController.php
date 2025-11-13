@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Personal\Comment;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Contracts\View\Factory as ViewFactory;
 use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Contracts\View\Factory as ViewFactory;
 
 class IndexController extends Controller
 {

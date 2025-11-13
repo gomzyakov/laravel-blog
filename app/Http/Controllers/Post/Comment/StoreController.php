@@ -12,7 +12,7 @@ class StoreController extends Controller
 {
     public function __invoke(StoreRequest $request, Post $post, Authenticatable $user)
     {
-        $data = $request->validated();
+        $data            = $request->validated();
         $data['post_id'] = $post->id;
         /** @phpstan-ignore-next-line */
         $data['user_id'] = $user->id;
