@@ -87,11 +87,19 @@ Route::prefix('category')->group(function () {
 Route::prefix('post')->group(function () {
     Route::get('/{post}', [PostController::class, 'show'])->name('post.show');
 
+<<<<<<< HEAD
     Route::prefix('{post}/comments')->group(function () {
         Route::post('/', PostCommentStoreController::class)->name('post.comments.store');
     });
     Route::prefix('{post}/likes')->group(function () {
         Route::post('/', PostLikeStoreController::class)->name('post.likes.store');
+=======
+    Route::prefix('{post}/comments')->middleware('auth')->group(function () {
+        Route::post('/', 'App\Http\Controllers\Post\Comment\StoreController')->name('post.comments.store');
+    });
+    Route::prefix('{post}/likes')->middleware('auth')->group(function () {
+        Route::post('/', 'App\Http\Controllers\Post\Like\StoreController')->name('post.likes.store');
+>>>>>>> 262525bb1db02520ca6129d6ac14b26ab68c594d
     });
 });
 
